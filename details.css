@@ -111,3 +111,11 @@ html[data-theme="light"] .hero-detail .combat-icon .icon-type{background:#d9f3ed
 html[data-theme="light"] .hero-detail .combat-icon small{background:#f4fcfa;color:#17363c;border-color:#4eaa98}
 html[data-theme="light"] .hero-detail .combat-icon:hover .icon-type{background:#c3ebe2;color:#0b4c43}
 html[data-theme="light"] .hero-detail .combat-icon:hover small{background:#e5f6f2;color:#12313a}
+
+/* Keep label strips steady and make the lower hover edge less twitchy. */
+.hero-detail .combat-icon{position:relative}
+.hero-detail .combat-icon::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px}
+.hero-detail .combat-icon:hover .icon-type{background:#124c5c;color:#a9fbd7}
+.hero-detail .combat-icon:hover small{background:#0b3543;color:#fff}
+html[data-theme="light"] .hero-detail .combat-icon:hover .icon-type{background:#d9f3ed;color:#145b51}
+html[data-theme="light"] .hero-detail .combat-icon:hover small{background:#f4fcfa;color:#17363c}

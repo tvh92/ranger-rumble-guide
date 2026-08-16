@@ -62,3 +62,41 @@ body{background:#0a3543;color:#edfafa;background-image:radial-gradient(circle at
 .combined-table .stats{font-size:14px}
 .combined-table .stats thead tr:first-child th{font-size:14px}
 .combined-table .stats thead tr:nth-child(2) th{font-size:12px}
+
+/* Final theme and responsive behavior layer. */
+.art-toggle{display:none}
+html[data-theme="light"] body{background:#e8f8f5;color:#12313a;background-image:radial-gradient(circle at 50% -20%,#8ee4d5 0,transparent 38%),linear-gradient(30deg,#087d6b0a 12%,transparent 12.5%,transparent 87%,#087d6b0a 87.5%),linear-gradient(150deg,#087d6b0a 12%,transparent 12.5%,transparent 87%,#087d6b0a 87.5%)}
+html[data-theme="light"] .topbar{background:#f8fffded;border-color:#18b98c;box-shadow:0 8px 24px #315c5530}
+html[data-theme="light"] .theme-toggle{background:#fff;border-color:#168f78;color:#075c51}
+html[data-theme="light"] .section-heading{border-color:#159b80}
+html[data-theme="light"] .section-heading h2{color:#093e49;text-shadow:2px 2px 0 #fff}
+html[data-theme="light"] .eyebrow{color:#b85800}
+html[data-theme="light"] .card{background:#fafffe;border-color:#61b9aa;color:#12313a;box-shadow:0 8px 18px #235f5524}
+html[data-theme="light"] .card:hover{border-color:#087d6b;box-shadow:0 12px 26px #235f5538,0 0 0 1px #087d6b33}
+html[data-theme="light"] .portrait,html[data-theme="light"] .card:nth-child(3n+2) .portrait,html[data-theme="light"] .card:nth-child(3n) .portrait{background:radial-gradient(circle at 50% 65%,#55c9bb55 0 18%,transparent 55%),linear-gradient(145deg,#d9f5ef,#bce9e0)!important;border-color:#61b9aa}
+html[data-theme="light"] .card-body{background:linear-gradient(90deg,#fff,#edf9f6)}
+html[data-theme="light"] .card h3{color:#13333d}
+html[data-theme="light"] .card p{color:#44666c}
+html[data-theme="light"] .card .type{color:#146b5d}
+html[data-theme="light"] dialog,html[data-theme="light"] .hero-detail{background:#effbf8;color:#12313a}
+html[data-theme="light"] .hero-detail .detail-art{background:radial-gradient(circle at 50% 28%,#4fcabd80 0 16%,transparent 44%),linear-gradient(180deg,#bfeee6,#8dd8cb);border-color:#168f78}
+html[data-theme="light"] .hero-detail .detail-body{background-color:#f8fffd;background-image:linear-gradient(30deg,#087d6b08 12%,transparent 12.5%,transparent 87%,#087d6b08 87.5%),linear-gradient(150deg,#087d6b08 12%,transparent 12.5%,transparent 87%,#087d6b08 87.5%)}
+html[data-theme="light"] .hero-detail .profile-title h2,html[data-theme="light"] .hero-detail .skins h3,html[data-theme="light"] .hero-detail .combined-stats>h3{color:#12313a}
+html[data-theme="light"] .hero-detail .type,html[data-theme="light"] .hero-detail .speed-badge,html[data-theme="light"] .hero-detail .hero-summary small{color:#17695d}
+html[data-theme="light"] .hero-detail .description-panel{background:#fff;border-color:#9bcfc5}
+html[data-theme="light"] .hero-detail .description-panel p{color:#34545b}
+html[data-theme="light"] .hero-detail .combat-icon,html[data-theme="light"] .hero-detail .skin{background:#f8fffd;border-color:#269b84;color:#12313a;box-shadow:inset 0 0 0 1px #d3eee8}
+html[data-theme="light"] .hero-detail .combat-icon small,html[data-theme="light"] .hero-detail .combat-icon .icon-type,html[data-theme="light"] .hero-detail .skin{color:#12313a}
+html[data-theme="light"] .hero-detail .combat-icon .icon-type{color:#17695d}
+html[data-theme="light"] .combined-fixed .fixed-group,html[data-theme="light"] .combined-table{background:#fff;border-color:#82c2b6;box-shadow:0 0 0 1px #82c2b6}
+html[data-theme="light"] .combined-fixed .fixed-group-title,html[data-theme="light"] .combined-table .stats thead tr:first-child th{background:#d9f3ed;color:#164e49}
+html[data-theme="light"] .combined-fixed .fixed-stat dt,html[data-theme="light"] .combined-table .stats thead tr:nth-child(2) th{color:#17695d}
+html[data-theme="light"] .combined-fixed .fixed-stat dd,html[data-theme="light"] .combined-table .stats tbody td{color:#17363c}
+html[data-theme="light"] .combined-table .stats thead tr:nth-child(2) th{background:#eef9f6}
+html[data-theme="light"] .combined-table .stats tbody th{color:#9a4e00}
+html[data-theme="light"] .combined-table .stats tbody tr:nth-child(even){background:#f0f8f6}
+html[data-theme="light"] .combined-table .stats tbody tr:hover{background:#dff3ee}
+html[data-theme="light"] .selected-skin{border-color:#168f78}
+html[data-theme="light"] .selected-skin h3,html[data-theme="light"] .selected-skin span{color:#12313a}
+html[data-theme="light"] dialog .close{background:#fff;color:#075c51;border-color:#168f78}
+@media(max-width:760px){.art-toggle{display:flex;align-items:center;justify-content:center;width:100%;padding:10px 12px;border:1px solid #20c997;background:#0b3c49;color:#baffdd;font:800 12px Outfit;text-transform:uppercase;cursor:pointer}.hero-detail .detail-art{min-height:0;padding:16px}.hero-detail.art-collapsed .detail-art>#hero-art,.hero-detail.art-collapsed .selected-skin{display:none}html[data-theme="light"] .art-toggle{background:#fff;color:#075c51;border-color:#168f78}}

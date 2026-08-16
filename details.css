@@ -33,4 +33,4 @@ body{background:#0a3543;color:#edfafa;background-image:radial-gradient(circle at
 /* Level labels must remain on one line, including LV 10. */
 .combined-table .stats tbody th{min-width:68px;white-space:nowrap}
 /* A lone fixed-stat panel should not stretch across the whole combat section. */
-.combined-fixed .fixed-group{width:100%;max-width:520px}
+.combined-fixed .fixed-group{width:100%;max-width:420px}

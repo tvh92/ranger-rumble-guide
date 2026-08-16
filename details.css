@@ -34,3 +34,14 @@ body{background:#0a3543;color:#edfafa;background-image:radial-gradient(circle at
 .combined-table .stats tbody th{min-width:68px;white-space:nowrap}
 /* A lone fixed-stat panel should not stretch across the whole combat section. */
 .combined-fixed .fixed-group{width:100%;max-width:420px}
+
+/* Center the profile content and keep galleries/roster rows balanced. */
+.description-panel{margin-inline:auto}
+.skins .skin-row{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;width:100%;max-width:698px;margin-inline:auto}
+.skins .skin{flex:0 1 92px;width:92px}
+.combined-stats{margin-inline:auto}
+.combined-fixed{display:flex;flex-wrap:wrap;justify-content:center}
+.combined-fixed .fixed-group{flex:1 1 340px}
+.character-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:100%;max-width:1400px;margin-inline:auto}
+.character-grid .card{flex:0 0 220px;width:220px}
+@media(max-width:650px){.character-grid .card{flex:0 1 calc(50% - 8px);width:auto}.skins .skin{flex:0 1 calc(33.333% - 6px);width:auto}}

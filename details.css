@@ -45,3 +45,20 @@ body{background:#0a3543;color:#edfafa;background-image:radial-gradient(circle at
 .character-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:100%;max-width:1400px;margin-inline:auto}
 .character-grid .card{flex:0 0 220px;width:220px}
 @media(max-width:650px){.character-grid .card{flex:0 1 calc(50% - 8px);width:auto}.skins .skin{flex:0 1 calc(33.333% - 6px);width:auto}}
+
+/* Slightly larger UI copy for desktop displays and vertically aligned stat labels. */
+.type{font-size:11px}
+.rarity-badge{font-size:10px}
+.card p{font-size:13px}
+.hero-summary small{font-size:11px}
+.hero-detail .description-panel p{font-size:14px}
+.description-toggle{font-size:12px}
+.hero-detail .combat-icon .icon-type,.hero-detail .combat-icon small{font-size:14px}
+.hero-detail .skin span,.selected-skin span{font-size:13px}
+.combined-fixed .fixed-stat{align-items:center}
+.combined-fixed .fixed-stat dt{align-self:stretch;display:flex;align-items:center;font-size:12px;line-height:1.2}
+.combined-fixed .fixed-stat dt span{display:flex;align-items:center;min-height:17px;font-size:12px;line-height:1.2}
+.combined-fixed .fixed-stat dd{display:flex;align-items:center;align-self:stretch;font-size:16px;line-height:1.2}
+.combined-table .stats{font-size:14px}
+.combined-table .stats thead tr:first-child th{font-size:14px}
+.combined-table .stats thead tr:nth-child(2) th{font-size:12px}

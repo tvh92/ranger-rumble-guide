@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fire rate">
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 18h25M8 32h31M8 46h25"/>
+    <path d="m39 12 17 20-17 20"/>
+  </g>
+</svg>

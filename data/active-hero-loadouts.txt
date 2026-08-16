@@ -1,0 +1,68 @@
+ACTIVE HERO LOADOUT REFERENCE
+=============================
+
+Hero: Widget (internal hero: Sandy)
+Weapon: Burst Pistol
+Gadget: Drill Thruster (internal: DrillDash)
+Melee: Turbo Drill (icon: WidgetMelee)
+Ultimate: RYNO (internal: Ryno)
+
+Hero: Celeste (internal hero: Celeste)
+Weapon: Buzz Blades
+Gadget: Cryo Slider
+Melee: Slapshot
+Ultimate: Hoverboard
+
+Hero: Sprocket (internal hero: Sprocket)
+Weapon: Shatterbomb
+Gadget: Hoverboots
+Melee: Omnimagnet
+Ultimate: Mega Strike
+
+Hero: Sparky (internal hero: Fuse)
+Weapon: Pyrocitor
+Gadget: Hunter Mine Launcher
+Melee: Crackaxe
+Ultimate: Big Boom
+
+Hero: Lil' Ann (internal hero: LilAnn)
+Weapon: Blitz Gun
+Gadget: Whirling Blades (internal: LittleSpin)
+Melee: Storm Cutlass
+Ultimate: Vortex Wallop
+
+Hero: Chip (internal hero: Chip)
+Weapon: Tesla Claw
+Gadget: Glove of Doom
+Melee: Brainstorm
+Ultimate: Sheep-o-Bomb
+
+Hero: Tempest (internal hero: Markus)
+Weapon: Cold Snap
+Gadget: Void Repulser
+Melee: Typhoon
+Ultimate: Good Ol' Shot
+
+Hero: Zed (internal hero: ZedOne)
+Weapon: Warmonger
+Gadget: Bombardier
+Melee: Stick of Order
+Ultimate: Tank Formation
+
+Hero: Mopz (internal hero: Raiden)
+Weapon: Blackhole Storm
+Gadget: Voltage Drop
+Melee: SEV3R
+Ultimate: Negatron Collider
+
+Hero: Grimshot (internal hero: Grimshot)
+Weapon: Headhunter
+Gadget: Holoshield Glove
+Melee: X60 Cleaver
+Ultimate: Smoke Leap
+
+Hero: Lump (internal hero: Lump)
+Weapon: Lava Gun
+Gadget: Amoeboid Launcher
+Melee: Glo-Bash
+Ultimate: Mutagenic Burst

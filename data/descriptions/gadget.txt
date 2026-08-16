@@ -1,0 +1,35 @@
+Amoeboid Launcher
+Launch Amoeboid soldiers into the fray one by one, or fuse them together into a massive biological threat.
+
+Adrenaline Booster
+Surge your bionic systems to temporarily boost your combat capabilities.
+
+Bombardier
+This flying drone clears the path ahead, raining fire on opponents in a straight line.
+
+Cryoslider
+Launches icy stones that slide in a straight line, leaving a freezing trail behind them.
+
+Drill Thruster
+No press pass? No problem. Power through anything standing in the way with your turbo drill.
+
+Voltage Drop
+Throw a bouncing grenade that releases a high-voltage electric shock on impact.
+
+Glove of Doom
+Throw a capsule that unleashes tiny robots known as the Agents of Doom, and let them do the work!
+
+Holoshield Glove
+Deploy high-tech holographic shields to block incoming strikes with optimal protection.
+
+Hoverboots
+The Hoverboots let you glide at extreme speeds, getting you in or out of danger in a flash.
+
+Whirling Blades
+Lunge forward in a spinning blade attack to strike nearby enemies.
+
+Hunter Mine Launcher
+Turn any room into a death trap by sticking mines to surfaces, or fire them at enemies for an instant blast.
+
+Void Repulser
+Generate a protective force field to block incoming damage while you rethink your life decisions.

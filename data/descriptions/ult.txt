@@ -1,0 +1,35 @@
+Big Boom
+Deploy a mine that blasts foes and launches you skyward. Activate manually for instant impact!
+
+Good Ol' Shot
+Fire a giant cannonball from your arm: it rolls, bounces, and knocks everything out of the way.
+
+Mutagenic Burst
+Release a surge of energy around you and evolve: grow bigger and gain health with each use.
+
+Hoverboard
+A high-velocity board that flies at full speed until the tank is dry.
+
+Relentless Hunt
+Activate hunting mode: sprint on all fours and deliver a lethal bite to the first target you run into.
+
+Negatron Collider
+Tired of hitting one target at a time? Charge a devastating beam that melts through everyone!
+
+RYNO
+With rapid-fire, auto-tracking missiles, this weapon was deemed too dangerous for civilian use.
+
+Vortex Wallop
+Become a relentless vortex of blades, slicing every enemy around you.
+
+Sheep-O-Bomb
+Throw a tactical morph-bomb that turns enemies into harmless sheep.
+
+Mega Strike
+A rapid leap followed by a crushing blow from your trusty Omnimagnet.
+
+Smoke Leap
+Vanish into the sky when things get tense, leaving a blinding smoke screen in your wake.
+
+Tank Formation
+Beep! Targets acquired. Transform into a heavy tank and blast enemies to dust.

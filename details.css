@@ -100,3 +100,14 @@ html[data-theme="light"] .selected-skin{border-color:#168f78}
 html[data-theme="light"] .selected-skin h3,html[data-theme="light"] .selected-skin span{color:#12313a}
 html[data-theme="light"] dialog .close{background:#fff;color:#075c51;border-color:#168f78}
 @media(max-width:760px){.art-toggle{display:flex;align-items:center;justify-content:center;width:100%;padding:10px 12px;border:1px solid #20c997;background:#0b3c49;color:#baffdd;font:800 12px Outfit;text-transform:uppercase;cursor:pointer}.hero-detail .detail-art{min-height:0;padding:16px}.hero-detail.art-collapsed .detail-art>#hero-art,.hero-detail.art-collapsed .selected-skin{display:none}html[data-theme="light"] .art-toggle{background:#fff;color:#075c51;border-color:#168f78}}
+
+/* Equipment labels use the active teal palette rather than neutral gray. */
+.hero-detail .combat-icon .icon-type{background:#124c5c;color:#a9fbd7;border:1px solid #217083;border-bottom:0}
+.hero-detail .combat-icon small{background:#0b3543;color:#fff;border:1px solid #217083;border-top:0}
+.hero-detail .combat-icon:hover .icon-type{background:#176176;color:#c4ffe6}
+.hero-detail .combat-icon:hover small{background:#104557;color:#fff}
+html[data-theme="dark"] .hero-detail .combat-icon small{color:#fff}
+html[data-theme="light"] .hero-detail .combat-icon .icon-type{background:#d9f3ed;color:#145b51;border-color:#4eaa98}
+html[data-theme="light"] .hero-detail .combat-icon small{background:#f4fcfa;color:#17363c;border-color:#4eaa98}
+html[data-theme="light"] .hero-detail .combat-icon:hover .icon-type{background:#c3ebe2;color:#0b4c43}
+html[data-theme="light"] .hero-detail .combat-icon:hover small{background:#e5f6f2;color:#12313a}

@@ -61,7 +61,7 @@ button { font: inherit; }
 .card-body { position: relative; display: block; min-height: 98px; padding: 12px; background: var(--surface-strong); }
 .card-body::before { content: ''; position: absolute; inset: 0 auto auto 0; width: 58%; height: 3px; background: var(--rarity, var(--line-bright)); }
 .card-meta { display: flex; align-items: center; gap: 7px; min-width: 0; }
-.rarity-badge { position: relative; display: inline-flex; align-items: center; padding: 5px 40px 5px 8px; background: linear-gradient(105deg, var(--rarity) 0 calc(100% - 29px), transparent calc(100% - 28px)); color: #fff; font-size: 10px; font-style: italic; font-weight: 900; letter-spacing: .7px; text-transform: uppercase; }
+.rarity-badge { position: relative; display: inline-flex; align-items: center; padding: 5px 40px 5px 8px; background: linear-gradient(105deg, var(--rarity) 0 calc(100% - 35px), transparent calc(100% - 34px)); color: #fff; font-size: 10px; font-style: italic; font-weight: 900; letter-spacing: .7px; text-transform: uppercase; }
 .rarity-badge::after { content: ''; position: absolute; top: 0; right: 22px; width: 4px; height: 100%; background: var(--rarity); box-shadow: 7px 0 var(--rarity), 14px 0 var(--rarity), 21px 0 var(--rarity); transform: skew(-12deg); transform-origin: center; }
 .type { color: var(--class-accent); font-size: 11px; font-weight: 900; letter-spacing: 1.1px; text-transform: uppercase; }
 .card-title { display: block; margin-top: 6px; color: var(--heading); font: italic 900 29px/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }

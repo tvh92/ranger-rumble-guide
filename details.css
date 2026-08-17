@@ -152,3 +152,10 @@ dialog .close::after,.hero-detail .close::after{transform:translate(-50%,-50%) r
 
 /* Never expose fallback alt text while a render is decoding. */
 #hero-art{font-size:0;color:transparent}
+
+/* Keep Sparky's two-part ultimate in the same three-row card layout. */
+.hero-detail .combat-icon.dual{display:grid!important;grid-template-columns:1fr;grid-template-rows:auto 112px auto;align-items:stretch}
+
+/* Centre chevrons within the visible, clipped arrow shapes. */
+.hero-nav-prev{text-indent:4px}
+.hero-nav-next{text-indent:-4px}

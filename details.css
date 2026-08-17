@@ -96,14 +96,14 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 :where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 @media (max-width: 760px) {
-  dialog { width: calc(100% - 16px); }
+  dialog { width: calc(100% - 16px); overflow: hidden; }
   dialog .close { right: 22px; }
-  .hero-detail { grid-template-columns: 1fr; }
+  .hero-detail { display: block; max-height: 92vh; overflow-y: auto; overscroll-behavior: contain; scrollbar-color: var(--line) var(--surface-strong); scrollbar-width: thin; }
   .detail-art { min-height: 0; padding: 16px; border-right: 0; border-bottom: 1px solid var(--line-bright); }
   #hero-art { width: 112%; height: 300px; transform: scale(1.04); }
   .art-toggle { display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 12px; border: 1px solid var(--line-bright); background: var(--surface-soft); color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; cursor: pointer; }
   .art-collapsed #hero-art, .art-collapsed .selected-skin { display: none; }
-  .detail-body { max-height: none; padding: 24px 18px 32px; }
+  .detail-body { max-height: none; padding: 24px 18px 32px; overflow: visible; }
   .icon-row { gap: 6px; }
   .icon-type, .combat-icon small { font-size: 11px; }
   .skin-row { max-width: 100%; }

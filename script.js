@@ -48,7 +48,8 @@ function find(items,key) { return items.find(item=>norm(item.name)===norm(key));
 function card(key, archived=false, type='hero') {
   const l=loadouts[key], title=displayHeroName(key),profile=heroProfiles[key];
   const image=archived?(type==='heroes'?heroImage(key):icon(key,type)):heroImage(key);
-  const subtitle=archived?'':l[0];
+  const gadgetName=l?.[2]==='Hunter Mine Launcher'?'H. Mine Launcher':l?.[2];
+  const subtitle=archived?'':`${l[0]}, ${gadgetName}`;
   const category=type==='heroes'?'Hero':type==='weapons'?'Weapon':type==='gadgets'?'Gadget':heroClasses[key];
   return `<article class="card" style="${profile?`--rarity:${profile.color}`:''}" tabindex="0" role="button" data-type="${type}" data-key="${safe(key)}"><div class="portrait">${image?`<img src="${image}" alt="${safe(title)}" onerror="this.remove()">`:'<span class="type">Info coming soon</span>'}</div><div class="card-body">${profile?`<div class="card-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(category)}</span></div>`:`<span class="type">${safe(category)}</span>`}<h3>${safe(title)}</h3>${subtitle?`<p>${safe(subtitle)}</p>`:''}</div></article>`;
 }

@@ -5,7 +5,7 @@
   --page: #041d28; --page-glow: #126b7b; --pattern: #26d99a0b;
   --surface: #072733; --surface-strong: #061f2b; --surface-soft: #0b3543; --surface-header: #124c5c;
   --line: #168c82; --line-bright: #20d99a; --accent: #9fffd2; --accent-strong: #51ffb5;
-  --heading: #fff; --text: #edfafa; --muted: #a9cfd2; --orange: #ffad55; --shadow: #00141c88; --focus: #ffad55;
+  --heading: #fff; --text: #edfafa; --muted: #a9cfd2; --orange: #ffad55; --class-accent: #ffe600; --shadow: #00141c88; --focus: #ffad55;
 }
 
 html[data-theme='light'] {
@@ -13,7 +13,7 @@ html[data-theme='light'] {
   --page: #e8f8f5; --page-glow: #8ee4d5; --pattern: #087d6b0a;
   --surface: #fafffe; --surface-strong: #fff; --surface-soft: #eef9f6; --surface-header: #d9f3ed;
   --line: #3f9f8e; --line-bright: #168f78; --accent: #17695d; --accent-strong: #087d6b;
-  --heading: #12313a; --text: #17363c; --muted: #44666c; --orange: #9a4e00; --shadow: #164f4633; --focus: #087d6b;
+  --heading: #12313a; --text: #17363c; --muted: #44666c; --orange: #9a4e00; --class-accent: #9a5900; --shadow: #164f4633; --focus: #087d6b;
 }
 
 * { box-sizing: border-box; }
@@ -21,8 +21,9 @@ html { scroll-behavior: smooth; }
 body {
   min-width: 320px; margin: 0; color: var(--text); font-family: Outfit, Arial, sans-serif;
   background-color: var(--page);
-  background-image: radial-gradient(circle at 50% -20%, var(--page-glow) 0, transparent 40%), linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%);
-  background-size: auto, 52px 90px, 52px 90px;
+  background-image: radial-gradient(circle at 50% -20%, var(--page-glow) 0, transparent 40%), linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%);
+  background-position: 0 0, 0 0, 0 0, 26px 45px, 26px 45px;
+  background-size: auto, 52px 90px, 52px 90px, 52px 90px, 52px 90px;
 }
 button { font: inherit; }
 .star-field { display: none; }
@@ -60,9 +61,10 @@ button { font: inherit; }
 .card-body { position: relative; display: block; min-height: 98px; padding: 12px; background: var(--surface-strong); }
 .card-body::before { content: ''; position: absolute; inset: 0 auto auto 0; width: 58%; height: 3px; background: var(--rarity, var(--line-bright)); }
 .card-meta { display: flex; align-items: center; gap: 7px; min-width: 0; }
-.rarity-badge { display: inline-flex; align-items: center; padding: 5px 15px 5px 8px; background: var(--rarity); clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%); color: #fff; font-size: 10px; font-weight: 900; letter-spacing: .7px; text-transform: uppercase; }
-.type { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: 1.1px; text-transform: uppercase; }
-.card-title { display: block; margin-top: 5px; color: var(--heading); font: italic 900 25px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .4px; text-transform: uppercase; }
+.rarity-badge { position: relative; display: inline-flex; align-items: center; padding: 5px 40px 5px 8px; background: linear-gradient(105deg, var(--rarity) 0 calc(100% - 29px), transparent calc(100% - 28px)); color: #fff; font-size: 10px; font-style: italic; font-weight: 900; letter-spacing: .7px; text-transform: uppercase; }
+.rarity-badge::after { content: ''; position: absolute; top: 0; right: 0; width: 23px; height: 100%; background: repeating-linear-gradient(90deg, var(--rarity) 0 4px, transparent 4px 7px); transform: skew(-12deg); }
+.type { color: var(--class-accent); font-size: 11px; font-weight: 900; letter-spacing: 1.1px; text-transform: uppercase; }
+.card-title { display: block; margin-top: 6px; color: var(--heading); font: italic 900 29px/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
 .card-subtitle { display: block; margin-top: 6px; overflow: hidden; color: var(--muted); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
 
 footer { display: flex; align-items: center; gap: 8px; min-height: 80px; padding: 24px max(24px, 8vw); border-top: 2px solid var(--line-bright); background: var(--surface-header); color: var(--text); font: 800 16px 'Barlow Condensed', Impact, sans-serif; letter-spacing: 1px; }
@@ -83,7 +85,7 @@ footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; le
   .portrait { height: 140px; }
   .portrait img { height: 130px; }
   .card-body { min-height: 104px; padding: 11px; }
-  .card-title { font-size: 22px; }
+  .card-title { font-size: 25px; }
   footer { flex-wrap: wrap; }
   footer small { flex-basis: 100%; margin: 4px 0 0; }
 }

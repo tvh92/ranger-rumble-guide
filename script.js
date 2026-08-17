@@ -1,4 +1,5 @@
 const raw = window.RUMBLE_DATA;
+const guideVersion = '0.9.0';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = '20260817';
@@ -120,6 +121,7 @@ function showArchive(type) {
   document.querySelectorAll('[data-archive]').forEach(button=>button.classList.toggle('active',button.dataset.archive===type));
 }
 render();
+$('#guide-version').textContent=`v${guideVersion}`;
 let imageTarget;
 document.addEventListener('click',event=>{ const cardTarget=event.target.closest('.card'); if(cardTarget&&cardTarget.dataset.type==='hero')showHero(cardTarget.dataset.key); const skin=event.target.closest('.skin'); if(skin){pinnedSkin={file:skin.dataset.file,name:skin.querySelector('span').textContent};setSkinPreview(pinnedSkin.file,pinnedSkin.name);} const heroSummary=event.target.closest('.hero-summary'); if(heroSummary){showDescription('heroes',heroSummary.dataset.hero,heroSummary.dataset.hero);rememberDescription();} const combat=event.target.closest('.combat-icon'); if(combat){showDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);rememberDescription();} const toggle=event.target.closest('.description-toggle'); if(toggle){const panel=$('#profile-description');showDescription(panel.dataset.category,panel.dataset.name,panel.dataset.hero,toggle.dataset.full==='true');rememberDescription();} const artToggle=event.target.closest('.art-toggle'); if(artToggle){const detail=artToggle.closest('.hero-detail'),collapsed=detail.classList.toggle('art-collapsed');artToggle.setAttribute('aria-expanded',String(!collapsed));artToggle.textContent=collapsed?'Show artwork and selected skin':'Hide artwork and selected skin';} const assign=event.target.closest('.assign-image'); if(assign){imageTarget=assign;$('#image-picker').click();} if(event.target.matches('.close'))event.target.closest('dialog').close(); if(event.target.matches('dialog'))event.target.close(); });
 document.addEventListener('mouseover',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=null;previewDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);}});

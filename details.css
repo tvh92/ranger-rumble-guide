@@ -170,6 +170,9 @@ html[data-theme="light"] .hero-nav,html[data-theme="light"] .hero-nav:hover,html
 html[data-theme="light"] .hero-nav::before{background:#d9f3edf0}
 html[data-theme="light"] .hero-nav:hover::before,html[data-theme="light"] .hero-nav:focus-visible::before{background:#bce9e0}
 
+.guide-version{display:inline-flex;align-items:center;margin-left:10px;padding:4px 8px;border:1px solid #18d99b;background:#0b3543;color:#9fffd2;font:800 11px Outfit;letter-spacing:.4px;vertical-align:middle}
+html[data-theme="light"] .guide-version{border-color:#168f78;background:#f4fcfa;color:#075c51}
+
 /* Keep hover previews anchored even when a skin adds wide accessories. */
 .selected-skin-stage{display:flex;align-items:flex-end;justify-content:center;width:100%;height:220px;overflow:visible}
 .selected-skin-stage img{flex:0 0 auto;margin:0;transform:translate(var(--skin-x,0px),var(--skin-y,0px))}

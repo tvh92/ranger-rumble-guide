@@ -42,7 +42,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .icon-art { display: flex; align-items: center; justify-content: center; gap: 4px; width: 100%; height: 112px; padding: 9px; border: 1px solid var(--line-bright); border-top-width: 4px; background: var(--surface-strong); box-shadow: inset 0 0 0 1px var(--page); transition: background-color .18s, box-shadow .18s; }
 .icon-art img { height: 84px; max-width: 112px; object-fit: contain; transition: transform .18s, filter .18s; }
 .combat-icon.dual .icon-art img { height: 70px; max-width: 48%; }
-.combat-icon small { display: grid; place-items: center; height: 54px; padding: 9px 7px; overflow-wrap: anywhere; border: 1px solid var(--line); border-top: 0; background: var(--surface-soft); color: var(--heading); font: 700 14px/1.2 Georgia, serif; text-align: center; }
+.combat-icon small { display: grid; place-items: center; height: 54px; padding: 9px 7px; overflow-wrap: anywhere; border: 1px solid var(--line); border-top: 0; background: var(--surface-soft); color: var(--heading); font: 700 14px/1.2 Outfit, Arial, sans-serif; text-align: center; }
 .combat-icon:hover .icon-art, .combat-icon:focus-visible .icon-art { background: color-mix(in srgb, var(--surface-soft) 88%, var(--accent-strong)); box-shadow: inset 0 0 0 1px var(--page), 0 0 18px color-mix(in srgb, var(--accent-strong) 35%, transparent); }
 .combat-icon:hover .icon-art img, .combat-icon:focus-visible .icon-art img { transform: scale(1.07); filter: drop-shadow(0 7px 7px var(--shadow)); }
 
@@ -58,6 +58,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .combined-stats { width: 100%; max-width: 820px; margin-inline: auto; }
 .combined-fixed { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 16px; }
 .fixed-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); flex: 1 1 340px; width: 100%; max-width: 420px; margin: 0; padding: 10px 14px; gap: 0 12px; border: 1px solid var(--line); background: var(--surface-strong); }
+.fixed-group:has(.fixed-stat:nth-child(2):last-child) { flex: 0 1 300px; grid-template-columns: 1fr; max-width: 300px; }
 .fixed-group-title { grid-column: 1 / -1; margin: -2px 0 8px; padding: 8px 12px; background: var(--surface-header); color: var(--orange); font-size: 14px; font-style: italic; font-weight: 800; clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%); }
 .fixed-stat { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; padding: 8px 6px; border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); }
 .fixed-stat dt { display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }

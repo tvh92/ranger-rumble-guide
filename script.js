@@ -79,7 +79,17 @@ const heroOrder=guide.heroOrder;
 function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="images/UI%20icons/ico_stats_${file}.${ext}" alt="">`:''; }
-function statCandidates(item,mode='normal') { if(!item?.levels?.length)return[]; const all=[...new Set(item.levels.flatMap(level=>Object.keys(level)))].filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column)); return mode==='hero'?all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)):mode==='ultimate'?(item.name==='Zed'?all.filter(column=>/^Tank /i.test(column)):all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column))):all; }
+function statCandidates(item,mode='normal') {
+  if(!item?.levels?.length || item.name==='Amoeboid Launcher') return [];
+  const all=[...new Set(item.levels.flatMap(level=>Object.keys(level)))].filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column));
+  if(mode==='hero') return all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)&&!(item.name==='Widget'&&/^(Projectile Time|Missiles)$/i.test(column)));
+  if(mode==='ultimate') {
+    if(item.name==='Zed') return all.filter(column=>/^Tank /i.test(column));
+    if(item.name==='Widget') return all.filter(column=>/^(Ult |Projectile Time|Missiles)/i.test(column)&&!/Fire Rate/i.test(column));
+    return all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column));
+  }
+  return all;
+}
 function combinedStatsTable(hero,weapon,gadget,loadout) {
   const groups=[{label:'Hero',displayName:hero.name,item:hero,mode:'hero'},{label:'Weapon',displayName:loadout[0],item:weapon,mode:'normal'},{label:'Gadget',displayName:loadout[2],item:gadget,mode:'normal'},{label:'Ultimate',displayName:loadout[7],item:hero,mode:'ultimate'}].map(group=>{
     const candidates=statCandidates(group.item,group.mode),fixed=candidates.filter(column=>group.item.levels.every(row=>row[column]===group.item.levels[0][column])),id=`stats-${norm(group.label)}`;

@@ -1,5 +1,5 @@
 const raw = window.RUMBLE_DATA;
-const guideVersion = '0.10.0';
+const guideVersion = '0.10.1';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = '20260817';
@@ -45,7 +45,7 @@ function icon(key, folder) { const found=files[folder]?.find(x=>norm(x)===norm(k
 function skinSource(file) { return `${base}/skins/${file.split('/').map(encodeURIComponent).join('/')}?v=${assetVersion}`; }
 function heroDefaultSkin(key) { const folderSkins=(window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&!file.includes('/icons/')); return folderSkins.find(file=>file===`${key}/${key}.png`)||folderSkins[0]||`${key}/${key}.png`; }
 function heroImage(key) { return skinSource(heroDefaultSkin(key)); }
-const skinAlignments={"Lil'Ann/Raritanium Lil'Ann.png":{scale:1.037},"Sparky/Raritanium Sparky.png":{scale:1.041},"Sparky/Robot Sparky.png":{scale:1.023},"Chip/McMarx Sports Chip.png":{scale:1.08},"Chip/Nefarious Chip.png":{scale:1.02},"Chip/Raritanium Chip.png":{scale:1.027}};
+const skinAlignments={"Lil'Ann/Raritanium Lil'Ann.png":{scale:1.037},"Sparky/Raritanium Sparky.png":{scale:1.041},"Sparky/Robot Sparky.png":{scale:.84},"Chip/McMarx Sports Chip.png":{scale:1.08},"Chip/Nefarious Chip.png":{scale:1.02},"Chip/Raritanium Chip.png":{scale:1.027}};
 function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; const alignment=skinAlignments[file]||{},calibrated=/^(Lil'Ann|Sparky|Chip)\//.test(file); preview.classList.toggle('skin-preview-calibrated',calibrated); preview.src=skinSource(file); preview.style.setProperty('--skin-height',`${195*(alignment.scale||1)}px`); preview.style.setProperty('--skin-x',`${alignment.x||0}px`); preview.style.setProperty('--skin-y',`${alignment.y||0}px`); $('#selected-skin-name').textContent=name; }
 function setActiveSkinButton(file) { document.querySelectorAll('.skin').forEach(button=>{const active=button.dataset.file===file;button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active));}); }
 function heroRender(key) { const file=key==="Lil'Ann"?'LilAnn':key; return `${base}/renders/${file}.png?v=${assetVersion}`; }

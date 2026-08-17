@@ -201,10 +201,9 @@ html[data-theme="light"] .hero-detail .combat-icon .icon-art,html[data-theme="li
 
 /* Persistent selected-skin state. */
 .hero-detail .skin{position:relative}
-.hero-detail .skin.is-selected{border-color:#62ffc1;box-shadow:0 0 0 2px #20d99a,0 0 16px #20d99a55}
-.hero-detail .skin.is-selected::after{content:"✓";position:absolute;right:5px;top:5px;display:grid;place-items:center;width:20px;height:20px;background:#20d99a;color:#04232d;border:1px solid #8affd2;font:900 13px Outfit}
+.hero-detail .skin.is-selected{border-color:#62ffc1;box-shadow:0 0 0 2px #20d99a}
+.hero-detail .skin.is-selected:focus-visible{outline:0!important}
 html[data-theme="light"] .hero-detail .skin.is-selected{border-color:#087d6b;box-shadow:0 0 0 2px #168f78,0 5px 14px #17695d2e}
-html[data-theme="light"] .hero-detail .skin.is-selected::after{background:#168f78;color:#fff;border-color:#075c51}
 
 /* Close control uses the same teal control language as navigation. */
 html[data-theme="dark"] dialog .close{background:#083746;color:#9fffd2;border-color:#20d99a;box-shadow:0 0 14px #20d99a33}

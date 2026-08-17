@@ -157,12 +157,22 @@ dialog .close::after,.hero-detail .close::after{transform:translate(-50%,-50%) r
 .hero-detail .combat-icon.dual{display:grid!important;grid-template-columns:1fr;grid-template-rows:auto 112px auto;align-items:stretch}
 
 /* Centre chevrons within the visible, clipped arrow shapes. */
-.hero-nav-prev{text-indent:4px}
-.hero-nav-next{text-indent:-4px}
+.hero-nav{isolation:isolate;border:0;background:#20d99a;font-size:0;clip-path:none}
+.hero-nav::before{content:"";position:absolute;z-index:-1;inset:1px;background:#083746e8}
+.hero-nav-prev,.hero-nav-prev::before{clip-path:polygon(18% 0,100% 0,100% 100%,18% 100%,0 50%)}
+.hero-nav-next,.hero-nav-next::before{clip-path:polygon(0 0,82% 0,100% 50%,82% 100%,0 100%)}
+.hero-nav span{display:block;width:13px;height:13px;border:solid currentColor;border-width:0 4px 4px 0}
+.hero-nav-prev span{margin-left:4px;transform:rotate(135deg)}
+.hero-nav-next span{margin-right:4px;transform:rotate(-45deg)}
+.hero-nav:hover,.hero-nav:focus-visible{background:#20d99a}
+.hero-nav:hover::before,.hero-nav:focus-visible::before{background:#126276}
+html[data-theme="light"] .hero-nav,html[data-theme="light"] .hero-nav:hover,html[data-theme="light"] .hero-nav:focus-visible{background:#168f78}
+html[data-theme="light"] .hero-nav::before{background:#d9f3edf0}
+html[data-theme="light"] .hero-nav:hover::before,html[data-theme="light"] .hero-nav:focus-visible::before{background:#bce9e0}
 
 /* Keep hover previews anchored even when a skin adds wide accessories. */
 .selected-skin img{transform:none}
-.selected-skin img.skin-preview-calibrated{width:auto;height:195px;max-width:none;object-position:center bottom;transform:translate(var(--skin-x,0),var(--skin-y,0)) scale(var(--skin-scale,1));transform-origin:center bottom}
+.selected-skin img.skin-preview-calibrated{position:relative;left:50%;width:auto;height:195px;max-width:none;margin-left:0;margin-right:0;object-position:center bottom;transform:translate(calc(-50% + var(--skin-x,0px)),var(--skin-y,0px)) scale(var(--skin-scale,1));transform-origin:center bottom}
 
 /* Let navigation tabs straddle the modal border without exposing its content. */
 dialog{overflow:visible}

@@ -174,9 +174,47 @@ html[data-theme="light"] .hero-nav:hover::before,html[data-theme="light"] .hero-
 html[data-theme="light"] .guide-version{border-color:#168f78;background:#f4fcfa;color:#075c51}
 
 /* Keep hover previews anchored even when a skin adds wide accessories. */
-.selected-skin-stage{display:flex;align-items:flex-end;justify-content:center;width:100%;height:220px;overflow:visible}
+.selected-skin-stage{position:relative;left:50%;display:flex;align-items:flex-end;justify-content:center;width:200px;max-width:none;height:220px;overflow:hidden;transform:translateX(-50%)}
 .selected-skin-stage img{flex:0 0 auto;margin:0;transform:translate(var(--skin-x,0px),var(--skin-y,0px))}
 .selected-skin-stage img.skin-preview-calibrated{width:auto;height:var(--skin-height,195px);max-width:none;object-position:center bottom}
+
+/* Consistent modal scrollbar treatment. */
+.hero-detail .detail-body{scrollbar-width:thin;scrollbar-color:#20d99a #061f2b}
+.hero-detail .detail-body::-webkit-scrollbar{width:10px}
+.hero-detail .detail-body::-webkit-scrollbar-track{background:#061f2b}
+.hero-detail .detail-body::-webkit-scrollbar-thumb{background:#168c82;border:2px solid #061f2b;border-radius:8px}
+html[data-theme="light"] .hero-detail .detail-body{scrollbar-color:#168f78 #d9f3ed}
+html[data-theme="light"] .hero-detail .detail-body::-webkit-scrollbar-track{background:#d9f3ed}
+html[data-theme="light"] .hero-detail .detail-body::-webkit-scrollbar-thumb{background:#168f78;border-color:#d9f3ed}
+
+/* Equipment cards share fixed rows, including wrapped names. */
+.hero-detail .combat-icon,.hero-detail .combat-icon:hover,.hero-detail .combat-icon.dual{grid-template-rows:38px 112px 54px;gap:0;height:204px;align-self:start}
+.hero-detail .combat-icon .icon-type{height:38px;min-height:38px}
+.hero-detail .combat-icon small{height:54px;min-height:54px;overflow-wrap:anywhere}
+
+/* Stronger separation and hierarchy in light mode. */
+html[data-theme="light"] .card{border-color:#3f9f8e;box-shadow:0 9px 22px #164f4633}
+html[data-theme="light"] .card-body{background:#fff}
+html[data-theme="light"] .section-heading{border-bottom-width:2px;border-color:#087d6b}
+html[data-theme="light"] .hero-detail .description-panel{border-color:#6eb8aa;box-shadow:0 6px 16px #2b6b5e18}
+html[data-theme="light"] .hero-detail .combat-icon .icon-art,html[data-theme="light"] .hero-detail .skin,html[data-theme="light"] .combined-fixed .fixed-group,html[data-theme="light"] .combined-table{box-shadow:0 4px 12px #275f551c}
+
+/* Persistent selected-skin state. */
+.hero-detail .skin{position:relative}
+.hero-detail .skin.is-selected{border-color:#62ffc1;box-shadow:0 0 0 2px #20d99a,0 0 16px #20d99a55}
+.hero-detail .skin.is-selected::after{content:"✓";position:absolute;right:5px;top:5px;display:grid;place-items:center;width:20px;height:20px;background:#20d99a;color:#04232d;border:1px solid #8affd2;font:900 13px Outfit}
+html[data-theme="light"] .hero-detail .skin.is-selected{border-color:#087d6b;box-shadow:0 0 0 2px #168f78,0 5px 14px #17695d2e}
+html[data-theme="light"] .hero-detail .skin.is-selected::after{background:#168f78;color:#fff;border-color:#075c51}
+
+/* Close control uses the same teal control language as navigation. */
+html[data-theme="dark"] dialog .close{background:#083746;color:#9fffd2;border-color:#20d99a;box-shadow:0 0 14px #20d99a33}
+html[data-theme="light"] dialog .close{background:#d9f3ed;color:#075c51;border-color:#168f78;box-shadow:0 4px 12px #17695d2e}
+dialog .close:hover{background:#126276;color:#fff}
+html[data-theme="light"] dialog .close:hover{background:#bce9e0;color:#12313a}
+
+/* Unified keyboard focus treatment. */
+.card:focus-visible,.combat-icon:focus-visible,.skin:focus-visible,.hero-summary:focus-visible,.theme-toggle:focus-visible,.hero-nav:focus-visible,dialog .close:focus-visible,.description-toggle:focus-visible{outline:3px solid #ffad55!important;outline-offset:3px}
+html[data-theme="light"] .card:focus-visible,html[data-theme="light"] .combat-icon:focus-visible,html[data-theme="light"] .skin:focus-visible,html[data-theme="light"] .hero-summary:focus-visible,html[data-theme="light"] .theme-toggle:focus-visible,html[data-theme="light"] .hero-nav:focus-visible,html[data-theme="light"] dialog .close:focus-visible,html[data-theme="light"] .description-toggle:focus-visible{outline-color:#087d6b!important}
 
 /* Let navigation tabs straddle the modal border without exposing its content. */
 dialog{overflow:visible}

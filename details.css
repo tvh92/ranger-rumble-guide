@@ -30,7 +30,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .profile-title h2 { margin: 5px 0 0; color: var(--heading); font: italic 900 53px/.82 'Barlow Condensed', Impact, sans-serif; letter-spacing: 1.2px; text-transform: uppercase; }
 .profile-title small { display: block; margin-top: 7px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; }
 
-.description-panel { width: min(100%, 620px); margin-inline: auto; padding: 18px 20px; overflow: auto; border: 1px solid color-mix(in srgb, var(--line) 75%, var(--muted)); border-radius: 0; background: color-mix(in srgb, var(--surface-strong) 86%, transparent); clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%); box-shadow: 0 6px 16px color-mix(in srgb, var(--shadow) 35%, transparent); backdrop-filter: blur(5px); }
+.description-panel { width: min(100%, 620px); margin-inline: auto; padding: 18px 20px; overflow: auto; border: 1px solid color-mix(in srgb, var(--line) 75%, var(--muted)); border-radius: 0; background: color-mix(in srgb, var(--surface-strong) 86%, transparent); box-shadow: 0 6px 16px color-mix(in srgb, var(--shadow) 35%, transparent), inset 4px 0 0 color-mix(in srgb, var(--line-bright) 70%, transparent); backdrop-filter: blur(5px); }
 .description-panel h3 { margin: 3px 0 6px; color: var(--heading); font: 800 21px 'Barlow Condensed', Impact, sans-serif; text-transform: uppercase; }
 .description-panel p { margin: 0; color: var(--text); font-size: 14px; line-height: 1.48; }
 .description-toggle { margin-top: 9px; padding: 0; border: 0; background: transparent; color: var(--accent-strong); font-size: 12px; font-style: italic; font-weight: 900; cursor: pointer; }
@@ -38,7 +38,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .icon-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 20px 0 26px; }
 .combat-icon { position: relative; display: grid; grid-template-rows: 38px 112px 54px; height: 204px; min-width: 0; padding: 0; border: 0; background: transparent; color: var(--text); cursor: pointer; }
 .combat-icon::after { content: ''; position: absolute; right: 0; bottom: -10px; left: 0; height: 10px; }
-.icon-type { display: grid; place-items: center; height: 38px; padding: 7px 16px 7px 8px; border: 1px solid var(--line); border-bottom: 0; background: var(--surface-header); color: var(--accent); font-size: 14px; font-style: italic; line-height: 1; letter-spacing: 1.1px; text-align: center; text-transform: uppercase; clip-path: polygon(0 0, calc(100% - 11px) 0, 100% 50%, calc(100% - 11px) 100%, 0 100%); }
+.icon-type { display: grid; place-items: center; height: 38px; padding: 7px 8px; border: 1px solid var(--line); border-bottom: 0; background: linear-gradient(90deg, var(--surface-header), color-mix(in srgb, var(--surface-header) 82%, var(--page))); color: var(--accent); font-size: 14px; font-style: italic; line-height: 1; letter-spacing: 1.1px; text-align: center; text-transform: uppercase; }
 .icon-art { display: flex; align-items: center; justify-content: center; gap: 4px; width: 100%; height: 112px; padding: 9px; border: 1px solid var(--line-bright); border-top-width: 4px; background: var(--surface-strong); box-shadow: inset 0 0 0 1px var(--page); transition: background-color .18s, box-shadow .18s; }
 .icon-art img { height: 84px; max-width: 112px; object-fit: contain; transition: transform .18s, filter .18s; }
 .combat-icon.dual .icon-art img { height: 70px; max-width: 48%; }
@@ -49,7 +49,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .skins { width: 100%; margin: 0 0 28px; }
 .skin-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; width: 100%; max-width: 698px; margin-inline: auto; }
 .skin-row:has(.skin:nth-child(8)) { max-width: 395px; }
-.skin { flex: 0 1 92px; width: 92px; min-height: 118px; padding: 8px 5px 10px; border: 1px solid var(--line); border-radius: 0; background: var(--surface-strong); color: var(--text); cursor: pointer; box-shadow: inset 0 0 0 1px var(--page); clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); }
+.skin { flex: 0 1 92px; width: 92px; min-height: 118px; padding: 8px 5px 10px; border: 1px solid var(--line); border-radius: 0; background: var(--surface-strong); color: var(--text); cursor: pointer; box-shadow: inset 0 0 0 1px var(--page); }
 .skin:hover { border-color: var(--accent-strong); background: var(--surface-soft); }
 .skin.is-selected { border-color: var(--accent-strong); box-shadow: 0 0 0 2px var(--line-bright); }
 .skin img { display: block; width: min(76px, 100%); height: 76px; margin: auto; object-fit: contain; }

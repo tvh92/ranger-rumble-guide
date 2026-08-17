@@ -171,8 +171,9 @@ html[data-theme="light"] .hero-nav::before{background:#d9f3edf0}
 html[data-theme="light"] .hero-nav:hover::before,html[data-theme="light"] .hero-nav:focus-visible::before{background:#bce9e0}
 
 /* Keep hover previews anchored even when a skin adds wide accessories. */
-.selected-skin img{transform:none}
-.selected-skin img.skin-preview-calibrated{position:relative;left:50%;width:auto;height:195px;max-width:none;margin-left:0;margin-right:0;object-position:center bottom;transform:translate(calc(-50% + var(--skin-x,0px)),var(--skin-y,0px)) scale(var(--skin-scale,1));transform-origin:center bottom}
+.selected-skin-stage{display:flex;align-items:flex-end;justify-content:center;width:100%;height:220px;overflow:visible}
+.selected-skin-stage img{flex:0 0 auto;margin:0;transform:translate(var(--skin-x,0px),var(--skin-y,0px))}
+.selected-skin-stage img.skin-preview-calibrated{width:auto;height:var(--skin-height,195px);max-width:none;object-position:center bottom}
 
 /* Let navigation tabs straddle the modal border without exposing its content. */
 dialog{overflow:visible}

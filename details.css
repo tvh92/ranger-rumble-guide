@@ -64,6 +64,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .fixed-stat dt { display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .fixed-stat dd { display: flex; align-items: center; margin: 0; padding-inline: 8px; color: var(--heading); font-size: 16px; font-weight: 800; }
 .stat-ui-icon { flex: 0 0 auto; width: 17px; height: 17px; object-fit: contain; }
+html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightness(0) saturate(100%) invert(31%) sepia(31%) saturate(1037%) hue-rotate(123deg) brightness(89%) contrast(91%); }
 
 .combined-table { width: 100%; overflow: hidden; border: 1px solid var(--line); border-radius: 0; background: color-mix(in srgb, var(--surface-strong) 94%, transparent); box-shadow: 0 0 0 1px var(--line); }
 .stats { width: 100%; min-width: 0; border-collapse: collapse; table-layout: fixed; font-size: 14px; }

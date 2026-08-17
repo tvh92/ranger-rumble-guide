@@ -133,3 +133,13 @@ dialog .close,.hero-detail .close{right:28px;top:12px}
 html[data-theme="light"] footer{background:#d9f3ed;border-color:#168f78;color:#12313a}
 html[data-theme="light"] footer small{color:#44666c}
 @media(max-width:760px){.hero-detail .detail-art>#hero-art{width:112%;height:300px;transform:scale(1.04)}}
+
+/* In-modal hero navigation. */
+.hero-nav{position:absolute;top:50%;z-index:6;display:grid;place-items:center;width:44px;height:58px;padding:0;border:1px solid #20d99a;background:#083746e8;color:#9fffd2;font:800 42px/1 'Barlow Condensed';cursor:pointer;transform:translateY(-50%);transition:.16s background,.16s color,.16s box-shadow,.16s transform}
+.hero-nav-prev{left:8px;clip-path:polygon(18% 0,100% 0,100% 100%,18% 100%,0 50%)}
+.hero-nav-next{right:8px;clip-path:polygon(0 0,82% 0,100% 50%,82% 100%,0 100%)}
+.hero-nav:hover,.hero-nav:focus-visible{background:#126276;color:#fff;box-shadow:0 0 18px #32f5aa66;outline:0}
+.hero-nav:hover{transform:translateY(-50%) scale(1.06)}
+html[data-theme="light"] .hero-nav{background:#d9f3edf0;border-color:#168f78;color:#075c51}
+html[data-theme="light"] .hero-nav:hover,html[data-theme="light"] .hero-nav:focus-visible{background:#bce9e0;color:#12313a}
+@media(max-width:760px){.hero-nav{top:44%;width:36px;height:50px;font-size:34px}.hero-nav-prev{left:4px}.hero-nav-next{right:4px}}

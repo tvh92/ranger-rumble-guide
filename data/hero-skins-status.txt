@@ -1,0 +1,117 @@
+ACTIVE HERO SKINS
+=================
+
+Widget
+Used:
+- Widget
+- Megalopolis Widget
+- McMarx Sports Widget
+- Rebel Widget
+- Raritanium Widget
+Unused:
+- Clank Suit Widget
+- Pirate Widget
+- Zoni Widget
+
+Mopz
+Used:
+- Mopz
+- Blackwater Mopz
+- Dreadzone Mopz
+- Megalopolis Mopz
+Unused:
+- Amoeboid Mopz
+- Pirate Mopz
+- Qforce Mopz
+
+Tempest
+Used:
+- Tempest
+- Blackwater Tempest
+- Dreadzone Tempest
+- Nefarious Tempest
+Unused:
+- Megacorp Tempest
+- Raritanium Tempest
+
+Zed
+Used:
+- Zed
+- Dreadzone Zed
+- Nefarious Zed
+- Blackwater Zed
+Unused:
+- Megacorp Zed
+- Pirate Zed
+
+Lil' Ann
+Used:
+- Lil'Ann
+- Megalopolis Lil'Ann
+- Nefarious Lil'Ann
+- Raritanium Lil'Ann
+Unused:
+- Admiral Lil'Ann
+- Gary's disciple Lil'Ann
+- Megacorp Lil'Ann
+
+Chip
+Used:
+- Chip
+- Nefarious Chip
+- Raritanium Chip
+- McMarx Sports Chip
+Unused:
+- Amoeboid Chip
+- Zoni Chip
+
+Sparky
+Used:
+- Sparky
+- Megalopolis Sparky
+- Raritanium Sparky
+- Robot Sparky
+Unused:
+- Pirate Sparky
+- Rebel Sparky
+
+Lump
+Used:
+- Lump
+- Nefarious Lump
+- Raritanium Lump
+- McMarx Sports Lump
+- DreadZone Lump
+Unused:
+- Dimensional Lump
+
+Sprocket
+Used:
+- Sprocket
+- Blackwater Sprocket
+- Robot Sprocket
+- McMarx Sports Sprocket
+- Ancient Lombax Sprocket
+Unused:
+- Megacorp Sprocket
+
+Grimshot
+Used:
+- Grimshot
+- Amoeboid Grimshot
+- Zoni Grimshot
+- Nefarious Grimshot
+- Gary's disciple Grimshot
+- Dreadzone Grimshot
+Unused:
+- None
+
+Celeste
+Used:
+- Celeste
+- McMarx Sports Celeste
+- Robot Celeste
+- Blackwater Celeste
+Unused:
+- Amoeboid Celeste
+- Qwark Force Celeste

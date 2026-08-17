@@ -34,6 +34,7 @@ function showDescription(category,name,hero='',full=false) { const panel=$('#pro
 let pinnedDescription=null;
 let hoverRestoreTimer=null;
 let pinnedSkin=null;
+let currentHeroKey=null;
 function rememberDescription(){const panel=$('#profile-description');if(panel)pinnedDescription={category:panel.dataset.category,name:panel.dataset.name,hero:panel.dataset.hero,full:panel.dataset.full==='true'};}
 function previewDescription(category,name,hero){showDescription(category,name,hero);}
 function measureDescriptionHeight(panel){const clone=panel.cloneNode(true),width=panel.getBoundingClientRect().width;clone.removeAttribute('id');Object.assign(clone.style,{position:'absolute',visibility:'hidden',pointerEvents:'none',width:`${width}px`,height:'auto',minHeight:'0',overflow:'visible'});panel.parentElement.append(clone);const height=Math.ceil(clone.scrollHeight+2);clone.remove();return height;}
@@ -48,7 +49,7 @@ function find(items,key) { return items.find(item=>norm(item.name)===norm(key));
 function card(key, archived=false, type='hero') {
   const l=loadouts[key], title=displayHeroName(key),profile=heroProfiles[key];
   const image=archived?(type==='heroes'?heroImage(key):icon(key,type)):heroImage(key);
-  const gadgetName=l?.[2]==='Hunter Mine Launcher'?'H. Mine Launcher':l?.[2];
+  const gadgetName=l?.[2];
   const subtitle=archived?'':`${l[0]}, ${gadgetName}`;
   const category=type==='heroes'?'Hero':type==='weapons'?'Weapon':type==='gadgets'?'Gadget':heroClasses[key];
   return `<article class="card" style="${profile?`--rarity:${profile.color}`:''}" tabindex="0" role="button" data-type="${type}" data-key="${safe(key)}"><div class="portrait">${image?`<img src="${image}" alt="${safe(title)}" onerror="this.remove()">`:'<span class="type">Info coming soon</span>'}</div><div class="card-body">${profile?`<div class="card-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(category)}</span></div>`:`<span class="type">${safe(category)}</span>`}<h3>${safe(title)}</h3>${subtitle?`<p>${safe(subtitle)}</p>`:''}</div></article>`;
@@ -81,18 +82,22 @@ function combinedStatsTable(hero,weapon,gadget,loadout) {
   return `<section class="combined-stats"><h3>Combat stats</h3>${fixedMarkup}<div class="combined-table"><table class="stats"><caption>Level 1–10 combat statistics for ${safe(hero.name)}</caption><thead><tr><th rowspan="2" scope="col">Level</th>${headGroups}</tr><tr>${headColumns}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
 function combatIcon(type,name,key,folder,hero,extraKey=null) { const id=`${hero}:${folder}:${key||name}`,source=customImages[id]||(key&&icon(key,folder)),extra=extraKey&&icon(extraKey,folder),category=type.toLowerCase()==='weapon'?'weapons':type.toLowerCase()==='gadget'?'gadgets':type.toLowerCase()==='melee'?'melee':'ultimates'; return `<button class="combat-icon ${extra?'dual':''} ${source?'':'assign-image'}" data-image-id="${safe(id)}" data-image-label="${safe(name)}" data-description-category="${category}" data-description-name="${safe(name)}" data-description-hero="${safe(hero)}">${`<b class="icon-type">${safe(type)}</b>`}<span class="icon-art">${source?`<img src="${source}" alt="${safe(name)}" onerror="this.remove()">`:'<i>+</i>'}${extra?`<img src="${extra}" alt="${safe(name)} remote" onerror="this.remove()">`:''}</span><small>${source?safe(name):`Add ${safe(name)} image`}</small></button>`; }
-function heroSkins(key) { const def=`${key}/${key}.png`; return (window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)).sort((a,b)=>a===def?-1:b===def?1:a.localeCompare(b)); }
+function heroSkins(key) { const def=`${key}/${key}.png`,used=(window.RANGER_USED_SKINS?.[key]||[]).map(norm); return (window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&used.includes(norm(file.split('/').at(-1).replace(/\.png$/i,'')))).sort((a,b)=>a===def?-1:b===def?1:a.localeCompare(b)); }
 function skinName(file,key) { const result=file.split('/').at(-1).replace(/\.png$/i,''); return result===key?'Default':result.replace(new RegExp(` ${key}$`),''); }
+function navigateHero(direction){const index=heroOrder.indexOf(currentHeroKey),next=(index+direction+heroOrder.length)%heroOrder.length;showHero(heroOrder[next]);}
 function showHero(key) {
+  currentHeroKey=key;
   const l=loadouts[key], hero=find(data.characters,key), weapon=find(data.weapons,l[0]),profile=heroProfiles[key];
   const gadget=find(data.gadgets,l[4])||find(data.weapons,l[4]);
   const skinButtons=heroSkins(key).map(file=>`<button class="skin" data-file="${safe(file)}"><img src="${skinSource(file)}" alt="${safe(skinName(file,key))}"><span>${safe(skinName(file,key))}</span></button>`).join('');
   const collapsed=matchMedia('(max-width:760px)').matches?' art-collapsed':'';
   $('#dialog-content').innerHTML=`<div class="hero-detail${collapsed}" style="--rarity:${profile.color}"><div class="detail-art"><button class="art-toggle" type="button" aria-expanded="${collapsed?'false':'true'}">${collapsed?'Show artwork and selected skin':'Hide artwork and selected skin'}</button><img id="hero-art" src="${heroRender(key)}" alt="${safe(displayHeroName(key))} render"><div class="selected-skin"><h3>Skins</h3><img id="skin-preview-image" src="${heroImage(key)}" alt="${safe(displayHeroName(key))} selected skin"><span id="selected-skin-name">Default</span></div></div><div class="detail-body"><button class="profile-title hero-summary" type="button" data-hero="${safe(key)}"><img class="hero-portrait" src="${heroPortrait(key)}" alt=""><div><div class="profile-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(heroClasses[key])}</span><span class="speed-badge"><img src="images/UI%20icons/ico_stats_speed.png" alt="">${profile.speed} speed</span></div><h2>${safe(displayHeroName(key))}</h2><small>Hero overview</small></div></button><div class="description-panel" id="profile-description"></div><div class="icon-row">${combatIcon('Weapon',l[0],l[1],'weapons',key)}${combatIcon('Gadget',l[2],l[3],'gadgets',key)}${combatIcon('Melee',l[5],l[6],'melee',key)}${combatIcon('Ultimate',l[7],l[8],'ultimates',key,key==='Sparky'?'BigBoomRemote':null)}</div><div class="skins"><h3>Choose skin</h3><div class="skin-row">${skinButtons}</div></div>${combinedStatsTable(hero,weapon,gadget,l)}</div></div>`;
+  const index=heroOrder.indexOf(key),previous=heroOrder[(index-1+heroOrder.length)%heroOrder.length],next=heroOrder[(index+1)%heroOrder.length];
+  $('#dialog-content').insertAdjacentHTML('afterbegin',`<button class="hero-nav hero-nav-prev" type="button" data-hero-direction="-1" aria-label="Previous hero: ${safe(displayHeroName(previous))}" title="${safe(displayHeroName(previous))}">‹</button><button class="hero-nav hero-nav-next" type="button" data-hero-direction="1" aria-label="Next hero: ${safe(displayHeroName(next))}" title="${safe(displayHeroName(next))}">›</button>`);
   pinnedSkin={src:heroImage(key),name:'Default'};
   heroDescriptionHeight=0;
   showDescription('heroes',key,key);
-  $('#details-dialog').showModal();
+  if(!$('#details-dialog').open)$('#details-dialog').showModal();
   document.body.classList.add('modal-open');
   heroDescriptionHeight=measureDescriptionHeight($('#profile-description'));
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
@@ -111,6 +116,8 @@ document.addEventListener('mouseover',event=>{const combat=event.target.closest(
 document.addEventListener('mouseout',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)&&pinnedDescription){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=setTimeout(()=>{showDescription(pinnedDescription.category,pinnedDescription.name,pinnedDescription.hero,pinnedDescription.full);hoverRestoreTimer=null;},350);}});
 document.addEventListener('mouseover',event=>{const skin=event.target.closest('.skin');if(skin&&!skin.contains(event.relatedTarget)){const preview=$('#skin-preview-image');if(preview){preview.src=skinSource(skin.dataset.file);$('#selected-skin-name').textContent=skin.querySelector('span').textContent;}}});
 document.addEventListener('mouseout',event=>{const skin=event.target.closest('.skin');if(skin&&!skin.contains(event.relatedTarget)&&pinnedSkin){$('#skin-preview-image').src=pinnedSkin.src;$('#selected-skin-name').textContent=pinnedSkin.name;}});
+document.addEventListener('click',event=>{const nav=event.target.closest('[data-hero-direction]');if(nav)navigateHero(Number(nav.dataset.heroDirection));});
+document.addEventListener('keydown',event=>{if(!$('#details-dialog').open)return;if(event.key==='ArrowLeft'){event.preventDefault();navigateHero(-1);}if(event.key==='ArrowRight'){event.preventDefault();navigateHero(1);}});
 document.addEventListener('keydown',event=>{const card=event.target.closest('.card');if(card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();card.click();}});
 $('#image-picker').onchange=event=>{ const file=event.target.files[0]; if(!file||!imageTarget)return; const reader=new FileReader(); reader.onload=()=>{customImages[imageTarget.dataset.imageId]=reader.result;localStorage.setItem('rangerRumbleImages',JSON.stringify(customImages));imageTarget.classList.remove('assign-image');imageTarget.querySelector('.icon-art').innerHTML=`<img src="${reader.result}" alt="${safe(imageTarget.dataset.imageLabel)}">`};reader.readAsDataURL(file); };
 const themeButton=$('#theme-toggle');

@@ -85,6 +85,7 @@ function combatIcon(type,name,key,folder,hero,extraKey=null) { const id=`${hero}
 function heroSkins(key) { const def=`${key}/${key}.png`,used=(window.RANGER_USED_SKINS?.[key]||[]).map(norm); return (window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&used.includes(norm(file.split('/').at(-1).replace(/\.png$/i,'')))).sort((a,b)=>a===def?-1:b===def?1:a.localeCompare(b)); }
 function skinName(file,key) { const result=file.split('/').at(-1).replace(/\.png$/i,''); return result===key?'Default':result.replace(new RegExp(` ${key}$`),''); }
 function navigateHero(direction){const index=heroOrder.indexOf(currentHeroKey),next=(index+direction+heroOrder.length)%heroOrder.length;showHero(heroOrder[next]);}
+function positionHeroNavigation(){const dialog=$('#details-dialog');if(!dialog.open)return;const rect=dialog.getBoundingClientRect();dialog.style.setProperty('--hero-nav-top',`${rect.top+rect.height/2}px`);dialog.style.setProperty('--hero-nav-left',`${rect.left+10}px`);dialog.style.setProperty('--hero-nav-right',`${innerWidth-rect.right+10}px`);}
 function showHero(key) {
   currentHeroKey=key;
   const l=loadouts[key], hero=find(data.characters,key), weapon=find(data.weapons,l[0]),profile=heroProfiles[key];
@@ -98,6 +99,7 @@ function showHero(key) {
   heroDescriptionHeight=0;
   showDescription('heroes',key,key);
   if(!$('#details-dialog').open)$('#details-dialog').showModal();
+  requestAnimationFrame(positionHeroNavigation);
   document.body.classList.add('modal-open');
   heroDescriptionHeight=measureDescriptionHeight($('#profile-description'));
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
@@ -122,6 +124,7 @@ document.addEventListener('keydown',event=>{const card=event.target.closest('.ca
 $('#image-picker').onchange=event=>{ const file=event.target.files[0]; if(!file||!imageTarget)return; const reader=new FileReader(); reader.onload=()=>{customImages[imageTarget.dataset.imageId]=reader.result;localStorage.setItem('rangerRumbleImages',JSON.stringify(customImages));imageTarget.classList.remove('assign-image');imageTarget.querySelector('.icon-art').innerHTML=`<img src="${reader.result}" alt="${safe(imageTarget.dataset.imageLabel)}">`};reader.readAsDataURL(file); };
 const themeButton=$('#theme-toggle');
 $('#details-dialog').addEventListener('close',()=>document.body.classList.remove('modal-open'));
+addEventListener('resize',positionHeroNavigation);
 function setTheme(theme){document.documentElement.dataset.theme=theme;localStorage.setItem('rangerRumbleTheme',theme);themeButton.textContent=theme==='dark'?'☀':'☾';themeButton.setAttribute('aria-label',theme==='dark'?'Switch to light mode':'Switch to dark mode');}
 setTheme(localStorage.getItem('rangerRumbleTheme')||'dark');
 themeButton.onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');

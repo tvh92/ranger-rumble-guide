@@ -143,3 +143,12 @@ html[data-theme="light"] footer small{color:#44666c}
 html[data-theme="light"] .hero-nav{background:#d9f3edf0;border-color:#168f78;color:#075c51}
 html[data-theme="light"] .hero-nav:hover,html[data-theme="light"] .hero-nav:focus-visible{background:#bce9e0;color:#12313a}
 @media(max-width:760px){.hero-nav{width:36px;height:50px;font-size:34px}}
+
+/* Draw the close mark instead of relying on an uneven font glyph. */
+dialog .close,.hero-detail .close{display:grid;place-items:center;padding:0;font-size:0;line-height:1}
+dialog .close::before,dialog .close::after,.hero-detail .close::before,.hero-detail .close::after{content:"";position:absolute;left:50%;top:50%;width:17px;height:2px;border-radius:2px;background:currentColor;transform-origin:center}
+dialog .close::before,.hero-detail .close::before{transform:translate(-50%,-50%) rotate(45deg)}
+dialog .close::after,.hero-detail .close::after{transform:translate(-50%,-50%) rotate(-45deg)}
+
+/* Never expose fallback alt text while a render is decoding. */
+#hero-art{font-size:0;color:transparent}

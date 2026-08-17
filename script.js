@@ -44,6 +44,9 @@ function icon(key, folder) { const found=files[folder]?.find(x=>norm(x)===norm(k
 function skinSource(file) { return `${base}/skins/${file.split('/').map(encodeURIComponent).join('/')}?v=${assetVersion}`; }
 function heroImage(key) { const folderSkins=(window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&!file.includes('/icons/')),defaultSkin=folderSkins.find(file=>file===`${key}/${key}.png`)||folderSkins[0]; return skinSource(defaultSkin || `${key}/${key}.png`); }
 function heroRender(key) { const file=key==="Lil'Ann"?'LilAnn':key; return `${base}/renders/${file}.png?v=${assetVersion}`; }
+const renderPreloads=new Map();
+function preloadHeroRender(key) { const src=heroRender(key); if(renderPreloads.has(src))return; const image=new Image(); image.src=src; renderPreloads.set(src,image); }
+function preloadAdjacentHeroRenders(key) { const index=heroOrder.indexOf(key); if(index<0)return; preloadHeroRender(heroOrder[(index-1+heroOrder.length)%heroOrder.length]); preloadHeroRender(heroOrder[(index+1)%heroOrder.length]); }
 function heroPortrait(key) { const internal={Tempest:'Markus',Zed:'ZedOne',"Lil'Ann":'LilAnn'}[key]||key; return `${base}/skins/icons/ico_miniPortrait_${internal}.png?v=${assetVersion}`; }
 function find(items,key) { return items.find(item=>norm(item.name)===norm(key)); }
 function card(key, archived=false, type='hero') {
@@ -58,7 +61,7 @@ const heroOrder=['Widget','Sprocket','Chip','Mopz',"Lil'Ann",'Tempest','Sparky',
 function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="images/UI%20icons/ico_stats_${file}.${ext}" alt="">`:''; }
-function statCandidates(item,mode='normal') { if(!item?.levels?.length)return[]; const all=Object.keys(item.levels[0]).filter(column=>column!=='Level'&&!/Power/i.test(column)); return mode==='hero'?all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)):mode==='ultimate'?(item.name==='Zed'?all.filter(column=>/^Tank /i.test(column)):all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column))):all; }
+function statCandidates(item,mode='normal') { if(!item?.levels?.length)return[]; const all=Object.keys(item.levels[0]).filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column)); return mode==='hero'?all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)):mode==='ultimate'?(item.name==='Zed'?all.filter(column=>/^Tank /i.test(column)):all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column))):all; }
 function statsTable(title,item,mode='normal',showLevel=true) {
   if (!item) return `<section class="stat-section"><h3>${safe(title)}</h3><p class="sub">Stats have not been added yet.</p></section>`;
   const candidates=statCandidates(item,mode);
@@ -88,6 +91,7 @@ function navigateHero(direction){const index=heroOrder.indexOf(currentHeroKey),n
 function positionHeroNavigation(){const dialog=$('#details-dialog');if(!dialog.open)return;const rect=dialog.getBoundingClientRect();dialog.style.setProperty('--hero-nav-top',`${rect.top+rect.height/2}px`);dialog.style.setProperty('--hero-nav-left',`${rect.left+10}px`);dialog.style.setProperty('--hero-nav-right',`${innerWidth-rect.right+10}px`);}
 function showHero(key) {
   currentHeroKey=key;
+  preloadAdjacentHeroRenders(key);
   const l=loadouts[key], hero=find(data.characters,key), weapon=find(data.weapons,l[0]),profile=heroProfiles[key];
   const gadget=find(data.gadgets,l[4])||find(data.weapons,l[4]);
   const skinButtons=heroSkins(key).map(file=>`<button class="skin" data-file="${safe(file)}"><img src="${skinSource(file)}" alt="${safe(skinName(file,key))}"><span>${safe(skinName(file,key))}</span></button>`).join('');

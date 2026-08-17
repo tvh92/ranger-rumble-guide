@@ -161,7 +161,8 @@ dialog .close::after,.hero-detail .close::after{transform:translate(-50%,-50%) r
 .hero-nav-next{text-indent:-4px}
 
 /* Keep hover previews anchored even when a skin adds wide accessories. */
-.selected-skin img{width:auto;height:195px;max-width:none;object-position:center bottom;transform:translate(var(--skin-x,0),var(--skin-y,0)) scale(var(--skin-scale,1));transform-origin:center bottom}
+.selected-skin img{transform:none}
+.selected-skin img.skin-preview-calibrated{width:auto;height:195px;max-width:none;object-position:center bottom;transform:translate(var(--skin-x,0),var(--skin-y,0)) scale(var(--skin-scale,1));transform-origin:center bottom}
 
 /* Let navigation tabs straddle the modal border without exposing its content. */
 dialog{overflow:visible}

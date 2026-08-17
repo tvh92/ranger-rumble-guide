@@ -45,7 +45,7 @@ function skinSource(file) { return `${base}/skins/${file.split('/').map(encodeUR
 function heroDefaultSkin(key) { const folderSkins=(window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&!file.includes('/icons/')); return folderSkins.find(file=>file===`${key}/${key}.png`)||folderSkins[0]||`${key}/${key}.png`; }
 function heroImage(key) { return skinSource(heroDefaultSkin(key)); }
 const skinAlignments={"Lil'Ann/Raritanium Lil'Ann.png":{scale:1.037},"Sparky/Raritanium Sparky.png":{scale:1.041},"Sparky/Robot Sparky.png":{scale:1.023}};
-function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; const alignment=skinAlignments[file]||{}; preview.src=skinSource(file); preview.style.setProperty('--skin-scale',alignment.scale||1); preview.style.setProperty('--skin-x',`${alignment.x||0}px`); preview.style.setProperty('--skin-y',`${alignment.y||0}px`); $('#selected-skin-name').textContent=name; }
+function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; const alignment=skinAlignments[file]||{}; preview.classList.toggle('skin-preview-calibrated',/^(Lil'Ann|Sparky)\//.test(file)); preview.src=skinSource(file); preview.style.setProperty('--skin-scale',alignment.scale||1); preview.style.setProperty('--skin-x',`${alignment.x||0}px`); preview.style.setProperty('--skin-y',`${alignment.y||0}px`); $('#selected-skin-name').textContent=name; }
 function heroRender(key) { const file=key==="Lil'Ann"?'LilAnn':key; return `${base}/renders/${file}.png?v=${assetVersion}`; }
 const renderPreloads=new Map();
 function preloadHeroRender(key) { const src=heroRender(key); if(renderPreloads.has(src))return; const image=new Image(); image.src=src; renderPreloads.set(src,image); }

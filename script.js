@@ -88,10 +88,10 @@ function showHero(key) {
   $('#dialog-content').innerHTML=`<div class="hero-detail${collapsed}" style="--rarity:${profile.color}"><div class="detail-art"><button class="art-toggle" type="button" aria-expanded="${collapsed?'false':'true'}">${collapsed?'Show artwork and selected skin':'Hide artwork and selected skin'}</button><img id="hero-art" src="${heroRender(key)}" alt="${safe(displayHeroName(key))} render"><div class="selected-skin"><h3>Skins</h3><img id="skin-preview-image" src="${heroImage(key)}" alt="${safe(displayHeroName(key))} selected skin"><span id="selected-skin-name">Default</span></div></div><div class="detail-body"><button class="profile-title hero-summary" type="button" data-hero="${safe(key)}"><img class="hero-portrait" src="${heroPortrait(key)}" alt=""><div><div class="profile-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(heroClasses[key])}</span><span class="speed-badge"><img src="images/UI%20icons/ico_stats_speed.png" alt="">${profile.speed} speed</span></div><h2>${safe(displayHeroName(key))}</h2><small>Hero overview</small></div></button><div class="description-panel" id="profile-description"></div><div class="icon-row">${combatIcon('Weapon',l[0],l[1],'weapons',key)}${combatIcon('Gadget',l[2],l[3],'gadgets',key)}${combatIcon('Melee',l[5],l[6],'melee',key)}${combatIcon('Ultimate',l[7],l[8],'ultimates',key,key==='Sparky'?'BigBoomRemote':null)}</div><div class="skins"><h3>Choose skin</h3><div class="skin-row">${skinButtons}</div></div>${combinedStatsTable(hero,weapon,gadget,l)}</div></div>`;
   heroDescriptionHeight=0;
   showDescription('heroes',key,key);
-  heroDescriptionHeight=$('#profile-description').offsetHeight;
+  $('#details-dialog').showModal();
+  heroDescriptionHeight=$('#profile-description').scrollHeight+2;
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
   rememberDescription();
-  $('#details-dialog').showModal();
 }
 function showArchive(type) {
   const list=type==='heroes'?data.characters:data[type];

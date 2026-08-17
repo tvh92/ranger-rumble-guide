@@ -1,34 +1,22 @@
 const raw = window.RUMBLE_DATA;
-const guideVersion = '0.11.0';
+const guide = window.RANGER_GUIDE;
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.12.0';
 const $ = s => document.querySelector(s);
 const base = 'images';
-const assetVersion = '20260817';
+const assetVersion = guideVersion;
 const files = {
   weapons: ['BlackholeStorm','Blaster','Blitzgun','Buzzblades','ColdSnap','Cryoshot','Headhunter','LavaGun','PlasmaStriker','Pyrocitor','ScorpionFlail','Shatterbomb','SuckCannon','TeslaClaw','TheEnforcer','ToxicSplatter','Warmonger'],
   gadgets: ['AmoeboidLauncher','Bombardier','Cryoslider','DrillDash','GloveOfDoom','HoloshieldGlove','HoverBoots','MineLauncher','VoidRepulser','VoltageDrop','WhirlingBlades'],
   melee: ['AnnMelee','CelesteMelee','ChipMelee','FuseMelee','GrimshotMelee','LumpMelee','MarkusMelee','MopzMelee','SprocketMelee','WidgetMelee','ZedMelee'],
   ultimates: ['BigBoom','BigBoomRemote','Cannonball','Evolution','Hoverboard','MegaStrike','Negatron','Ryno','Sheepinator','SmokeScreen','TankFormation','VortexWallop']
 };
-const heroClasses = {Widget:'Allrounder',Sprocket:'Allrounder',Mopz:'Allrounder',Tempest:'Juggernaut',Lump:'Juggernaut',Sparky:'Cannoneer',Zed:'Cannoneer',"Lil'Ann":'Stalker',Celeste:'Runner',Grimshot:'Deadeye',Chip:'Disruptor'};
-const heroProfiles = {Widget:{speed:'Medium',rarity:'Common',color:'#3C6FFA'},Sprocket:{speed:'Medium',rarity:'Common',color:'#3C6FFA'},Chip:{speed:'Medium',rarity:'Common',color:'#3C6FFA'},Celeste:{speed:'Medium',rarity:'Epic',color:'#F38A0E'},Zed:{speed:'Fast',rarity:'Epic',color:'#F38A0E'},Grimshot:{speed:'Medium',rarity:'Epic',color:'#F38A0E'},Sparky:{speed:'Fast',rarity:'Rare',color:'#ED00EE'},Lump:{speed:'Slow',rarity:'Rare',color:'#ED00EE'},Tempest:{speed:'Slow',rarity:'Rare',color:'#ED00EE'},Mopz:{speed:'Medium',rarity:'Rare',color:'#ED00EE'},"Lil'Ann":{speed:'Medium',rarity:'Rare',color:'#ED00EE'}};
-const loadouts = {
-  Widget:['Burst Pistol','Blaster','Drill Thruster','DrillDash','DrillDash','Turbo Drill','WidgetMelee','RYNO','Ryno'],
-  Celeste:['Buzz Blades','Buzzblades','Cryo Slider','Cryoslider','Cryo Slider','Slapshot','CelesteMelee','Hoverboard','Hoverboard'],
-  Sprocket:['Shatterbomb','Shatterbomb','Hoverboots','HoverBoots','Hoverboots','Omnimagnet','SprocketMelee','Mega Strike','MegaStrike'],
-  Sparky:['Pyrocitor','Pyrocitor','Hunter Mine Launcher','MineLauncher','MineLauncher','Crackaxe','FuseMelee','Big Boom','BigBoom'],
-  "Lil'Ann":['Blitz Gun','Blitzgun','Whirling Blades','WhirlingBlades','LittleSpin','Storm Cutlass','AnnMelee','Vortex Wallop','VortexWallop'],
-  Chip:['Tesla Claw','TeslaClaw','Glove of Doom','GloveOfDoom','Glove of Doom','Brainstorm','ChipMelee','Sheep-o-Bomb','Sheepinator'],
-  Tempest:['Cold Snap','ColdSnap','Void Repulser','VoidRepulser','Void Repulser','Typhoon','MarkusMelee',"Good Ol' Shot",'Cannonball'],
-  Zed:['Warmonger','Warmonger','Bombardier','Bombardier','Bombardier','Stick of Order','ZedMelee','Tank Formation','TankFormation'],
-  Mopz:['Blackhole Storm','BlackholeStorm','Voltage Drop','VoltageDrop','ElectricGrenade','SEV3R','MopzMelee','Negatron Collider','Negatron'],
-  Grimshot:['Headhunter','Headhunter','Holoshield Glove','HoloshieldGlove','Holoshield Glove','X60 Cleaver','GrimshotMelee','Smoke Leap','SmokeScreen'],
-  Lump:['Lava Gun','LavaGun','Amoeboid Launcher','AmoeboidLauncher','Amoeboid Launcher','Glo-Bash','LumpMelee','Mutagenic Burst','Evolution']
-};
-const customImages = JSON.parse(localStorage.getItem('rangerRumbleImages') || '{}');
+const heroClasses = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.className]));
+const heroProfiles = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, {speed: hero.speed, rarity: hero.rarity, color: hero.color}]));
+const loadouts = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.loadout]));
 const norm = value => String(value).replace(/[^a-z0-9]/gi,'').toLowerCase();
 const safe = value => { const e=document.createElement('span'); e.textContent=value; return e.innerHTML; };
 const displayHeroName = value => value==="Lil'Ann"?"Lil' Ann":value;
-const descriptionAliases = {heroes:{Tempest:'Markus'},weapons:{'Burst Pistol':'Blaster','Blackhole Storm':'Blackhole',Pyrocitor:'Pyro'},gadgets:{'Cryo Slider':'Cryoslider'},ultimates:{},melee:{}};
+const descriptionAliases = guide.descriptionAliases;
 function descriptionEntry(category,name,hero='') { const source=window.RUMBLE_DESCRIPTIONS?.[category]||{}, lookup=category==='melee'?hero:(descriptionAliases[category]?.[name]||name), key=Object.keys(source).find(entry=>norm(entry)===norm(lookup)); return key?source[key]:null; }
 let heroDescriptionHeight=0;
 function showDescription(category,name,hero='',full=false) { const panel=$('#profile-description'); if(!panel)return; const label={heroes:'Hero',weapons:'Weapon',gadgets:'Gadget',melee:'Melee',ultimates:'Ultimate'}[category]||category,entry=descriptionEntry(category,name,hero),displayName=category==='heroes'?displayHeroName(name):name; panel.dataset.category=category;panel.dataset.name=name;panel.dataset.hero=hero;panel.dataset.full=String(full); const copy=entry?(full&&entry.full?entry.full:entry.short):'No description is available yet.'; const toggle=entry?.full&&entry.full!==entry.short?`<button class="description-toggle" type="button" data-full="${full?'false':'true'}">${full?'Show short description':'Read full description'}</button>`:''; panel.innerHTML=`<span class="type">${safe(label)}</span><h3>${safe(displayName)}</h3><p>${safe(copy)}</p>${toggle}`; panel.style.minHeight='0';panel.style.height=full?`${measureDescriptionHeight(panel)}px`:heroDescriptionHeight?`${heroDescriptionHeight}px`:'auto';panel.style.overflow=full?'visible':'auto'; }
@@ -47,7 +35,30 @@ function heroDefaultSkin(key) { const folderSkins=(window.RANGER_SKINS||[]).filt
 function heroImage(key) { return skinSource(heroDefaultSkin(key)); }
 const skinFrames=new Map(),skinFramePromises=new Map();
 function loadSkinSize(file) { return new Promise(resolve=>{const image=new Image();image.onload=()=>resolve({file,width:image.naturalWidth,height:image.naturalHeight});image.onerror=()=>resolve({file,width:1,height:1});image.src=skinSource(file);}); }
-function prepareSkinFrame(hero) { if(skinFrames.has(hero))return Promise.resolve(skinFrames.get(hero));if(skinFramePromises.has(hero))return skinFramePromises.get(hero);const promise=Promise.all(heroSkins(hero).map(loadSkinSize)).then(sizes=>{const maxWidth=Math.max(...sizes.map(size=>size.width)),maxHeight=Math.max(...sizes.map(size=>size.height)),scale=Math.min(186/maxWidth,200/maxHeight),frame={scale,sizes:new Map(sizes.map(size=>[size.file,size]))};skinFrames.set(hero,frame);return frame;});skinFramePromises.set(hero,promise);return promise; }
+function prepareSkinFrame(hero) {
+  if (skinFrames.has(hero)) return Promise.resolve(skinFrames.get(hero));
+  if (skinFramePromises.has(hero)) return skinFramePromises.get(hero);
+  const skins = heroSkins(hero);
+  if (!skins.length) {
+    const emptyFrame = {scale: 1, sizes: new Map()};
+    skinFrames.set(hero, emptyFrame);
+    return Promise.resolve(emptyFrame);
+  }
+  const promise = Promise.all(skins.map(loadSkinSize)).then(sizes => {
+    const validSizes = sizes.filter(size => size.width > 1 && size.height > 1);
+    if (!validSizes.length) return {scale: 1, sizes: new Map()};
+    const maxWidth = Math.max(...validSizes.map(size => size.width));
+    const maxHeight = Math.max(...validSizes.map(size => size.height));
+    const frame = {
+      scale: Math.min(186 / maxWidth, 200 / maxHeight),
+      sizes: new Map(validSizes.map(size => [size.file, size]))
+    };
+    skinFrames.set(hero, frame);
+    return frame;
+  }).finally(() => skinFramePromises.delete(hero));
+  skinFramePromises.set(hero, promise);
+  return promise;
+}
 function applySkinFrame(file,preview) { const hero=file.split('/')[0],apply=frame=>{if(preview.dataset.file!==file)return;const size=frame.sizes.get(file);if(!size)return;preview.style.width=`${size.width*frame.scale}px`;preview.style.height=`${size.height*frame.scale}px`;preview.style.visibility='visible';};const frame=skinFrames.get(hero);if(frame)apply(frame);else{preview.style.visibility='hidden';prepareSkinFrame(hero).then(apply);} }
 function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; preview.dataset.file=file;preview.src=skinSource(file);applySkinFrame(file,preview);$('#selected-skin-name').textContent=name; }
 function setActiveSkinButton(file) { document.querySelectorAll('.skin').forEach(button=>{const active=button.dataset.file===file;button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active));}); }
@@ -57,29 +68,18 @@ function preloadHeroRender(key) { const src=heroRender(key); if(renderPreloads.h
 function preloadAdjacentHeroRenders(key) { const index=heroOrder.indexOf(key); if(index<0)return; preloadHeroRender(heroOrder[(index-1+heroOrder.length)%heroOrder.length]); preloadHeroRender(heroOrder[(index+1)%heroOrder.length]); }
 function heroPortrait(key) { const internal={Tempest:'Markus',Zed:'ZedOne',"Lil'Ann":'LilAnn'}[key]||key; return `${base}/skins/icons/ico_miniPortrait_${internal}.png?v=${assetVersion}`; }
 function find(items,key) { return items.find(item=>norm(item.name)===norm(key)); }
-function card(key, archived=false, type='hero') {
+function card(key) {
   const l=loadouts[key], title=displayHeroName(key),profile=heroProfiles[key];
-  const image=archived?(type==='heroes'?heroImage(key):icon(key,type)):heroImage(key);
+  const image=heroImage(key);
   const gadgetName=l?.[2];
-  const subtitle=archived?'':`${l[0]}, ${gadgetName}`;
-  const category=type==='heroes'?'Hero':type==='weapons'?'Weapon':type==='gadgets'?'Gadget':heroClasses[key];
-  return `<article class="card" style="${profile?`--rarity:${profile.color}`:''}" tabindex="0" role="button" data-type="${type}" data-key="${safe(key)}"><div class="portrait">${image?`<img src="${image}" alt="${safe(title)}" onerror="this.remove()">`:'<span class="type">Info coming soon</span>'}</div><div class="card-body">${profile?`<div class="card-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(category)}</span></div>`:`<span class="type">${safe(category)}</span>`}<h3>${safe(title)}</h3>${subtitle?`<p>${safe(subtitle)}</p>`:''}</div></article>`;
+  const subtitle=`${l[0]}, ${gadgetName}`;
+  return `<button class="card" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}"><span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge">${profile.rarity}</span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
 }
-const heroOrder=['Widget','Sprocket','Chip','Mopz',"Lil'Ann",'Tempest','Sparky','Celeste','Zed','Lump','Grimshot'];
+const heroOrder=guide.heroOrder;
 function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="images/UI%20icons/ico_stats_${file}.${ext}" alt="">`:''; }
-function statCandidates(item,mode='normal') { if(!item?.levels?.length)return[]; const all=Object.keys(item.levels[0]).filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column)); return mode==='hero'?all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)):mode==='ultimate'?(item.name==='Zed'?all.filter(column=>/^Tank /i.test(column)):all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column))):all; }
-function statsTable(title,item,mode='normal',showLevel=true) {
-  if (!item) return `<section class="stat-section"><h3>${safe(title)}</h3><p class="sub">Stats have not been added yet.</p></section>`;
-  const candidates=statCandidates(item,mode);
-  if (!candidates.length) return '';
-  const fixed=candidates.filter(column=>item.levels.every(row=>row[column]===item.levels[0][column]));
-  const columns=candidates.filter(column=>!fixed.includes(column));
-  const fixedStats=fixed.length?`<div class="fixed-stats">${fixed.map(column=>`<div><span>${safe(statLabel(column,mode))}</span><strong>${safe(item.levels[0][column])}</strong></div>`).join('')}</div>`:'';
-  const table=columns.length?`<div class="table-scroll"><table class="stats ${showLevel?'':'no-level'}"><thead><tr>${showLevel?'<th>Level</th>':''}${columns.map(column=>`<th>${safe(statLabel(column,mode))}</th>`).join('')}</tr></thead><tbody>${item.levels.map(row=>`<tr>${showLevel?`<td>LV ${row.Level}</td>`:''}${columns.map(column=>`<td>${Number.isInteger(row[column])?row[column].toLocaleString():row[column]}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`:'';
-  return `<section class="stat-section"><h3>${safe(title)}</h3>${fixedStats}${table}</section>`;
-}
+function statCandidates(item,mode='normal') { if(!item?.levels?.length)return[]; const all=[...new Set(item.levels.flatMap(level=>Object.keys(level)))].filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column)); return mode==='hero'?all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)):mode==='ultimate'?(item.name==='Zed'?all.filter(column=>/^Tank /i.test(column)):all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column))):all; }
 function combinedStatsTable(hero,weapon,gadget,loadout) {
   const groups=[{label:'Hero',displayName:hero.name,item:hero,mode:'hero'},{label:'Weapon',displayName:loadout[0],item:weapon,mode:'normal'},{label:'Gadget',displayName:loadout[2],item:gadget,mode:'normal'},{label:'Ultimate',displayName:loadout[7],item:hero,mode:'ultimate'}].map(group=>{
     const candidates=statCandidates(group.item,group.mode),fixed=candidates.filter(column=>group.item.levels.every(row=>row[column]===group.item.levels[0][column])),id=`stats-${norm(group.label)}`;
@@ -89,10 +89,10 @@ function combinedStatsTable(hero,weapon,gadget,loadout) {
   const fixedMarkup=fixedGroups.length?`<div class="combined-fixed">${fixedGroups.map(group=>`<dl class="fixed-group"><div class="fixed-group-title">${safe(group.label)}: ${safe(group.displayName)}</div>${group.fixed.map(column=>{const label=statLabel(column,group.mode);return`<div class="fixed-stat"><dt>${statIcon(label)}<span>${safe(label)}</span></dt><dd>${safe(group.item.levels[0][column])}</dd></div>`}).join('')}</dl>`).join('')}</div>`:'';
   const headGroups=visible.map(group=>`<th id="${group.id}" scope="colgroup" colspan="${group.columns.length}">${safe(group.label)}: ${safe(group.displayName)}</th>`).join('');
   const headColumns=visible.flatMap(group=>group.columns.map((column,index)=>{const label=statLabel(column.key,group.mode).replace(new RegExp(`^${group.label} `,'i'),'').replace(/^Tank /i,'');return`<th id="${column.id}" class="${index===0?'group-start':''}" scope="col"><span class="column-label">${safe(label)}</span></th>`})).join('');
-  const rows=hero.levels.map((row,index)=>{const rowId=`stats-level-${row.Level}`,cells=visible.flatMap(group=>group.columns.map(column=>{const value=group.item.levels[index]?.[column.key]??'—';return`<td headers="${rowId} ${group.id} ${column.id}">${Number.isInteger(value)?value.toLocaleString():safe(value)}</td>`})).join('');return`<tr><th id="${rowId}" scope="row">LV ${row.Level}</th>${cells}</tr>`}).join('');
+  const rows=hero.levels.map(row=>{const rowId=`stats-level-${row.Level}`,cells=visible.flatMap(group=>group.columns.map(column=>{const matchingLevel=group.item.levels.find(level=>level.Level===row.Level);const value=matchingLevel?.[column.key]??'—';return`<td headers="${rowId} ${group.id} ${column.id}">${Number.isInteger(value)?value.toLocaleString():safe(value)}</td>`})).join('');return`<tr><th id="${rowId}" scope="row">LV ${row.Level}</th>${cells}</tr>`}).join('');
   return `<section class="combined-stats"><h3>Combat stats</h3>${fixedMarkup}<div class="combined-table"><table class="stats"><caption>Level 1–10 combat statistics for ${safe(hero.name)}</caption><thead><tr><th rowspan="2" scope="col">Level</th>${headGroups}</tr><tr>${headColumns}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
 }
-function combatIcon(type,name,key,folder,hero,extraKey=null) { const id=`${hero}:${folder}:${key||name}`,source=customImages[id]||(key&&icon(key,folder)),extra=extraKey&&icon(extraKey,folder),category=type.toLowerCase()==='weapon'?'weapons':type.toLowerCase()==='gadget'?'gadgets':type.toLowerCase()==='melee'?'melee':'ultimates'; return `<button class="combat-icon ${extra?'dual':''} ${source?'':'assign-image'}" data-image-id="${safe(id)}" data-image-label="${safe(name)}" data-description-category="${category}" data-description-name="${safe(name)}" data-description-hero="${safe(hero)}">${`<b class="icon-type">${safe(type)}</b>`}<span class="icon-art">${source?`<img src="${source}" alt="${safe(name)}" onerror="this.remove()">`:'<i>+</i>'}${extra?`<img src="${extra}" alt="${safe(name)} remote" onerror="this.remove()">`:''}</span><small>${source?safe(name):`Add ${safe(name)} image`}</small></button>`; }
+function combatIcon(type,name,key,folder,hero,extraKey=null) { const source=key&&icon(key,folder),extra=extraKey&&icon(extraKey,folder),category=type.toLowerCase()==='weapon'?'weapons':type.toLowerCase()==='gadget'?'gadgets':type.toLowerCase()==='melee'?'melee':'ultimates'; return `<button class="combat-icon ${extra?'dual':''} ${source?'':'image-missing'}" data-description-category="${category}" data-description-name="${safe(name)}" data-description-hero="${safe(hero)}">${`<b class="icon-type">${safe(type)}</b>`}<span class="icon-art">${source?`<img src="${source}" alt="${safe(name)}">`:'<i aria-hidden="true">?</i>'}${extra?`<img src="${extra}" alt="${safe(name)} remote">`:''}</span><small>${safe(name)}</small></button>`; }
 function heroSkins(key) { const def=`${key}/${key}.png`,used=(window.RANGER_USED_SKINS?.[key]||[]).map(norm); return (window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&used.includes(norm(file.split('/').at(-1).replace(/\.png$/i,'')))).sort((a,b)=>a===def?-1:b===def?1:a.localeCompare(b)); }
 function skinName(file,key) { const result=file.split('/').at(-1).replace(/\.png$/i,''); return result===key?'Default':result.replace(new RegExp(` ${key}$`),''); }
 function navigateHero(direction){const index=heroOrder.indexOf(currentHeroKey),next=(index+direction+heroOrder.length)%heroOrder.length;showHero(heroOrder[next]);}
@@ -120,24 +120,18 @@ function showHero(key) {
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
   rememberDescription();
 }
-function showArchive(type) {
-  const list=type==='heroes'?data.characters:data[type];
-  const used=type==='heroes'?Object.keys(loadouts):Object.values(loadouts).flatMap(l=>type==='weapons'?[l[0],l[4]]:[l[4]]).filter(Boolean);
-  $('#archive-grid').innerHTML=list.filter(item=>!used.map(norm).includes(norm(item.name))).map(item=>card(item.name,true,type)).join('')||'<p class="empty">Nothing archived here.</p>';
-  document.querySelectorAll('[data-archive]').forEach(button=>button.classList.toggle('active',button.dataset.archive===type));
-}
 render();
 $('#guide-version').textContent=`v${guideVersion}`;
-let imageTarget;
-document.addEventListener('click',event=>{ const cardTarget=event.target.closest('.card'); if(cardTarget&&cardTarget.dataset.type==='hero')showHero(cardTarget.dataset.key); const skin=event.target.closest('.skin'); if(skin){pinnedSkin={file:skin.dataset.file,name:skin.querySelector('span').textContent};setSkinPreview(pinnedSkin.file,pinnedSkin.name);setActiveSkinButton(pinnedSkin.file);} const heroSummary=event.target.closest('.hero-summary'); if(heroSummary){showDescription('heroes',heroSummary.dataset.hero,heroSummary.dataset.hero);rememberDescription();} const combat=event.target.closest('.combat-icon'); if(combat){showDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);rememberDescription();} const toggle=event.target.closest('.description-toggle'); if(toggle){const panel=$('#profile-description');showDescription(panel.dataset.category,panel.dataset.name,panel.dataset.hero,toggle.dataset.full==='true');rememberDescription();} const artToggle=event.target.closest('.art-toggle'); if(artToggle){const detail=artToggle.closest('.hero-detail'),collapsed=detail.classList.toggle('art-collapsed');artToggle.setAttribute('aria-expanded',String(!collapsed));artToggle.textContent=collapsed?'Show artwork and selected skin':'Hide artwork and selected skin';} const assign=event.target.closest('.assign-image'); if(assign){imageTarget=assign;$('#image-picker').click();} if(event.target.matches('.close'))event.target.closest('dialog').close(); if(event.target.matches('dialog'))event.target.close(); });
+document.addEventListener('click',event=>{ const cardTarget=event.target.closest('.card'); if(cardTarget)showHero(cardTarget.dataset.key); const skin=event.target.closest('.skin'); if(skin){pinnedSkin={file:skin.dataset.file,name:skin.querySelector('span').textContent};setSkinPreview(pinnedSkin.file,pinnedSkin.name);setActiveSkinButton(pinnedSkin.file);} const heroSummary=event.target.closest('.hero-summary'); if(heroSummary){showDescription('heroes',heroSummary.dataset.hero,heroSummary.dataset.hero);rememberDescription();} const combat=event.target.closest('.combat-icon'); if(combat){showDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);rememberDescription();} const toggle=event.target.closest('.description-toggle'); if(toggle){const panel=$('#profile-description');showDescription(panel.dataset.category,panel.dataset.name,panel.dataset.hero,toggle.dataset.full==='true');rememberDescription();} const artToggle=event.target.closest('.art-toggle'); if(artToggle){const detail=artToggle.closest('.hero-detail'),collapsed=detail.classList.toggle('art-collapsed');artToggle.setAttribute('aria-expanded',String(!collapsed));artToggle.textContent=collapsed?'Show artwork and selected skin':'Hide artwork and selected skin';} if(event.target.matches('.close'))event.target.closest('dialog').close(); if(event.target.matches('dialog'))event.target.close(); });
 document.addEventListener('mouseover',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=null;previewDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);}});
 document.addEventListener('mouseout',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)&&pinnedDescription){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=setTimeout(()=>{showDescription(pinnedDescription.category,pinnedDescription.name,pinnedDescription.hero,pinnedDescription.full);hoverRestoreTimer=null;},350);}});
+document.addEventListener('focusin',event=>{const combat=event.target.closest('.combat-icon');if(combat)previewDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);});
+document.addEventListener('focusout',event=>{const combat=event.target.closest('.combat-icon');if(combat&&pinnedDescription)showDescription(pinnedDescription.category,pinnedDescription.name,pinnedDescription.hero,pinnedDescription.full);});
 document.addEventListener('mouseover',event=>{const skin=event.target.closest('.skin');if(skin&&!skin.contains(event.relatedTarget))setSkinPreview(skin.dataset.file,skin.querySelector('span').textContent);});
 document.addEventListener('mouseout',event=>{const skin=event.target.closest('.skin');if(skin&&!skin.contains(event.relatedTarget)&&pinnedSkin)setSkinPreview(pinnedSkin.file,pinnedSkin.name);});
 document.addEventListener('click',event=>{const nav=event.target.closest('[data-hero-direction]');if(nav)navigateHero(Number(nav.dataset.heroDirection));});
 document.addEventListener('keydown',event=>{if(!$('#details-dialog').open)return;if(event.key==='ArrowLeft'){event.preventDefault();navigateHero(-1);}if(event.key==='ArrowRight'){event.preventDefault();navigateHero(1);}});
-document.addEventListener('keydown',event=>{const card=event.target.closest('.card');if(card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();card.click();}});
-$('#image-picker').onchange=event=>{ const file=event.target.files[0]; if(!file||!imageTarget)return; const reader=new FileReader(); reader.onload=()=>{customImages[imageTarget.dataset.imageId]=reader.result;localStorage.setItem('rangerRumbleImages',JSON.stringify(customImages));imageTarget.classList.remove('assign-image');imageTarget.querySelector('.icon-art').innerHTML=`<img src="${reader.result}" alt="${safe(imageTarget.dataset.imageLabel)}">`};reader.readAsDataURL(file); };
+document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement){event.target.hidden=true;event.target.parentElement?.classList.add('image-missing');}},true);
 const themeButton=$('#theme-toggle');
 $('#details-dialog').addEventListener('close',()=>document.body.classList.remove('modal-open'));
 addEventListener('resize',positionHeroNavigation);

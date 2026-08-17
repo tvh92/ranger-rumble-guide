@@ -1,5 +1,5 @@
 const raw = window.RUMBLE_DATA;
-const guideVersion = '0.10.1';
+const guideVersion = '0.11.0';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = '20260817';
@@ -45,8 +45,11 @@ function icon(key, folder) { const found=files[folder]?.find(x=>norm(x)===norm(k
 function skinSource(file) { return `${base}/skins/${file.split('/').map(encodeURIComponent).join('/')}?v=${assetVersion}`; }
 function heroDefaultSkin(key) { const folderSkins=(window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&!file.includes('/icons/')); return folderSkins.find(file=>file===`${key}/${key}.png`)||folderSkins[0]||`${key}/${key}.png`; }
 function heroImage(key) { return skinSource(heroDefaultSkin(key)); }
-const skinAlignments={"Lil'Ann/Raritanium Lil'Ann.png":{scale:1.037},"Sparky/Raritanium Sparky.png":{scale:1.041},"Sparky/Robot Sparky.png":{scale:.84},"Chip/McMarx Sports Chip.png":{scale:1.08},"Chip/Nefarious Chip.png":{scale:1.02},"Chip/Raritanium Chip.png":{scale:1.027}};
-function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; const alignment=skinAlignments[file]||{},calibrated=/^(Lil'Ann|Sparky|Chip)\//.test(file); preview.classList.toggle('skin-preview-calibrated',calibrated); preview.src=skinSource(file); preview.style.setProperty('--skin-height',`${195*(alignment.scale||1)}px`); preview.style.setProperty('--skin-x',`${alignment.x||0}px`); preview.style.setProperty('--skin-y',`${alignment.y||0}px`); $('#selected-skin-name').textContent=name; }
+const skinFrames=new Map(),skinFramePromises=new Map();
+function loadSkinSize(file) { return new Promise(resolve=>{const image=new Image();image.onload=()=>resolve({file,width:image.naturalWidth,height:image.naturalHeight});image.onerror=()=>resolve({file,width:1,height:1});image.src=skinSource(file);}); }
+function prepareSkinFrame(hero) { if(skinFrames.has(hero))return Promise.resolve(skinFrames.get(hero));if(skinFramePromises.has(hero))return skinFramePromises.get(hero);const promise=Promise.all(heroSkins(hero).map(loadSkinSize)).then(sizes=>{const maxWidth=Math.max(...sizes.map(size=>size.width)),maxHeight=Math.max(...sizes.map(size=>size.height)),scale=Math.min(186/maxWidth,200/maxHeight),frame={scale,sizes:new Map(sizes.map(size=>[size.file,size]))};skinFrames.set(hero,frame);return frame;});skinFramePromises.set(hero,promise);return promise; }
+function applySkinFrame(file,preview) { const hero=file.split('/')[0],apply=frame=>{if(preview.dataset.file!==file)return;const size=frame.sizes.get(file);if(!size)return;preview.style.width=`${size.width*frame.scale}px`;preview.style.height=`${size.height*frame.scale}px`;preview.style.visibility='visible';};const frame=skinFrames.get(hero);if(frame)apply(frame);else{preview.style.visibility='hidden';prepareSkinFrame(hero).then(apply);} }
+function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(!preview)return; preview.dataset.file=file;preview.src=skinSource(file);applySkinFrame(file,preview);$('#selected-skin-name').textContent=name; }
 function setActiveSkinButton(file) { document.querySelectorAll('.skin').forEach(button=>{const active=button.dataset.file===file;button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active));}); }
 function heroRender(key) { const file=key==="Lil'Ann"?'LilAnn':key; return `${base}/renders/${file}.png?v=${assetVersion}`; }
 const renderPreloads=new Map();
@@ -97,6 +100,7 @@ function positionHeroNavigation(){const dialog=$('#details-dialog');if(!dialog.o
 function showHero(key) {
   currentHeroKey=key;
   preloadAdjacentHeroRenders(key);
+  prepareSkinFrame(key);
   const l=loadouts[key], hero=find(data.characters,key), weapon=find(data.weapons,l[0]),profile=heroProfiles[key];
   const gadget=find(data.gadgets,l[4])||find(data.weapons,l[4]);
   const skinButtons=heroSkins(key).map(file=>`<button class="skin" data-file="${safe(file)}"><img src="${skinSource(file)}" alt="${safe(skinName(file,key))}"><span>${safe(skinName(file,key))}</span></button>`).join('');

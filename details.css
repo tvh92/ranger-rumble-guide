@@ -175,8 +175,7 @@ html[data-theme="light"] .guide-version{border-color:#168f78;background:#f4fcfa;
 
 /* Keep hover previews anchored even when a skin adds wide accessories. */
 .selected-skin-stage{position:relative;left:50%;display:flex;align-items:flex-end;justify-content:center;width:200px;max-width:none;height:220px;overflow:hidden;transform:translateX(-50%)}
-.selected-skin-stage img{flex:0 0 auto;margin:0;transform:translate(var(--skin-x,0px),var(--skin-y,0px))}
-.selected-skin-stage img.skin-preview-calibrated{width:auto;height:var(--skin-height,195px);max-width:none;object-position:center bottom}
+.selected-skin-stage img{flex:0 0 auto;max-width:none;margin:0;object-fit:contain;object-position:center bottom;transform:none}
 
 /* Consistent modal scrollbar treatment. */
 .hero-detail .detail-body{scrollbar-width:thin;scrollbar-color:#20d99a #061f2b}

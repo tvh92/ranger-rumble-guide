@@ -35,6 +35,7 @@ let pinnedDescription=null;
 let hoverRestoreTimer=null;
 function rememberDescription(){const panel=$('#profile-description');if(panel)pinnedDescription={category:panel.dataset.category,name:panel.dataset.name,hero:panel.dataset.hero,full:panel.dataset.full==='true'};}
 function previewDescription(category,name,hero){showDescription(category,name,hero);}
+function measureDescriptionHeight(panel){const clone=panel.cloneNode(true),width=panel.getBoundingClientRect().width;clone.removeAttribute('id');Object.assign(clone.style,{position:'absolute',visibility:'hidden',pointerEvents:'none',width:`${width}px`,height:'auto',minHeight:'0',overflow:'visible'});panel.parentElement.append(clone);const height=Math.ceil(clone.scrollHeight+2);clone.remove();return height;}
 const trim = item => ({...item, levels:item.levels.filter(level => level.Level <= 10)});
 const data = {characters:[...raw.characters.filter(x=>x.name!=='Avatar').map(trim),{name:'FreezePoint',levels:[]}], weapons:[...raw.weapons.map(trim),{name:'Cryoshot',levels:[]},{name:'Toxic Splatter',levels:[]}], gadgets:raw.gadgets.map(trim)};
 function icon(key, folder) { const found=files[folder]?.find(x=>norm(x)===norm(key)); return found ? `${base}/${folder}/${found}.png?v=${assetVersion}` : null; }
@@ -89,7 +90,7 @@ function showHero(key) {
   heroDescriptionHeight=0;
   showDescription('heroes',key,key);
   $('#details-dialog').showModal();
-  heroDescriptionHeight=$('#profile-description').scrollHeight+2;
+  heroDescriptionHeight=measureDescriptionHeight($('#profile-description'));
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
   rememberDescription();
 }

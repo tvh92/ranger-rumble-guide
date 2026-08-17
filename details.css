@@ -125,3 +125,11 @@ body.modal-open{overflow:hidden}
 dialog{overflow:hidden}
 dialog .close,.hero-detail .close{right:28px;top:12px}
 @media(max-width:760px){dialog .close,.hero-detail .close{right:22px}}
+
+/* Larger render inside the same sidebar, balanced skin rows, and a true light footer. */
+.hero-detail .detail-art{overflow:hidden}
+.hero-detail .detail-art>#hero-art{width:122%;max-width:none;height:430px;transform:scale(1.08);transform-origin:center top}
+.skins .skin-row:has(.skin:nth-child(8)){max-width:395px}
+html[data-theme="light"] footer{background:#d9f3ed;border-color:#168f78;color:#12313a}
+html[data-theme="light"] footer small{color:#44666c}
+@media(max-width:760px){.hero-detail .detail-art>#hero-art{width:112%;height:300px;transform:scale(1.04)}}

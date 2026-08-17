@@ -90,6 +90,7 @@ function showHero(key) {
   heroDescriptionHeight=0;
   showDescription('heroes',key,key);
   $('#details-dialog').showModal();
+  document.body.classList.add('modal-open');
   heroDescriptionHeight=measureDescriptionHeight($('#profile-description'));
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
   rememberDescription();
@@ -108,6 +109,7 @@ document.addEventListener('mouseout',event=>{const combat=event.target.closest('
 document.addEventListener('keydown',event=>{const card=event.target.closest('.card');if(card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();card.click();}});
 $('#image-picker').onchange=event=>{ const file=event.target.files[0]; if(!file||!imageTarget)return; const reader=new FileReader(); reader.onload=()=>{customImages[imageTarget.dataset.imageId]=reader.result;localStorage.setItem('rangerRumbleImages',JSON.stringify(customImages));imageTarget.classList.remove('assign-image');imageTarget.querySelector('.icon-art').innerHTML=`<img src="${reader.result}" alt="${safe(imageTarget.dataset.imageLabel)}">`};reader.readAsDataURL(file); };
 const themeButton=$('#theme-toggle');
+$('#details-dialog').addEventListener('close',()=>document.body.classList.remove('modal-open'));
 function setTheme(theme){document.documentElement.dataset.theme=theme;localStorage.setItem('rangerRumbleTheme',theme);themeButton.textContent=theme==='dark'?'☀':'☾';themeButton.setAttribute('aria-label',theme==='dark'?'Switch to light mode':'Switch to dark mode');}
 setTheme(localStorage.getItem('rangerRumbleTheme')||'dark');
 themeButton.onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');

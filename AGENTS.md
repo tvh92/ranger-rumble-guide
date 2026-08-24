@@ -10,14 +10,20 @@
 ## Workflow
 
 1. Inspect the worktree and preserve unrelated user changes.
-2. Make and test edits in a temporary sandbox copy before copying only verified files back here.
+2. Make and test edits in a temporary sandbox copy. Exclude `.git`, then copy only verified, scoped files back here.
 3. For visual changes, run the site locally and inspect the main page and relevant hero windows in both dark and light mode.
 4. Run `data/validate-data.js` and `git diff --check` before committing.
 5. Increment the version in `index.html` and every cache-busting `?v=` reference for each published change.
 6. Commit only files related to the request, push, and confirm the deployed GitHub Pages version and affected UI.
-7. Use the bundled workspace runtime paths for Node, Python, and Git. Port `8766` is suitable for the local static server.
+7. Use the bundled workspace runtime paths for Node, Python, and Git. Use an available localhost port for the temporary static server; do not assume a fixed port is free.
 
-When the user requests website work, that request authorizes committing and pushing the scoped change to this repository's configured GitHub remote. Do not ask for separate commit or push approval; preserve unrelated worktree changes.
+When the user requests website work, that request authorizes implementing, validating, committing, and pushing the scoped change to this repository's configured GitHub remote. Do not ask for separate commit or push approval. If the user explicitly asks only to commit, do not push until requested.
+
+## Working tree conventions
+
+- Modified files under `data/` may be intentional generated or exported data. Inspect and summarize them before treating them as unrelated changes.
+- Never discard pre-existing changes. If the user confirms they are intentional, commit them separately from UI or website changes unless asked otherwise.
+- Preserve spacing in fixed-width text exports; trailing whitespace may be intentional for aligned columns.
 
 ## Data conventions
 

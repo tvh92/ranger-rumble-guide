@@ -6658,6 +6658,64 @@
       ]
     },
     {
+      "name": "GloveOfDoom",
+      "hero": "Chip",
+      "columns": [
+        "Agent Explosion Damage",
+        "Agent HP",
+        "Agent Lifetime",
+        "Range",
+        "Drones Per Use",
+        "More Agent Drones",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {"Level": 1, "Agent Explosion Damage": 63, "Agent HP": 50, "Agent Lifetime": 8, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 2, "Agent Explosion Damage": 82, "Agent HP": 65, "Agent Lifetime": 8.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 3, "Agent Explosion Damage": 101, "Agent HP": 80, "Agent Lifetime": 9, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 4, "Agent Explosion Damage": 120, "Agent HP": 95, "Agent Lifetime": 9.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 5, "Agent Explosion Damage": 139, "Agent HP": 110, "Agent Lifetime": 10, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 6, "Agent Explosion Damage": 158, "Agent HP": 125, "Agent Lifetime": 10.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 7, "Agent Explosion Damage": 176, "Agent HP": 140, "Agent Lifetime": 11, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 8, "Agent Explosion Damage": 195, "Agent HP": 155, "Agent Lifetime": 11.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 9, "Agent Explosion Damage": 214, "Agent HP": 170, "Agent Lifetime": 12, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
+        {"Level": 10, "Agent Explosion Damage": 233, "Agent HP": 185, "Agent Lifetime": 12.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12}
+      ]
+    },
+    {
+      "name": "AmoeboidLauncher",
+      "hero": "Lump",
+      "columns": [
+        "Small Damage",
+        "Medium Damage",
+        "Large Damage",
+        "Small HP",
+        "Medium HP",
+        "Large HP",
+        "Small Lifetime",
+        "Medium Lifetime",
+        "Large Lifetime",
+        "AcidZone Damage",
+        "AcidZone Duration",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {"Level": 1, "Small Damage": 39, "Medium Damage": 59, "Large Damage": 78, "Small HP": 91, "Medium HP": 143, "Large HP": 195, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 2, "Small Damage": 48, "Medium Damage": 71, "Large Damage": 95, "Small HP": 111, "Medium HP": 174, "Large HP": 238, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 3, "Small Damage": 56, "Medium Damage": 84, "Large Damage": 112, "Small HP": 131, "Medium HP": 205, "Large HP": 280, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 4, "Small Damage": 65, "Medium Damage": 97, "Large Damage": 129, "Small HP": 151, "Medium HP": 237, "Large HP": 323, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 5, "Small Damage": 73, "Medium Damage": 110, "Large Damage": 146, "Small HP": 170, "Medium HP": 268, "Large HP": 365, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 6, "Small Damage": 82, "Medium Damage": 122, "Large Damage": 163, "Small HP": 190, "Medium HP": 299, "Large HP": 408, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 7, "Small Damage": 90, "Medium Damage": 135, "Large Damage": 180, "Small HP": 210, "Medium HP": 330, "Large HP": 450, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 8, "Small Damage": 99, "Medium Damage": 148, "Large Damage": 197, "Small HP": 230, "Medium HP": 361, "Large HP": 493, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 9, "Small Damage": 107, "Medium Damage": 161, "Large Damage": 214, "Small HP": 250, "Medium HP": 392, "Large HP": 535, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
+        {"Level": 10, "Small Damage": 116, "Medium Damage": 173, "Large Damage": 231, "Small HP": 270, "Medium HP": 424, "Large HP": 578, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12}
+      ]
+    },
+    {
       "name": "LittleSpin",
       "hero": "Lil'Ann",
       "columns": [

@@ -1,6 +1,6 @@
 const raw = window.RUMBLE_DATA;
 const guide = window.RANGER_GUIDE;
-const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.12.0';
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.21';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;
@@ -132,7 +132,7 @@ function modTable(mod) {
 function modsSection(heroKey) {
   const mods=window.RANGER_MODS?.[heroKey]||[];
   if(!mods.length)return '';
-  const cards=mods.map(mod=>`<article class="mod-card"><header><img src="images/mods/${encodeURIComponent(mod.icon)}?v=${assetVersion}" alt=""><div><span>Hero talent</span><h4>${safe(mod.name)}</h4></div></header><p class="mod-menu">${safe(mod.menu)}</p><p class="mod-effect">${safe(mod.effect)}</p>${mod.note?`<p class="mod-note">${safe(mod.note)}</p>`:''}${modTable(mod)}</article>`).join('');
+  const cards=mods.map(mod=>`<article class="mod-card"><header><img src="images/talents/${encodeURIComponent(mod.icon)}?v=${assetVersion}" alt=""><div><span>Hero talent</span><h4>${safe(mod.name)}</h4></div></header><p class="mod-menu">${safe(mod.menu)}</p><p class="mod-effect">${safe(mod.effect)}</p>${mod.note?`<p class="mod-note">${safe(mod.note)}</p>`:''}${modTable(mod)}</article>`).join('');
   return `<section class="mods-section" id="talents"><h3>Talents</h3><div class="mod-grid">${cards}</div></section>`;
 }
 function combatIcon(type,name,key,folder,hero,extraKey=null) { const source=key&&icon(key,folder),extra=extraKey&&icon(extraKey,folder),category=type.toLowerCase()==='weapon'?'weapons':type.toLowerCase()==='gadget'?'gadgets':type.toLowerCase()==='melee'?'melee':'ultimates'; return `<button class="combat-icon ${extra?'dual':''} ${source?'':'image-missing'}" data-description-category="${category}" data-description-name="${safe(name)}" data-description-hero="${safe(hero)}">${`<b class="icon-type">${safe(type)}</b>`}<span class="icon-art">${source?`<img src="${source}" alt="${safe(name)}">`:'<i aria-hidden="true">?</i>'}${extra?`<img src="${extra}" alt="${safe(name)} remote">`:''}</span><small>${safe(name)}</small></button>`; }

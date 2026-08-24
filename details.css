@@ -66,15 +66,15 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .stat-ui-icon { flex: 0 0 auto; width: 17px; height: 17px; object-fit: contain; }
 html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightness(0) saturate(100%) invert(31%) sepia(31%) saturate(1037%) hue-rotate(123deg) brightness(89%) contrast(91%); }
 
-.combined-table { width: 100%; overflow: hidden; border: 1px solid var(--line); border-radius: 0; background: color-mix(in srgb, var(--surface-strong) 94%, transparent); box-shadow: 0 0 0 1px var(--line); }
-.stats { width: 100%; min-width: 0; border-collapse: collapse; table-layout: fixed; font-size: 14px; }
+.combined-table { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 0; background: color-mix(in srgb, var(--surface-strong) 94%, transparent); box-shadow: 0 0 0 1px var(--line); }
+.stats { width: 100%; min-width: 0; border-collapse: collapse; table-layout: auto; font-size: 14px; }
 .stats caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .stats th, .stats td { padding: 9px 14px; border-right: 1px solid color-mix(in srgb, var(--line) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); text-align: center; }
 .stats thead tr:first-child th { padding: 12px 14px; background: var(--surface-header); color: var(--orange); font-size: 14px; font-style: italic; }
 .stats thead tr:nth-child(n+2) th { padding: 9px 10px; background: var(--surface-soft); color: var(--accent); font-size: 12px; text-transform: uppercase; }
 .stats thead tr:nth-child(2) th.group-start { border-left: 2px solid var(--line); }
 .stats thead tr:nth-child(3) th.subgroup-start { border-left: 2px solid var(--line); }
-.stats tbody th { min-width: 68px; padding-left: 16px; color: var(--orange); text-align: left; white-space: nowrap; }
+.stats tbody th { width: 1%; min-width: 68px; padding-left: 16px; color: var(--orange); text-align: left; white-space: nowrap; }
 .stats tbody td { padding-inline: 16px; color: var(--heading); font-weight: 700; }
 .stats tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface-soft) 48%, transparent); }
 .stats tbody tr:hover { background: var(--surface-soft); }

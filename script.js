@@ -1,6 +1,6 @@
 const raw = window.RUMBLE_DATA;
 const guide = window.RANGER_GUIDE;
-const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.24';
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.25';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;
@@ -116,7 +116,8 @@ function combinedStatsTable(hero,weapon,gadget,loadout) {
   });
   const fixedGroups=groups.filter(group=>group.fixed.length),visible=groups.filter(group=>group.columns.length);
   const stagedFireRate=norm(weapon?.name)==='blackholestorm'?`<dl class="fixed-group staged-fire-rate"><div class="fixed-group-title">Weapon: ${safe(loadout[0])}</div><div class="fixed-stat"><dt>${statIcon('Fire rate')}<span>Fire rate stages</span></dt><dd><span>1×</span><i>→</i><span>3× <small>at 1.3s</small></span><i>→</i><span>5× <small>at 3s</small></span><i>→</i><span>8× <small>at 5s · talent</small></span></dd></div></dl>`:'';
-  const fixedMarkup=fixedGroups.length||stagedFireRate?`<div class="combined-fixed">${fixedGroups.map(group=>`<dl class="fixed-group"><div class="fixed-group-title">${safe(group.label)}: ${safe(group.displayName)}</div>${group.fixed.map(column=>{const label=displayStatLabel(column,group.mode,group.item?.name,group.displayName);return`<div class="fixed-stat"><dt>${statIcon(label)}<span>${safe(label)}</span></dt><dd>${statValue(column,group.item.levels[0][column])}</dd></div>`}).join('')}</dl>`).join('')}${stagedFireRate}</div>`:'';
+  const stackedFixed=hero.name==='Ratchet'&&fixedGroups.map(group=>group.label).join(',')==='Weapon,Gadget,Ultimate';
+  const fixedMarkup=fixedGroups.length||stagedFireRate?`<div class="combined-fixed${stackedFixed?' fixed-stacked':''}">${fixedGroups.map(group=>`<dl class="fixed-group"><div class="fixed-group-title">${safe(group.label)}: ${safe(group.displayName)}</div>${group.fixed.map(column=>{const label=displayStatLabel(column,group.mode,group.item?.name,group.displayName);return`<div class="fixed-stat"><dt>${statIcon(label)}<span>${safe(label)}</span></dt><dd>${statValue(column,group.item.levels[0][column])}</dd></div>`}).join('')}</dl>`).join('')}${stagedFireRate}</div>`:'';
   const headGroups=visible.map(group=>`<th id="${group.id}" scope="colgroup" colspan="${group.columns.length}">${safe(group.label)}: ${safe(group.displayName)}</th>`).join('');
   const nested=visible.some(group=>norm(group.item?.name)==='amoeboidlauncher');
   const headColumns=visible.map(group=>{if(norm(group.item?.name)==='amoeboidlauncher'){return['Damage','HP'].map((label,index)=>`<th id="${group.id}-${label.toLowerCase()}" class="${index===0?'group-start':''}" scope="colgroup" colspan="3">${label}</th>`).join('')}return group.columns.map((column,index)=>{const label=displayStatLabel(column.key,group.mode,group.item?.name,group.displayName).replace(new RegExp(`^${group.label} `,'i'),'').replace(/^Tank /i,'');return`<th id="${column.id}" class="${index===0?'group-start':''}" scope="col"${nested?' rowspan="2"':''}><span class="column-label">${statHeader(label,hero.name)}</span></th>`}).join('')}).join('');

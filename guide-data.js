@@ -1,5 +1,5 @@
 window.RANGER_GUIDE = {
-  heroOrder: ['Ratchet', 'Widget', 'Sprocket', 'Chip', 'Mopz', "Lil'Ann", 'Tempest', 'Sparky', 'Celeste', 'Zed', 'Lump', 'Grimshot'],
+  heroOrder: ['Widget', 'Sprocket', 'Chip', 'Mopz', "Lil'Ann", 'Tempest', 'Sparky', 'Celeste', 'Zed', 'Lump', 'Grimshot', 'Ratchet'],
   heroes: {
     Ratchet: {className: 'Allrounder', speed: 'Medium', rarity: 'Epic', color: '#F38A0E', eventOnly: true, render: false, descriptionHeightHero: 'Widget', weaponStats: 'Ratchet Burst Pistol', loadout: ['Burst Pistol', 'Blaster', 'Wrench Throw', 'WrenchThrow', 'WrenchThrow', 'Wrench', 'RatchetMelee', 'RYNO', 'Ryno']},
     Widget: {className: 'Allrounder', speed: 'Medium', rarity: 'Common', color: '#3C6FFA', loadout: ['Burst Pistol', 'Blaster', 'Drill Thruster', 'DrillDash', 'DrillDash', 'Turbo Drill', 'WidgetMelee', 'RYNO', 'Ryno']},

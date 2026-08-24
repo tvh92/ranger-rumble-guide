@@ -6719,49 +6719,20 @@
       "name": "LittleSpin",
       "hero": "Lil'Ann",
       "columns": [
-        "Attacks Damage"
+        "AoeA Damage",
+        "AoeB Damage"
       ],
       "levels": [
-        {
-          "Level": 1,
-          "Attacks Damage": 83
-        },
-        {
-          "Level": 2,
-          "Attacks Damage": 101
-        },
-        {
-          "Level": 3,
-          "Attacks Damage": 119
-        },
-        {
-          "Level": 4,
-          "Attacks Damage": 138
-        },
-        {
-          "Level": 5,
-          "Attacks Damage": 156
-        },
-        {
-          "Level": 6,
-          "Attacks Damage": 174
-        },
-        {
-          "Level": 7,
-          "Attacks Damage": 192
-        },
-        {
-          "Level": 8,
-          "Attacks Damage": 210
-        },
-        {
-          "Level": 9,
-          "Attacks Damage": 228
-        },
-        {
-          "Level": 10,
-          "Attacks Damage": 246
-        }
+        {"Level": 1, "AoeA Damage": 42, "AoeB Damage": 83},
+        {"Level": 2, "AoeA Damage": 51, "AoeB Damage": 101},
+        {"Level": 3, "AoeA Damage": 60, "AoeB Damage": 119},
+        {"Level": 4, "AoeA Damage": 69, "AoeB Damage": 138},
+        {"Level": 5, "AoeA Damage": 78, "AoeB Damage": 156},
+        {"Level": 6, "AoeA Damage": 87, "AoeB Damage": 174},
+        {"Level": 7, "AoeA Damage": 96, "AoeB Damage": 192},
+        {"Level": 8, "AoeA Damage": 105, "AoeB Damage": 210},
+        {"Level": 9, "AoeA Damage": 114, "AoeB Damage": 228},
+        {"Level": 10, "AoeA Damage": 123, "AoeB Damage": 246}
       ]
     }
   ]

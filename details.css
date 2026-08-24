@@ -28,7 +28,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .detail-toc button::before { content: ''; position: absolute; top: 50%; left: 3px; width: 4px; height: 4px; background: var(--line-bright); transform: translateY(-50%) rotate(45deg); }
 .detail-toc button:hover, .detail-toc button.is-active { background: var(--surface-soft); color: var(--heading); }
 .detail-toc button.is-active::before { width: 6px; height: 6px; background: var(--accent-strong); box-shadow: 0 0 8px var(--accent-strong); }
-#overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 18px; }
+#overview, #loadout, #skins, #combat-stats, #talents { scroll-margin-top: 18px; }
 
 .profile-title { display: flex; align-items: center; gap: 15px; width: 100%; margin: 0 0 18px; padding: 0 0 13px; border: 0; border-bottom: 1px solid var(--line-bright); background: transparent; color: inherit; text-align: left; cursor: pointer; }
 .hero-portrait { width: 66px; height: 66px; padding: 4px; border: 1px solid var(--line-bright); border-radius: 13px; background: var(--surface-soft); object-fit: contain; }
@@ -71,6 +71,12 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .fixed-stat { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; padding: 8px 6px; border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); }
 .fixed-stat dt { display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .fixed-stat dd { display: flex; align-items: center; margin: 0; padding-inline: 8px; color: var(--heading); font-size: 16px; font-weight: 800; }
+.staged-fire-rate { flex-basis: 100%; max-width: 640px; }
+.staged-fire-rate .fixed-stat { grid-column: 1 / -1; align-items: center; }
+.staged-fire-rate .fixed-stat dd { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px 8px; font-size: 14px; }
+.staged-fire-rate .fixed-stat dd span { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+.staged-fire-rate .fixed-stat dd small { color: var(--muted); font-size: 10px; font-weight: 700; }
+.staged-fire-rate .fixed-stat dd i { color: var(--orange); font-style: normal; }
 .stat-ui-icon { flex: 0 0 auto; width: 17px; height: 17px; object-fit: contain; }
 html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightness(0) saturate(100%) invert(31%) sepia(31%) saturate(1037%) hue-rotate(123deg) brightness(89%) contrast(91%); }
 
@@ -105,7 +111,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .mod-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .mod-table th, .mod-table td { padding: 7px 9px; border-right: 1px solid color-mix(in srgb, var(--line) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); text-align: center; }
 .mod-table thead th { background: var(--surface-soft); color: var(--accent); text-transform: uppercase; }
-.mod-table tbody th { color: var(--orange); text-align: left; white-space: nowrap; }
+.mod-table tbody th { color: var(--orange); text-align: center; white-space: nowrap; }
 .mod-table tbody td { color: var(--heading); font-weight: 700; }
 .mod-table tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface-soft) 48%, transparent); }
 
@@ -132,7 +138,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
   .detail-toc > span { flex: 0 0 auto; }
   .detail-toc button { flex: 0 0 auto; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }
   .detail-body { padding-bottom: 100px; }
-  #overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 18px; }
+  #overview, #loadout, #skins, #combat-stats, #talents { scroll-margin-top: 18px; }
 }
 
 @media (max-width: 760px) {

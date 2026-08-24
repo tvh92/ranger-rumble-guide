@@ -1,0 +1,157 @@
+OUTDATED TALENTS AND WEAPON MODS
+
+Historical reference from an older Ranger Rumble build. These names and descriptions may not match the current game.
+
+TALENTS
+
+Celeste
+- Turbo Dash: Celeste's dash recharges faster.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon provides more ultimate charge.
+
+Chip
+- Elemental Scholar: Chip electrocutes and freezes other rangers faster.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon uses the damage type of the currently equipped weapon.
+
+Sparky
+- Fire Affinity: Sparky's fire damage is more effective.
+- Improved Melee: Unlocks a new jump melee attack. Also, jump attacks deal fire damage in an area on the ground.
+
+Grimshot
+- Scope Master: Snipers have more bullets and reload faster when Grimshot uses them.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon grants a short speed bonus on the third hit.
+
+Lil' Ann
+- Adrenaline Spike: Knocking out another ranger grants Lil'Ann a temporary speed bonus.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon deals more damage to targets with low health.
+
+Lump
+- Evolving Experiment: Lump is made of Acid and can evolve through his ultimate ability.
+- Improved Melee: Unlocks a new jump melee attack. Also, jump attacks create acid puddles on the ground.
+
+Tempest
+- Quiet Strength: Instead of the usual regeneration, Tempest regenerates slowly and continuously over time.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon deals more damage to targets with low health.
+
+Mopz
+- Electric Affinity: Mopz's electric damage is more effective.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon deals electric damage.
+
+Widget
+- Express Recovery: Widget regenerates faster than other heroes.
+- Improved Melee: Unlocks a new jump melee attack. Also, jump attacks push enemies away.
+
+Sprocket
+- Rocket Legs: Sprocket jumps higher from the ground.
+- Improved Melee: Unlocks a new jump melee attack. Also, jump attacks attract enemies.
+
+Zed One
+- Artillery Ace: Zed One is not slowed down when firing his weapons.
+- Improved Melee: Unlocks a new jump melee attack. Also, the melee weapon provides ammo or speeds up reloading if it is in progress.
+
+WEAPON MODS
+
+Amoeboid Launcher
+
+- Acid Spill (Amoeboid Launcher): Small allied Amoeboids now spawn an acid puddle on death.
+- Brainwash (Amoeboid Launcher): Shoot the neutral Amoeboids on the map to recruit them.
+- Primal Goo (Amoeboid Launcher): The first shot after reloading immediately spawns a big Amoeboid.
+Burst Pistol
+
+- Lightweight Frame (Burst Pistol): Wielding the Burst Pistol grants a speed bonus.
+- Double Barrel (Burst Pistol): Each shot now fires two projectiles instead of one.
+- Triple Barrel (Burst Pistol): Each shot now fires three projectiles.
+Bombardier
+
+- Payload Rack (Bombardier): The Bombardier drops more bombs and moves faster.
+- Seeking Payload (Bombardier): The Bombardier drops even more bombs and slightly turns toward nearby enemies.
+- Crash Core (Bombardier): The Bombardier drops to the ground and explodes at the end of its flight.
+Buzz Blades
+
+- Ricochet Blades (Buzz Blades): The number of rebounds from the blades increases.
+- Splitting Blades (Buzz Blades): Blades split in two after impact.
+- Cyclone Bounce (Buzz Blades): The number of rebounds from the blades increases even more.
+Cold Snap
+
+- Cryo Shards (Cold Snap): Projectiles leave ice shards on the ground after exploding.
+- Frost Disperser (Cold Snap): Projectiles now also leave an icy cloud in the air after exploding, freezing other rivals over time.
+- Shard Cascade (Cold Snap): An additional circle of ice shards appears following the first one.
+Cryo Slider
+
+- Cryo Stone (Cryo Slider): The stone now explodes into an area of ice damage.
+- Bounce Coating (Cryo Slider): After bouncing, the stone accelerates and becomes more powerful.
+- Splitter Stone (Cryo Slider): After each bounce, the stone divides into two.
+The Enforcer
+
+- Tri Chamber (The Enforcer): The number of shots per burst increases to 3.
+- Shock Round (The Enforcer): Shots inflict more damage on electrocuted rivals.
+- Quad Chamber (The Enforcer): The number of shots per burst increases to 4.
+Blackhole Storm
+
+- Spin-Up Rotor (Blackhole Storm): The rate of fire can increase even further.
+- Quick Reload (Blackhole Storm): When reloading, a quick reload button appears to be pressed at the right timing.
+- Storm Module (Blackhole Storm): After holding fire for a sufficient duration, consume all remaining ammo to unleash a wide laser beam.
+Glove of Doom
+
+- Extra Agent (Glove of Doom): Agents of doom are now generated two by two.
+- Jetpack Unit (Glove of Doom): Agents of doom now use a jetpack to fly towards nearby enemies.
+- Agent Alpha (Glove of Doom): Grants an extra ammo at the end of the magazine that generates an Alpha Agent.
+Shatterbomb
+
+- Cluster Bombs (Shatterbomb): Grenades release two bomblets after exploding.
+- Shardfield Core (Shatterbomb): Grenades leave shards on the ground, dealing damage over time.
+- Mega Cluster (Shatterbomb): Grenades now release four bomblets after exploding.
+Headhunter
+
+- Thermal Scope (Headhunter): Rivals are displayed through walls at the center of the reticle.
+- Enhanced Optics (Headhunter): The Headhunter can now use a zoom lens.
+- Sharpshot Ammo (Headhunter): Zooming shots inflict more damage.
+Holoshield Glove
+
+- Healing Field (Holoshield Glove): Shields now heal allies directly behind them.
+- Phalanx (Holoshield Glove): The Holoshield Glove can now deploy more simultaneous shields.
+- Holoshock Module (Holoshield Glove): Shields deal electrical damage on contact and immediately stun.
+Hoverboots
+
+- Impact Thruster (Hoverboots): Hoverboots now deal more damage on contact.
+- Hoversocks (Hoverboots): Using the Hoverboots grants a temporary health bonus.
+- Shockwave Starter (Hoverboots): Create an area of damage around the player when Hoverboots are equipped.
+Lava Gun
+
+- Magma Nozzle (Lava Gun): Firing leaves lava on the ground, burning enemies standing on it.
+- Wideflow Canon (Lava Gun): The lava stream is now wider.
+- Viscous Lava (Lava Gun): The lava becomes more powerful and slows enemies down.
+Hunter Mine Launcher
+
+- Mine Fusion (Hunter Mine Launcher): Shooting on an existing mine allows them to be merged into a larger one.
+- Seeker Mines (Hunter Mine Launcher): When a mine detonates, it now moves towards nearby enemies.
+- Stealth Casing (Hunter Mine Launcher): Mines become camouflaged and are harder to spot.
+Plasma Striker
+
+- Multi Capacitor (Plasma Striker): One additional beam can be fired per shot, by charging longer.
+- Lance Loader (Plasma Striker): One more beam can be fired per shot, without additional charging time.
+- Overdrive Tip (Plasma Striker): When fully charged, all beams cause a small explosion upon impact.
+Pyrocitor
+
+- Azur Igniter (Pyrocitor): After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.
+- Oil Canister (Pyrocitor): When reloading, shoots oil puddles that can ignite with fire.
+- Reservoir (Pyrocitor): Oil puddles produced by the Pyrocitor are now larger.
+Blitz Gun
+
+- Impact Chamber (Blitz Gun): Firing shortly after a dash delivers a more powerful shot.
+- Kinetic Loader (Blitz Gun): The weapon recovers ammo after a dash.
+- Overdrive Coil (Blitz Gun): When having half your health or less, the Blitz Gun deals more damage.
+Tesla Claw
+
+- Dual Arc Emitter (Tesla Claw): The Tesla Claw can now hit two enemies at the same time.
+- Conductive Antena (Tesla Claw): After holding fire for a sufficient duration, the beam becomes larger and more powerful.
+- Tri Arc Emitter (Tesla Claw): The Tesla Claw can now hit three enemies at the same time.
+Void Repulser
+
+- Pulse Core (Void Repulser): When the Void Repulser reloads, it deals damage in an area in front of it.
+- Shatter Booster (Void Repulser): Grants a short speed bonus if the Void Repulser runs out of health.
+- Ramming Field (Void Repulser): After being held for a duration, the Void Repulser increases the hero's speed and deals more damage on contact.
+Warmonger
+
+- Rocket Cluster (Warmonger): Fires two minirockets in addition to the usual one.
+- Extra Rocket (Warmonger): An additional minirocket is fired alongside the others.
+- Incendiary Rockets (Warmonger): Minirockets now deal fire damage.

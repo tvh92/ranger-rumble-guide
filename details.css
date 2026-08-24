@@ -22,6 +22,14 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .detail-body::-webkit-scrollbar-track { background: var(--surface-strong); }
 .detail-body::-webkit-scrollbar-thumb { border: 2px solid var(--surface-strong); border-radius: 8px; background: var(--line); }
 
+.detail-toc { position: fixed; top: var(--detail-toc-top, 90px); right: var(--detail-toc-right, 8px); z-index: 7; display: grid; width: 112px; padding: 7px; border: 1px solid var(--line-bright); background: color-mix(in srgb, var(--surface-strong) 93%, transparent); box-shadow: 0 10px 30px color-mix(in srgb, var(--shadow) 55%, transparent); backdrop-filter: blur(8px); }
+.detail-toc > span { padding: 7px 8px 8px; color: var(--orange); font: italic 800 12px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; }
+.detail-toc button { position: relative; min-height: 34px; padding: 7px 8px 7px 12px; border: 0; border-top: 1px solid color-mix(in srgb, var(--line) 45%, transparent); background: transparent; color: var(--text); font: 700 11px/1.15 Outfit, Arial, sans-serif; text-align: left; cursor: pointer; }
+.detail-toc button::before { content: ''; position: absolute; top: 50%; left: 3px; width: 4px; height: 4px; background: var(--line-bright); transform: translateY(-50%) rotate(45deg); }
+.detail-toc button:hover, .detail-toc button.is-active { background: var(--surface-soft); color: var(--heading); }
+.detail-toc button.is-active::before { width: 6px; height: 6px; background: var(--accent-strong); box-shadow: 0 0 8px var(--accent-strong); }
+#overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 18px; }
+
 .profile-title { display: flex; align-items: center; gap: 15px; width: 100%; margin: 0 0 18px; padding: 0 0 13px; border: 0; border-bottom: 1px solid var(--line-bright); background: transparent; color: inherit; text-align: left; cursor: pointer; }
 .hero-portrait { width: 66px; height: 66px; padding: 4px; border: 1px solid var(--line-bright); border-radius: 13px; background: var(--surface-soft); object-fit: contain; }
 .profile-meta { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
@@ -116,7 +124,15 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .art-toggle { display: none; }
 .image-missing { position: relative; }
 .image-missing::after { content: 'Image unavailable'; display: grid; place-items: center; min-height: 70px; padding: 8px; color: var(--accent); font-size: 11px; font-weight: 700; text-align: center; }
-:where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+:where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle, .detail-toc button):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+@media (max-width: 1180px) {
+  .detail-toc { position: sticky; top: -30px; right: auto; z-index: 5; display: flex; align-items: center; width: calc(100% + 72px); margin: -30px -36px 20px; padding: 7px 36px; overflow-x: auto; border-width: 0 0 1px; box-shadow: 0 8px 18px color-mix(in srgb, var(--shadow) 35%, transparent); scrollbar-width: none; }
+  .detail-toc::-webkit-scrollbar { display: none; }
+  .detail-toc > span { flex: 0 0 auto; }
+  .detail-toc button { flex: 0 0 auto; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }
+  #overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 58px; }
+}
 
 @media (max-width: 760px) {
   dialog { width: calc(100% - 16px); overflow: hidden; }
@@ -127,6 +143,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
   .art-toggle { display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 12px; border: 1px solid var(--line-bright); background: var(--surface-soft); color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; cursor: pointer; }
   .art-collapsed #hero-art, .art-collapsed .selected-skin { display: none; }
   .detail-body { max-height: none; padding: 24px 18px 32px; overflow: visible; }
+  .detail-toc { top: 0; width: calc(100% + 36px); margin: -24px -18px 20px; padding-inline: 18px; }
   .icon-row { gap: 6px; }
   .icon-type, .combat-icon small { font-size: 11px; }
   .skin-row { max-width: 100%; }

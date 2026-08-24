@@ -28,7 +28,13 @@ function rememberDescription(){const panel=$('#profile-description');if(panel)pi
 function previewDescription(category,name,hero){showDescription(category,name,hero);}
 function measureDescriptionHeight(panel){const clone=panel.cloneNode(true),width=panel.getBoundingClientRect().width;clone.removeAttribute('id');Object.assign(clone.style,{position:'absolute',visibility:'hidden',pointerEvents:'none',width:`${width}px`,height:'auto',minHeight:'0',overflow:'visible'});panel.parentElement.append(clone);const height=Math.ceil(clone.scrollHeight+2);clone.remove();return height;}
 const trim = item => ({...item, levels:item.levels.filter(level => level.Level <= 10)});
-const data = {characters:[...raw.characters.filter(x=>x.name!=='Avatar').map(trim),{name:'FreezePoint',levels:[]}], weapons:[...raw.weapons.map(trim),{name:'Cryoshot',levels:[]},{name:'Toxic Splatter',levels:[]}], gadgets:raw.gadgets.map(trim)};
+const meleeSizeBySpeed = {Fast:'Small', Medium:'Medium', Slow:'Large'};
+function trimHero(item) {
+  const trimmed=trim(item),profile=heroProfiles[item.name],size=meleeSizeBySpeed[profile?.speed],values=window.RANGER_MELEE_DAMAGE?.[size]?.[profile?.rarity];
+  if(!values) return trimmed;
+  return {...trimmed,columns:[...(trimmed.columns||[]).filter(column=>column!=='Melee Damage'),'Melee Damage'],levels:trimmed.levels.map(level=>({...level,'Melee Damage':values[level.Level-1]}))};
+}
+const data = {characters:[...raw.characters.filter(x=>x.name!=='Avatar').map(trimHero),{name:'FreezePoint',levels:[]}], weapons:[...raw.weapons.map(trim),{name:'Cryoshot',levels:[]},{name:'Toxic Splatter',levels:[]}], gadgets:raw.gadgets.map(trim)};
 function icon(key, folder) { const found=files[folder]?.find(x=>norm(x)===norm(key)); return found ? `${base}/${folder}/${found}.png?v=${assetVersion}` : null; }
 function skinSource(file) { return `${base}/skins/${file.split('/').map(encodeURIComponent).join('/')}?v=${assetVersion}`; }
 function heroDefaultSkin(key) { const folderSkins=(window.RANGER_SKINS||[]).filter(file=>file.startsWith(`${key}/`)&&!file.includes('/icons/')); return folderSkins.find(file=>file===`${key}/${key}.png`)||folderSkins[0]||`${key}/${key}.png`; }

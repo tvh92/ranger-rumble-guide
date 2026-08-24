@@ -1,0 +1,35 @@
+MELEE DAMAGE STATS
+==================
+
+Hero size mapping
+-----------------
+Fast speed = Small
+Medium speed = Medium
+Slow speed = Large
+
+Active heroes
+-------------
+Widget: Medium, Common
+Sprocket: Medium, Common
+Chip: Medium, Common
+Mopz: Medium, Rare
+Lil'Ann: Medium, Rare
+Tempest: Large, Rare
+Sparky: Small, Rare
+Celeste: Medium, Epic
+Zed: Small, Epic
+Lump: Large, Rare
+Grimshot: Medium, Epic
+
+Level | Small Common | Small Rare | Small Epic | Medium Common | Medium Rare | Medium Epic | Large Common | Large Rare | Large Epic
+------|--------------|------------|------------|---------------|-------------|-------------|--------------|------------|-----------
+1     | 20           | 26         | 32         | 25            | 33          | 40          | 30           | 39         | 48
+2     | 26           | 32         | 37         | 33            | 40          | 47          | 39           | 48         | 56
+3     | 32           | 37         | 43         | 40            | 47          | 53          | 48           | 56         | 64
+4     | 38           | 43         | 48         | 48            | 54          | 60          | 57           | 65         | 72
+5     | 44           | 49         | 53         | 55            | 61          | 67          | 66           | 73         | 80
+6     | 50           | 54         | 59         | 63            | 68          | 73          | 75           | 82         | 88
+7     | 56           | 60         | 64         | 70            | 75          | 80          | 84           | 90         | 96
+8     | 62           | 66         | 69         | 78            | 82          | 87          | 93           | 99         | 104
+9     | 68           | 71         | 75         | 85            | 89          | 93          | 102          | 107        | 112
+10    | 74           | 77         | 80         | 93            | 96          | 100         | 111          | 116        | 120

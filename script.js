@@ -1,6 +1,6 @@
 const raw = window.RUMBLE_DATA;
 const guide = window.RANGER_GUIDE;
-const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.23';
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.24';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;
@@ -82,7 +82,7 @@ function card(key) {
   return `<button class="card${profile.eventOnly?' event-card':''}" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}">${profile.eventOnly?'<span class="event-flag">Event only</span>':''}<span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
 }
 const heroOrder=guide.heroOrder;
-function render() { const events=guide.eventHeroOrder||[]; $('#event-character-grid').innerHTML=events.map(key=>card(key)).join(''); $('#event-roster').hidden=!events.length; $('#character-grid').innerHTML=heroOrder.filter(key=>!events.includes(key)).map(key=>card(key)).join(''); }
+function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function displayStatLabel(column,mode,itemName='',displayName='') {
   const item=norm(itemName),display=norm(displayName);
@@ -91,6 +91,7 @@ function displayStatLabel(column,mode,itemName='',displayName='') {
   if(item==='littlespin'){if(column==='AoeA Damage')return'First hit damage';if(column==='AoeB Damage')return'Second hit damage';}
   if((item==='buzzblades'||item==='bombardier')&&column==='Damage')return'Damage per hit';
   if(mode==='ultimate'&&display==='ryno'&&column==='Ult Damage')return'Missile damage';
+  if(mode==='ultimate'&&display==='ryno'&&column==='Projectile Time')return'Fire rate';
   return column==='Agent Explosion Damage'?'Damage':statLabel(column,mode);
 }
 function statHeader(label,heroName) { return label==='Overhealth'&&heroName==='Lump'?'Over-<br>health':safe(label); }
@@ -99,10 +100,10 @@ function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'
 function statCandidates(item,mode='normal') {
   if(!item?.levels?.length || item.name==='Amoeboid Launcher') return [];
   const all=[...new Set(item.levels.flatMap(level=>Object.keys(level)))].filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column));
-  if(mode==='hero') return all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)&&!(item.name==='Widget'&&/^(Projectile Time|Missiles)$/i.test(column)));
+  if(mode==='hero') return all.filter(column=>!/^Ult /i.test(column)&&!/^Tank /i.test(column)&&!/^(Projectile Time|Missiles)$/i.test(column));
   if(mode==='ultimate') {
     if(item.name==='Zed') return all.filter(column=>/^Tank /i.test(column));
-    if(item.name==='Widget') return all.filter(column=>/^(Ult |Projectile Time|Missiles)/i.test(column)&&!/Fire Rate/i.test(column));
+    if(item.name==='Widget'||item.name==='Ratchet') return all.filter(column=>/^(Ult |Projectile Time|Missiles)/i.test(column)&&!/Fire Rate/i.test(column));
     return all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column));
   }
   return all;
@@ -161,6 +162,11 @@ function showHero(key) {
   requestAnimationFrame(positionHeroNavigation);
   document.body.classList.add('modal-open');
   heroDescriptionHeight=measureDescriptionHeight($('#profile-description'));
+  if(config.descriptionHeightHero){
+    showDescription('heroes',config.descriptionHeightHero,config.descriptionHeightHero);
+    heroDescriptionHeight=Math.max(heroDescriptionHeight,measureDescriptionHeight($('#profile-description')));
+    showDescription('heroes',key,key);
+  }
   $('#profile-description').style.height=`${heroDescriptionHeight}px`;
   rememberDescription();
   $('.detail-body').addEventListener('scroll',updateDetailToc,{passive:true});

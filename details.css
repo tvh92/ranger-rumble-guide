@@ -17,14 +17,14 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .selected-skin-stage img { flex: 0 0 auto; max-width: none; margin: 0; object-fit: contain; object-position: center bottom; }
 .selected-skin span { display: block; margin-top: 7px; color: var(--accent); font-size: 13px; font-weight: 800; }
 
-.detail-body { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; max-height: 90vh; padding: 30px 36px 40px; overflow-y: auto; background-color: color-mix(in srgb, var(--surface) 88%, var(--page)); background-image: linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%); background-size: 44px 76px; scrollbar-color: var(--line) var(--surface-strong); scrollbar-width: thin; }
+.detail-body { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; max-height: 90vh; padding: 30px 36px 40px; overflow-y: auto; overscroll-behavior: contain; background-color: color-mix(in srgb, var(--surface) 88%, var(--page)); background-image: linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%); background-size: 44px 76px; scrollbar-color: var(--line) var(--surface-strong); scrollbar-width: thin; }
 .detail-body::-webkit-scrollbar { width: 10px; }
 .detail-body::-webkit-scrollbar-track { background: var(--surface-strong); }
 .detail-body::-webkit-scrollbar-thumb { border: 2px solid var(--surface-strong); border-radius: 8px; background: var(--line); }
 
-.detail-toc { position: fixed; top: var(--detail-toc-top, 90px); right: var(--detail-toc-right, 8px); z-index: 7; display: grid; width: 112px; padding: 7px; border: 1px solid var(--line-bright); background: color-mix(in srgb, var(--surface-strong) 93%, transparent); box-shadow: 0 10px 30px color-mix(in srgb, var(--shadow) 55%, transparent); backdrop-filter: blur(8px); }
-.detail-toc > span { padding: 7px 8px 8px; color: var(--orange); font: italic 800 12px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; }
-.detail-toc button { position: relative; min-height: 34px; padding: 7px 8px 7px 12px; border: 0; border-top: 1px solid color-mix(in srgb, var(--line) 45%, transparent); background: transparent; color: var(--text); font: 700 11px/1.15 Outfit, Arial, sans-serif; text-align: left; cursor: pointer; }
+.detail-toc { position: fixed; top: var(--detail-toc-top, 90px); right: var(--detail-toc-right, 8px); z-index: 7; display: grid; width: 150px; padding: 9px; border: 1px solid var(--line-bright); background: color-mix(in srgb, var(--surface-strong) 96%, transparent); box-shadow: 0 12px 34px color-mix(in srgb, var(--shadow) 65%, transparent); backdrop-filter: blur(8px); }
+.detail-toc > span { padding: 9px 10px 11px; color: var(--orange); font: italic 800 15px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .7px; text-transform: uppercase; }
+.detail-toc button { position: relative; min-height: 42px; padding: 9px 10px 9px 17px; border: 0; border-top: 1px solid color-mix(in srgb, var(--line) 45%, transparent); background: transparent; color: var(--text); font: 750 13px/1.2 Outfit, Arial, sans-serif; text-align: left; cursor: pointer; }
 .detail-toc button::before { content: ''; position: absolute; top: 50%; left: 3px; width: 4px; height: 4px; background: var(--line-bright); transform: translateY(-50%) rotate(45deg); }
 .detail-toc button:hover, .detail-toc button.is-active { background: var(--surface-soft); color: var(--heading); }
 .detail-toc button.is-active::before { width: 6px; height: 6px; background: var(--accent-strong); box-shadow: 0 0 8px var(--accent-strong); }
@@ -126,12 +126,13 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .image-missing::after { content: 'Image unavailable'; display: grid; place-items: center; min-height: 70px; padding: 8px; color: var(--accent); font-size: 11px; font-weight: 700; text-align: center; }
 :where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle, .detail-toc button):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
-@media (max-width: 1180px) {
-  .detail-toc { position: sticky; top: -30px; right: auto; z-index: 5; display: flex; align-items: center; width: calc(100% + 72px); margin: -30px -36px 20px; padding: 7px 36px; overflow-x: auto; border-width: 0 0 1px; box-shadow: 0 8px 18px color-mix(in srgb, var(--shadow) 35%, transparent); scrollbar-width: none; }
+@media (max-width: 1280px) {
+  .detail-toc { position: fixed; top: auto; right: auto; bottom: var(--detail-toc-mobile-bottom, 12px); left: var(--detail-toc-mobile-left, 16px); z-index: 8; display: flex; align-items: center; width: var(--detail-toc-mobile-width, calc(100% - 32px)); margin: 0; padding: 7px 12px; overflow-x: auto; border-width: 1px; box-shadow: 0 8px 24px color-mix(in srgb, var(--shadow) 55%, transparent); scrollbar-width: none; }
   .detail-toc::-webkit-scrollbar { display: none; }
   .detail-toc > span { flex: 0 0 auto; }
   .detail-toc button { flex: 0 0 auto; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }
-  #overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 58px; }
+  .detail-body { padding-bottom: 100px; }
+  #overview, #loadout, #skins, #combat-stats, #mods { scroll-margin-top: 18px; }
 }
 
 @media (max-width: 760px) {
@@ -143,7 +144,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
   .art-toggle { display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 12px; border: 1px solid var(--line-bright); background: var(--surface-soft); color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; cursor: pointer; }
   .art-collapsed #hero-art, .art-collapsed .selected-skin { display: none; }
   .detail-body { max-height: none; padding: 24px 18px 32px; overflow: visible; }
-  .detail-toc { top: 0; width: calc(100% + 36px); margin: -24px -18px 20px; padding-inline: 18px; }
+  .detail-toc { padding-inline: 8px; }
   .icon-row { gap: 6px; }
   .icon-type, .combat-icon small { font-size: 11px; }
   .skin-row { max-width: 100%; }

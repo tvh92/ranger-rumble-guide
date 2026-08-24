@@ -17,6 +17,8 @@
 6. Commit only files related to the request, push, and confirm the deployed GitHub Pages version and affected UI.
 7. Use the bundled workspace runtime paths for Node, Python, and Git. Port `8766` is suitable for the local static server.
 
+When the user requests website work, that request authorizes committing and pushing the scoped change to this repository's configured GitHub remote. Do not ask for separate commit or push approval; preserve unrelated worktree changes.
+
 ## Data conventions
 
 - Active loadouts and internal names are documented in `data/active-hero-loadouts.txt`.

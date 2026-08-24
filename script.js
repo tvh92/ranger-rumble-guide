@@ -30,7 +30,7 @@ function measureDescriptionHeight(panel){const clone=panel.cloneNode(true),width
 const trim = item => ({...item, levels:item.levels.filter(level => level.Level <= 10)});
 const meleeSizeBySpeed = {Fast:'Small', Medium:'Medium', Slow:'Large'};
 function trimHero(item) {
-  const trimmed=trim(item),profile=heroProfiles[item.name],size=meleeSizeBySpeed[profile?.speed],values=window.RANGER_MELEE_DAMAGE?.[size]?.[profile?.rarity];
+  const trimmed=trim(item),profile=heroProfiles[item.name],size=meleeSizeBySpeed[profile?.speed],values=guide.meleeDamage?.[size]?.[profile?.rarity];
   if(!values) return trimmed;
   return {...trimmed,columns:[...(trimmed.columns||[]).filter(column=>column!=='Melee Damage'),'Melee Damage'],levels:trimmed.levels.map(level=>({...level,'Melee Damage':values[level.Level-1]}))};
 }

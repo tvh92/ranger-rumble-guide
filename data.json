@@ -3208,161 +3208,105 @@
     },
     {
       "name": "Ratchet",
-      "ultimate": "Unknown (Ratchet)",
+      "ultimate": "RYNO (RatchetRyno / RynoRatchet)",
       "columns": [
         "Hero HP",
-        "Hero Power"
+        "Hero Power",
+        "Ult Damage",
+        "Projectile Time",
+        "Missiles",
+        "Overhealth"
       ],
       "levels": [
         {
           "Level": 1,
           "Hero HP": 320,
-          "Hero Power": 4800
+          "Hero Power": 4800,
+          "Ult Damage": 45,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 128
         },
         {
           "Level": 2,
           "Hero HP": 373,
-          "Hero Power": 5600
+          "Hero Power": 5600,
+          "Ult Damage": 52,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 149
         },
         {
           "Level": 3,
           "Hero HP": 427,
-          "Hero Power": 6400
+          "Hero Power": 6400,
+          "Ult Damage": 60,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 171
         },
         {
           "Level": 4,
           "Hero HP": 480,
-          "Hero Power": 7200
+          "Hero Power": 7200,
+          "Ult Damage": 67,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 192
         },
         {
           "Level": 5,
           "Hero HP": 533,
-          "Hero Power": 8000
+          "Hero Power": 8000,
+          "Ult Damage": 75,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 213
         },
         {
           "Level": 6,
           "Hero HP": 587,
-          "Hero Power": 8800
+          "Hero Power": 8800,
+          "Ult Damage": 82,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 235
         },
         {
           "Level": 7,
           "Hero HP": 640,
-          "Hero Power": 9600
+          "Hero Power": 9600,
+          "Ult Damage": 90,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 256
         },
         {
           "Level": 8,
           "Hero HP": 693,
-          "Hero Power": 10400
+          "Hero Power": 10400,
+          "Ult Damage": 97,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 277
         },
         {
           "Level": 9,
           "Hero HP": 747,
-          "Hero Power": 11200
+          "Hero Power": 11200,
+          "Ult Damage": 105,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 299
         },
         {
           "Level": 10,
           "Hero HP": 800,
-          "Hero Power": 12000
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000
+          "Hero Power": 12000,
+          "Ult Damage": 112,
+          "Projectile Time": 0.13,
+          "Missiles": 18,
+          "Overhealth": 320
         }
       ]
     },
@@ -4478,6 +4422,120 @@
     }
   ],
   "weapons": [
+    {
+      "name": "Ratchet Burst Pistol",
+      "columns": [
+        "Power",
+        "Damage",
+        "Projectiles",
+        "Fire Rate",
+        "Range",
+        "MaxAmmo",
+        "ReloadTime"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1600,
+          "Damage": 8,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 2,
+          "Power": 1870,
+          "Damage": 9,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 3,
+          "Power": 2130,
+          "Damage": 11,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 4,
+          "Power": 2400,
+          "Damage": 12,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 5,
+          "Power": 2670,
+          "Damage": 13,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 6,
+          "Power": 2930,
+          "Damage": 15,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 7,
+          "Power": 3200,
+          "Damage": 16,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 8,
+          "Power": 3470,
+          "Damage": 17,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 9,
+          "Power": 3730,
+          "Damage": 19,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        },
+        {
+          "Level": 10,
+          "Power": 4000,
+          "Damage": 20,
+          "Projectiles": 2,
+          "Fire Rate": 3.5,
+          "Range": 16,
+          "MaxAmmo": 12,
+          "ReloadTime": 1.7
+        }
+      ]
+    },
     {
       "name": "Amoeboid Launcher",
       "columns": [
@@ -6538,6 +6596,65 @@
   ],
   "gadgets": [
     {
+      "name": "WrenchThrow",
+      "columns": [
+        "Damage",
+        "Range"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Damage": 100,
+          "Range": 20
+        },
+        {
+          "Level": 2,
+          "Damage": 120,
+          "Range": 20
+        },
+        {
+          "Level": 3,
+          "Damage": 140,
+          "Range": 20
+        },
+        {
+          "Level": 4,
+          "Damage": 160,
+          "Range": 20
+        },
+        {
+          "Level": 5,
+          "Damage": 180,
+          "Range": 20
+        },
+        {
+          "Level": 6,
+          "Damage": 200,
+          "Range": 20
+        },
+        {
+          "Level": 7,
+          "Damage": 220,
+          "Range": 20
+        },
+        {
+          "Level": 8,
+          "Damage": 240,
+          "Range": 20
+        },
+        {
+          "Level": 9,
+          "Damage": 260,
+          "Range": 20
+        },
+        {
+          "Level": 10,
+          "Damage": 280,
+          "Range": 20
+        }
+      ]
+    },
+    {
       "name": "ElectricGrenade",
       "hero": "Mopz",
       "columns": [
@@ -6671,16 +6788,116 @@
         "Cooldown"
       ],
       "levels": [
-        {"Level": 1, "Agent Explosion Damage": 63, "Agent HP": 50, "Agent Lifetime": 8, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 2, "Agent Explosion Damage": 82, "Agent HP": 65, "Agent Lifetime": 8.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 3, "Agent Explosion Damage": 101, "Agent HP": 80, "Agent Lifetime": 9, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 4, "Agent Explosion Damage": 120, "Agent HP": 95, "Agent Lifetime": 9.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 5, "Agent Explosion Damage": 139, "Agent HP": 110, "Agent Lifetime": 10, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 6, "Agent Explosion Damage": 158, "Agent HP": 125, "Agent Lifetime": 10.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 7, "Agent Explosion Damage": 176, "Agent HP": 140, "Agent Lifetime": 11, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 8, "Agent Explosion Damage": 195, "Agent HP": 155, "Agent Lifetime": 11.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 9, "Agent Explosion Damage": 214, "Agent HP": 170, "Agent Lifetime": 12, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12},
-        {"Level": 10, "Agent Explosion Damage": 233, "Agent HP": 185, "Agent Lifetime": 12.5, "Range": 12, "Drones Per Use": 2, "More Agent Drones": 3, "Charges": 1, "Cooldown": 12}
+        {
+          "Level": 1,
+          "Agent Explosion Damage": 63,
+          "Agent HP": 50,
+          "Agent Lifetime": 8,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Agent Explosion Damage": 82,
+          "Agent HP": 65,
+          "Agent Lifetime": 8.5,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Agent Explosion Damage": 101,
+          "Agent HP": 80,
+          "Agent Lifetime": 9,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Agent Explosion Damage": 120,
+          "Agent HP": 95,
+          "Agent Lifetime": 9.5,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Agent Explosion Damage": 139,
+          "Agent HP": 110,
+          "Agent Lifetime": 10,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Agent Explosion Damage": 158,
+          "Agent HP": 125,
+          "Agent Lifetime": 10.5,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Agent Explosion Damage": 176,
+          "Agent HP": 140,
+          "Agent Lifetime": 11,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Agent Explosion Damage": 195,
+          "Agent HP": 155,
+          "Agent Lifetime": 11.5,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Agent Explosion Damage": 214,
+          "Agent HP": 170,
+          "Agent Lifetime": 12,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Agent Explosion Damage": 233,
+          "Agent HP": 185,
+          "Agent Lifetime": 12.5,
+          "Range": 12,
+          "Drones Per Use": 2,
+          "More Agent Drones": 3,
+          "Charges": 1,
+          "Cooldown": 12
+        }
       ]
     },
     {
@@ -6703,16 +6920,176 @@
         "Cooldown"
       ],
       "levels": [
-        {"Level": 1, "Small Damage": 39, "Medium Damage": 59, "Large Damage": 78, "Small HP": 91, "Medium HP": 143, "Large HP": 195, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 2, "Small Damage": 48, "Medium Damage": 71, "Large Damage": 95, "Small HP": 111, "Medium HP": 174, "Large HP": 238, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 3, "Small Damage": 56, "Medium Damage": 84, "Large Damage": 112, "Small HP": 131, "Medium HP": 205, "Large HP": 280, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 4, "Small Damage": 65, "Medium Damage": 97, "Large Damage": 129, "Small HP": 151, "Medium HP": 237, "Large HP": 323, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 5, "Small Damage": 73, "Medium Damage": 110, "Large Damage": 146, "Small HP": 170, "Medium HP": 268, "Large HP": 365, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 6, "Small Damage": 82, "Medium Damage": 122, "Large Damage": 163, "Small HP": 190, "Medium HP": 299, "Large HP": 408, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 7, "Small Damage": 90, "Medium Damage": 135, "Large Damage": 180, "Small HP": 210, "Medium HP": 330, "Large HP": 450, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 8, "Small Damage": 99, "Medium Damage": 148, "Large Damage": 197, "Small HP": 230, "Medium HP": 361, "Large HP": 493, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 9, "Small Damage": 107, "Medium Damage": 161, "Large Damage": 214, "Small HP": 250, "Medium HP": 392, "Large HP": 535, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12},
-        {"Level": 10, "Small Damage": 116, "Medium Damage": 173, "Large Damage": 231, "Small HP": 270, "Medium HP": 424, "Large HP": 578, "Small Lifetime": 10, "Medium Lifetime": 12.5, "Large Lifetime": 15, "AcidZone Damage": 10, "AcidZone Duration": 1, "Range": 14, "Charges": 1, "Cooldown": 12}
+        {
+          "Level": 1,
+          "Small Damage": 39,
+          "Medium Damage": 59,
+          "Large Damage": 78,
+          "Small HP": 91,
+          "Medium HP": 143,
+          "Large HP": 195,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Small Damage": 48,
+          "Medium Damage": 71,
+          "Large Damage": 95,
+          "Small HP": 111,
+          "Medium HP": 174,
+          "Large HP": 238,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Small Damage": 56,
+          "Medium Damage": 84,
+          "Large Damage": 112,
+          "Small HP": 131,
+          "Medium HP": 205,
+          "Large HP": 280,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Small Damage": 65,
+          "Medium Damage": 97,
+          "Large Damage": 129,
+          "Small HP": 151,
+          "Medium HP": 237,
+          "Large HP": 323,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Small Damage": 73,
+          "Medium Damage": 110,
+          "Large Damage": 146,
+          "Small HP": 170,
+          "Medium HP": 268,
+          "Large HP": 365,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Small Damage": 82,
+          "Medium Damage": 122,
+          "Large Damage": 163,
+          "Small HP": 190,
+          "Medium HP": 299,
+          "Large HP": 408,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Small Damage": 90,
+          "Medium Damage": 135,
+          "Large Damage": 180,
+          "Small HP": 210,
+          "Medium HP": 330,
+          "Large HP": 450,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Small Damage": 99,
+          "Medium Damage": 148,
+          "Large Damage": 197,
+          "Small HP": 230,
+          "Medium HP": 361,
+          "Large HP": 493,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Small Damage": 107,
+          "Medium Damage": 161,
+          "Large Damage": 214,
+          "Small HP": 250,
+          "Medium HP": 392,
+          "Large HP": 535,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Small Damage": 116,
+          "Medium Damage": 173,
+          "Large Damage": 231,
+          "Small HP": 270,
+          "Medium HP": 424,
+          "Large HP": 578,
+          "Small Lifetime": 10,
+          "Medium Lifetime": 12.5,
+          "Large Lifetime": 15,
+          "AcidZone Damage": 10,
+          "AcidZone Duration": 1,
+          "Range": 14,
+          "Charges": 1,
+          "Cooldown": 12
+        }
       ]
     },
     {
@@ -6723,16 +7100,56 @@
         "AoeB Damage"
       ],
       "levels": [
-        {"Level": 1, "AoeA Damage": 42, "AoeB Damage": 83},
-        {"Level": 2, "AoeA Damage": 51, "AoeB Damage": 101},
-        {"Level": 3, "AoeA Damage": 60, "AoeB Damage": 119},
-        {"Level": 4, "AoeA Damage": 69, "AoeB Damage": 138},
-        {"Level": 5, "AoeA Damage": 78, "AoeB Damage": 156},
-        {"Level": 6, "AoeA Damage": 87, "AoeB Damage": 174},
-        {"Level": 7, "AoeA Damage": 96, "AoeB Damage": 192},
-        {"Level": 8, "AoeA Damage": 105, "AoeB Damage": 210},
-        {"Level": 9, "AoeA Damage": 114, "AoeB Damage": 228},
-        {"Level": 10, "AoeA Damage": 123, "AoeB Damage": 246}
+        {
+          "Level": 1,
+          "AoeA Damage": 42,
+          "AoeB Damage": 83
+        },
+        {
+          "Level": 2,
+          "AoeA Damage": 51,
+          "AoeB Damage": 101
+        },
+        {
+          "Level": 3,
+          "AoeA Damage": 60,
+          "AoeB Damage": 119
+        },
+        {
+          "Level": 4,
+          "AoeA Damage": 69,
+          "AoeB Damage": 138
+        },
+        {
+          "Level": 5,
+          "AoeA Damage": 78,
+          "AoeB Damage": 156
+        },
+        {
+          "Level": 6,
+          "AoeA Damage": 87,
+          "AoeB Damage": 174
+        },
+        {
+          "Level": 7,
+          "AoeA Damage": 96,
+          "AoeB Damage": 192
+        },
+        {
+          "Level": 8,
+          "AoeA Damage": 105,
+          "AoeB Damage": 210
+        },
+        {
+          "Level": 9,
+          "AoeA Damage": 114,
+          "AoeB Damage": 228
+        },
+        {
+          "Level": 10,
+          "AoeA Damage": 123,
+          "AoeB Damage": 246
+        }
       ]
     }
   ]

@@ -1,17 +1,17 @@
 const raw = window.RUMBLE_DATA;
 const guide = window.RANGER_GUIDE;
-const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.21';
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.23';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;
 const files = {
   weapons: ['BlackholeStorm','Blaster','Blitzgun','Buzzblades','ColdSnap','Cryoshot','Headhunter','LavaGun','PlasmaStriker','Pyrocitor','ScorpionFlail','Shatterbomb','SuckCannon','TeslaClaw','TheEnforcer','ToxicSplatter','Warmonger'],
-  gadgets: ['AmoeboidLauncher','Bombardier','Cryoslider','DrillDash','GloveOfDoom','HoloshieldGlove','HoverBoots','MineLauncher','VoidRepulser','VoltageDrop','WhirlingBlades'],
-  melee: ['AnnMelee','CelesteMelee','ChipMelee','FuseMelee','GrimshotMelee','LumpMelee','MarkusMelee','MopzMelee','SprocketMelee','WidgetMelee','ZedMelee'],
+  gadgets: ['AmoeboidLauncher','Bombardier','Cryoslider','DrillDash','GloveOfDoom','HoloshieldGlove','HoverBoots','MineLauncher','VoidRepulser','VoltageDrop','WhirlingBlades','WrenchThrow'],
+  melee: ['AnnMelee','CelesteMelee','ChipMelee','FuseMelee','GrimshotMelee','LumpMelee','MarkusMelee','MopzMelee','RatchetMelee','SprocketMelee','WidgetMelee','ZedMelee'],
   ultimates: ['BigBoom','BigBoomRemote','Cannonball','Evolution','Hoverboard','MegaStrike','Negatron','Ryno','Sheepinator','SmokeScreen','TankFormation','VortexWallop']
 };
 const heroClasses = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.className]));
-const heroProfiles = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, {speed: hero.speed, rarity: hero.rarity, color: hero.color}]));
+const heroProfiles = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, {speed: hero.speed, rarity: hero.rarity, color: hero.color, eventOnly: hero.eventOnly===true}]));
 const loadouts = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.loadout]));
 const norm = value => String(value).replace(/[^a-z0-9]/gi,'').toLowerCase();
 const safe = value => { const e=document.createElement('span'); e.textContent=value; return e.innerHTML; };
@@ -70,19 +70,19 @@ function setSkinPreview(file,name) { const preview=$('#skin-preview-image'); if(
 function setActiveSkinButton(file) { document.querySelectorAll('.skin').forEach(button=>{const active=button.dataset.file===file;button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active));}); }
 function heroRender(key) { const file=key==="Lil'Ann"?'LilAnn':key; return `${base}/renders/${file}.png?v=${assetVersion}`; }
 const renderPreloads=new Map();
-function preloadHeroRender(key) { const src=heroRender(key); if(renderPreloads.has(src))return; const image=new Image(); image.src=src; renderPreloads.set(src,image); }
+function preloadHeroRender(key) { if(guide.heroes[key]?.render===false)return; const src=heroRender(key); if(renderPreloads.has(src))return; const image=new Image(); image.src=src; renderPreloads.set(src,image); }
 function preloadAdjacentHeroRenders(key) { const index=heroOrder.indexOf(key); if(index<0)return; preloadHeroRender(heroOrder[(index-1+heroOrder.length)%heroOrder.length]); preloadHeroRender(heroOrder[(index+1)%heroOrder.length]); }
-function heroPortrait(key) { const internal={Tempest:'Markus',Zed:'ZedOne',"Lil'Ann":'LilAnn'}[key]||key; return `${base}/skins/icons/ico_miniPortrait_${internal}.png?v=${assetVersion}`; }
+function heroPortrait(key) { if(guide.heroes[key]?.portrait===false)return heroImage(key); const internal={Tempest:'Markus',Zed:'ZedOne',"Lil'Ann":'LilAnn'}[key]||key; return `${base}/skins/icons/ico_miniPortrait_${internal}.png?v=${assetVersion}`; }
 function find(items,key) { return items.find(item=>norm(item.name)===norm(key)); }
 function card(key) {
   const l=loadouts[key], title=displayHeroName(key),profile=heroProfiles[key];
   const image=heroImage(key);
   const gadgetName=l?.[2];
   const subtitle=`${l[0]}, ${gadgetName}`;
-  return `<button class="card" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}"><span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
+  return `<button class="card${profile.eventOnly?' event-card':''}" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}">${profile.eventOnly?'<span class="event-flag">Event only</span>':''}<span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
 }
 const heroOrder=guide.heroOrder;
-function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
+function render() { const events=guide.eventHeroOrder||[]; $('#event-character-grid').innerHTML=events.map(key=>card(key)).join(''); $('#event-roster').hidden=!events.length; $('#character-grid').innerHTML=heroOrder.filter(key=>!events.includes(key)).map(key=>card(key)).join(''); }
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function displayStatLabel(column,mode,itemName='',displayName='') {
   const item=norm(itemName),display=norm(displayName);
@@ -145,11 +145,11 @@ function showHero(key) {
   currentHeroKey=key;
   preloadAdjacentHeroRenders(key);
   prepareSkinFrame(key);
-  const l=loadouts[key], hero=find(data.characters,key), weapon=find(data.weapons,l[0]),profile=heroProfiles[key];
+  const l=loadouts[key],config=guide.heroes[key],hero=find(data.characters,key),weapon=find(data.weapons,config.weaponStats||l[0]),profile=heroProfiles[key];
   const gadget=find(data.gadgets,l[4])||find(data.weapons,l[4]);
   const skinButtons=heroSkins(key).map(file=>`<button class="skin" data-file="${safe(file)}"><img src="${skinSource(file)}" alt="${safe(skinName(file,key))}"><span>${safe(skinName(file,key))}</span></button>`).join('');
-  const collapsed=matchMedia('(max-width:760px)').matches?' art-collapsed':'';
-  $('#dialog-content').innerHTML=`<nav class="detail-toc" aria-label="Hero details sections"><span>On this page</span><button class="is-active" type="button" data-toc-target="overview">Overview</button><button type="button" data-toc-target="loadout">Loadout</button><button type="button" data-toc-target="skins">Skins</button><button type="button" data-toc-target="combat-stats">Combat stats</button><button type="button" data-toc-target="talents">Talents</button></nav><div class="hero-detail${collapsed}" style="--rarity:${profile.color}"><div class="detail-art"><button class="art-toggle" type="button" aria-expanded="${collapsed?'false':'true'}">${collapsed?'Show artwork and selected skin':'Hide artwork and selected skin'}</button><img id="hero-art" src="${heroRender(key)}" alt="${safe(displayHeroName(key))} render"><div class="selected-skin"><h3>Skins</h3><div class="selected-skin-stage"><img id="skin-preview-image" src="${heroImage(key)}" alt="${safe(displayHeroName(key))} selected skin"></div><span id="selected-skin-name">Default</span></div></div><div class="detail-body"><button class="profile-title hero-summary" id="overview" type="button" data-hero="${safe(key)}"><img class="hero-portrait" src="${heroPortrait(key)}" alt=""><div><div class="profile-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span><span class="speed-badge"><img src="images/UI%20icons/ico_stats_speed.png" alt="">${profile.speed} speed</span></div><h2>${safe(displayHeroName(key))}</h2><small>Hero overview</small></div></button><div class="description-panel" id="profile-description"></div><div class="icon-row" id="loadout">${combatIcon('Weapon',l[0],l[1],'weapons',key)}${combatIcon('Gadget',l[2],l[3],'gadgets',key)}${combatIcon('Melee',l[5],l[6],'melee',key)}${combatIcon('Ultimate',l[7],l[8],'ultimates',key,key==='Sparky'?'BigBoomRemote':null)}</div><div class="skins" id="skins"><h3>Choose skin</h3><div class="skin-row">${skinButtons}</div></div>${combinedStatsTable(hero,weapon,gadget,l)}${modsSection(key)}</div></div>`;
+  const hasSkinMenu=heroSkins(key).length>1,collapsed=matchMedia('(max-width:760px)').matches?' art-collapsed':'',renderMarkup=config.render===false?'':`<img id="hero-art" src="${heroRender(key)}" alt="${safe(displayHeroName(key))} render">`,skinToc=hasSkinMenu?'<button type="button" data-toc-target="skins">Skins</button>':'',skinMenu=hasSkinMenu?`<div class="skins" id="skins"><h3>Choose skin</h3><div class="skin-row">${skinButtons}</div></div>`:'';
+  $('#dialog-content').innerHTML=`<nav class="detail-toc" aria-label="Hero details sections"><span>On this page</span><button class="is-active" type="button" data-toc-target="overview">Overview</button><button type="button" data-toc-target="loadout">Loadout</button>${skinToc}<button type="button" data-toc-target="combat-stats">Combat stats</button><button type="button" data-toc-target="talents">Talents</button></nav><div class="hero-detail${collapsed}${config.render===false?' render-missing':''}" style="--rarity:${profile.color}"><div class="detail-art"><button class="art-toggle" type="button" aria-expanded="${collapsed?'false':'true'}">${collapsed?'Show artwork and selected skin':'Hide artwork and selected skin'}</button>${renderMarkup}<div class="selected-skin"><h3>Skin</h3><div class="selected-skin-stage"><img id="skin-preview-image" src="${heroImage(key)}" alt="${safe(displayHeroName(key))} selected skin"></div><span id="selected-skin-name">Default</span></div></div><div class="detail-body"><button class="profile-title hero-summary" id="overview" type="button" data-hero="${safe(key)}"><img class="hero-portrait" src="${heroPortrait(key)}" alt=""><div><div class="profile-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span><span class="speed-badge"><img src="images/UI%20icons/ico_stats_speed.png" alt="">${profile.speed} speed</span></div><h2>${safe(displayHeroName(key))}</h2><small>Hero overview</small></div></button><div class="description-panel" id="profile-description"></div><div class="icon-row" id="loadout">${combatIcon('Weapon',l[0],l[1],'weapons',key)}${combatIcon('Gadget',l[2],l[3],'gadgets',key)}${combatIcon('Melee',l[5],l[6],'melee',key)}${combatIcon('Ultimate',l[7],l[8],'ultimates',key,key==='Sparky'?'BigBoomRemote':null)}</div>${skinMenu}${combinedStatsTable(hero,weapon,gadget,l)}${modsSection(key)}</div></div>`;
   const index=heroOrder.indexOf(key),previous=heroOrder[(index-1+heroOrder.length)%heroOrder.length],next=heroOrder[(index+1)%heroOrder.length];
   $('#dialog-content').insertAdjacentHTML('afterbegin',`<button class="hero-nav hero-nav-prev" type="button" data-hero-direction="-1" aria-label="Previous hero: ${safe(displayHeroName(previous))}" title="${safe(displayHeroName(previous))}"><span aria-hidden="true"></span></button><button class="hero-nav hero-nav-next" type="button" data-hero-direction="1" aria-label="Next hero: ${safe(displayHeroName(next))}" title="${safe(displayHeroName(next))}"><span aria-hidden="true"></span></button>`);
   pinnedSkin={file:heroDefaultSkin(key),name:'Default'};

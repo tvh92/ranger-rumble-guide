@@ -1,7 +1,18 @@
 RANGER RUMBLE HERO TALENT EXPORT
-Source: version 1.9.0 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
+Source: versions 1.9.0 and 1.9.1 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
 Fixed-point divisor: 65536
 Damage arrays: levels 1 through 10
+================================================================================
+
+HERO: Ratchet
+TALENT: Express Recovery
+MENU: Ratchet regenerates faster than other heroes.
+EFFECT: Regeneration delay reduced to 4.0000s; full-regeneration time remains 3.0000s.
+
+TALENT: Triple Barrel
+MENU: Each shot now fires three projectiles instead of two.
+EFFECT: Projectile count 3; no additional shot consumed.
+
 ================================================================================
 
 HERO: Widget (internal: Sandy)

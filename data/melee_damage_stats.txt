@@ -9,6 +9,7 @@ Slow speed = Large
 
 Active heroes
 -------------
+Ratchet: Medium, Epic (40 damage at level 1)
 Widget: Medium, Common
 Sprocket: Medium, Common
 Chip: Medium, Common

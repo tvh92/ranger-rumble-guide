@@ -15,7 +15,7 @@ const find = (items, name) => items.find(item => normalize(item.name) === normal
 for (const heroName of guide.heroOrder) {
   const config = guide.heroes[heroName];
   const hero = find(data.characters, heroName);
-  const weapon = find(data.weapons, config.loadout[0]);
+  const weapon = find(data.weapons, config.weaponStats || config.loadout[0]);
   const gadget = find(data.gadgets, config.loadout[4]) || find(data.weapons, config.loadout[4]);
   if (!hero) errors.push(`${heroName}: hero statistics are missing`);
   if (!weapon) errors.push(`${heroName}: weapon statistics are missing for ${config.loadout[0]}`);

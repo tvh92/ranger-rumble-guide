@@ -1,6 +1,15 @@
 ACTIVE HERO LOADOUT REFERENCE
 =============================
 
+Hero: Ratchet (event-only; internal hero: Ratchet)
+Class: Allrounder (internal type: Generalist)
+Speed: Medium
+Rarity: Epic
+Weapon: Burst Pistol (internal: RatchetBlaster; 2 projectiles per shot)
+Gadget: Wrench Throw (internal: WrenchThrow)
+Melee: Wrench (icon/internal: RatchetMelee / WrenchMelee)
+Ultimate: RYNO (internal: RatchetRyno / RynoRatchet)
+
 Hero: Widget (internal hero: Sandy)
 Weapon: Burst Pistol
 Gadget: Drill Thruster (internal: DrillDash)

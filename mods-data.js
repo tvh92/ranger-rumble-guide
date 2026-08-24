@@ -1,5 +1,9 @@
 // Generated from data/hero_talent_stats_export.txt.
 window.RANGER_MODS = {
+  Ratchet: [
+    {name:'Express Recovery',icon:'Express Recovery.png',menu:'Ratchet regenerates faster than other heroes.',effect:'Regeneration delay reduced to 4s; full-regeneration time remains 3s.'},
+    {name:'Triple Barrel',icon:'Triple Barrel.png',menu:'Each shot now fires three projectiles instead of two.',effect:'Projectile count: 3. No additional shot is consumed.'}
+  ],
   Widget: [
     {name:'Express Recovery',icon:'Express Recovery.png',menu:'Widget regenerates faster than other heroes.',effect:'Regeneration delay reduced from 6s to 4s; full-regeneration time remains 3s.'},
     {name:'Double Barrel',icon:'Double Barrel.png',menu:'Each shot now fires two projectiles instead of one.',effect:'Projectile count: 2. No additional shot is consumed.'}

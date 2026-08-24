@@ -9,6 +9,8 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 
 .hero-detail { display: grid; grid-template-columns: 230px minmax(0, 1fr); overflow: hidden; background: var(--surface); color: var(--text); }
 .detail-art { display: flex; flex-direction: column; align-items: center; gap: 20px; min-height: 650px; padding: 35px 20px 28px; overflow: hidden; border-right: 1px solid var(--line-bright); background: radial-gradient(circle at 50% 28%, color-mix(in srgb, var(--page-glow) 70%, transparent) 0 16%, transparent 44%), linear-gradient(180deg, color-mix(in srgb, var(--page-glow) 62%, var(--surface)), var(--surface-strong)); }
+.render-missing .detail-art { justify-content: center; }
+.render-missing .selected-skin { padding-top: 0; border-top: 0; }
 #hero-art { width: 122%; max-width: none; height: 430px; object-fit: contain; color: transparent; font-size: 0; transform: scale(1.08); transform-origin: center top; filter: drop-shadow(0 12px 8px #00151d80); }
 .selected-skin { width: 100%; padding-top: 16px; border-top: 1px solid var(--line-bright); text-align: center; }
 .selected-skin h3, .skins h3, .combined-stats > h3, .mods-section > h3 { margin: 0 0 12px; color: var(--heading); font: italic 800 24px/1 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }

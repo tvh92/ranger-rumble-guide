@@ -1,4 +1,5 @@
 window.RANGER_USED_SKINS = {
+  "Ratchet": ["Ratchet_00"],
   "Widget": ["Widget", "Megalopolis Widget", "McMarx Sports Widget", "Rebel Widget", "Raritanium Widget"],
   "Mopz": ["Mopz", "Blackwater Mopz", "Dreadzone Mopz", "Megalopolis Mopz"],
   "Tempest": ["Tempest", "Blackwater Tempest", "Dreadzone Tempest", "Nefarious Tempest"],

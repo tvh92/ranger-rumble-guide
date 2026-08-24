@@ -47,6 +47,13 @@ button { font: inherit; }
 .section-heading h2 { margin: 0; color: var(--heading); font: italic 900 clamp(44px, 4vw, 58px)/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; text-shadow: 3px 3px 0 color-mix(in srgb, var(--page) 85%, black); }
 
 .card-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; max-width: 1400px; margin-inline: auto; }
+.event-roster { position: relative; max-width: 1400px; margin: 0 auto 28px; padding: 18px 20px 20px; overflow: hidden; border: 1px solid var(--line-bright); background: linear-gradient(115deg, color-mix(in srgb, var(--accent-strong) 12%, var(--surface)), var(--surface-strong) 68%); box-shadow: 0 10px 24px var(--shadow); }
+.event-roster::after { content: ''; position: absolute; inset: -45% -8% auto auto; width: 280px; aspect-ratio: 1; border: 28px solid color-mix(in srgb, var(--accent-strong) 8%, transparent); transform: rotate(25deg); pointer-events: none; }
+.event-roster-heading { position: relative; z-index: 1; display: flex; align-items: baseline; justify-content: center; gap: 10px; margin-bottom: 14px; color: var(--heading); text-transform: uppercase; }
+.event-roster-heading span { padding: 5px 9px; background: var(--accent-strong); color: #03251d; font-size: 11px; font-weight: 900; letter-spacing: 1.2px; transform: skew(-8deg); }
+.event-roster-heading strong { font: italic 900 22px 'Barlow Condensed', Impact, sans-serif; letter-spacing: .7px; }
+.event-card { position: relative; border-right-color: var(--accent-strong); border-bottom-color: var(--accent-strong); box-shadow: 0 10px 24px var(--shadow), 0 0 0 1px color-mix(in srgb, var(--accent-strong) 25%, transparent); }
+.event-flag { position: absolute; z-index: 2; top: 10px; left: 0; padding: 6px 14px 6px 10px; background: var(--accent-strong); color: #03251d; font-size: 10px; font-style: italic; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 100%, 0 100%); }
 .card {
   flex: 0 0 220px; width: 220px; min-width: 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-top: 5px solid var(--rarity, var(--line)); border-radius: 3px;
   background: var(--surface); color: var(--text); text-align: left; cursor: pointer; box-shadow: 0 8px 18px var(--shadow); transition: transform .18s, border-color .18s, box-shadow .18s;
@@ -82,6 +89,7 @@ footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; le
   .section { padding: 42px 18px 55px; }
   .section-heading h2 { font-size: 43px; }
   .card-grid { gap: 10px; }
+  .event-roster { padding-inline: 12px; }
   .card { flex: 0 1 calc(50% - 5px); width: auto; }
   .portrait { height: 140px; }
   .portrait img { height: 130px; }

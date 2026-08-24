@@ -1,0 +1,212 @@
+RANGER RUMBLE HERO TALENT EXPORT
+Source: version 1.9.0 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
+Fixed-point divisor: 65536
+Damage arrays: levels 1 through 10
+================================================================================
+
+HERO: Widget (internal: Sandy)
+TALENT: Express Recovery
+MENU: Widget regenerates faster than other heroes.
+EFFECT: Regeneration delay reduced from 6.0000s to 4.0000s; full-regeneration time remains 3.0000s.
+
+TALENT: Double Barrel
+MENU: Each shot now fires two projectiles instead of one.
+EFFECT: Projectile count 2; no additional shot consumed.
+
+================================================================================
+
+HERO: Sprocket
+TALENT: Rocket Legs
+MENU: Sprocket jumps higher from the ground.
+EFFECT: Base jump multiplier 1.5000 (+50%).
+
+TALENT: Cluster Bombs
+MENU: Grenades release two bomblets after exploding.
+EFFECT: Bomblet count 2; AoE radius 2.5000; horizontal push 7.0000; upward push 1.0000.
+Level  | Damage
+1      | 25.0000
+2      | 33.0000
+3      | 40.0000
+4      | 48.0000
+5      | 55.0000
+6      | 63.0000
+7      | 70.0000
+8      | 78.0000
+9      | 85.0000
+10     | 93.0000
+
+================================================================================
+
+HERO: Chip
+TALENT: Extra Agent
+MENU: Each use now generates one additional Agent of Doom.
+EFFECT: Agents deployed 3 (base 2); consumes one gadget charge.
+
+TALENT: Dual Arc Emitter
+MENU: The Tesla Claw can now hit two enemies at the same time.
+EFFECT: Additional beams 1; secondary-beam health multiplier 0.5000; Electric buildup 16.0000.
+Level  | Damage spec  | Health damage
+1      | 20.0000      | 10.0000
+2      | 26.0000      | 13.0000
+3      | 32.0000      | 16.0000
+4      | 38.0000      | 19.0000
+5      | 44.0000      | 22.0000
+6      | 50.0000      | 25.0000
+7      | 56.0000      | 28.0000
+8      | 62.0000      | 31.0000
+9      | 68.0000      | 34.0000
+10     | 74.0000      | 37.0000
+
+================================================================================
+
+HERO: Lil' Ann (internal: LilAnn)
+TALENT: Adrenaline Spike
+MENU: Knocking out another ranger grants Lil'Ann a temporary speed bonus.
+EFFECT: Move-speed modifier +0.1500; duration 4.0000s; trigger player elimination.
+
+TALENT: Impact Chamber
+MENU: Firing shortly after a dash delivers a more powerful shot.
+EFFECT: Enhanced-shot damage +25%; existing gameplay/wiki activation window 3s.
+NOTE: The 3-second activation window is not serialized in the enhancement asset and appears to be controlled by game code.
+Level  | Normal damage  | Enhanced damage
+1      | 104.0000       | 130.0000
+2      | 127.0000       | 159.0000
+3      | 149.0000       | 186.0000
+4      | 172.0000       | 215.0000
+5      | 195.0000       | 244.0000
+6      | 217.0000       | 271.0000
+7      | 240.0000       | 300.0000
+8      | 263.0000       | 329.0000
+9      | 285.0000       | 356.0000
+10     | 308.0000       | 385.0000
+
+================================================================================
+
+HERO: Tempest (internal: Markus)
+TALENT: Pulse Core
+MENU: When the shield breaks, it deals damage in an area in front of it.
+EFFECT: Forward AoE; leveled push force 25.0000 to 205.0000.
+Level  | Damage  | Push force
+1      | 59.0000 | 25.0000
+2      | 71.0000 | 45.0000
+3      | 84.0000 | 65.0000
+4      | 97.0000 | 85.0000
+5      | 110.0000| 105.0000
+6      | 122.0000| 125.0000
+7      | 135.0000| 145.0000
+8      | 148.0000| 165.0000
+9      | 161.0000| 185.0000
+10     | 173.0000| 205.0000
+
+TALENT: Cryo Shards
+MENU: Projectiles leave ice shards on the ground after exploding.
+EFFECT: Effective AoE radius approximately 2.5000; Ice buildup 4.0000 per application.
+Level  | Damage
+1      | 5.0000
+2      | 6.0000
+3      | 7.0000
+4      | 9.0000
+5      | 10.0000
+6      | 11.0000
+7      | 12.0000
+8      | 13.0000
+9      | 14.0000
+10     | 15.0000
+
+================================================================================
+
+HERO: Sparky (internal: Fuse)
+TALENT: Azur Igniter
+MENU: After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.
+EFFECT: Activates after 1.5000s continuous fire; approximately +50% damage.
+Level  | Normal damage  | Blue-fire damage
+1      | 33.0000        | 50.0000
+2      | 40.0000        | 60.0000
+3      | 47.0000        | 71.0000
+4      | 54.0000        | 81.0000
+5      | 61.0000        | 92.0000
+6      | 68.0000        | 102.0000
+7      | 75.0000        | 113.0000
+8      | 82.0000        | 123.0000
+9      | 89.0000        | 134.0000
+10     | 96.0000        | 144.0000
+
+================================================================================
+
+HERO: Mopz (internal: Raiden)
+TALENT: Spin-Up Rotor
+MENU: The rate of fire can increase even further.
+EFFECT: Adds stage 3: 5.0000s spin-up, stored fire-rate multiplier 8.0000, non-progressive.
+BASE STAGES: approximately 1.3000s/3.0000x and 3.0000s/5.0000x.
+
+================================================================================
+
+HERO: Celeste
+TALENT: Turbo Dash
+MENU: Celeste's dash recharges faster.
+EFFECT: Dash cooldown reduction 0.5000 (-50%).
+
+TALENT: Ricochet Blades
+MENU: The number of rebounds from the blades increases.
+EFFECT: Extended maximum hit count 7 (base 6); ricochet radius 8.0000.
+
+================================================================================
+
+HERO: Zed (internal: ZedOne)
+TALENT: Artillery Ace
+MENU: Zed One is no longer slowed down when firing his weapon.
+EFFECT: Weapon movement-speed modifier overridden to 0; Ultimates excluded.
+
+TALENT: Rocket Cluster
+MENU: Fires two minirockets in addition to the usual one.
+EFFECT: Additional minirockets 2; projectile speed 24.0000; blast radius 1.0000.
+Level  | Minirocket damage
+1      | 10.0000
+2      | 11.0000
+3      | 13.0000
+4      | 14.0000
+5      | 16.0000
+6      | 18.0000
+7      | 19.0000
+8      | 21.0000
+9      | 22.0000
+10     | 24.0000
+
+================================================================================
+
+HERO: Lump
+TALENT: Acid Core (localized asset name; former wiki name: Acid Spill)
+MENU: Small allied Amoeboids now spawn an acid puddle on death.
+EFFECT: Acid-zone damage 10.0000; duration 1.0000s; triggered by Small Amoeboid death.
+
+TALENT: Magma Nozzle
+MENU: Firing leaves lava on the ground, burning enemies standing on it.
+EFFECT: Pool radius 2.0000; lifetime 2.0000s; movement-speed modifier -0.2500.
+Level  | Damage per application
+1      | 4.0000
+2      | 5.0000
+3      | 6.0000
+4      | 6.0000
+5      | 7.0000
+6      | 8.0000
+7      | 9.0000
+8      | 10.0000
+9      | 11.0000
+10     | 12.0000
+
+================================================================================
+
+HERO: Grimshot
+TALENT: Healing Field
+MENU: Shields now heal allies directly behind them.
+EFFECT: Radius 2.3000; duration 8.0000s (same as the shield); heals 0.0500 of maximum HP per second (5%/s).
+
+TALENT: Thermal Scope
+MENU: Rivals are displayed through walls at the center of the reticle.
+EFFECT: Through-wall detection enabled; normalized central-screen radius 0.5000.
+
+================================================================================
+
+REMOVED/UNASSIGNED IN ACTIVE HERO SPECS
+Fire Affinity; Electric Affinity; Elemental Scholar; Scope Master; Quiet Strength;
+all former improved-melee and jump-melee talents.

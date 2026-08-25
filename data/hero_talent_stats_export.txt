@@ -2,6 +2,7 @@ RANGER RUMBLE HERO TALENT EXPORT
 Source: versions 1.9.0 and 1.9.1 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
 Fixed-point divisor: 65536
 Damage arrays: levels 1 through 10
+Unlock requirements: Talent 1 unlocks at level 3 and costs 1 core. Talent 2 unlocks at level 6, costs 3 cores, and requires Talent 1 to be unlocked first.
 ================================================================================
 
 HERO: Ratchet

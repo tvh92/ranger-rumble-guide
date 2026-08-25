@@ -110,6 +110,9 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 html[data-theme='light'] .mod-card header img { filter: drop-shadow(0 2px 1px #164f4670) drop-shadow(0 5px 5px #164f4638); }
 .mod-card header span { color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; }
 .mod-card h4 { margin: 3px 0 0; color: var(--heading); font: italic 800 23px/1 'Barlow Condensed', Impact, sans-serif; text-transform: uppercase; }
+.talent-requirements { display: flex; flex-wrap: wrap; gap: 6px; padding: 9px 16px; border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent); background: color-mix(in srgb, var(--surface-soft) 65%, transparent); }
+.talent-requirements span { padding: 4px 8px; border: 1px solid var(--line-bright); color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: .4px; line-height: 1; text-transform: uppercase; }
+.talent-requirements .talent-prerequisite { border-color: color-mix(in srgb, var(--orange) 70%, var(--line)); color: var(--orange); }
 .mod-card p { margin: 0; padding: 12px 16px 0; font-size: 13px; line-height: 1.45; }
 .mod-card > p:last-of-type { padding-bottom: 16px; }
 .mod-menu { color: var(--text); font-weight: 700; }

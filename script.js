@@ -95,7 +95,7 @@ function displayStatLabel(column,mode,itemName='',displayName='') {
   return column==='Agent Explosion Damage'?'Damage':statLabel(column,mode);
 }
 function statHeader(label,heroName) { return label==='Overhealth'&&heroName==='Lump'?'Over-<br>health':safe(label); }
-function statValue(column,value,itemName='') { const formatted=Number.isInteger(value)?value.toLocaleString():safe(value); if(norm(itemName)==='ratchetburstpistol'&&column==='Damage')return`${formatted} × 2`; return column==='Agent Lifetime'?`${formatted}s`:formatted; }
+function statValue(column,value,itemName='') { const formatted=Number.isInteger(value)?value.toLocaleString():safe(value); if(norm(itemName)==='ratchetburstpistol'&&column==='Damage')return`${formatted} × 2`; return /Agent Lifetime|Reload\s*Time|Cooldown/i.test(column)?`${formatted}s`:formatted; }
 function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/missiles|drones per use/.test(text)){file='payload';ext='svg'}else if(/lifetime|duration/.test(text)){file='duration';ext='svg'}else if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="images/UI%20icons/ico_stats_${file}.${ext}" alt="">`:''; }
 function statCandidates(item,mode='normal') {
   if(!item?.levels?.length || item.name==='Amoeboid Launcher') return [];

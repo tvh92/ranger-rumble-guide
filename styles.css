@@ -67,6 +67,9 @@ button { font: inherit; }
 .rarity-label { display: inline-flex; align-items: center; padding: 5px 14px 5px 8px; background: var(--rarity); clip-path: polygon(0 0, 100% 0, calc(100% - 5px) 100%, 0 100%); }
 .rarity-badge::after { content: ''; position: relative; flex: 0 0 4px; width: 4px; margin: 0 21px 0 1px; background: var(--rarity); box-shadow: 7px 0 var(--rarity), 14px 0 var(--rarity), 21px 0 var(--rarity); transform: skew(-12deg); transform-origin: center; }
 .type { color: var(--class-accent); font-size: 11px; font-weight: 900; letter-spacing: 1.1px; text-transform: uppercase; }
+.card.rarity-legendary .rarity-label { padding-right: 10px; }
+.card.rarity-legendary .rarity-badge::after { margin-right: 14px; box-shadow: 7px 0 var(--rarity), 14px 0 var(--rarity); }
+.card.rarity-legendary .type { font-size: 10px; letter-spacing: .6px; }
 .card-title { display: block; margin-top: 6px; color: var(--heading); font: italic 900 29px/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
 .card-subtitle { display: block; margin-top: 6px; overflow: hidden; color: var(--muted); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
 

@@ -80,7 +80,7 @@ function card(key) {
   const image=heroImage(key);
   const gadgetName=l?.[2];
   const subtitle=`${l[0]}, ${gadgetName}`;
-  return `<button class="card${profile.eventOnly?' event-card':''}" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}">${profile.eventOnly?'<span class="event-flag">Event only</span>':''}<span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
+  return `<button class="card rarity-${norm(profile.rarity)}${profile.eventOnly?' event-card':''}" type="button" style="--rarity:${profile.color}" data-key="${safe(key)}">${profile.eventOnly?'<span class="event-flag">Event only</span>':''}<span class="portrait"><img src="${image}" alt="${safe(title)}"></span><span class="card-body"><span class="card-meta"><span class="rarity-badge"><span class="rarity-label">${profile.rarity}</span></span><span class="type">${safe(heroClasses[key])}</span></span><span class="card-title">${safe(title)}</span><span class="card-subtitle">${safe(subtitle)}</span></span></button>`;
 }
 const heroOrder=guide.heroOrder;
 function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }

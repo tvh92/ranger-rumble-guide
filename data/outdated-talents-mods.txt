@@ -50,108 +50,109 @@ Zed One
 
 WEAPON MODS
 
+WEAPON MODS
+
 Amoeboid Launcher
+- Acid Spill: Small allied Amoeboids now spawn an acid puddle on death.
+- Brainwash: Shoot the neutral Amoeboids on the map to recruit them.
+- Primal Goo: The first shot after reloading immediately spawns a big Amoeboid.
 
-- Acid Spill (Amoeboid Launcher): Small allied Amoeboids now spawn an acid puddle on death.
-- Brainwash (Amoeboid Launcher): Shoot the neutral Amoeboids on the map to recruit them.
-- Primal Goo (Amoeboid Launcher): The first shot after reloading immediately spawns a big Amoeboid.
 Burst Pistol
+- Lightweight Frame: Wielding the Burst Pistol grants a speed bonus.
+- Double Barrel: Each shot now fires two projectiles instead of one.
+- Triple Barrel: Each shot now fires three projectiles.
 
-- Lightweight Frame (Burst Pistol): Wielding the Burst Pistol grants a speed bonus.
-- Double Barrel (Burst Pistol): Each shot now fires two projectiles instead of one.
-- Triple Barrel (Burst Pistol): Each shot now fires three projectiles.
 Bombardier
+- Payload Rack: The Bombardier drops more bombs and moves faster.
+- Seeking Payload: The Bombardier drops even more bombs and slightly turns toward nearby enemies.
+- Crash Core: The Bombardier drops to the ground and explodes at the end of its flight.
 
-- Payload Rack (Bombardier): The Bombardier drops more bombs and moves faster.
-- Seeking Payload (Bombardier): The Bombardier drops even more bombs and slightly turns toward nearby enemies.
-- Crash Core (Bombardier): The Bombardier drops to the ground and explodes at the end of its flight.
 Buzz Blades
+- Ricochet Blades: The number of rebounds from the blades increases.
+- Splitting Blades: Blades split in two after impact.
+- Cyclone Bounce: The number of rebounds from the blades increases even more.
 
-- Ricochet Blades (Buzz Blades): The number of rebounds from the blades increases.
-- Splitting Blades (Buzz Blades): Blades split in two after impact.
-- Cyclone Bounce (Buzz Blades): The number of rebounds from the blades increases even more.
 Cold Snap
+- Cryo Shards: Projectiles leave ice shards on the ground after exploding.
+- Frost Disperser: Projectiles now also leave an icy cloud in the air after exploding, freezing other rivals over time.
+- Shard Cascade: An additional circle of ice shards appears following the first one.
 
-- Cryo Shards (Cold Snap): Projectiles leave ice shards on the ground after exploding.
-- Frost Disperser (Cold Snap): Projectiles now also leave an icy cloud in the air after exploding, freezing other rivals over time.
-- Shard Cascade (Cold Snap): An additional circle of ice shards appears following the first one.
 Cryo Slider
+- Cryo Stone: The stone now explodes into an area of ice damage.
+- Bounce Coating: After bouncing, the stone accelerates and becomes more powerful.
+- Splitter Stone: After each bounce, the stone divides into two.
 
-- Cryo Stone (Cryo Slider): The stone now explodes into an area of ice damage.
-- Bounce Coating (Cryo Slider): After bouncing, the stone accelerates and becomes more powerful.
-- Splitter Stone (Cryo Slider): After each bounce, the stone divides into two.
 The Enforcer
+- Tri Chamber: The number of shots per burst increases to 3.
+- Shock Round: Shots inflict more damage on electrocuted rivals.
+- Quad Chamber: The number of shots per burst increases to 4.
 
-- Tri Chamber (The Enforcer): The number of shots per burst increases to 3.
-- Shock Round (The Enforcer): Shots inflict more damage on electrocuted rivals.
-- Quad Chamber (The Enforcer): The number of shots per burst increases to 4.
 Blackhole Storm
+- Spin-Up Rotor: The rate of fire can increase even further.
+- Quick Reload: When reloading, a quick reload button appears to be pressed at the right timing.
+- Storm Module: After holding fire for a sufficient duration, consume all remaining ammo to unleash a wide laser beam.
 
-- Spin-Up Rotor (Blackhole Storm): The rate of fire can increase even further.
-- Quick Reload (Blackhole Storm): When reloading, a quick reload button appears to be pressed at the right timing.
-- Storm Module (Blackhole Storm): After holding fire for a sufficient duration, consume all remaining ammo to unleash a wide laser beam.
 Glove of Doom
+- Extra Agent: Agents of doom are now generated two by two.
+- Jetpack Unit: Agents of doom now use a jetpack to fly towards nearby enemies.
+- Agent Alpha: Grants an extra ammo at the end of the magazine that generates an Alpha Agent.
 
-- Extra Agent (Glove of Doom): Agents of doom are now generated two by two.
-- Jetpack Unit (Glove of Doom): Agents of doom now use a jetpack to fly towards nearby enemies.
-- Agent Alpha (Glove of Doom): Grants an extra ammo at the end of the magazine that generates an Alpha Agent.
 Shatterbomb
+- Cluster Bombs: Grenades release two bomblets after exploding.
+- Shardfield Core: Grenades leave shards on the ground, dealing damage over time.
+- Mega Cluster: Grenades now release four bomblets after exploding.
 
-- Cluster Bombs (Shatterbomb): Grenades release two bomblets after exploding.
-- Shardfield Core (Shatterbomb): Grenades leave shards on the ground, dealing damage over time.
-- Mega Cluster (Shatterbomb): Grenades now release four bomblets after exploding.
 Headhunter
+- Thermal Scope: Rivals are displayed through walls at the center of the reticle.
+- Enhanced Optics: The Headhunter can now use a zoom lens.
+- Sharpshot Ammo: Zooming shots inflict more damage.
 
-- Thermal Scope (Headhunter): Rivals are displayed through walls at the center of the reticle.
-- Enhanced Optics (Headhunter): The Headhunter can now use a zoom lens.
-- Sharpshot Ammo (Headhunter): Zooming shots inflict more damage.
 Holoshield Glove
+- Healing Field: Shields now heal allies directly behind them.
+- Phalanx: The Holoshield Glove can now deploy more simultaneous shields.
+- Holoshock Module: Shields deal electrical damage on contact and immediately stun.
 
-- Healing Field (Holoshield Glove): Shields now heal allies directly behind them.
-- Phalanx (Holoshield Glove): The Holoshield Glove can now deploy more simultaneous shields.
-- Holoshock Module (Holoshield Glove): Shields deal electrical damage on contact and immediately stun.
 Hoverboots
+- Impact Thruster: Hoverboots now deal more damage on contact.
+- Hoversocks: Using the Hoverboots grants a temporary health bonus.
+- Shockwave Starter: Create an area of damage around the player when Hoverboots are equipped.
 
-- Impact Thruster (Hoverboots): Hoverboots now deal more damage on contact.
-- Hoversocks (Hoverboots): Using the Hoverboots grants a temporary health bonus.
-- Shockwave Starter (Hoverboots): Create an area of damage around the player when Hoverboots are equipped.
 Lava Gun
+- Magma Nozzle: Firing leaves lava on the ground, burning enemies standing on it.
+- Wideflow Canon: The lava stream is now wider.
+- Viscous Lava: The lava becomes more powerful and slows enemies down.
 
-- Magma Nozzle (Lava Gun): Firing leaves lava on the ground, burning enemies standing on it.
-- Wideflow Canon (Lava Gun): The lava stream is now wider.
-- Viscous Lava (Lava Gun): The lava becomes more powerful and slows enemies down.
 Hunter Mine Launcher
+- Mine Fusion: Shooting on an existing mine allows them to be merged into a larger one.
+- Seeker Mines: When a mine detonates, it now moves towards nearby enemies.
+- Stealth Casing: Mines become camouflaged and are harder to spot.
 
-- Mine Fusion (Hunter Mine Launcher): Shooting on an existing mine allows them to be merged into a larger one.
-- Seeker Mines (Hunter Mine Launcher): When a mine detonates, it now moves towards nearby enemies.
-- Stealth Casing (Hunter Mine Launcher): Mines become camouflaged and are harder to spot.
 Plasma Striker
+- Multi Capacitor: One additional beam can be fired per shot, by charging longer.
+- Lance Loader: One more beam can be fired per shot, without additional charging time.
+- Overdrive Tip: When fully charged, all beams cause a small explosion upon impact.
 
-- Multi Capacitor (Plasma Striker): One additional beam can be fired per shot, by charging longer.
-- Lance Loader (Plasma Striker): One more beam can be fired per shot, without additional charging time.
-- Overdrive Tip (Plasma Striker): When fully charged, all beams cause a small explosion upon impact.
 Pyrocitor
+- Azur Igniter: After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.
+- Oil Canister: When reloading, shoots oil puddles that can ignite with fire.
+- Reservoir: Oil puddles produced by the Pyrocitor are now larger.
 
-- Azur Igniter (Pyrocitor): After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.
-- Oil Canister (Pyrocitor): When reloading, shoots oil puddles that can ignite with fire.
-- Reservoir (Pyrocitor): Oil puddles produced by the Pyrocitor are now larger.
 Blitz Gun
+- Impact Chamber: Firing shortly after a dash delivers a more powerful shot.
+- Kinetic Loader: The weapon recovers ammo after a dash.
+- Overdrive Coil: When having half your health or less, the Blitz Gun deals more damage.
 
-- Impact Chamber (Blitz Gun): Firing shortly after a dash delivers a more powerful shot.
-- Kinetic Loader (Blitz Gun): The weapon recovers ammo after a dash.
-- Overdrive Coil (Blitz Gun): When having half your health or less, the Blitz Gun deals more damage.
 Tesla Claw
+- Dual Arc Emitter: The Tesla Claw can now hit two enemies at the same time.
+- Conductive Antena: After holding fire for a sufficient duration, the beam becomes larger and more powerful.
+- Tri Arc Emitter: The Tesla Claw can now hit three enemies at the same time.
 
-- Dual Arc Emitter (Tesla Claw): The Tesla Claw can now hit two enemies at the same time.
-- Conductive Antena (Tesla Claw): After holding fire for a sufficient duration, the beam becomes larger and more powerful.
-- Tri Arc Emitter (Tesla Claw): The Tesla Claw can now hit three enemies at the same time.
 Void Repulser
+- Pulse Core: When the Void Repulser reloads, it deals damage in an area in front of it.
+- Shatter Booster: Grants a short speed bonus if the Void Repulser runs out of health.
+- Ramming Field: After being held for a duration, the Void Repulser increases the hero's speed and deals more damage on contact.
 
-- Pulse Core (Void Repulser): When the Void Repulser reloads, it deals damage in an area in front of it.
-- Shatter Booster (Void Repulser): Grants a short speed bonus if the Void Repulser runs out of health.
-- Ramming Field (Void Repulser): After being held for a duration, the Void Repulser increases the hero's speed and deals more damage on contact.
 Warmonger
-
-- Rocket Cluster (Warmonger): Fires two minirockets in addition to the usual one.
-- Extra Rocket (Warmonger): An additional minirocket is fired alongside the others.
-- Incendiary Rockets (Warmonger): Minirockets now deal fire damage.
+- Rocket Cluster: Fires two minirockets in addition to the usual one.
+- Extra Rocket: An additional minirocket is fired alongside the others.
+- Incendiary Rockets: Minirockets now deal fire damage.

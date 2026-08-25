@@ -4441,7 +4441,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4451,7 +4451,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4461,7 +4461,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4471,7 +4471,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4481,7 +4481,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4491,7 +4491,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4501,7 +4501,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4511,7 +4511,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4521,7 +4521,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         },
         {
@@ -4531,7 +4531,7 @@
           "Projectiles": 2,
           "Fire Rate": 3.5,
           "Range": 16,
-          "MaxAmmo": 12,
+          "MaxAmmo": 30,
           "ReloadTime": 1.7
         }
       ]

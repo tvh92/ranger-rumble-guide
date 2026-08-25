@@ -6,8 +6,8 @@ Class: Allrounder (internal type: Generalist)
 Speed: Medium
 Rarity: Epic
 Weapon: Burst Pistol (internal: RatchetBlaster; 2 projectiles per shot)
-Gadget: Wrench Throw (internal: WrenchThrow)
-Melee: Wrench (icon/internal: RatchetMelee / WrenchMelee)
+Gadget: Throwable Wrench (internal: WrenchThrow)
+Melee: Omniwrench (icon/internal: RatchetMelee / WrenchMelee)
 Ultimate: RYNO (internal: RatchetRyno / RynoRatchet)
 
 Hero: Widget (internal hero: Sandy)

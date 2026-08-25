@@ -1,6 +1,6 @@
 const raw = window.RUMBLE_DATA;
 const guide = window.RANGER_GUIDE;
-const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.25';
+const guideVersion = document.querySelector('meta[name="app-version"]')?.content || '0.14.31';
 const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;

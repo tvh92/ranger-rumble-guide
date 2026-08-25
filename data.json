@@ -6599,58 +6599,69 @@
       "name": "WrenchThrow",
       "columns": [
         "Damage",
-        "Range"
+        "Range",
+        "Cooldown"
       ],
       "levels": [
         {
           "Level": 1,
           "Damage": 100,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 2,
           "Damage": 120,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 3,
           "Damage": 140,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 4,
           "Damage": 160,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 5,
           "Damage": 180,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 6,
           "Damage": 200,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 7,
           "Damage": 220,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 8,
           "Damage": 240,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 9,
           "Damage": 260,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         },
         {
           "Level": 10,
           "Damage": 280,
-          "Range": 20
+          "Range": 20,
+          "Cooldown": 10
         }
       ]
     },

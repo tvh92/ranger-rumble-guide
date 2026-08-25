@@ -33,3 +33,6 @@ Turn any room into a death trap by sticking mines to surfaces, or fire them at e
 
 Void Repulser
 Generate a protective force field to block incoming damage while you rethink your life decisions.
+
+Throwable Wrench
+Throw the Omniwrench forward to push enemies back, before it returns to your hand.

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lifetime">
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 8h28M18 56h28"/>
+    <path d="M22 10c0 11 2 15 10 22-8 7-10 11-10 22M42 10c0 11-2 15-10 22 8 7 10 11 10 22"/>
+    <path d="m25 48 7-6 7 6"/>
+  </g>
+</svg>

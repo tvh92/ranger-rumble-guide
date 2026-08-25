@@ -67,9 +67,9 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 
 .combined-stats { width: 100%; max-width: 820px; margin-inline: auto; }
 .combined-fixed { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 12px; margin-bottom: 16px; }
-.combined-fixed.fixed-stacked { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .9fr); align-items: start; }
+.combined-fixed.fixed-stacked { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
 .fixed-stacked .fixed-group { width: 100%; max-width: none; }
-.fixed-stacked .fixed-group:first-child { grid-row: 1 / span 2; }
+.fixed-stacked .fixed-group:first-child { grid-column: 1 / -1; width: 100%; max-width: 420px; justify-self: center; }
 .fixed-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); flex: 1 1 340px; width: 100%; max-width: 420px; margin: 0; padding: 10px 14px; gap: 0 12px; border: 1px solid var(--line); background: var(--surface-strong); }
 .fixed-group:has(.fixed-stat:nth-child(2):last-child) { flex: 0 1 300px; grid-template-columns: 1fr; max-width: 300px; }
 .fixed-group-title { grid-column: 1 / -1; display: flex; align-items: center; min-height: 44px; margin: -2px 0 8px; padding: 0 14px; background: var(--surface-header); color: var(--orange); font-size: 14px; font-style: italic; font-weight: 800; line-height: 1.15; clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%); }

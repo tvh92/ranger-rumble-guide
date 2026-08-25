@@ -4439,100 +4439,100 @@
           "Power": 1600,
           "Damage": 8,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 2,
           "Power": 1870,
           "Damage": 9,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 3,
           "Power": 2130,
           "Damage": 11,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 4,
           "Power": 2400,
           "Damage": 12,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 5,
           "Power": 2670,
           "Damage": 13,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 6,
           "Power": 2930,
           "Damage": 15,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 7,
           "Power": 3200,
           "Damage": 16,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 8,
           "Power": 3470,
           "Damage": 17,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 9,
           "Power": 3730,
           "Damage": 19,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         },
         {
           "Level": 10,
           "Power": 4000,
           "Damage": 20,
           "Projectiles": 2,
-          "Fire Rate": 3.5,
-          "Range": 16,
+          "Fire Rate": 6,
+          "Range": 35,
           "MaxAmmo": 30,
-          "ReloadTime": 1.7
+          "ReloadTime": 1.4
         }
       ]
     },

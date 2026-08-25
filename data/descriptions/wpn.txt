@@ -50,7 +50,7 @@ Pyro
 This flamethrower from Gadgetron engulfs close-range foes in a blazing storm hotter than a supernova. Ideal for toasting enemies—or marshmallows. Fan your flames by upgrading your Pyrocitor to spew flammable oil puddles and hotter blazes.
 
 Scorpion Flail
-Precision strikes with an explosive twist. Hold the trigger for even more power. <br>
+Precision strikes with an explosive twist. Hold the trigger for even more power.
 
 Blitz Gun
 Problems with personal space invaders? The Blitz Gun provides an excellent punch at close range! It can be modified in several ways to synchronise with your Dash ability.
@@ -59,7 +59,7 @@ Tesla Claw
 When you need to deliver a jolt! Designed by Gadgetron, The Tesla Claw uses electrostatic technology to fire a continuous beam of electricity at your target. Excellent for close-range use. the Tesla Claw can be enhanced to deliver multiple beams with more impact.
 
 Suck Cannon
-Blow everyone away with the Suck Cannon. <br>
+Blow everyone away with the Suck Cannon.
 
 Void Repulser
 Perfect for dire situations, the Void Repulser generates a force field that protects you from damage while you rethink your life decisions - or just plan a new attack strategy. Enhance this weapon to increase its force field and stun power for a bit of offence!

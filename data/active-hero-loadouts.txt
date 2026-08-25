@@ -4,7 +4,7 @@ ACTIVE HERO LOADOUT REFERENCE
 Hero: Ratchet (event-only; internal hero: Ratchet)
 Class: Allrounder (internal type: Generalist)
 Speed: Medium
-Rarity: Epic
+Rarity: Legendary (color: #BF0303)
 Weapon: Burst Pistol (internal: RatchetBlaster; 2 projectiles per shot)
 Gadget: Throwable Wrench (internal: WrenchThrow)
 Melee: Omniwrench (icon/internal: RatchetMelee / WrenchMelee)

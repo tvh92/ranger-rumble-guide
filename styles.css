@@ -74,8 +74,7 @@ button { font: inherit; }
 .card-subtitle { display: block; margin-top: 6px; overflow: hidden; color: var(--muted); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
 
 footer { display: flex; align-items: center; gap: 8px; min-height: 80px; padding: 24px max(24px, 8vw); border-top: 2px solid var(--line-bright); background: var(--surface-header); color: var(--text); font: 800 16px 'Barlow Condensed', Impact, sans-serif; letter-spacing: 1px; }
-.brand-mark { display: inline-grid; place-items: center; width: 34px; height: 34px; background: linear-gradient(135deg, #13a982, #29efaa); color: #fff; font-size: 25px; font-weight: 900; transform: skew(-8deg); }
-.guide-version { display: inline-flex; align-items: center; margin-left: 2px; padding: 4px 8px; border: 1px solid var(--line-bright); background: var(--surface-strong); color: var(--accent); font: 800 11px Outfit; letter-spacing: .4px; }
+.game-version { display: inline-flex; align-items: center; margin-left: 2px; padding: 4px 8px; border: 1px solid var(--line-bright); background: var(--surface-strong); color: var(--accent); font: 800 11px Outfit; letter-spacing: .4px; white-space: nowrap; }
 footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; letter-spacing: 0; }
 :where(.card, .theme-toggle):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
@@ -91,6 +90,8 @@ footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; le
   .portrait { height: 140px; }
   .portrait img { height: 130px; }
   .card-body { min-height: 104px; padding: 11px; }
+  .card-meta { align-items: flex-start; flex-wrap: wrap; }
+  .card-meta .type { flex: 1 0 100%; overflow-wrap: anywhere; }
   .card-title { font-size: 25px; }
   footer { flex-wrap: wrap; }
   footer small { flex-basis: 100%; margin: 4px 0 0; }

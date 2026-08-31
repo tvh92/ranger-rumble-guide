@@ -56,6 +56,10 @@ button { font: inherit; }
 .season-infinite strong,.season-infinite span { display: block; }
 .season-infinite strong { color: var(--heading); font: italic 900 21px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
 .season-infinite span { margin-top: 4px; color: var(--muted); font-size: 12px; }
+.season-rewards { max-width: 1400px; margin: 0 auto; }
+.season-rewards summary { width: fit-content; margin: 0 auto; padding: 11px 18px; border: 1px solid var(--line-bright); background: var(--surface-header); color: var(--accent); cursor: pointer; font: italic 900 18px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; box-shadow: 0 6px 14px var(--shadow); }
+.season-rewards summary:hover,.season-rewards summary:focus-visible { border-color: var(--accent-strong); color: var(--heading); }
+.season-rewards[open] summary { margin-bottom: 12px; }
 .season-table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--line); box-shadow: 0 8px 18px var(--shadow); }
 .season-table { width: 100%; min-width: 720px; border-collapse: collapse; background: var(--surface); }
 .season-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

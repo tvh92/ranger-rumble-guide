@@ -45,6 +45,29 @@ button { font: inherit; }
 .section { width: 100%; max-width: 1840px; min-height: calc(100vh - 184px); margin-inline: auto; padding: 52px max(42px, 5vw) 64px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--line-bright); }
 .section-heading h2 { margin: 0; color: var(--heading); font: italic 900 clamp(44px, 4vw, 58px)/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; text-shadow: 3px 3px 0 color-mix(in srgb, var(--page) 85%, black); }
+.season-section { min-height: auto; padding-top: 12px; }
+.season-eyebrow { margin: 0 0 8px; color: var(--accent-strong); font-size: 12px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; }
+.season-dates { margin: 0; color: var(--muted); font-weight: 800; letter-spacing: .2px; }
+.season-intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 1400px; margin: 0 auto 18px; padding: 18px 20px; border: 1px solid var(--line); background: linear-gradient(105deg, var(--surface-header), var(--surface)); box-shadow: 0 8px 18px var(--shadow); }
+.season-number { color: var(--orange); font: italic 900 30px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-transform: uppercase; }
+.season-intro p { margin: 7px 0 0; color: var(--muted); }
+.season-infinite { display: flex; align-items: center; gap: 12px; min-width: 310px; padding: 9px 13px; border-left: 3px solid var(--accent-strong); background: color-mix(in srgb, var(--surface-strong) 80%, transparent); }
+.season-infinite img { width: 48px; height: 48px; object-fit: contain; }
+.season-infinite strong,.season-infinite span { display: block; }
+.season-infinite strong { color: var(--heading); font: italic 900 21px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
+.season-infinite span { margin-top: 4px; color: var(--muted); font-size: 12px; }
+.season-table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--line); box-shadow: 0 8px 18px var(--shadow); }
+.season-table { width: 100%; min-width: 720px; border-collapse: collapse; background: var(--surface); }
+.season-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.season-table th,.season-table td { padding: 9px 14px; border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent); text-align: left; }
+.season-table thead th { position: sticky; top: 0; z-index: 1; background: var(--surface-header); color: var(--accent); font-size: 12px; letter-spacing: .8px; text-transform: uppercase; }
+.season-table tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface-soft) 56%, transparent); }
+.season-table tbody tr:hover { background: color-mix(in srgb, var(--accent-strong) 11%, var(--surface)); }
+.season-table tbody th { width: 72px; color: var(--orange); font: italic 900 20px/.9 'Barlow Condensed', Impact, sans-serif; }
+.season-table td:last-child { width: 100px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.season-reward { display: inline-flex; align-items: center; gap: 10px; min-height: 35px; font-weight: 700; }
+.season-reward img { width: 35px; height: 35px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
+.season-reward.text-only span { padding-left: 10px; border-left: 2px solid var(--orange); }
 
 .card-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; max-width: 1400px; margin-inline: auto; }
 .event-card { position: relative; }
@@ -85,6 +108,11 @@ footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; le
   .game-logo { width: min(190px, 50vw); height: 62px; }
   .section { padding: 42px 18px 55px; }
   .section-heading h2 { font-size: 43px; }
+  .season-section { padding-top: 4px; }
+  .season-heading { align-items: flex-start; }
+  .season-dates { margin-top: 11px; font-size: 13px; }
+  .season-intro { align-items: stretch; flex-direction: column; gap: 16px; padding: 16px; }
+  .season-infinite { min-width: 0; }
   .card-grid { gap: 10px; }
   .card { flex: 0 1 calc(50% - 5px); width: auto; }
   .portrait { height: 140px; }

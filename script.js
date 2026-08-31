@@ -5,6 +5,7 @@ const $ = s => document.querySelector(s);
 const base = 'images';
 const assetVersion = guideVersion;
 const assetUrl = path => `${base}/${path}?v=${encodeURIComponent(assetVersion)}`;
+const seasonAssetUrl = path => assetUrl(`season_pass/${path}`);
 const files = {
   weapons: ['BlackholeStorm','Blaster','Blitzgun','Buzzblades','ColdSnap','Cryoshot','Headhunter','LavaGun','PlasmaStriker','Pyrocitor','ScorpionFlail','Shatterbomb','SuckCannon','TeslaClaw','TheEnforcer','ToxicSplatter','Warmonger'],
   gadgets: ['AmoeboidLauncher','Bombardier','Cryoslider','DrillDash','GloveOfDoom','HoloshieldGlove','HoverBoots','MineLauncher','VoidRepulser','VoltageDrop','WhirlingBlades','WrenchThrow'],
@@ -85,6 +86,27 @@ function card(key) {
 }
 const heroOrder=guide.heroOrder;
 function render() { $('#character-grid').innerHTML=heroOrder.map(key=>card(key)).join(''); }
+function seasonRewardIcon(reward) {
+  if (/Reebo \(Epic\)/i.test(reward)) return 'gadgetron_body_epic.png';
+  if (/Reebo \(Rare\)/i.test(reward)) return 'gadgetron_body_rare.png';
+  if (/Reebo \(Common\)/i.test(reward)) return 'gadgetron_body.png';
+  if (/Hero Lorbs \(Common\)/i.test(reward)) return 'ico_Lorb_common.png';
+  if (/Hero Lorbs \(Rare\)/i.test(reward)) return 'ico_Lorb_rare.png';
+  if (/Hero Lorbs \(Epic\)/i.test(reward)) return 'ico_Lorb_epic.png';
+  if (/Qredits/i.test(reward)) return 'ico_credit02.png';
+  if (/Cores/i.test(reward)) return 'ico_core.png';
+  if (/Skin: Raritanium Chip/i.test(reward)) return '../skins/Chip/Raritanium%20Chip.png';
+  if (/Raritanium/i.test(reward)) return 'ico_Raritanium.png';
+  if (/Fashionium/i.test(reward)) return 'ico_Fashionium.png';
+  return null;
+}
+function seasonReward(reward) { const iconFile=seasonRewardIcon(reward),iconMarkup=iconFile?`<img src="${iconFile.startsWith('../')?assetUrl(iconFile.slice(3)):seasonAssetUrl(iconFile)}" alt="">`:''; return `<span class="season-reward${iconFile?'':' text-only'}">${iconMarkup}<span>${safe(reward)}</span></span>`; }
+function renderSeasonPass() {
+  const season=window.RANGER_SEASON,container=$('#season-pass-content');
+  if (!season || !container) return;
+  const rows=season.rewards.map(([tier,free,premium,xp])=>`<tr><th scope="row">${tier}</th><td>${seasonReward(free)}</td><td>${seasonReward(premium)}</td><td>${xp.toLocaleString()}</td></tr>`).join('');
+  container.innerHTML=`<div class="season-intro"><div><span class="season-number">Season ${season.number}</span><p>Earn rewards on the Free track or unlock the Premium track for additional rewards.</p></div><div class="season-infinite"><img src="${seasonAssetUrl('gadgetron_body.png')}" alt=""><div><strong>Infinite Reebos</strong><span>Every tier after 60 rewards ${safe(season.infiniteReward)}.</span></div></div></div><div class="season-table-wrap"><table class="season-table"><caption>Season ${season.number} rewards for tiers 0–60</caption><thead><tr><th scope="col">Tier</th><th scope="col">Free reward</th><th scope="col">Premium reward</th><th scope="col">XP</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function displayStatLabel(column,mode,itemName='',displayName='') {
   const item=norm(itemName),display=norm(displayName);
@@ -178,6 +200,7 @@ function showHero(key) {
   updateDetailToc();
 }
 render();
+renderSeasonPass();
 document.addEventListener('click',event=>{ const cardTarget=event.target.closest('.card'); if(cardTarget)showHero(cardTarget.dataset.key); const toc=event.target.closest('[data-toc-target]');if(toc){document.getElementById(toc.dataset.tocTarget)?.scrollIntoView({behavior:'smooth',block:'start'});toc.focus();} const skin=event.target.closest('.skin'); if(skin){pinnedSkin={file:skin.dataset.file,name:skin.querySelector('span').textContent};setSkinPreview(pinnedSkin.file,pinnedSkin.name);setActiveSkinButton(pinnedSkin.file);} const heroSummary=event.target.closest('.hero-summary'); if(heroSummary){showDescription('heroes',heroSummary.dataset.hero,heroSummary.dataset.hero);rememberDescription();revealDescription();} const combat=event.target.closest('.combat-icon'); if(combat){showDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);rememberDescription();revealDescription();} const toggle=event.target.closest('.description-toggle'); if(toggle){const panel=$('#profile-description');showDescription(panel.dataset.category,panel.dataset.name,panel.dataset.hero,toggle.dataset.full==='true');rememberDescription();revealDescription();} const artToggle=event.target.closest('.art-toggle'); if(artToggle){const detail=artToggle.closest('.hero-detail'),collapsed=detail.classList.toggle('art-collapsed');artToggle.setAttribute('aria-expanded',String(!collapsed));artToggle.textContent=collapsed?'Show artwork and selected skin':'Hide artwork and selected skin';} if(event.target.matches('.close'))event.target.closest('dialog').close(); if(event.target.matches('dialog'))event.target.close(); });
 document.addEventListener('mouseover',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=null;previewDescription(combat.dataset.descriptionCategory,combat.dataset.descriptionName,combat.dataset.descriptionHero);}});
 document.addEventListener('mouseout',event=>{const combat=event.target.closest('.combat-icon');if(combat&&!combat.contains(event.relatedTarget)&&pinnedDescription){clearTimeout(hoverRestoreTimer);hoverRestoreTimer=setTimeout(()=>{showDescription(pinnedDescription.category,pinnedDescription.name,pinnedDescription.hero,pinnedDescription.full);hoverRestoreTimer=null;},350);}});

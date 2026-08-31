@@ -110,6 +110,7 @@ function renderSeasonPass() {
 function statLabel(column,mode) { let text=column.replace(/^\d+_/,'').replace(/_/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/Aoe/gi,'AOE'); if(mode==='ultimate')text=text.replace(/^Ult\b/i,'Ultimate'); return text.split(/\s+/).map((word,index)=>/^(HP|AOE|RYNO)$/i.test(word)?word.toUpperCase():index?word.toLowerCase():word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()).join(' '); }
 function displayStatLabel(column,mode,itemName='',displayName='') {
   const item=norm(itemName),display=norm(displayName);
+  if(column==='ReloadTime')return'Reload';
   if(item==='drilldash'){if(column==='Aoe Damage')return'Drill hit damage';if(column==='LastHitAoe Damage')return'Finisher damage';}
   if(item==='electricgrenade'&&/ElectricZone Damage/i.test(column))return'Zone damage';
   if(item==='electricgrenade'&&/ElectricZone Duration/i.test(column))return'Duration';
@@ -121,7 +122,7 @@ function displayStatLabel(column,mode,itemName='',displayName='') {
 }
 function statHeader(label,heroName) { return label==='Overhealth'&&heroName==='Lump'?'Over-<br>health':safe(label); }
 function statValue(column,value,itemName='') { const formatted=Number.isInteger(value)?value.toLocaleString():safe(value); if(norm(itemName)==='ratchetburstpistol'&&column==='Damage')return`${formatted} × 2`; return /Agent Lifetime|Reload\s*Time|Cooldown/i.test(column)?`${formatted}s`:formatted; }
-function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/missiles|drones per use/.test(text)){file='payload';ext='svg'}else if(/lifetime|duration/.test(text)){file='duration';ext='svg'}else if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="${assetUrl(`UI%20icons/ico_stats_${file}.${ext}`)}" alt="">`:''; }
+function statIcon(label) { const text=label.toLowerCase(); let file='',ext='png'; if(/missiles|(?:drones|discs) per use/.test(text)){file='payload';ext='svg'}else if(/lifetime|duration/.test(text)){file='duration';ext='svg'}else if(/max ammo|\bammo\b/.test(text)){file='ammo';ext='svg'}else if(/\brange\b/.test(text)){file='range';ext='svg'}else if(/fire rate/.test(text)){file='fire-rate';ext='svg'}else if(/\bhp\b|health/.test(text))file='health';else if(/damage/.test(text))file='damage';else if(/reload|cooldown/.test(text))file='cooldown';else if(/speed/.test(text))file='speed'; return file?`<img class="stat-ui-icon" src="${assetUrl(`UI%20icons/ico_stats_${file}.${ext}`)}" alt="">`:''; }
 function statCandidates(item,mode='normal') {
   if(!item?.levels?.length || item.name==='Amoeboid Launcher') return [];
   const all=[...new Set(item.levels.flatMap(level=>Object.keys(level)))].filter(column=>column!=='Level'&&!/Power/i.test(column)&&!/Mod\s*Damage/i.test(column));

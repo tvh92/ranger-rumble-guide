@@ -1,69 +1,375 @@
+// Generated from data/SeasonPassContent.txt.
 window.RANGER_SEASON = {
-  number: 11,
-  starts: '2026-08-11',
-  ends: '2026-09-08',
-  rewards: [
-    [0, 'Raritanium x5', 'Fashionium x50', 0],
-    [1, 'Reebo (Common) x1', 'Raritanium x5', 1000],
-    [2, 'Hero Lorbs (Common) x100', 'Fashionium x25', 1500],
-    [3, 'Qredits x1000', 'Hero Lorbs (Common) x200', 2000],
-    [4, 'Reebo (Common) x1', 'Qredits x2000', 2500],
-    [5, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [6, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [7, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [8, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [9, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [10, 'Fashionium x25', 'Raritanium x10', 3000],
-    [11, 'Reebo (Common) x1', 'Raritanium x5', 3000],
-    [12, 'Hero Lorbs (Common) x100', 'Fashionium x25', 3000],
-    [13, 'Qredits x1000', 'Hero Lorbs (Common) x200', 3000],
-    [14, 'Reebo (Common) x1', 'Qredits x2000', 3000],
-    [15, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [16, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [17, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [18, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [19, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [20, 'Reebo (Epic) x1', 'Hero Lorbs (Epic) x200', 3000],
-    [21, 'Reebo (Common) x1', 'Raritanium x5', 3000],
-    [22, 'Hero Lorbs (Common) x100', 'Fashionium x25', 3000],
-    [23, 'Qredits x1000', 'Hero Lorbs (Common) x200', 3000],
-    [24, 'Reebo (Common) x1', 'Qredits x2000', 3000],
-    [25, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [26, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [27, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [28, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [29, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [30, 'Raritanium x5', 'Fashionium x50', 3000],
-    [31, 'Reebo (Common) x1', 'Raritanium x5', 3000],
-    [32, 'Hero Lorbs (Common) x100', 'Fashionium x25', 3000],
-    [33, 'Qredits x1000', 'Hero Lorbs (Common) x200', 3000],
-    [34, 'Reebo (Common) x1', 'Qredits x2000', 3000],
-    [35, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [36, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [37, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [38, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [39, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [40, 'Fashionium x25', 'Raritanium x10', 3000],
-    [41, 'Reebo (Common) x1', 'Raritanium x5', 3000],
-    [42, 'Hero Lorbs (Common) x100', 'Fashionium x25', 3000],
-    [43, 'Qredits x1000', 'Hero Lorbs (Common) x200', 3000],
-    [44, 'Reebo (Common) x1', 'Qredits x2000', 3000],
-    [45, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [46, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [47, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [48, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [49, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [50, 'Reebo (Epic) x1', 'Cores x1', 3000],
-    [51, 'Reebo (Common) x1', 'Raritanium x5', 3000],
-    [52, 'Hero Lorbs (Common) x100', 'Fashionium x25', 3000],
-    [53, 'Qredits x1000', 'Hero Lorbs (Common) x200', 3000],
-    [54, 'Reebo (Common) x1', 'Qredits x2000', 3000],
-    [55, 'Hero Lorbs (Rare) x75', 'Raritanium x5', 3000],
-    [56, 'Qredits x1000', 'Hero Lorbs (Rare) x150', 3000],
-    [57, 'Reebo (Rare) x1', 'Fashionium x25', 3000],
-    [58, 'Hero Lorbs (Epic) x50', 'Qredits x2000', 3000],
-    [59, 'Qredits x1000', 'Hero Lorbs (Epic) x100', 3000],
-    [60, 'Cores x1', 'Skin: Raritanium Chip x1', 3000]
+  "number": 11,
+  "starts": "2026-08-11",
+  "ends": "2026-09-08",
+  "rewards": [
+    [
+      0,
+      "Raritanium x5",
+      "Fashionium x50",
+      0
+    ],
+    [
+      1,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      1000
+    ],
+    [
+      2,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      1500
+    ],
+    [
+      3,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      2000
+    ],
+    [
+      4,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      2500
+    ],
+    [
+      5,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      6,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      7,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      8,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      9,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      10,
+      "Fashionium x25",
+      "Raritanium x10",
+      3000
+    ],
+    [
+      11,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      12,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      13,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      3000
+    ],
+    [
+      14,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      15,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      16,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      17,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      18,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      19,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      20,
+      "Reebo (Epic) x1",
+      "Hero Lorbs (Epic) x200",
+      3000
+    ],
+    [
+      21,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      22,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      23,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      3000
+    ],
+    [
+      24,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      25,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      26,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      27,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      28,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      29,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      30,
+      "Raritanium x5",
+      "Fashionium x50",
+      3000
+    ],
+    [
+      31,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      32,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      33,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      3000
+    ],
+    [
+      34,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      35,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      36,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      37,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      38,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      39,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      40,
+      "Fashionium x25",
+      "Raritanium x10",
+      3000
+    ],
+    [
+      41,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      42,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      43,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      3000
+    ],
+    [
+      44,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      45,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      46,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      47,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      48,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      49,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      50,
+      "Reebo (Epic) x1",
+      "Cores x1",
+      3000
+    ],
+    [
+      51,
+      "Reebo (Common) x1",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      52,
+      "Hero Lorbs (Common) x100",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      53,
+      "Qredits x1000",
+      "Hero Lorbs (Common) x200",
+      3000
+    ],
+    [
+      54,
+      "Reebo (Common) x1",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      55,
+      "Hero Lorbs (Rare) x75",
+      "Raritanium x5",
+      3000
+    ],
+    [
+      56,
+      "Qredits x1000",
+      "Hero Lorbs (Rare) x150",
+      3000
+    ],
+    [
+      57,
+      "Reebo (Rare) x1",
+      "Fashionium x25",
+      3000
+    ],
+    [
+      58,
+      "Hero Lorbs (Epic) x50",
+      "Qredits x2000",
+      3000
+    ],
+    [
+      59,
+      "Qredits x1000",
+      "Hero Lorbs (Epic) x100",
+      3000
+    ],
+    [
+      60,
+      "Cores x1",
+      "Skin: Raritanium Chip x1",
+      3000
+    ]
   ],
-  infiniteReward: 'Reebo (Common) x1'
+  "infiniteReward": "Reebo (Common) x1"
 };

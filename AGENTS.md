@@ -11,7 +11,7 @@
 
 1. Inspect the worktree and preserve unrelated user changes.
 2. Make and test edits in a temporary sandbox copy. Exclude `.git`, then copy only verified, scoped files back here.
-3. For visual changes, run the site locally and inspect the main page and relevant hero windows in both dark and light mode.
+3. For major visual changes, or when the user requests it, run the site locally and inspect the main page and relevant hero windows in both dark and light mode.
 4. Run `data/validate-data.js` and `git diff --check` before committing.
 5. Increment the version in `index.html` and every cache-busting `?v=` reference for each published change.
 6. Commit only files related to the request, push, and confirm the deployed GitHub Pages version and affected UI.
@@ -27,6 +27,9 @@ When the user requests website work, that request authorizes implementing, valid
 
 ## Data conventions
 
+- `data/update_site_data.py` previews or regenerates the text-exported site data (`data.json`, `data.js`, `descriptions.js`, `mods-data.js`, `guide-data.js`, `season-data.js`, `data/skin-status.js`, and `index.html`). It is preview-only unless `--write` is supplied. Keep its curated stat and talent-presentation overrides aligned with intentional corrections in the generated website data.
+- Pass the visible game version with `--game-version`. Use `--bump-site-version` or `--site-version` separately for the `app-version` and every local cache-busting `?v=` reference.
+- The generator reads the season number from the `Season N` heading in `data/SeasonPassContent.txt` and calculates the season dates automatically.
 - Active loadouts and internal names are documented in `data/active-hero-loadouts.txt`.
 - Only skins listed under `Used:` in `data/hero-skins-status.txt` should appear; retain `Unused:` entries as reference.
 - Descriptions come from `data/descriptions/` and are displayed in the hero/item description panel.

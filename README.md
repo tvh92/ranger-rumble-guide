@@ -39,16 +39,31 @@ The site is intentionally built as a static guide and can run directly from the 
 
 ## Updating the guide
 
-1. Edit and review the relevant source or data files locally.
-2. Increment the `app-version` in `index.html` and update every local `?v=` cache-busting reference to match.
-3. Validate the data:
+The update helper reads the text exports under `data/` and regenerates the corresponding website data. It is preview-only by default, so running it without `--write` cannot overwrite anything.
+
+1. Replace the relevant exports in `data/`. Keep the `Season N` line at the top of `data/SeasonPassContent.txt` current.
+2. Preview the update. This example changes the game to `1.9.4` and proposes the next site cache version automatically:
+
+   ```powershell
+   python data/update_site_data.py --game-version 1.9.4 --bump-site-version
+   ```
+
+3. Review the listed files, then perform the same update with writing enabled:
+
+   ```powershell
+   python data/update_site_data.py --game-version 1.9.4 --bump-site-version --write
+   ```
+
+   Use `--site-version 0.14.48` instead of `--bump-site-version` when you need to select an exact cache version. The older `--version` spelling remains accepted as an alias for `--game-version`.
+
+4. Validate the generated data:
 
    ```powershell
    node data/validate-data.js
    ```
 
-4. Check the diff, commit the scoped changes, and push `main` to GitHub.
-5. Confirm the updated version on the live GitHub Pages site.
+5. Check the diff carefully, commit the scoped changes, and push `main` to GitHub.
+6. Confirm the updated version on the live GitHub Pages site.
 
 `data.json` is the standard JSON representation for external tools. The browser loads `data.js` so the guide also works when `index.html` is opened directly.
 

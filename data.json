@@ -2,7 +2,6 @@
   "characters": [
     {
       "name": "Celeste",
-      "ultimate": "HoverBoard (Celeste)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -91,11 +90,11 @@
           "Ult Power": 4000,
           "Ult Fire Rate": 1300
         }
-      ]
+      ],
+      "ultimate": "HoverBoard (Celeste)"
     },
     {
       "name": "Chip",
-      "ultimate": "Sheepinator (Chip)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -195,11 +194,11 @@
           "Ult Power": 3700,
           "Ult Fire Rate": 900
         }
-      ]
+      ],
+      "ultimate": "Sheepinator (Chip)"
     },
     {
       "name": "Sparky",
-      "ultimate": "BigBoom (Fuse)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -299,11 +298,11 @@
           "Ult Power": 3850,
           "Ult Fire Rate": 900
         }
-      ]
+      ],
+      "ultimate": "BigBoom (Fuse)"
     },
     {
       "name": "Grimshot",
-      "ultimate": "SmokeScreen (Grimshot)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -370,11 +369,11 @@
           "Hero Power": 12000,
           "Overhealth": 160
         }
-      ]
+      ],
+      "ultimate": "SmokeScreen (Grimshot)"
     },
     {
       "name": "Lil'Ann",
-      "ultimate": "Sabre (LilAnn)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -474,11 +473,11 @@
           "Ult Power": 3850,
           "Ult Fire Rate": 900
         }
-      ]
+      ],
+      "ultimate": "Sabre (LilAnn)"
     },
     {
       "name": "Lump",
-      "ultimate": "Evolution (Lump)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -556,11 +555,11 @@
           "Ult Damage": 347,
           "Overhealth": 462
         }
-      ]
+      ],
+      "ultimate": "Evolution (Lump)"
     },
     {
       "name": "Tempest",
-      "ultimate": "CannonBall (Markus)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -660,11 +659,11 @@
           "Ult Power": 3850,
           "Ult Fire Rate": 1100
         }
-      ]
+      ],
+      "ultimate": "CannonBall (Markus)"
     },
     {
       "name": "Mopz",
-      "ultimate": "Negatron (Raiden)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -764,11 +763,11 @@
           "Ult Power": 3850,
           "Ult Fire Rate": 900
         }
-      ]
+      ],
+      "ultimate": "Negatron (Raiden)"
     },
     {
       "name": "Ratchet",
-      "ultimate": "RYNO (RatchetRyno / RynoRatchet)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -868,11 +867,11 @@
           "Missiles": 18,
           "Overhealth": 320
         }
-      ]
+      ],
+      "ultimate": "RYNO (RatchetRyno / RynoRatchet)"
     },
     {
       "name": "Widget",
-      "ultimate": "Ryno (Sandy)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -972,11 +971,11 @@
           "Missiles": 18,
           "Overhealth": 296
         }
-      ]
+      ],
+      "ultimate": "Ryno (Sandy)"
     },
     {
       "name": "Sprocket",
-      "ultimate": "Slam (Sprocket)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -1054,11 +1053,11 @@
           "Ult Damage": 407,
           "Overhealth": 148
         }
-      ]
+      ],
+      "ultimate": "Slam (Sprocket)"
     },
     {
       "name": "Zed",
-      "ultimate": "TankZed (ZedOne)",
       "columns": [
         "Hero HP",
         "Hero Power",
@@ -1158,11 +1157,11 @@
           "Tank Fire Rate": 0.7,
           "Tank Range": 51
         }
-      ]
+      ],
+      "ultimate": "TankZed (ZedOne)"
     },
     {
       "name": "Chance",
-      "ultimate": "Unknown (Chance)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1218,11 +1217,11 @@
           "Hero HP": 960,
           "Hero Power": 12000
         }
-      ]
+      ],
+      "ultimate": "Unknown (Chance)"
     },
     {
       "name": "Crumby",
-      "ultimate": "Unknown (Crumby)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1278,11 +1277,11 @@
           "Hero HP": 770,
           "Hero Power": 11550
         }
-      ]
+      ],
+      "ultimate": "Unknown (Crumby)"
     },
     {
       "name": "Flare",
-      "ultimate": "Unknown (Flare)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1338,11 +1337,11 @@
           "Hero HP": 592,
           "Hero Power": 11100
         }
-      ]
+      ],
+      "ultimate": "Unknown (Flare)"
     },
     {
       "name": "Helen",
-      "ultimate": "Unknown (Helen)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1398,11 +1397,11 @@
           "Hero HP": 924,
           "Hero Power": 11550
         }
-      ]
+      ],
+      "ultimate": "Unknown (Helen)"
     },
     {
       "name": "Molly",
-      "ultimate": "Unknown (Molly)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1458,11 +1457,11 @@
           "Hero HP": 924,
           "Hero Power": 11550
         }
-      ]
+      ],
+      "ultimate": "Unknown (Molly)"
     },
     {
       "name": "Nakari",
-      "ultimate": "Unknown (Nakari)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1518,11 +1517,11 @@
           "Hero HP": 740,
           "Hero Power": 11100
         }
-      ]
+      ],
+      "ultimate": "Unknown (Nakari)"
     },
     {
       "name": "Steeljaw",
-      "ultimate": "Unknown (Steeljaw)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1578,11 +1577,11 @@
           "Hero HP": 960,
           "Hero Power": 12000
         }
-      ]
+      ],
+      "ultimate": "Unknown (Steeljaw)"
     },
     {
       "name": "Terry",
-      "ultimate": "Unknown (Terry)",
       "columns": [
         "Hero HP",
         "Hero Power"
@@ -1638,7 +1637,8 @@
           "Hero HP": 592,
           "Hero Power": 11100
         }
-      ]
+      ],
+      "ultimate": "Unknown (Terry)"
     }
   ],
   "weapons": [
@@ -4325,7 +4325,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4343,7 +4343,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4361,7 +4361,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4379,7 +4379,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4397,7 +4397,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4415,7 +4415,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4433,7 +4433,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4451,7 +4451,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4469,7 +4469,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
@@ -4487,7 +4487,7 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-		  "AcidZone Duration": 1,
+          "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12

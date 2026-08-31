@@ -79,12 +79,11 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .fixed-stat dd { display: flex; align-items: center; margin: 0; padding-inline: 8px; color: var(--heading); font-size: 16px; font-weight: 800; }
 .fixed-stat.lifetime-stat { grid-column: 1 / -1; }
 .fixed-stat.lifetime-stat dd { font-size: 16px; white-space: nowrap; }
-.staged-fire-rate { flex-basis: 100%; max-width: 640px; }
-.staged-fire-rate .fixed-stat { grid-column: 1 / -1; align-items: center; }
-.staged-fire-rate .fixed-stat dd { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px 8px; font-size: 14px; }
-.staged-fire-rate .fixed-stat dd span { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }
-.staged-fire-rate .fixed-stat dd small { color: var(--muted); font-size: 10px; font-weight: 700; }
-.staged-fire-rate .fixed-stat dd i { color: var(--orange); font-style: normal; }
+.fixed-stat.staged-fire-rate { grid-column: 1 / -1; align-items: center; }
+.staged-fire-rate dd { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px 8px; font-size: 14px; }
+.staged-fire-rate dd span { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+.staged-fire-rate dd small { color: var(--muted); font-size: 10px; font-weight: 700; }
+.staged-fire-rate dd i { color: var(--orange); font-style: normal; }
 .stat-ui-icon { flex: 0 0 auto; width: 17px; height: 17px; object-fit: contain; }
 html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightness(0) saturate(100%) invert(31%) sepia(31%) saturate(1037%) hue-rotate(123deg) brightness(89%) contrast(91%); }
 

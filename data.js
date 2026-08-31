@@ -3948,7 +3948,8 @@ window.RUMBLE_DATA = {
         "Damage",
         "Range",
         "Charges",
-        "Cooldown"
+        "Cooldown",
+        "Discs Per Use"
       ],
       "levels": [
         {
@@ -3957,7 +3958,8 @@ window.RUMBLE_DATA = {
           "Damage": 88,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 2,
@@ -3965,7 +3967,8 @@ window.RUMBLE_DATA = {
           "Damage": 103,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 3,
@@ -3973,7 +3976,8 @@ window.RUMBLE_DATA = {
           "Damage": 117,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 4,
@@ -3981,7 +3985,8 @@ window.RUMBLE_DATA = {
           "Damage": 132,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 5,
@@ -3989,7 +3994,8 @@ window.RUMBLE_DATA = {
           "Damage": 147,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 6,
@@ -3997,7 +4003,8 @@ window.RUMBLE_DATA = {
           "Damage": 161,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 7,
@@ -4005,7 +4012,8 @@ window.RUMBLE_DATA = {
           "Damage": 176,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 8,
@@ -4013,7 +4021,8 @@ window.RUMBLE_DATA = {
           "Damage": 191,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 9,
@@ -4021,7 +4030,8 @@ window.RUMBLE_DATA = {
           "Damage": 205,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 10,
@@ -4029,7 +4039,8 @@ window.RUMBLE_DATA = {
           "Damage": 220,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         }
       ]
     },

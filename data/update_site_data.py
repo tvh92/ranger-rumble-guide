@@ -34,6 +34,9 @@ WEAPON_DAMAGE_OVERRIDES = {
     "Bombardier": [112, 131, 149, 168, 187, 205, 224, 243, 261, 280],
     "Cryo Slider": [88, 103, 117, 132, 147, 161, 176, 191, 205, 220],
 }
+GADGET_STAT_OVERRIDES = {
+    "Cryo Slider": {"Discs Per Use": 2},
+}
 MOD_PRESENTATION_OVERRIDES = {
     "Celeste": {
         "Turbo Dash": {"effect": "Dash cooldown reduction: 50%."},
@@ -128,6 +131,11 @@ def parse_stat_export(filename: str, labels: tuple[str, ...]) -> list[dict]:
         if filename == "weapon_stats_export.txt" and name in WEAPON_DAMAGE_OVERRIDES:
             for level, damage in zip(levels, WEAPON_DAMAGE_OVERRIDES[name], strict=True):
                 level["Damage"] = damage
+        if filename == "gadget_stats_export.txt" and name in GADGET_STAT_OVERRIDES:
+            for column, value in GADGET_STAT_OVERRIDES[name].items():
+                columns.append(column)
+                for level in levels:
+                    level[column] = value
         entry = {"name": name, "columns": columns, "levels": levels}
         if ultimate:
             entry["ultimate"] = ultimate.group(1).strip()

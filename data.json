@@ -3947,7 +3947,8 @@
         "Damage",
         "Range",
         "Charges",
-        "Cooldown"
+        "Cooldown",
+        "Discs Per Use"
       ],
       "levels": [
         {
@@ -3956,7 +3957,8 @@
           "Damage": 88,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 2,
@@ -3964,7 +3966,8 @@
           "Damage": 103,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 3,
@@ -3972,7 +3975,8 @@
           "Damage": 117,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 4,
@@ -3980,7 +3984,8 @@
           "Damage": 132,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 5,
@@ -3988,7 +3993,8 @@
           "Damage": 147,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 6,
@@ -3996,7 +4002,8 @@
           "Damage": 161,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 7,
@@ -4004,7 +4011,8 @@
           "Damage": 176,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 8,
@@ -4012,7 +4020,8 @@
           "Damage": 191,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 9,
@@ -4020,7 +4029,8 @@
           "Damage": 205,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         },
         {
           "Level": 10,
@@ -4028,7 +4038,8 @@
           "Damage": 220,
           "Range": 34,
           "Charges": 1,
-          "Cooldown": 12
+          "Cooldown": 12,
+          "Discs Per Use": 2
         }
       ]
     },

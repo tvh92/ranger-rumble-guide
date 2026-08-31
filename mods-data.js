@@ -371,8 +371,8 @@ window.RANGER_MODS = {
     {
       "name": "Ricochet Blades",
       "icon": "Ricochet Blades.png",
-      "menu": "Increases the maximum hit count from three to four.",
-      "effect": "Ricochet count: 4 instead of 3; maximum hit count: 7 instead of 6; ricochet radius: 8."
+      "menu": "The number of rebounds from the blades increases.",
+      "effect": "Increases the maximum hit count from three to four."
     }
   ],
   "Zed": [

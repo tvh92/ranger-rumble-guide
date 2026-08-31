@@ -106,10 +106,8 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .gadget-stat { display: block; }
 .gadget-stat + .gadget-stat { margin-top: 3px; padding-top: 3px; }
 .gadget-damage { color: var(--orange); }
-.gadget-damage::before { content: '◆'; }
 .gadget-hp { color: var(--accent); }
-.gadget-hp::before { content: '♥'; }
-.stats.gadget-stat-damage .gadget-hp, .stats.gadget-stat-hp .gadget-damage { display: none; }
+.stats.gadget-stat-damage .gadget-hp, .stats.gadget-stat-hp .gadget-damage { visibility: hidden; }
 .stats thead tr:nth-child(n+2) th { padding: 9px 10px; background: var(--surface-soft); color: var(--accent); font-size: 12px; text-transform: uppercase; }
 .stats thead tr:nth-child(2) th.group-start { border-left: 2px solid var(--line); }
 .stats thead tr:nth-child(3) th.subgroup-start { border-left: 2px solid var(--line); }
@@ -196,7 +194,7 @@ html[data-theme='light'] .mod-card header img { filter: drop-shadow(0 2px 1px #1
   .combined-fixed.fixed-stacked { display: grid; grid-template-columns: 1fr; }
   .fixed-stacked .fixed-group:first-child { grid-row: auto; }
   .stats { min-width: 0; }
-  .stats-gadget-toggle { display: flex; margin: 10px auto 0; justify-content: center; }
+  .stats-gadget-toggle { display: flex; margin: 16px auto 0; justify-content: center; }
   .gadget-pair { padding-inline: 7px !important; }
   .hero-nav { width: 36px; height: 50px; }
 }

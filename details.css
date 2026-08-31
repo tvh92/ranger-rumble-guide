@@ -79,7 +79,11 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .fixed-stat dt { display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .fixed-stat dd { display: flex; align-items: center; margin: 0; padding-inline: 8px; color: var(--heading); font-size: 16px; font-weight: 800; }
 .fixed-stat.lifetime-stat { grid-column: 1 / -1; }
-.fixed-stat.lifetime-stat dd { font-size: 16px; white-space: nowrap; }
+.fixed-stat.lifetime-stat dd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; font-size: 16px; }
+.lifetime-stat dd span { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 14px; }
+.lifetime-stat dd span + span { border-left: 1px solid var(--line); }
+.lifetime-stat dd b { color: var(--muted); font-size: 10px; letter-spacing: .08em; }
+.lifetime-stat dd strong { color: var(--text); }
 .fixed-stat.staged-fire-rate { grid-column: 1 / -1; align-items: center; }
 .staged-fire-rate dd { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px 8px; font-size: 14px; }
 .staged-fire-rate dd span { display: inline-flex; align-items: baseline; gap: 4px; white-space: nowrap; }

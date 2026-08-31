@@ -43,7 +43,7 @@ WEAPON_STAT_OVERRIDES = {
 MOD_PRESENTATION_OVERRIDES = {
     "Celeste": {
         "Turbo Dash": {"effect": "Dash cooldown reduction: 50%."},
-        "Ricochet Blades": {"effect": "Ricochet count: 4 instead of 3; maximum hit count: 7 instead of 6; ricochet radius: 8."},
+        "Ricochet Blades": {"menu": "Increases the maximum hit count from three to four.", "effect": "Ricochet count: 4 instead of 3; maximum hit count: 7 instead of 6; ricochet radius: 8."},
     },
     "Chip": {
         "Extra Agent": {"effect": "3 Agents deployed instead of 2; consumes one gadget charge."},

@@ -24,10 +24,10 @@ for (const heroName of guide.heroOrder) {
   const config = guide.heroes[heroName];
   const hero = find(data.characters, heroName);
   const weapon = find(data.weapons, config.weaponStats || config.loadout[0]);
-  const gadget = find(data.gadgets, config.loadout[4]) || find(data.weapons, config.loadout[4]);
+  const gadget = find(data.gadgets, config.loadout[4]);
   if (!hero) errors.push(`${heroName}: hero statistics are missing`);
   if (!weapon) errors.push(`${heroName}: weapon statistics are missing for ${config.loadout[0]}`);
-  if (!gadget) warnings.push(`${heroName}: gadget statistics are not available for ${config.loadout[2]}`);
+  if (!gadget) errors.push(`${heroName}: gadget statistics are missing for ${config.loadout[2]}`);
   for (const [category, name] of [['heroes', heroName], ['weapons', config.loadout[0]], ['gadgets', config.loadout[2]], ['melee', config.loadout[5]], ['ultimates', config.loadout[7]]]) {
     if (!descriptionEntry(category, name, heroName)?.short) errors.push(`${heroName}: ${category} description is missing for ${name}`);
   }

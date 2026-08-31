@@ -3942,6 +3942,282 @@ window.RUMBLE_DATA = {
       ]
     },
     {
+      "name": "Cryoslider",
+      "columns": [
+        "Power",
+        "Damage",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1600,
+          "Damage": 88,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Power": 1870,
+          "Damage": 103,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Power": 2130,
+          "Damage": 117,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Power": 2400,
+          "Damage": 132,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Power": 2670,
+          "Damage": 147,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Power": 2930,
+          "Damage": 161,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Power": 3200,
+          "Damage": 176,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Power": 3470,
+          "Damage": 191,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Power": 3730,
+          "Damage": 205,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Power": 4000,
+          "Damage": 220,
+          "Range": 34,
+          "Charges": 1,
+          "Cooldown": 12
+        }
+      ]
+    },
+    {
+      "name": "HoverBoots",
+      "columns": [
+        "Power",
+        "Damage",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1000,
+          "Damage": 20,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Power": 1300,
+          "Damage": 26,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Power": 1600,
+          "Damage": 32,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Power": 1900,
+          "Damage": 38,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Power": 2200,
+          "Damage": 44,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Power": 2500,
+          "Damage": 50,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Power": 2800,
+          "Damage": 56,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Power": 3100,
+          "Damage": 62,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Power": 3400,
+          "Damage": 68,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Power": 3700,
+          "Damage": 74,
+          "Range": 2,
+          "Charges": 1,
+          "Cooldown": 12
+        }
+      ]
+    },
+    {
+      "name": "MineLauncher",
+      "columns": [
+        "Power",
+        "Damage",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1300,
+          "Damage": 143,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Power": 1580,
+          "Damage": 174,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Power": 1870,
+          "Damage": 205,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Power": 2150,
+          "Damage": 237,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Power": 2430,
+          "Damage": 268,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Power": 2720,
+          "Damage": 299,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Power": 3000,
+          "Damage": 330,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Power": 3280,
+          "Damage": 361,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Power": 3570,
+          "Damage": 392,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Power": 3850,
+          "Damage": 424,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        }
+      ]
+    },
+    {
       "name": "LittleSpin",
       "columns": [
         "Power",
@@ -4041,6 +4317,212 @@ window.RUMBLE_DATA = {
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
+        }
+      ]
+    },
+    {
+      "name": "VoidRepulser",
+      "columns": [
+        "Power",
+        "Damage",
+        "Shield HP",
+        "Range",
+        "Duration",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1300,
+          "Damage": 26,
+          "Shield HP": 260,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 2,
+          "Power": 1580,
+          "Damage": 32,
+          "Shield HP": 317,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 3,
+          "Power": 1870,
+          "Damage": 37,
+          "Shield HP": 373,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 4,
+          "Power": 2150,
+          "Damage": 43,
+          "Shield HP": 430,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 5,
+          "Power": 2430,
+          "Damage": 49,
+          "Shield HP": 487,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 6,
+          "Power": 2720,
+          "Damage": 54,
+          "Shield HP": 543,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 7,
+          "Power": 3000,
+          "Damage": 60,
+          "Shield HP": 600,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 8,
+          "Power": 3280,
+          "Damage": 66,
+          "Shield HP": 657,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 9,
+          "Power": 3570,
+          "Damage": 71,
+          "Shield HP": 713,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        },
+        {
+          "Level": 10,
+          "Power": 3850,
+          "Damage": 77,
+          "Shield HP": 770,
+          "Range": 5,
+          "Duration": 6,
+          "Charges": 1,
+          "Cooldown": 14
+        }
+      ]
+    },
+    {
+      "name": "Bombardier",
+      "columns": [
+        "Power",
+        "Damage",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1600,
+          "Damage": 112,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 2,
+          "Power": 1870,
+          "Damage": 131,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 3,
+          "Power": 2130,
+          "Damage": 149,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 4,
+          "Power": 2400,
+          "Damage": 168,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 5,
+          "Power": 2670,
+          "Damage": 187,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 6,
+          "Power": 2930,
+          "Damage": 205,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 7,
+          "Power": 3200,
+          "Damage": 224,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 8,
+          "Power": 3470,
+          "Damage": 243,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 9,
+          "Power": 3730,
+          "Damage": 261,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
+        },
+        {
+          "Level": 10,
+          "Power": 4000,
+          "Damage": 280,
+          "Range": 24,
+          "Charges": 1,
+          "Cooldown": 12
         }
       ]
     },
@@ -4155,6 +4637,109 @@ window.RUMBLE_DATA = {
           "ElectricZone Duration": 4,
           "Charges": 1,
           "Cooldown": 10
+        }
+      ]
+    },
+    {
+      "name": "HoloshieldGlove",
+      "columns": [
+        "Power",
+        "Damage",
+        "Shield HP",
+        "Range",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1600,
+          "Damage": 32,
+          "Shield HP": 256,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 2,
+          "Power": 1870,
+          "Damage": 37,
+          "Shield HP": 299,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 3,
+          "Power": 2130,
+          "Damage": 43,
+          "Shield HP": 341,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 4,
+          "Power": 2400,
+          "Damage": 48,
+          "Shield HP": 384,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 5,
+          "Power": 2670,
+          "Damage": 53,
+          "Shield HP": 427,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 6,
+          "Power": 2930,
+          "Damage": 59,
+          "Shield HP": 469,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 7,
+          "Power": 3200,
+          "Damage": 64,
+          "Shield HP": 512,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 8,
+          "Power": 3470,
+          "Damage": 69,
+          "Shield HP": 555,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 9,
+          "Power": 3730,
+          "Damage": 75,
+          "Shield HP": 597,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
+        },
+        {
+          "Level": 10,
+          "Power": 4000,
+          "Damage": 80,
+          "Shield HP": 640,
+          "Range": 12,
+          "Charges": 1,
+          "Cooldown": 16
         }
       ]
     },

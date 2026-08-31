@@ -112,6 +112,7 @@ function displayStatLabel(column,mode,itemName='',displayName='') {
   const item=norm(itemName),display=norm(displayName);
   if(item==='drilldash'){if(column==='Aoe Damage')return'Drill hit damage';if(column==='LastHitAoe Damage')return'Finisher damage';}
   if(item==='electricgrenade'&&/ElectricZone Damage/i.test(column))return'Zone damage';
+  if(item==='electricgrenade'&&/ElectricZone Duration/i.test(column))return'Duration';
   if(item==='littlespin'){if(column==='AoeA Damage')return'First hit damage';if(column==='AoeB Damage')return'Second hit damage';}
   if((item==='buzzblades'||item==='bombardier')&&column==='Damage')return'Damage per hit';
   if(mode==='ultimate'&&display==='ryno'&&column==='Ult Damage')return'Missile damage';
@@ -134,12 +135,12 @@ function statCandidates(item,mode='normal') {
 }
 function combinedStatsTable(hero,weapon,gadget,loadout) {
   const groups=[{label:'Hero',displayName:hero.name,item:hero,mode:'hero'},{label:'Weapon',displayName:loadout[0],item:weapon,mode:'normal'},{label:'Gadget',displayName:loadout[2],item:gadget,mode:'normal'},{label:'Ultimate',displayName:loadout[7],item:hero,mode:'ultimate'}].map(group=>{
-    const hidden={gloveofdoom:/^(More Agent Drones|Charges)$/i,amoeboidlauncher:/^(AcidZone Damage|AcidZone Duration|Charges)$/i,ratchetburstpistol:/^Projectiles$/i}[norm(group.item?.name)];
-    const candidates=statCandidates(group.item,group.mode).filter(column=>!hidden?.test(column)),fixed=candidates.filter(column=>group.item.levels.every(row=>row[column]===group.item.levels[0][column])),id=`stats-${norm(group.label)}`;
+    const hidden={gloveofdoom:/^More Agent Drones$/i,amoeboidlauncher:/^(AcidZone Damage|AcidZone Duration)$/i,ratchetburstpistol:/^Projectiles$/i}[norm(group.item?.name)];
+    const candidates=statCandidates(group.item,group.mode).filter(column=>!(group.label==='Gadget'&&/^Charges$/i.test(column))&&!hidden?.test(column)),fixed=candidates.filter(column=>group.item.levels.every(row=>row[column]===group.item.levels[0][column])),id=`stats-${norm(group.label)}`;
     return {...group,id,fixed,columns:candidates.filter(column=>!fixed.includes(column)).map((key,index)=>({key,id:`${id}-${index}`}))};
   });
   const fixedGroups=groups.filter(group=>group.fixed.length),visible=groups.filter(group=>group.columns.length);
-  const stagedFireRate=norm(weapon?.name)==='blackholestorm'?`<dl class="fixed-group staged-fire-rate"><div class="fixed-group-title">Weapon: ${safe(loadout[0])}</div><div class="fixed-stat"><dt>${statIcon('Fire rate')}<span>Fire rate stages</span></dt><dd><span>1×</span><i>→</i><span>3× <small>at 1.3s</small></span><i>→</i><span>5× <small>at 3s</small></span><i>→</i><span>8× <small>at 5s · talent</small></span></dd></div></dl>`:'';
+  const stagedFireRate=norm(weapon?.name)==='blackholestorm'?`<dl class="fixed-group staged-fire-rate"><div class="fixed-group-title">Weapon: ${safe(loadout[0])}</div><div class="fixed-stat"><dt>${statIcon('Fire rate')}<span>Fire rate</span></dt><dd><span>1×</span><i>→</i><span>3× <small>at 1.3s</small></span><i>→</i><span>5× <small>at 3s</small></span><i>→</i><span>8× <small>at 5s (talent)</small></span></dd></div></dl>`:'';
   const stackedFixed=hero.name==='Ratchet'&&fixedGroups.map(group=>group.label).join(',')==='Weapon,Gadget,Ultimate';
   const fixedMarkup=fixedGroups.length||stagedFireRate?`<div class="combined-fixed${stackedFixed?' fixed-stacked':''}">${fixedGroups.map(group=>{const amoeboid=norm(group.item?.name)==='amoeboidlauncher',lifetimeColumns=['Small Lifetime','Medium Lifetime','Large Lifetime'],columns=amoeboid?group.fixed.filter(column=>!lifetimeColumns.includes(column)):group.fixed,lifetime=amoeboid?`<div class="fixed-stat lifetime-stat"><dt>${statIcon('Lifetime')}<span>Lifetime</span></dt><dd>${lifetimeColumns.map((column,index)=>`${group.item.levels[0][column]}s ${'SML'[index]}`).join(' | ')}</dd></div>`:'';return`<dl class="fixed-group"><div class="fixed-group-title">${safe(group.label)}: ${safe(group.displayName)}</div>${columns.map(column=>{const label=displayStatLabel(column,group.mode,group.item?.name,group.displayName);return`<div class="fixed-stat"><dt>${statIcon(label)}<span>${safe(label)}</span></dt><dd>${statValue(column,group.item.levels[0][column],group.item?.name)}</dd></div>`}).join('')}${lifetime}</dl>`}).join('')}${stagedFireRate}</div>`:'';
   const headGroups=visible.map(group=>`<th id="${group.id}" scope="colgroup" colspan="${group.columns.length}">${safe(group.label)}: ${safe(group.displayName)}</th>`).join('');

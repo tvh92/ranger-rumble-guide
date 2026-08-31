@@ -380,15 +380,10 @@ def season_dates(number: int) -> tuple[str, str]:
 def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
     weapons = parse_stat_export("weapon_stats_export.txt", ("WEAPON",))
     gadget_exports = parse_stat_export("gadget_stats_export.txt", ("GADGET",))
-    weapon_names = {normalized(item["name"]) for item in weapons}
-    gadgets = []
-    for item in gadget_exports:
-        internal_id = item.get("internalId", item["name"])
-        # Gadgets whose statistics also occur in the weapon export belong in the
-        # weapons collection. The remaining entries are keyed by their game ID.
-        if normalized(item["name"]) in weapon_names or normalized(internal_id) in weapon_names:
-            continue
-        gadgets.append({"name": internal_id, "columns": item["columns"], "levels": item["levels"]})
+    gadgets = [
+        {"name": item.get("internalId", item["name"]), "columns": item["columns"], "levels": item["levels"]}
+        for item in gadget_exports
+    ]
     data = {
         "characters": parse_stat_export("character_stats_export.txt", ("HERO",)),
         "weapons": weapons,

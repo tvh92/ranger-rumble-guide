@@ -37,10 +37,13 @@ WEAPON_DAMAGE_OVERRIDES = {
 GADGET_STAT_OVERRIDES = {
     "Cryo Slider": {"Discs Per Use": 2},
 }
+WEAPON_STAT_OVERRIDES = {
+    "Buzzblades": {"Ricochet": 3},
+}
 MOD_PRESENTATION_OVERRIDES = {
     "Celeste": {
         "Turbo Dash": {"effect": "Dash cooldown reduction: 50%."},
-        "Ricochet Blades": {"effect": "Maximum hit count: 7 instead of 6; ricochet radius: 8."},
+        "Ricochet Blades": {"effect": "Ricochet count: 4 instead of 3; maximum hit count: 7 instead of 6; ricochet radius: 8."},
     },
     "Chip": {
         "Extra Agent": {"effect": "3 Agents deployed instead of 2; consumes one gadget charge."},
@@ -133,6 +136,11 @@ def parse_stat_export(filename: str, labels: tuple[str, ...]) -> list[dict]:
                 level["Damage"] = damage
         if filename == "gadget_stats_export.txt" and name in GADGET_STAT_OVERRIDES:
             for column, value in GADGET_STAT_OVERRIDES[name].items():
+                columns.append(column)
+                for level in levels:
+                    level[column] = value
+        if filename == "weapon_stats_export.txt" and name in WEAPON_STAT_OVERRIDES:
+            for column, value in WEAPON_STAT_OVERRIDES[name].items():
                 columns.append(column)
                 for level in levels:
                     level[column] = value

@@ -2133,7 +2133,8 @@ window.RUMBLE_DATA = {
         "Fire Rate",
         "Range",
         "MaxAmmo",
-        "ReloadTime"
+        "ReloadTime",
+        "Ricochet"
       ],
       "levels": [
         {
@@ -2143,7 +2144,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 2,
@@ -2152,7 +2154,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 3,
@@ -2161,7 +2164,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 4,
@@ -2170,7 +2174,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 5,
@@ -2179,7 +2184,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 6,
@@ -2188,7 +2194,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 7,
@@ -2197,7 +2204,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 8,
@@ -2206,7 +2214,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 9,
@@ -2215,7 +2224,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 10,
@@ -2224,7 +2234,8 @@ window.RUMBLE_DATA = {
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         }
       ]
     },

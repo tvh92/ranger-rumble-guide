@@ -2132,7 +2132,8 @@
         "Fire Rate",
         "Range",
         "MaxAmmo",
-        "ReloadTime"
+        "ReloadTime",
+        "Ricochet"
       ],
       "levels": [
         {
@@ -2142,7 +2143,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 2,
@@ -2151,7 +2153,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 3,
@@ -2160,7 +2163,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 4,
@@ -2169,7 +2173,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 5,
@@ -2178,7 +2183,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 6,
@@ -2187,7 +2193,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 7,
@@ -2196,7 +2203,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 8,
@@ -2205,7 +2213,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 9,
@@ -2214,7 +2223,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         },
         {
           "Level": 10,
@@ -2223,7 +2233,8 @@
           "Fire Rate": 2.5,
           "Range": 30,
           "MaxAmmo": 13,
-          "ReloadTime": 1.4
+          "ReloadTime": 1.4,
+          "Ricochet": 3
         }
       ]
     },

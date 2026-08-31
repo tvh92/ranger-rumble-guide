@@ -51,7 +51,7 @@ Level  | Damage
 
 HERO: Chip
 TALENT: Extra Agent
-MENU: Each use now generates one additional Agent of Doom.
+MENU: The gadget now generates one additional Agent of Doom.
 EFFECT: Agents deployed 3 (base 2); consumes one gadget charge.
 
 TALENT: Dual Arc Emitter
@@ -150,6 +150,9 @@ TALENT: Spin-Up Rotor
 MENU: The rate of fire can increase even further.
 EFFECT: Adds stage 3: 5.0000s spin-up, stored fire-rate multiplier 8.0000, non-progressive.
 BASE STAGES: approximately 1.3000s/3.0000x and 3.0000s/5.0000x.
+
+TALENT: Quick Reload
+MENU: The weapon recovers ammo after using a gadget.
 
 ================================================================================
 

@@ -13,7 +13,7 @@ window.RANGER_MODS = {
     {name:'Cluster Bombs',icon:'Cluster Bombs.png',menu:'Grenades release two bomblets after exploding.',effect:'2 bomblets; 2.5 AOE radius; 7 horizontal push; 1 upward push.',columns:['Damage'],levels:[[25],[33],[40],[48],[55],[63],[70],[78],[85],[93]]}
   ],
   Chip: [
-    {name:'Extra Agent',icon:'Extra Agent.png',menu:'Each use now generates one additional Agent of Doom.',effect:'3 Agents deployed instead of 2; consumes one gadget charge.'},
+    {name:'Extra Agent',icon:'Extra Agent.png',menu:'The gadget now generates one additional Agent of Doom.',effect:'3 Agents deployed instead of 2; consumes one gadget charge.'},
     {name:'Dual Arc Emitter',icon:'Dual Arc Emitter.png',menu:'The Tesla Claw can now hit two enemies at the same time.',effect:'1 additional beam; 50% secondary-beam health multiplier; 16 Electric buildup.',columns:['Damage spec','Health damage'],levels:[[20,10],[26,13],[32,16],[38,19],[44,22],[50,25],[56,28],[62,31],[68,34],[74,37]]}
   ],
   "Lil'Ann": [
@@ -28,7 +28,8 @@ window.RANGER_MODS = {
     {name:'Azur Igniter',icon:'Azur Igniter.png',menu:'After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.',effect:'Activates after 1.5s of continuous fire; approximately +50% damage.',columns:['Normal damage','Blue-fire damage'],levels:[[33,50],[40,60],[47,71],[54,81],[61,92],[68,102],[75,113],[82,123],[89,134],[96,144]]}
   ],
   Mopz: [
-    {name:'Spin-Up Rotor',icon:'Spin-Up Rotor.png',menu:'The rate of fire can increase even further.',effect:'Adds stage 3 after 5s of spin-up with an 8x stored fire-rate multiplier.',note:'Base stages are approximately 1.3s/3x and 3s/5x.'}
+    {name:'Spin-Up Rotor',icon:'Spin-Up Rotor.png',menu:'The rate of fire can increase even further.',effect:'Adds stage 3 after 5s of spin-up with an 8x stored fire-rate multiplier.',note:'Base stages are approximately 1.3s/3x and 3s/5x.'},
+    {name:'Quick Reload',icon:'Spin-Up Rotor.png',menu:'The weapon recovers ammo after using a gadget.'}
   ],
   Celeste: [
     {name:'Turbo Dash',icon:'Turbo Dash.png',menu:"Celeste's dash recharges faster.",effect:'Dash cooldown reduction: 50%.'},

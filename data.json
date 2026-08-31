@@ -1,174 +1,14 @@
 {
   "characters": [
     {
-      "name": "Avatar",
-      "ultimate": "Unknown (Avatar)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 200,
-          "Hero Power": 3000
-        },
-        {
-          "Level": 2,
-          "Hero HP": 260,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 3,
-          "Hero HP": 320,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 4,
-          "Hero HP": 380,
-          "Hero Power": 5700
-        },
-        {
-          "Level": 5,
-          "Hero HP": 440,
-          "Hero Power": 6600
-        },
-        {
-          "Level": 6,
-          "Hero HP": 500,
-          "Hero Power": 7500
-        },
-        {
-          "Level": 7,
-          "Hero HP": 560,
-          "Hero Power": 8400
-        },
-        {
-          "Level": 8,
-          "Hero HP": 620,
-          "Hero Power": 9300
-        },
-        {
-          "Level": 9,
-          "Hero HP": 680,
-          "Hero Power": 10200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 740,
-          "Hero Power": 11100
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000
-        }
-      ]
-    },
-    {
       "name": "Celeste",
       "ultimate": "HoverBoard (Celeste)",
       "columns": [
         "Hero HP",
         "Hero Power",
         "Ult Damage",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -176,400 +16,80 @@
           "Hero HP": 320,
           "Hero Power": 4800,
           "Ult Damage": 64,
-          "Ult Fire Rate": 1600,
-          "Ult Power": 1300
+          "Ult Power": 1600,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 2,
           "Hero HP": 373,
           "Hero Power": 5600,
           "Ult Damage": 75,
-          "Ult Fire Rate": 1870,
-          "Ult Power": 1300
+          "Ult Power": 1870,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 3,
           "Hero HP": 427,
           "Hero Power": 6400,
           "Ult Damage": 85,
-          "Ult Fire Rate": 2130,
-          "Ult Power": 1300
+          "Ult Power": 2130,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 4,
           "Hero HP": 480,
           "Hero Power": 7200,
           "Ult Damage": 96,
-          "Ult Fire Rate": 2400,
-          "Ult Power": 1300
+          "Ult Power": 2400,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 5,
           "Hero HP": 533,
           "Hero Power": 8000,
           "Ult Damage": 107,
-          "Ult Fire Rate": 2670,
-          "Ult Power": 1300
+          "Ult Power": 2670,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 6,
           "Hero HP": 587,
           "Hero Power": 8800,
           "Ult Damage": 117,
-          "Ult Fire Rate": 2930,
-          "Ult Power": 1300
+          "Ult Power": 2930,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 7,
           "Hero HP": 640,
           "Hero Power": 9600,
           "Ult Damage": 128,
-          "Ult Fire Rate": 3200,
-          "Ult Power": 1300
+          "Ult Power": 3200,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 8,
           "Hero HP": 693,
           "Hero Power": 10400,
           "Ult Damage": 139,
-          "Ult Fire Rate": 3470,
-          "Ult Power": 1300
+          "Ult Power": 3470,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 9,
           "Hero HP": 747,
           "Hero Power": 11200,
           "Ult Damage": 149,
-          "Ult Fire Rate": 3730,
-          "Ult Power": 1300
+          "Ult Power": 3730,
+          "Ult Fire Rate": 1300
         },
         {
           "Level": 10,
           "Hero HP": 800,
           "Hero Power": 12000,
           "Ult Damage": 160,
-          "Ult Fire Rate": 4000,
-          "Ult Power": 1300
-        },
-        {
-          "Level": 11,
-          "Hero HP": 762,
-          "Hero Power": 3810,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 798,
-          "Hero Power": 3990,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 834,
-          "Hero Power": 4170,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 870,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 907,
-          "Hero Power": 4530,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 921,
-          "Hero Power": 4600,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 935,
-          "Hero Power": 4680,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 949,
-          "Hero Power": 4750,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 964,
-          "Hero Power": 4820,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 978,
-          "Hero Power": 4890,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 992,
-          "Hero Power": 4960,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1006,
-          "Hero Power": 5030,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1020,
-          "Hero Power": 5100,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1035,
-          "Hero Power": 5170,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1049,
-          "Hero Power": 5240,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1059,
-          "Hero Power": 5300,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1069,
-          "Hero Power": 5350,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1080,
-          "Hero Power": 5400,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1090,
-          "Hero Power": 5450,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1100,
-          "Hero Power": 5500,
-          "Ult Damage": 0,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        }
-      ]
-    },
-    {
-      "name": "Chance",
-      "ultimate": "Unknown (Chance)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 384,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 2,
-          "Hero HP": 448,
-          "Hero Power": 5600
-        },
-        {
-          "Level": 3,
-          "Hero HP": 512,
-          "Hero Power": 6400
-        },
-        {
-          "Level": 4,
-          "Hero HP": 576,
-          "Hero Power": 7200
-        },
-        {
-          "Level": 5,
-          "Hero HP": 640,
-          "Hero Power": 8000
-        },
-        {
-          "Level": 6,
-          "Hero HP": 704,
-          "Hero Power": 8800
-        },
-        {
-          "Level": 7,
-          "Hero HP": 768,
-          "Hero Power": 9600
-        },
-        {
-          "Level": 8,
-          "Hero HP": 832,
-          "Hero Power": 10400
-        },
-        {
-          "Level": 9,
-          "Hero HP": 896,
-          "Hero Power": 11200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 960,
-          "Hero Power": 12000
-        },
-        {
-          "Level": 11,
-          "Hero HP": 914,
-          "Hero Power": 3810
-        },
-        {
-          "Level": 12,
-          "Hero HP": 958,
-          "Hero Power": 3990
-        },
-        {
-          "Level": 13,
-          "Hero HP": 1001,
-          "Hero Power": 4170
-        },
-        {
-          "Level": 14,
-          "Hero HP": 1045,
-          "Hero Power": 4350
-        },
-        {
-          "Level": 15,
-          "Hero HP": 1088,
-          "Hero Power": 4530
-        },
-        {
-          "Level": 16,
-          "Hero HP": 1105,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 17,
-          "Hero HP": 1122,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 18,
-          "Hero HP": 1139,
-          "Hero Power": 4750
-        },
-        {
-          "Level": 19,
-          "Hero HP": 1156,
-          "Hero Power": 4820
-        },
-        {
-          "Level": 20,
-          "Hero HP": 1173,
-          "Hero Power": 4890
-        },
-        {
-          "Level": 21,
-          "Hero HP": 1190,
-          "Hero Power": 4960
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1207,
-          "Hero Power": 5030
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1224,
-          "Hero Power": 5100
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1242,
-          "Hero Power": 5170
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1259,
-          "Hero Power": 5240
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1271,
-          "Hero Power": 5300
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1283,
-          "Hero Power": 5350
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1295,
-          "Hero Power": 5400
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1308,
-          "Hero Power": 5450
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1320,
-          "Hero Power": 5500
+          "Ult Power": 4000,
+          "Ult Fire Rate": 1300
         }
       ]
     },
@@ -581,8 +101,8 @@
         "Hero Power",
         "Ult Damage",
         "Overhealth",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -591,8 +111,8 @@
           "Hero Power": 3000,
           "Ult Damage": 73,
           "Overhealth": 40,
-          "Ult Fire Rate": 1000,
-          "Ult Power": 900
+          "Ult Power": 1000,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 2,
@@ -600,8 +120,8 @@
           "Hero Power": 3900,
           "Ult Damage": 95,
           "Overhealth": 52,
-          "Ult Fire Rate": 1300,
-          "Ult Power": 900
+          "Ult Power": 1300,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 3,
@@ -609,8 +129,8 @@
           "Hero Power": 4800,
           "Ult Damage": 117,
           "Overhealth": 64,
-          "Ult Fire Rate": 1600,
-          "Ult Power": 900
+          "Ult Power": 1600,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 4,
@@ -618,8 +138,8 @@
           "Hero Power": 5700,
           "Ult Damage": 139,
           "Overhealth": 76,
-          "Ult Fire Rate": 1900,
-          "Ult Power": 900
+          "Ult Power": 1900,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 5,
@@ -627,8 +147,8 @@
           "Hero Power": 6600,
           "Ult Damage": 161,
           "Overhealth": 88,
-          "Ult Fire Rate": 2200,
-          "Ult Power": 900
+          "Ult Power": 2200,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 6,
@@ -636,8 +156,8 @@
           "Hero Power": 7500,
           "Ult Damage": 183,
           "Overhealth": 100,
-          "Ult Fire Rate": 2500,
-          "Ult Power": 900
+          "Ult Power": 2500,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 7,
@@ -645,8 +165,8 @@
           "Hero Power": 8400,
           "Ult Damage": 204,
           "Overhealth": 112,
-          "Ult Fire Rate": 2800,
-          "Ult Power": 900
+          "Ult Power": 2800,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 8,
@@ -654,8 +174,8 @@
           "Hero Power": 9300,
           "Ult Damage": 226,
           "Overhealth": 124,
-          "Ult Fire Rate": 3100,
-          "Ult Power": 900
+          "Ult Power": 3100,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 9,
@@ -663,8 +183,8 @@
           "Hero Power": 10200,
           "Ult Damage": 248,
           "Overhealth": 136,
-          "Ult Fire Rate": 3400,
-          "Ult Power": 900
+          "Ult Power": 3400,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 10,
@@ -672,508 +192,8 @@
           "Hero Power": 11100,
           "Ult Damage": 270,
           "Overhealth": 148,
-          "Ult Fire Rate": 3700,
-          "Ult Power": 900
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710,
-          "Ult Damage": 0,
-          "Overhealth": 109,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890,
-          "Ult Damage": 0,
-          "Overhealth": 115,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060,
-          "Ult Damage": 0,
-          "Overhealth": 122,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230,
-          "Ult Damage": 0,
-          "Overhealth": 129,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400,
-          "Ult Damage": 0,
-          "Overhealth": 136,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520,
-          "Ult Damage": 0,
-          "Overhealth": 141,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640,
-          "Ult Damage": 0,
-          "Overhealth": 146,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760,
-          "Ult Damage": 0,
-          "Overhealth": 150,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880,
-          "Ult Damage": 0,
-          "Overhealth": 155,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000,
-          "Ult Damage": 0,
-          "Overhealth": 160,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120,
-          "Ult Damage": 0,
-          "Overhealth": 165,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240,
-          "Ult Damage": 0,
-          "Overhealth": 170,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360,
-          "Ult Damage": 0,
-          "Overhealth": 174,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480,
-          "Ult Damage": 0,
-          "Overhealth": 179,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600,
-          "Ult Damage": 0,
-          "Overhealth": 184,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680,
-          "Ult Damage": 0,
-          "Overhealth": 187,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760,
-          "Ult Damage": 0,
-          "Overhealth": 190,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840,
-          "Ult Damage": 0,
-          "Overhealth": 194,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 197,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000,
-          "Ult Damage": 0,
-          "Overhealth": 200,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        }
-      ]
-    },
-    {
-      "name": "Crumby",
-      "ultimate": "Unknown (Crumby)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 260,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 2,
-          "Hero HP": 317,
-          "Hero Power": 4750
-        },
-        {
-          "Level": 3,
-          "Hero HP": 373,
-          "Hero Power": 5600
-        },
-        {
-          "Level": 4,
-          "Hero HP": 430,
-          "Hero Power": 6450
-        },
-        {
-          "Level": 5,
-          "Hero HP": 487,
-          "Hero Power": 7300
-        },
-        {
-          "Level": 6,
-          "Hero HP": 543,
-          "Hero Power": 8150
-        },
-        {
-          "Level": 7,
-          "Hero HP": 600,
-          "Hero Power": 9000
-        },
-        {
-          "Level": 8,
-          "Hero HP": 657,
-          "Hero Power": 9850
-        },
-        {
-          "Level": 9,
-          "Hero HP": 713,
-          "Hero Power": 10700
-        },
-        {
-          "Level": 10,
-          "Hero HP": 770,
-          "Hero Power": 11550
-        },
-        {
-          "Level": 11,
-          "Hero HP": 434,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 462,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 489,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 517,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 544,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 563,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 582,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 602,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 621,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 640,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 659,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 678,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 698,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 717,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 736,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 749,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 762,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 774,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 787,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 800,
-          "Hero Power": 5000
-        }
-      ]
-    },
-    {
-      "name": "Flare",
-      "ultimate": "Unknown (Flare)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 160,
-          "Hero Power": 3000
-        },
-        {
-          "Level": 2,
-          "Hero HP": 208,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 3,
-          "Hero HP": 256,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 4,
-          "Hero HP": 304,
-          "Hero Power": 5700
-        },
-        {
-          "Level": 5,
-          "Hero HP": 352,
-          "Hero Power": 6600
-        },
-        {
-          "Level": 6,
-          "Hero HP": 400,
-          "Hero Power": 7500
-        },
-        {
-          "Level": 7,
-          "Hero HP": 448,
-          "Hero Power": 8400
-        },
-        {
-          "Level": 8,
-          "Hero HP": 496,
-          "Hero Power": 9300
-        },
-        {
-          "Level": 9,
-          "Hero HP": 544,
-          "Hero Power": 10200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 592,
-          "Hero Power": 11100
-        },
-        {
-          "Level": 11,
-          "Hero HP": 434,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 462,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 489,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 517,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 544,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 563,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 582,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 602,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 621,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 640,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 659,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 678,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 698,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 717,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 736,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 749,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 762,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 774,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 787,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 800,
-          "Hero Power": 5000
+          "Ult Power": 3700,
+          "Ult Fire Rate": 900
         }
       ]
     },
@@ -1185,8 +205,8 @@
         "Hero Power",
         "Ult Damage",
         "Overhealth",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -1195,8 +215,8 @@
           "Hero Power": 3900,
           "Ult Damage": 234,
           "Overhealth": 52,
-          "Ult Fire Rate": 1300,
-          "Ult Power": 900
+          "Ult Power": 1300,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 2,
@@ -1204,8 +224,8 @@
           "Hero Power": 4750,
           "Ult Damage": 285,
           "Overhealth": 63,
-          "Ult Fire Rate": 1580,
-          "Ult Power": 900
+          "Ult Power": 1580,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 3,
@@ -1213,8 +233,8 @@
           "Hero Power": 5600,
           "Ult Damage": 336,
           "Overhealth": 75,
-          "Ult Fire Rate": 1870,
-          "Ult Power": 900
+          "Ult Power": 1870,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 4,
@@ -1222,8 +242,8 @@
           "Hero Power": 6450,
           "Ult Damage": 387,
           "Overhealth": 86,
-          "Ult Fire Rate": 2150,
-          "Ult Power": 900
+          "Ult Power": 2150,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 5,
@@ -1231,8 +251,8 @@
           "Hero Power": 7300,
           "Ult Damage": 438,
           "Overhealth": 97,
-          "Ult Fire Rate": 2430,
-          "Ult Power": 900
+          "Ult Power": 2430,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 6,
@@ -1240,8 +260,8 @@
           "Hero Power": 8150,
           "Ult Damage": 489,
           "Overhealth": 109,
-          "Ult Fire Rate": 2720,
-          "Ult Power": 900
+          "Ult Power": 2720,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 7,
@@ -1249,8 +269,8 @@
           "Hero Power": 9000,
           "Ult Damage": 540,
           "Overhealth": 120,
-          "Ult Fire Rate": 3000,
-          "Ult Power": 900
+          "Ult Power": 3000,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 8,
@@ -1258,8 +278,8 @@
           "Hero Power": 9850,
           "Ult Damage": 591,
           "Overhealth": 131,
-          "Ult Fire Rate": 3280,
-          "Ult Power": 900
+          "Ult Power": 3280,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 9,
@@ -1267,8 +287,8 @@
           "Hero Power": 10700,
           "Ult Damage": 642,
           "Overhealth": 143,
-          "Ult Fire Rate": 3570,
-          "Ult Power": 900
+          "Ult Power": 3570,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 10,
@@ -1276,188 +296,8 @@
           "Hero Power": 11550,
           "Ult Damage": 693,
           "Overhealth": 154,
-          "Ult Fire Rate": 3850,
-          "Ult Power": 900
-        },
-        {
-          "Level": 11,
-          "Hero HP": 522,
-          "Hero Power": 3260,
-          "Ult Damage": 0,
-          "Overhealth": 130,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 550,
-          "Hero Power": 3440,
-          "Ult Damage": 0,
-          "Overhealth": 138,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 578,
-          "Hero Power": 3610,
-          "Ult Damage": 0,
-          "Overhealth": 145,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 606,
-          "Hero Power": 3790,
-          "Ult Damage": 0,
-          "Overhealth": 152,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 635,
-          "Hero Power": 3970,
-          "Ult Damage": 0,
-          "Overhealth": 159,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 650,
-          "Hero Power": 4060,
-          "Ult Damage": 0,
-          "Overhealth": 162,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 665,
-          "Hero Power": 4160,
-          "Ult Damage": 0,
-          "Overhealth": 166,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 681,
-          "Hero Power": 4250,
-          "Ult Damage": 0,
-          "Overhealth": 170,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 696,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Overhealth": 174,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 711,
-          "Hero Power": 4440,
-          "Ult Damage": 0,
-          "Overhealth": 178,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 726,
-          "Hero Power": 4540,
-          "Ult Damage": 0,
-          "Overhealth": 182,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 742,
-          "Hero Power": 4640,
-          "Ult Damage": 0,
-          "Overhealth": 185,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 757,
-          "Hero Power": 4730,
-          "Ult Damage": 0,
-          "Overhealth": 189,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 772,
-          "Hero Power": 4830,
-          "Ult Damage": 0,
-          "Overhealth": 193,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 788,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 197,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 798,
-          "Hero Power": 4990,
-          "Ult Damage": 0,
-          "Overhealth": 200,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 809,
-          "Hero Power": 5050,
-          "Ult Damage": 0,
-          "Overhealth": 202,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 819,
-          "Hero Power": 5120,
-          "Ult Damage": 0,
-          "Overhealth": 205,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 830,
-          "Hero Power": 5180,
-          "Ult Damage": 0,
-          "Overhealth": 207,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 840,
-          "Hero Power": 5250,
-          "Ult Damage": 0,
-          "Overhealth": 210,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
+          "Ult Power": 3850,
+          "Ult Fire Rate": 900
         }
       ]
     },
@@ -1529,286 +369,6 @@
           "Hero HP": 800,
           "Hero Power": 12000,
           "Overhealth": 160
-        },
-        {
-          "Level": 11,
-          "Hero HP": 762,
-          "Hero Power": 3810,
-          "Overhealth": 152
-        },
-        {
-          "Level": 12,
-          "Hero HP": 798,
-          "Hero Power": 3990,
-          "Overhealth": 160
-        },
-        {
-          "Level": 13,
-          "Hero HP": 834,
-          "Hero Power": 4170,
-          "Overhealth": 167
-        },
-        {
-          "Level": 14,
-          "Hero HP": 870,
-          "Hero Power": 4350,
-          "Overhealth": 174
-        },
-        {
-          "Level": 15,
-          "Hero HP": 907,
-          "Hero Power": 4530,
-          "Overhealth": 181
-        },
-        {
-          "Level": 16,
-          "Hero HP": 921,
-          "Hero Power": 4600,
-          "Overhealth": 184
-        },
-        {
-          "Level": 17,
-          "Hero HP": 935,
-          "Hero Power": 4680,
-          "Overhealth": 187
-        },
-        {
-          "Level": 18,
-          "Hero HP": 949,
-          "Hero Power": 4750,
-          "Overhealth": 190
-        },
-        {
-          "Level": 19,
-          "Hero HP": 964,
-          "Hero Power": 4820,
-          "Overhealth": 193
-        },
-        {
-          "Level": 20,
-          "Hero HP": 978,
-          "Hero Power": 4890,
-          "Overhealth": 196
-        },
-        {
-          "Level": 21,
-          "Hero HP": 992,
-          "Hero Power": 4960,
-          "Overhealth": 198
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1006,
-          "Hero Power": 5030,
-          "Overhealth": 201
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1020,
-          "Hero Power": 5100,
-          "Overhealth": 204
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1035,
-          "Hero Power": 5170,
-          "Overhealth": 207
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1049,
-          "Hero Power": 5240,
-          "Overhealth": 210
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1059,
-          "Hero Power": 5300,
-          "Overhealth": 212
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1069,
-          "Hero Power": 5350,
-          "Overhealth": 214
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1080,
-          "Hero Power": 5400,
-          "Overhealth": 216
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1090,
-          "Hero Power": 5450,
-          "Overhealth": 218
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1100,
-          "Hero Power": 5500,
-          "Overhealth": 220
-        }
-      ]
-    },
-    {
-      "name": "Helen",
-      "ultimate": "Unknown (Helen)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 312,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 2,
-          "Hero HP": 380,
-          "Hero Power": 4750
-        },
-        {
-          "Level": 3,
-          "Hero HP": 448,
-          "Hero Power": 5600
-        },
-        {
-          "Level": 4,
-          "Hero HP": 516,
-          "Hero Power": 6450
-        },
-        {
-          "Level": 5,
-          "Hero HP": 584,
-          "Hero Power": 7300
-        },
-        {
-          "Level": 6,
-          "Hero HP": 652,
-          "Hero Power": 8150
-        },
-        {
-          "Level": 7,
-          "Hero HP": 720,
-          "Hero Power": 9000
-        },
-        {
-          "Level": 8,
-          "Hero HP": 788,
-          "Hero Power": 9850
-        },
-        {
-          "Level": 9,
-          "Hero HP": 856,
-          "Hero Power": 10700
-        },
-        {
-          "Level": 10,
-          "Hero HP": 924,
-          "Hero Power": 11550
-        },
-        {
-          "Level": 11,
-          "Hero HP": 783,
-          "Hero Power": 3260
-        },
-        {
-          "Level": 12,
-          "Hero HP": 825,
-          "Hero Power": 3440
-        },
-        {
-          "Level": 13,
-          "Hero HP": 867,
-          "Hero Power": 3610
-        },
-        {
-          "Level": 14,
-          "Hero HP": 910,
-          "Hero Power": 3790
-        },
-        {
-          "Level": 15,
-          "Hero HP": 952,
-          "Hero Power": 3970
-        },
-        {
-          "Level": 16,
-          "Hero HP": 975,
-          "Hero Power": 4060
-        },
-        {
-          "Level": 17,
-          "Hero HP": 998,
-          "Hero Power": 4160
-        },
-        {
-          "Level": 18,
-          "Hero HP": 1021,
-          "Hero Power": 4250
-        },
-        {
-          "Level": 19,
-          "Hero HP": 1044,
-          "Hero Power": 4350
-        },
-        {
-          "Level": 20,
-          "Hero HP": 1067,
-          "Hero Power": 4440
-        },
-        {
-          "Level": 21,
-          "Hero HP": 1090,
-          "Hero Power": 4540
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1112,
-          "Hero Power": 4640
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1135,
-          "Hero Power": 4730
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1158,
-          "Hero Power": 4830
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1181,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1197,
-          "Hero Power": 4990
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1213,
-          "Hero Power": 5050
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1229,
-          "Hero Power": 5120
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1244,
-          "Hero Power": 5180
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1260,
-          "Hero Power": 5250
         }
       ]
     },
@@ -1820,8 +380,8 @@
         "Hero Power",
         "Ult Damage",
         "Overhealth",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -1830,8 +390,8 @@
           "Hero Power": 3900,
           "Ult Damage": 39,
           "Overhealth": 104,
-          "Ult Fire Rate": 1300,
-          "Ult Power": 900
+          "Ult Power": 1300,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 2,
@@ -1839,8 +399,8 @@
           "Hero Power": 4750,
           "Ult Damage": 48,
           "Overhealth": 127,
-          "Ult Fire Rate": 1580,
-          "Ult Power": 900
+          "Ult Power": 1580,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 3,
@@ -1848,8 +408,8 @@
           "Hero Power": 5600,
           "Ult Damage": 56,
           "Overhealth": 149,
-          "Ult Fire Rate": 1870,
-          "Ult Power": 900
+          "Ult Power": 1870,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 4,
@@ -1857,8 +417,8 @@
           "Hero Power": 6450,
           "Ult Damage": 65,
           "Overhealth": 172,
-          "Ult Fire Rate": 2150,
-          "Ult Power": 900
+          "Ult Power": 2150,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 5,
@@ -1866,8 +426,8 @@
           "Hero Power": 7300,
           "Ult Damage": 73,
           "Overhealth": 195,
-          "Ult Fire Rate": 2430,
-          "Ult Power": 900
+          "Ult Power": 2430,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 6,
@@ -1875,8 +435,8 @@
           "Hero Power": 8150,
           "Ult Damage": 82,
           "Overhealth": 217,
-          "Ult Fire Rate": 2720,
-          "Ult Power": 900
+          "Ult Power": 2720,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 7,
@@ -1884,8 +444,8 @@
           "Hero Power": 9000,
           "Ult Damage": 90,
           "Overhealth": 240,
-          "Ult Fire Rate": 3000,
-          "Ult Power": 900
+          "Ult Power": 3000,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 8,
@@ -1893,8 +453,8 @@
           "Hero Power": 9850,
           "Ult Damage": 99,
           "Overhealth": 263,
-          "Ult Fire Rate": 3280,
-          "Ult Power": 900
+          "Ult Power": 3280,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 9,
@@ -1902,8 +462,8 @@
           "Hero Power": 10700,
           "Ult Damage": 107,
           "Overhealth": 285,
-          "Ult Fire Rate": 3570,
-          "Ult Power": 900
+          "Ult Power": 3570,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 10,
@@ -1911,188 +471,8 @@
           "Hero Power": 11550,
           "Ult Damage": 116,
           "Overhealth": 308,
-          "Ult Fire Rate": 3850,
-          "Ult Power": 900
-        },
-        {
-          "Level": 11,
-          "Hero HP": 652,
-          "Hero Power": 3260,
-          "Ult Damage": 0,
-          "Overhealth": 261,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 688,
-          "Hero Power": 3440,
-          "Ult Damage": 0,
-          "Overhealth": 275,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 723,
-          "Hero Power": 3610,
-          "Ult Damage": 0,
-          "Overhealth": 289,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 758,
-          "Hero Power": 3790,
-          "Ult Damage": 0,
-          "Overhealth": 303,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 793,
-          "Hero Power": 3970,
-          "Ult Damage": 0,
-          "Overhealth": 317,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 812,
-          "Hero Power": 4060,
-          "Ult Damage": 0,
-          "Overhealth": 325,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 832,
-          "Hero Power": 4160,
-          "Ult Damage": 0,
-          "Overhealth": 333,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 851,
-          "Hero Power": 4250,
-          "Ult Damage": 0,
-          "Overhealth": 340,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 870,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Overhealth": 348,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 889,
-          "Hero Power": 4440,
-          "Ult Damage": 0,
-          "Overhealth": 356,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 908,
-          "Hero Power": 4540,
-          "Ult Damage": 0,
-          "Overhealth": 363,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 927,
-          "Hero Power": 4640,
-          "Ult Damage": 0,
-          "Overhealth": 371,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 946,
-          "Hero Power": 4730,
-          "Ult Damage": 0,
-          "Overhealth": 378,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 965,
-          "Hero Power": 4830,
-          "Ult Damage": 0,
-          "Overhealth": 386,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 984,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 394,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 998,
-          "Hero Power": 4990,
-          "Ult Damage": 0,
-          "Overhealth": 399,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1011,
-          "Hero Power": 5050,
-          "Ult Damage": 0,
-          "Overhealth": 404,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1024,
-          "Hero Power": 5120,
-          "Ult Damage": 0,
-          "Overhealth": 410,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1037,
-          "Hero Power": 5180,
-          "Ult Damage": 0,
-          "Overhealth": 415,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1050,
-          "Hero Power": 5250,
-          "Ult Damage": 0,
-          "Overhealth": 420,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
+          "Ult Power": 3850,
+          "Ult Fire Rate": 900
         }
       ]
     },
@@ -2175,146 +555,6 @@
           "Hero Power": 11550,
           "Ult Damage": 347,
           "Overhealth": 462
-        },
-        {
-          "Level": 11,
-          "Hero HP": 522,
-          "Hero Power": 3260,
-          "Ult Damage": 0,
-          "Overhealth": 391
-        },
-        {
-          "Level": 12,
-          "Hero HP": 550,
-          "Hero Power": 3440,
-          "Ult Damage": 0,
-          "Overhealth": 413
-        },
-        {
-          "Level": 13,
-          "Hero HP": 578,
-          "Hero Power": 3610,
-          "Ult Damage": 0,
-          "Overhealth": 434
-        },
-        {
-          "Level": 14,
-          "Hero HP": 606,
-          "Hero Power": 3790,
-          "Ult Damage": 0,
-          "Overhealth": 455
-        },
-        {
-          "Level": 15,
-          "Hero HP": 635,
-          "Hero Power": 3970,
-          "Ult Damage": 0,
-          "Overhealth": 476
-        },
-        {
-          "Level": 16,
-          "Hero HP": 650,
-          "Hero Power": 4060,
-          "Ult Damage": 0,
-          "Overhealth": 487
-        },
-        {
-          "Level": 17,
-          "Hero HP": 665,
-          "Hero Power": 4160,
-          "Ult Damage": 0,
-          "Overhealth": 499
-        },
-        {
-          "Level": 18,
-          "Hero HP": 681,
-          "Hero Power": 4250,
-          "Ult Damage": 0,
-          "Overhealth": 510
-        },
-        {
-          "Level": 19,
-          "Hero HP": 696,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Overhealth": 522
-        },
-        {
-          "Level": 20,
-          "Hero HP": 711,
-          "Hero Power": 4440,
-          "Ult Damage": 0,
-          "Overhealth": 533
-        },
-        {
-          "Level": 21,
-          "Hero HP": 726,
-          "Hero Power": 4540,
-          "Ult Damage": 0,
-          "Overhealth": 545
-        },
-        {
-          "Level": 22,
-          "Hero HP": 742,
-          "Hero Power": 4640,
-          "Ult Damage": 0,
-          "Overhealth": 556
-        },
-        {
-          "Level": 23,
-          "Hero HP": 757,
-          "Hero Power": 4730,
-          "Ult Damage": 0,
-          "Overhealth": 568
-        },
-        {
-          "Level": 24,
-          "Hero HP": 772,
-          "Hero Power": 4830,
-          "Ult Damage": 0,
-          "Overhealth": 579
-        },
-        {
-          "Level": 25,
-          "Hero HP": 788,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 591
-        },
-        {
-          "Level": 26,
-          "Hero HP": 798,
-          "Hero Power": 4990,
-          "Ult Damage": 0,
-          "Overhealth": 599
-        },
-        {
-          "Level": 27,
-          "Hero HP": 809,
-          "Hero Power": 5050,
-          "Ult Damage": 0,
-          "Overhealth": 606
-        },
-        {
-          "Level": 28,
-          "Hero HP": 819,
-          "Hero Power": 5120,
-          "Ult Damage": 0,
-          "Overhealth": 614
-        },
-        {
-          "Level": 29,
-          "Hero HP": 830,
-          "Hero Power": 5180,
-          "Ult Damage": 0,
-          "Overhealth": 622
-        },
-        {
-          "Level": 30,
-          "Hero HP": 840,
-          "Hero Power": 5250,
-          "Ult Damage": 0,
-          "Overhealth": 630
         }
       ]
     },
@@ -2326,8 +566,8 @@
         "Hero Power",
         "Ult Damage",
         "Overhealth",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -2336,8 +576,8 @@
           "Hero Power": 3900,
           "Ult Damage": 169,
           "Overhealth": 104,
-          "Ult Fire Rate": 1300,
-          "Ult Power": 1100
+          "Ult Power": 1300,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 2,
@@ -2345,8 +585,8 @@
           "Hero Power": 4750,
           "Ult Damage": 206,
           "Overhealth": 127,
-          "Ult Fire Rate": 1580,
-          "Ult Power": 1100
+          "Ult Power": 1580,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 3,
@@ -2354,8 +594,8 @@
           "Hero Power": 5600,
           "Ult Damage": 243,
           "Overhealth": 149,
-          "Ult Fire Rate": 1870,
-          "Ult Power": 1100
+          "Ult Power": 1870,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 4,
@@ -2363,8 +603,8 @@
           "Hero Power": 6450,
           "Ult Damage": 280,
           "Overhealth": 172,
-          "Ult Fire Rate": 2150,
-          "Ult Power": 1100
+          "Ult Power": 2150,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 5,
@@ -2372,8 +612,8 @@
           "Hero Power": 7300,
           "Ult Damage": 316,
           "Overhealth": 195,
-          "Ult Fire Rate": 2430,
-          "Ult Power": 1100
+          "Ult Power": 2430,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 6,
@@ -2381,8 +621,8 @@
           "Hero Power": 8150,
           "Ult Damage": 353,
           "Overhealth": 217,
-          "Ult Fire Rate": 2720,
-          "Ult Power": 1100
+          "Ult Power": 2720,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 7,
@@ -2390,8 +630,8 @@
           "Hero Power": 9000,
           "Ult Damage": 390,
           "Overhealth": 240,
-          "Ult Fire Rate": 3000,
-          "Ult Power": 1100
+          "Ult Power": 3000,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 8,
@@ -2399,8 +639,8 @@
           "Hero Power": 9850,
           "Ult Damage": 427,
           "Overhealth": 263,
-          "Ult Fire Rate": 3280,
-          "Ult Power": 1100
+          "Ult Power": 3280,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 9,
@@ -2408,8 +648,8 @@
           "Hero Power": 10700,
           "Ult Damage": 464,
           "Overhealth": 285,
-          "Ult Fire Rate": 3570,
-          "Ult Power": 1100
+          "Ult Power": 3570,
+          "Ult Fire Rate": 1100
         },
         {
           "Level": 10,
@@ -2417,508 +657,8 @@
           "Hero Power": 11550,
           "Ult Damage": 501,
           "Overhealth": 308,
-          "Ult Fire Rate": 3850,
-          "Ult Power": 1100
-        },
-        {
-          "Level": 11,
-          "Hero HP": 783,
-          "Hero Power": 3260,
-          "Ult Damage": 0,
-          "Overhealth": 261,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 825,
-          "Hero Power": 3440,
-          "Ult Damage": 0,
-          "Overhealth": 275,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 867,
-          "Hero Power": 3610,
-          "Ult Damage": 0,
-          "Overhealth": 289,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 910,
-          "Hero Power": 3790,
-          "Ult Damage": 0,
-          "Overhealth": 303,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 952,
-          "Hero Power": 3970,
-          "Ult Damage": 0,
-          "Overhealth": 317,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 975,
-          "Hero Power": 4060,
-          "Ult Damage": 0,
-          "Overhealth": 325,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 998,
-          "Hero Power": 4160,
-          "Ult Damage": 0,
-          "Overhealth": 333,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 1021,
-          "Hero Power": 4250,
-          "Ult Damage": 0,
-          "Overhealth": 340,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 1044,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Overhealth": 348,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 1067,
-          "Hero Power": 4440,
-          "Ult Damage": 0,
-          "Overhealth": 356,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 1090,
-          "Hero Power": 4540,
-          "Ult Damage": 0,
-          "Overhealth": 363,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1112,
-          "Hero Power": 4640,
-          "Ult Damage": 0,
-          "Overhealth": 371,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1135,
-          "Hero Power": 4730,
-          "Ult Damage": 0,
-          "Overhealth": 378,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1158,
-          "Hero Power": 4830,
-          "Ult Damage": 0,
-          "Overhealth": 386,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1181,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 394,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1197,
-          "Hero Power": 4990,
-          "Ult Damage": 0,
-          "Overhealth": 399,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1213,
-          "Hero Power": 5050,
-          "Ult Damage": 0,
-          "Overhealth": 404,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1229,
-          "Hero Power": 5120,
-          "Ult Damage": 0,
-          "Overhealth": 410,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1244,
-          "Hero Power": 5180,
-          "Ult Damage": 0,
-          "Overhealth": 415,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1260,
-          "Hero Power": 5250,
-          "Ult Damage": 0,
-          "Overhealth": 420,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        }
-      ]
-    },
-    {
-      "name": "Molly",
-      "ultimate": "Unknown (Molly)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 312,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 2,
-          "Hero HP": 380,
-          "Hero Power": 4750
-        },
-        {
-          "Level": 3,
-          "Hero HP": 448,
-          "Hero Power": 5600
-        },
-        {
-          "Level": 4,
-          "Hero HP": 516,
-          "Hero Power": 6450
-        },
-        {
-          "Level": 5,
-          "Hero HP": 584,
-          "Hero Power": 7300
-        },
-        {
-          "Level": 6,
-          "Hero HP": 652,
-          "Hero Power": 8150
-        },
-        {
-          "Level": 7,
-          "Hero HP": 720,
-          "Hero Power": 9000
-        },
-        {
-          "Level": 8,
-          "Hero HP": 788,
-          "Hero Power": 9850
-        },
-        {
-          "Level": 9,
-          "Hero HP": 856,
-          "Hero Power": 10700
-        },
-        {
-          "Level": 10,
-          "Hero HP": 924,
-          "Hero Power": 11550
-        },
-        {
-          "Level": 11,
-          "Hero HP": 783,
-          "Hero Power": 3260
-        },
-        {
-          "Level": 12,
-          "Hero HP": 825,
-          "Hero Power": 3440
-        },
-        {
-          "Level": 13,
-          "Hero HP": 867,
-          "Hero Power": 3610
-        },
-        {
-          "Level": 14,
-          "Hero HP": 910,
-          "Hero Power": 3790
-        },
-        {
-          "Level": 15,
-          "Hero HP": 952,
-          "Hero Power": 3970
-        },
-        {
-          "Level": 16,
-          "Hero HP": 975,
-          "Hero Power": 4060
-        },
-        {
-          "Level": 17,
-          "Hero HP": 998,
-          "Hero Power": 4160
-        },
-        {
-          "Level": 18,
-          "Hero HP": 1021,
-          "Hero Power": 4250
-        },
-        {
-          "Level": 19,
-          "Hero HP": 1044,
-          "Hero Power": 4350
-        },
-        {
-          "Level": 20,
-          "Hero HP": 1067,
-          "Hero Power": 4440
-        },
-        {
-          "Level": 21,
-          "Hero HP": 1090,
-          "Hero Power": 4540
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1112,
-          "Hero Power": 4640
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1135,
-          "Hero Power": 4730
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1158,
-          "Hero Power": 4830
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1181,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1197,
-          "Hero Power": 4990
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1213,
-          "Hero Power": 5050
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1229,
-          "Hero Power": 5120
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1244,
-          "Hero Power": 5180
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1260,
-          "Hero Power": 5250
-        }
-      ]
-    },
-    {
-      "name": "Nakari",
-      "ultimate": "Unknown (Nakari)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 200,
-          "Hero Power": 3000
-        },
-        {
-          "Level": 2,
-          "Hero HP": 260,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 3,
-          "Hero HP": 320,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 4,
-          "Hero HP": 380,
-          "Hero Power": 5700
-        },
-        {
-          "Level": 5,
-          "Hero HP": 440,
-          "Hero Power": 6600
-        },
-        {
-          "Level": 6,
-          "Hero HP": 500,
-          "Hero Power": 7500
-        },
-        {
-          "Level": 7,
-          "Hero HP": 560,
-          "Hero Power": 8400
-        },
-        {
-          "Level": 8,
-          "Hero HP": 620,
-          "Hero Power": 9300
-        },
-        {
-          "Level": 9,
-          "Hero HP": 680,
-          "Hero Power": 10200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 740,
-          "Hero Power": 11100
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000
+          "Ult Power": 3850,
+          "Ult Fire Rate": 1100
         }
       ]
     },
@@ -2930,8 +670,8 @@
         "Hero Power",
         "Ult Damage",
         "Overhealth",
-        "Ult Fire Rate",
-        "Ult Power"
+        "Ult Power",
+        "Ult Fire Rate"
       ],
       "levels": [
         {
@@ -2940,8 +680,8 @@
           "Hero Power": 3900,
           "Ult Damage": 39,
           "Overhealth": 104,
-          "Ult Fire Rate": 1300,
-          "Ult Power": 900
+          "Ult Power": 1300,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 2,
@@ -2949,8 +689,8 @@
           "Hero Power": 4750,
           "Ult Damage": 48,
           "Overhealth": 127,
-          "Ult Fire Rate": 1580,
-          "Ult Power": 900
+          "Ult Power": 1580,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 3,
@@ -2958,8 +698,8 @@
           "Hero Power": 5600,
           "Ult Damage": 56,
           "Overhealth": 149,
-          "Ult Fire Rate": 1870,
-          "Ult Power": 900
+          "Ult Power": 1870,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 4,
@@ -2967,8 +707,8 @@
           "Hero Power": 6450,
           "Ult Damage": 65,
           "Overhealth": 172,
-          "Ult Fire Rate": 2150,
-          "Ult Power": 900
+          "Ult Power": 2150,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 5,
@@ -2976,8 +716,8 @@
           "Hero Power": 7300,
           "Ult Damage": 73,
           "Overhealth": 195,
-          "Ult Fire Rate": 2430,
-          "Ult Power": 900
+          "Ult Power": 2430,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 6,
@@ -2985,8 +725,8 @@
           "Hero Power": 8150,
           "Ult Damage": 82,
           "Overhealth": 217,
-          "Ult Fire Rate": 2720,
-          "Ult Power": 900
+          "Ult Power": 2720,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 7,
@@ -2994,8 +734,8 @@
           "Hero Power": 9000,
           "Ult Damage": 90,
           "Overhealth": 240,
-          "Ult Fire Rate": 3000,
-          "Ult Power": 900
+          "Ult Power": 3000,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 8,
@@ -3003,8 +743,8 @@
           "Hero Power": 9850,
           "Ult Damage": 99,
           "Overhealth": 263,
-          "Ult Fire Rate": 3280,
-          "Ult Power": 900
+          "Ult Power": 3280,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 9,
@@ -3012,8 +752,8 @@
           "Hero Power": 10700,
           "Ult Damage": 107,
           "Overhealth": 285,
-          "Ult Fire Rate": 3570,
-          "Ult Power": 900
+          "Ult Power": 3570,
+          "Ult Fire Rate": 900
         },
         {
           "Level": 10,
@@ -3021,188 +761,8 @@
           "Hero Power": 11550,
           "Ult Damage": 116,
           "Overhealth": 308,
-          "Ult Fire Rate": 3850,
-          "Ult Power": 900
-        },
-        {
-          "Level": 11,
-          "Hero HP": 652,
-          "Hero Power": 3260,
-          "Ult Damage": 0,
-          "Overhealth": 261,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 12,
-          "Hero HP": 688,
-          "Hero Power": 3440,
-          "Ult Damage": 0,
-          "Overhealth": 275,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 13,
-          "Hero HP": 723,
-          "Hero Power": 3610,
-          "Ult Damage": 0,
-          "Overhealth": 289,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 14,
-          "Hero HP": 758,
-          "Hero Power": 3790,
-          "Ult Damage": 0,
-          "Overhealth": 303,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 15,
-          "Hero HP": 793,
-          "Hero Power": 3970,
-          "Ult Damage": 0,
-          "Overhealth": 317,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 16,
-          "Hero HP": 812,
-          "Hero Power": 4060,
-          "Ult Damage": 0,
-          "Overhealth": 325,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 17,
-          "Hero HP": 832,
-          "Hero Power": 4160,
-          "Ult Damage": 0,
-          "Overhealth": 333,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 18,
-          "Hero HP": 851,
-          "Hero Power": 4250,
-          "Ult Damage": 0,
-          "Overhealth": 340,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 19,
-          "Hero HP": 870,
-          "Hero Power": 4350,
-          "Ult Damage": 0,
-          "Overhealth": 348,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 20,
-          "Hero HP": 889,
-          "Hero Power": 4440,
-          "Ult Damage": 0,
-          "Overhealth": 356,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 21,
-          "Hero HP": 908,
-          "Hero Power": 4540,
-          "Ult Damage": 0,
-          "Overhealth": 363,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 22,
-          "Hero HP": 927,
-          "Hero Power": 4640,
-          "Ult Damage": 0,
-          "Overhealth": 371,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 23,
-          "Hero HP": 946,
-          "Hero Power": 4730,
-          "Ult Damage": 0,
-          "Overhealth": 378,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 24,
-          "Hero HP": 965,
-          "Hero Power": 4830,
-          "Ult Damage": 0,
-          "Overhealth": 386,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 25,
-          "Hero HP": 984,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 394,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 26,
-          "Hero HP": 998,
-          "Hero Power": 4990,
-          "Ult Damage": 0,
-          "Overhealth": 399,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1011,
-          "Hero Power": 5050,
-          "Ult Damage": 0,
-          "Overhealth": 404,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1024,
-          "Hero Power": 5120,
-          "Ult Damage": 0,
-          "Overhealth": 410,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1037,
-          "Hero Power": 5180,
-          "Ult Damage": 0,
-          "Overhealth": 415,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1050,
-          "Hero Power": 5250,
-          "Ult Damage": 0,
-          "Overhealth": 420,
-          "Ult Fire Rate": 0,
-          "Ult Power": 0
+          "Ult Power": 3850,
+          "Ult Fire Rate": 900
         }
       ]
     },
@@ -3411,186 +971,6 @@
           "Projectile Time": 0.13,
           "Missiles": 18,
           "Overhealth": 296
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 217
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 231
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 245
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 258
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 272
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 282
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 291
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 301
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 310
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 320
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 330
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 339
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 349
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 358
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 368
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 374
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 381
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 387
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 394
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000,
-          "Ult Damage": 0,
-          "Projectile Time": 0,
-          "Missiles": 0,
-          "Overhealth": 400
         }
       ]
     },
@@ -3673,466 +1053,6 @@
           "Hero Power": 11100,
           "Ult Damage": 407,
           "Overhealth": 148
-        },
-        {
-          "Level": 11,
-          "Hero HP": 543,
-          "Hero Power": 2710,
-          "Ult Damage": 0,
-          "Overhealth": 109
-        },
-        {
-          "Level": 12,
-          "Hero HP": 577,
-          "Hero Power": 2890,
-          "Ult Damage": 0,
-          "Overhealth": 115
-        },
-        {
-          "Level": 13,
-          "Hero HP": 611,
-          "Hero Power": 3060,
-          "Ult Damage": 0,
-          "Overhealth": 122
-        },
-        {
-          "Level": 14,
-          "Hero HP": 646,
-          "Hero Power": 3230,
-          "Ult Damage": 0,
-          "Overhealth": 129
-        },
-        {
-          "Level": 15,
-          "Hero HP": 680,
-          "Hero Power": 3400,
-          "Ult Damage": 0,
-          "Overhealth": 136
-        },
-        {
-          "Level": 16,
-          "Hero HP": 704,
-          "Hero Power": 3520,
-          "Ult Damage": 0,
-          "Overhealth": 141
-        },
-        {
-          "Level": 17,
-          "Hero HP": 728,
-          "Hero Power": 3640,
-          "Ult Damage": 0,
-          "Overhealth": 146
-        },
-        {
-          "Level": 18,
-          "Hero HP": 752,
-          "Hero Power": 3760,
-          "Ult Damage": 0,
-          "Overhealth": 150
-        },
-        {
-          "Level": 19,
-          "Hero HP": 776,
-          "Hero Power": 3880,
-          "Ult Damage": 0,
-          "Overhealth": 155
-        },
-        {
-          "Level": 20,
-          "Hero HP": 800,
-          "Hero Power": 4000,
-          "Ult Damage": 0,
-          "Overhealth": 160
-        },
-        {
-          "Level": 21,
-          "Hero HP": 824,
-          "Hero Power": 4120,
-          "Ult Damage": 0,
-          "Overhealth": 165
-        },
-        {
-          "Level": 22,
-          "Hero HP": 848,
-          "Hero Power": 4240,
-          "Ult Damage": 0,
-          "Overhealth": 170
-        },
-        {
-          "Level": 23,
-          "Hero HP": 872,
-          "Hero Power": 4360,
-          "Ult Damage": 0,
-          "Overhealth": 174
-        },
-        {
-          "Level": 24,
-          "Hero HP": 896,
-          "Hero Power": 4480,
-          "Ult Damage": 0,
-          "Overhealth": 179
-        },
-        {
-          "Level": 25,
-          "Hero HP": 920,
-          "Hero Power": 4600,
-          "Ult Damage": 0,
-          "Overhealth": 184
-        },
-        {
-          "Level": 26,
-          "Hero HP": 936,
-          "Hero Power": 4680,
-          "Ult Damage": 0,
-          "Overhealth": 187
-        },
-        {
-          "Level": 27,
-          "Hero HP": 952,
-          "Hero Power": 4760,
-          "Ult Damage": 0,
-          "Overhealth": 190
-        },
-        {
-          "Level": 28,
-          "Hero HP": 968,
-          "Hero Power": 4840,
-          "Ult Damage": 0,
-          "Overhealth": 194
-        },
-        {
-          "Level": 29,
-          "Hero HP": 984,
-          "Hero Power": 4920,
-          "Ult Damage": 0,
-          "Overhealth": 197
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1000,
-          "Hero Power": 5000,
-          "Ult Damage": 0,
-          "Overhealth": 200
-        }
-      ]
-    },
-    {
-      "name": "Steeljaw",
-      "ultimate": "Unknown (Steeljaw)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 384,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 2,
-          "Hero HP": 448,
-          "Hero Power": 5600
-        },
-        {
-          "Level": 3,
-          "Hero HP": 512,
-          "Hero Power": 6400
-        },
-        {
-          "Level": 4,
-          "Hero HP": 576,
-          "Hero Power": 7200
-        },
-        {
-          "Level": 5,
-          "Hero HP": 640,
-          "Hero Power": 8000
-        },
-        {
-          "Level": 6,
-          "Hero HP": 704,
-          "Hero Power": 8800
-        },
-        {
-          "Level": 7,
-          "Hero HP": 768,
-          "Hero Power": 9600
-        },
-        {
-          "Level": 8,
-          "Hero HP": 832,
-          "Hero Power": 10400
-        },
-        {
-          "Level": 9,
-          "Hero HP": 896,
-          "Hero Power": 11200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 960,
-          "Hero Power": 12000
-        },
-        {
-          "Level": 11,
-          "Hero HP": 914,
-          "Hero Power": 3810
-        },
-        {
-          "Level": 12,
-          "Hero HP": 958,
-          "Hero Power": 3990
-        },
-        {
-          "Level": 13,
-          "Hero HP": 1001,
-          "Hero Power": 4170
-        },
-        {
-          "Level": 14,
-          "Hero HP": 1045,
-          "Hero Power": 4350
-        },
-        {
-          "Level": 15,
-          "Hero HP": 1088,
-          "Hero Power": 4530
-        },
-        {
-          "Level": 16,
-          "Hero HP": 1105,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 17,
-          "Hero HP": 1122,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 18,
-          "Hero HP": 1139,
-          "Hero Power": 4750
-        },
-        {
-          "Level": 19,
-          "Hero HP": 1156,
-          "Hero Power": 4820
-        },
-        {
-          "Level": 20,
-          "Hero HP": 1173,
-          "Hero Power": 4890
-        },
-        {
-          "Level": 21,
-          "Hero HP": 1190,
-          "Hero Power": 4960
-        },
-        {
-          "Level": 22,
-          "Hero HP": 1207,
-          "Hero Power": 5030
-        },
-        {
-          "Level": 23,
-          "Hero HP": 1224,
-          "Hero Power": 5100
-        },
-        {
-          "Level": 24,
-          "Hero HP": 1242,
-          "Hero Power": 5170
-        },
-        {
-          "Level": 25,
-          "Hero HP": 1259,
-          "Hero Power": 5240
-        },
-        {
-          "Level": 26,
-          "Hero HP": 1271,
-          "Hero Power": 5300
-        },
-        {
-          "Level": 27,
-          "Hero HP": 1283,
-          "Hero Power": 5350
-        },
-        {
-          "Level": 28,
-          "Hero HP": 1295,
-          "Hero Power": 5400
-        },
-        {
-          "Level": 29,
-          "Hero HP": 1308,
-          "Hero Power": 5450
-        },
-        {
-          "Level": 30,
-          "Hero HP": 1320,
-          "Hero Power": 5500
-        }
-      ]
-    },
-    {
-      "name": "Terry",
-      "ultimate": "Unknown (Terry)",
-      "columns": [
-        "Hero HP",
-        "Hero Power"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Hero HP": 160,
-          "Hero Power": 3000
-        },
-        {
-          "Level": 2,
-          "Hero HP": 208,
-          "Hero Power": 3900
-        },
-        {
-          "Level": 3,
-          "Hero HP": 256,
-          "Hero Power": 4800
-        },
-        {
-          "Level": 4,
-          "Hero HP": 304,
-          "Hero Power": 5700
-        },
-        {
-          "Level": 5,
-          "Hero HP": 352,
-          "Hero Power": 6600
-        },
-        {
-          "Level": 6,
-          "Hero HP": 400,
-          "Hero Power": 7500
-        },
-        {
-          "Level": 7,
-          "Hero HP": 448,
-          "Hero Power": 8400
-        },
-        {
-          "Level": 8,
-          "Hero HP": 496,
-          "Hero Power": 9300
-        },
-        {
-          "Level": 9,
-          "Hero HP": 544,
-          "Hero Power": 10200
-        },
-        {
-          "Level": 10,
-          "Hero HP": 592,
-          "Hero Power": 11100
-        },
-        {
-          "Level": 11,
-          "Hero HP": 434,
-          "Hero Power": 2710
-        },
-        {
-          "Level": 12,
-          "Hero HP": 462,
-          "Hero Power": 2890
-        },
-        {
-          "Level": 13,
-          "Hero HP": 489,
-          "Hero Power": 3060
-        },
-        {
-          "Level": 14,
-          "Hero HP": 517,
-          "Hero Power": 3230
-        },
-        {
-          "Level": 15,
-          "Hero HP": 544,
-          "Hero Power": 3400
-        },
-        {
-          "Level": 16,
-          "Hero HP": 563,
-          "Hero Power": 3520
-        },
-        {
-          "Level": 17,
-          "Hero HP": 582,
-          "Hero Power": 3640
-        },
-        {
-          "Level": 18,
-          "Hero HP": 602,
-          "Hero Power": 3760
-        },
-        {
-          "Level": 19,
-          "Hero HP": 621,
-          "Hero Power": 3880
-        },
-        {
-          "Level": 20,
-          "Hero HP": 640,
-          "Hero Power": 4000
-        },
-        {
-          "Level": 21,
-          "Hero HP": 659,
-          "Hero Power": 4120
-        },
-        {
-          "Level": 22,
-          "Hero HP": 678,
-          "Hero Power": 4240
-        },
-        {
-          "Level": 23,
-          "Hero HP": 698,
-          "Hero Power": 4360
-        },
-        {
-          "Level": 24,
-          "Hero HP": 717,
-          "Hero Power": 4480
-        },
-        {
-          "Level": 25,
-          "Hero HP": 736,
-          "Hero Power": 4600
-        },
-        {
-          "Level": 26,
-          "Hero HP": 749,
-          "Hero Power": 4680
-        },
-        {
-          "Level": 27,
-          "Hero HP": 762,
-          "Hero Power": 4760
-        },
-        {
-          "Level": 28,
-          "Hero HP": 774,
-          "Hero Power": 4840
-        },
-        {
-          "Level": 29,
-          "Hero HP": 787,
-          "Hero Power": 4920
-        },
-        {
-          "Level": 30,
-          "Hero HP": 800,
-          "Hero Power": 5000
         }
       ]
     },
@@ -4237,186 +1157,486 @@
           "Tank Damage": 408,
           "Tank Fire Rate": 0.7,
           "Tank Range": 51
+        }
+      ]
+    },
+    {
+      "name": "Chance",
+      "ultimate": "Unknown (Chance)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 384,
+          "Hero Power": 4800
         },
         {
-          "Level": 11,
-          "Hero HP": 610,
-          "Hero Power": 3810,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 2,
+          "Hero HP": 448,
+          "Hero Power": 5600
         },
         {
-          "Level": 12,
-          "Hero HP": 638,
-          "Hero Power": 3990,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 3,
+          "Hero HP": 512,
+          "Hero Power": 6400
         },
         {
-          "Level": 13,
-          "Hero HP": 667,
-          "Hero Power": 4170,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 4,
+          "Hero HP": 576,
+          "Hero Power": 7200
         },
         {
-          "Level": 14,
-          "Hero HP": 696,
-          "Hero Power": 4350,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 5,
+          "Hero HP": 640,
+          "Hero Power": 8000
         },
         {
-          "Level": 15,
-          "Hero HP": 725,
-          "Hero Power": 4530,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 6,
+          "Hero HP": 704,
+          "Hero Power": 8800
         },
         {
-          "Level": 16,
-          "Hero HP": 737,
-          "Hero Power": 4600,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 7,
+          "Hero HP": 768,
+          "Hero Power": 9600
         },
         {
-          "Level": 17,
-          "Hero HP": 748,
-          "Hero Power": 4680,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 8,
+          "Hero HP": 832,
+          "Hero Power": 10400
         },
         {
-          "Level": 18,
-          "Hero HP": 759,
-          "Hero Power": 4750,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 9,
+          "Hero HP": 896,
+          "Hero Power": 11200
         },
         {
-          "Level": 19,
-          "Hero HP": 771,
-          "Hero Power": 4820,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 10,
+          "Hero HP": 960,
+          "Hero Power": 12000
+        }
+      ]
+    },
+    {
+      "name": "Crumby",
+      "ultimate": "Unknown (Crumby)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 260,
+          "Hero Power": 3900
         },
         {
-          "Level": 20,
-          "Hero HP": 782,
-          "Hero Power": 4890,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 2,
+          "Hero HP": 317,
+          "Hero Power": 4750
         },
         {
-          "Level": 21,
-          "Hero HP": 794,
-          "Hero Power": 4960,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 3,
+          "Hero HP": 373,
+          "Hero Power": 5600
         },
         {
-          "Level": 22,
-          "Hero HP": 805,
-          "Hero Power": 5030,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 4,
+          "Hero HP": 430,
+          "Hero Power": 6450
         },
         {
-          "Level": 23,
-          "Hero HP": 816,
-          "Hero Power": 5100,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 5,
+          "Hero HP": 487,
+          "Hero Power": 7300
         },
         {
-          "Level": 24,
-          "Hero HP": 828,
-          "Hero Power": 5170,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 6,
+          "Hero HP": 543,
+          "Hero Power": 8150
         },
         {
-          "Level": 25,
-          "Hero HP": 839,
-          "Hero Power": 5240,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 7,
+          "Hero HP": 600,
+          "Hero Power": 9000
         },
         {
-          "Level": 26,
-          "Hero HP": 847,
-          "Hero Power": 5300,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 8,
+          "Hero HP": 657,
+          "Hero Power": 9850
         },
         {
-          "Level": 27,
-          "Hero HP": 855,
-          "Hero Power": 5350,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 9,
+          "Hero HP": 713,
+          "Hero Power": 10700
         },
         {
-          "Level": 28,
-          "Hero HP": 864,
-          "Hero Power": 5400,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 10,
+          "Hero HP": 770,
+          "Hero Power": 11550
+        }
+      ]
+    },
+    {
+      "name": "Flare",
+      "ultimate": "Unknown (Flare)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 160,
+          "Hero Power": 3000
         },
         {
-          "Level": 29,
-          "Hero HP": 872,
-          "Hero Power": 5450,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 2,
+          "Hero HP": 208,
+          "Hero Power": 3900
         },
         {
-          "Level": 30,
-          "Hero HP": 880,
-          "Hero Power": 5500,
-          "Tank HP": 0,
-          "Tank Damage": 0,
-          "Tank Fire Rate": 0,
-          "Tank Range": 0
+          "Level": 3,
+          "Hero HP": 256,
+          "Hero Power": 4800
+        },
+        {
+          "Level": 4,
+          "Hero HP": 304,
+          "Hero Power": 5700
+        },
+        {
+          "Level": 5,
+          "Hero HP": 352,
+          "Hero Power": 6600
+        },
+        {
+          "Level": 6,
+          "Hero HP": 400,
+          "Hero Power": 7500
+        },
+        {
+          "Level": 7,
+          "Hero HP": 448,
+          "Hero Power": 8400
+        },
+        {
+          "Level": 8,
+          "Hero HP": 496,
+          "Hero Power": 9300
+        },
+        {
+          "Level": 9,
+          "Hero HP": 544,
+          "Hero Power": 10200
+        },
+        {
+          "Level": 10,
+          "Hero HP": 592,
+          "Hero Power": 11100
+        }
+      ]
+    },
+    {
+      "name": "Helen",
+      "ultimate": "Unknown (Helen)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 312,
+          "Hero Power": 3900
+        },
+        {
+          "Level": 2,
+          "Hero HP": 380,
+          "Hero Power": 4750
+        },
+        {
+          "Level": 3,
+          "Hero HP": 448,
+          "Hero Power": 5600
+        },
+        {
+          "Level": 4,
+          "Hero HP": 516,
+          "Hero Power": 6450
+        },
+        {
+          "Level": 5,
+          "Hero HP": 584,
+          "Hero Power": 7300
+        },
+        {
+          "Level": 6,
+          "Hero HP": 652,
+          "Hero Power": 8150
+        },
+        {
+          "Level": 7,
+          "Hero HP": 720,
+          "Hero Power": 9000
+        },
+        {
+          "Level": 8,
+          "Hero HP": 788,
+          "Hero Power": 9850
+        },
+        {
+          "Level": 9,
+          "Hero HP": 856,
+          "Hero Power": 10700
+        },
+        {
+          "Level": 10,
+          "Hero HP": 924,
+          "Hero Power": 11550
+        }
+      ]
+    },
+    {
+      "name": "Molly",
+      "ultimate": "Unknown (Molly)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 312,
+          "Hero Power": 3900
+        },
+        {
+          "Level": 2,
+          "Hero HP": 380,
+          "Hero Power": 4750
+        },
+        {
+          "Level": 3,
+          "Hero HP": 448,
+          "Hero Power": 5600
+        },
+        {
+          "Level": 4,
+          "Hero HP": 516,
+          "Hero Power": 6450
+        },
+        {
+          "Level": 5,
+          "Hero HP": 584,
+          "Hero Power": 7300
+        },
+        {
+          "Level": 6,
+          "Hero HP": 652,
+          "Hero Power": 8150
+        },
+        {
+          "Level": 7,
+          "Hero HP": 720,
+          "Hero Power": 9000
+        },
+        {
+          "Level": 8,
+          "Hero HP": 788,
+          "Hero Power": 9850
+        },
+        {
+          "Level": 9,
+          "Hero HP": 856,
+          "Hero Power": 10700
+        },
+        {
+          "Level": 10,
+          "Hero HP": 924,
+          "Hero Power": 11550
+        }
+      ]
+    },
+    {
+      "name": "Nakari",
+      "ultimate": "Unknown (Nakari)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 200,
+          "Hero Power": 3000
+        },
+        {
+          "Level": 2,
+          "Hero HP": 260,
+          "Hero Power": 3900
+        },
+        {
+          "Level": 3,
+          "Hero HP": 320,
+          "Hero Power": 4800
+        },
+        {
+          "Level": 4,
+          "Hero HP": 380,
+          "Hero Power": 5700
+        },
+        {
+          "Level": 5,
+          "Hero HP": 440,
+          "Hero Power": 6600
+        },
+        {
+          "Level": 6,
+          "Hero HP": 500,
+          "Hero Power": 7500
+        },
+        {
+          "Level": 7,
+          "Hero HP": 560,
+          "Hero Power": 8400
+        },
+        {
+          "Level": 8,
+          "Hero HP": 620,
+          "Hero Power": 9300
+        },
+        {
+          "Level": 9,
+          "Hero HP": 680,
+          "Hero Power": 10200
+        },
+        {
+          "Level": 10,
+          "Hero HP": 740,
+          "Hero Power": 11100
+        }
+      ]
+    },
+    {
+      "name": "Steeljaw",
+      "ultimate": "Unknown (Steeljaw)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 384,
+          "Hero Power": 4800
+        },
+        {
+          "Level": 2,
+          "Hero HP": 448,
+          "Hero Power": 5600
+        },
+        {
+          "Level": 3,
+          "Hero HP": 512,
+          "Hero Power": 6400
+        },
+        {
+          "Level": 4,
+          "Hero HP": 576,
+          "Hero Power": 7200
+        },
+        {
+          "Level": 5,
+          "Hero HP": 640,
+          "Hero Power": 8000
+        },
+        {
+          "Level": 6,
+          "Hero HP": 704,
+          "Hero Power": 8800
+        },
+        {
+          "Level": 7,
+          "Hero HP": 768,
+          "Hero Power": 9600
+        },
+        {
+          "Level": 8,
+          "Hero HP": 832,
+          "Hero Power": 10400
+        },
+        {
+          "Level": 9,
+          "Hero HP": 896,
+          "Hero Power": 11200
+        },
+        {
+          "Level": 10,
+          "Hero HP": 960,
+          "Hero Power": 12000
+        }
+      ]
+    },
+    {
+      "name": "Terry",
+      "ultimate": "Unknown (Terry)",
+      "columns": [
+        "Hero HP",
+        "Hero Power"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Hero HP": 160,
+          "Hero Power": 3000
+        },
+        {
+          "Level": 2,
+          "Hero HP": 208,
+          "Hero Power": 3900
+        },
+        {
+          "Level": 3,
+          "Hero HP": 256,
+          "Hero Power": 4800
+        },
+        {
+          "Level": 4,
+          "Hero HP": 304,
+          "Hero Power": 5700
+        },
+        {
+          "Level": 5,
+          "Hero HP": 352,
+          "Hero Power": 6600
+        },
+        {
+          "Level": 6,
+          "Hero HP": 400,
+          "Hero Power": 7500
+        },
+        {
+          "Level": 7,
+          "Hero HP": 448,
+          "Hero Power": 8400
+        },
+        {
+          "Level": 8,
+          "Hero HP": 496,
+          "Hero Power": 9300
+        },
+        {
+          "Level": 9,
+          "Hero HP": 544,
+          "Hero Power": 10200
+        },
+        {
+          "Level": 10,
+          "Hero HP": 592,
+          "Hero Power": 11100
         }
       ]
     }
@@ -4533,54 +1753,6 @@
           "Range": 35,
           "MaxAmmo": 30,
           "ReloadTime": 1.4
-        }
-      ]
-    },
-    {
-      "name": "Amoeboid Launcher",
-      "columns": [
-        "Damage"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "Damage": 0
-        },
-        {
-          "Level": 2,
-          "Damage": 0
-        },
-        {
-          "Level": 3,
-          "Damage": 0
-        },
-        {
-          "Level": 4,
-          "Damage": 0
-        },
-        {
-          "Level": 5,
-          "Damage": 0
-        },
-        {
-          "Level": 6,
-          "Damage": 0
-        },
-        {
-          "Level": 7,
-          "Damage": 0
-        },
-        {
-          "Level": 8,
-          "Damage": 0
-        },
-        {
-          "Level": 9,
-          "Damage": 0
-        },
-        {
-          "Level": 10,
-          "Damage": 0
         }
       ]
     },
@@ -4799,52 +1971,52 @@
       "levels": [
         {
           "Level": 1,
-          "Damage": 117,
+          "Damage": 112,
           "Mod Damage": 120
         },
         {
           "Level": 2,
-          "Damage": 136,
+          "Damage": 131,
           "Mod Damage": 140
         },
         {
           "Level": 3,
-          "Damage": 156,
+          "Damage": 149,
           "Mod Damage": 160
         },
         {
           "Level": 4,
-          "Damage": 175,
+          "Damage": 168,
           "Mod Damage": 180
         },
         {
           "Level": 5,
-          "Damage": 195,
+          "Damage": 187,
           "Mod Damage": 200
         },
         {
           "Level": 6,
-          "Damage": 214,
+          "Damage": 205,
           "Mod Damage": 220
         },
         {
           "Level": 7,
-          "Damage": 234,
+          "Damage": 224,
           "Mod Damage": 240
         },
         {
           "Level": 8,
-          "Damage": 253,
+          "Damage": 243,
           "Mod Damage": 260
         },
         {
           "Level": 9,
-          "Damage": 273,
+          "Damage": 261,
           "Mod Damage": 280
         },
         {
           "Level": 10,
-          "Damage": 292,
+          "Damage": 280,
           "Mod Damage": 300
         }
       ]
@@ -5178,52 +2350,52 @@
       "levels": [
         {
           "Level": 1,
-          "Damage": 83,
+          "Damage": 88,
           "Mod Damage": 6
         },
         {
           "Level": 2,
-          "Damage": 97,
+          "Damage": 103,
           "Mod Damage": 7
         },
         {
           "Level": 3,
-          "Damage": 111,
+          "Damage": 117,
           "Mod Damage": 9
         },
         {
           "Level": 4,
-          "Damage": 125,
+          "Damage": 132,
           "Mod Damage": 10
         },
         {
           "Level": 5,
-          "Damage": 139,
+          "Damage": 147,
           "Mod Damage": 11
         },
         {
           "Level": 6,
-          "Damage": 153,
+          "Damage": 161,
           "Mod Damage": 12
         },
         {
           "Level": 7,
-          "Damage": 166,
+          "Damage": 176,
           "Mod Damage": 13
         },
         {
           "Level": 8,
-          "Damage": 180,
+          "Damage": 191,
           "Mod Damage": 14
         },
         {
           "Level": 9,
-          "Damage": 194,
+          "Damage": 205,
           "Mod Damage": 15
         },
         {
           "Level": 10,
-          "Damage": 208,
+          "Damage": 220,
           "Mod Damage": 16
         }
       ]
@@ -6605,190 +3777,390 @@
       "levels": [
         {
           "Level": 1,
-          "Damage": 100,
-          "Range": 20,
-          "Cooldown": 10
+          "Damage": 96,
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 2,
-          "Damage": 120,
-          "Range": 20,
-          "Cooldown": 10
+          "Damage": 112,
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 3,
-          "Damage": 140,
-          "Range": 20,
-          "Cooldown": 10
+          "Damage": 128,
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 4,
+          "Damage": 144,
+          "Range": 18,
+          "Cooldown": 6
+        },
+        {
+          "Level": 5,
           "Damage": 160,
-          "Range": 20,
-          "Cooldown": 10
-        },
-        {
-          "Level": 5,
-          "Damage": 180,
-          "Range": 20,
-          "Cooldown": 10
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 6,
-          "Damage": 200,
-          "Range": 20,
-          "Cooldown": 10
+          "Damage": 176,
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 7,
-          "Damage": 220,
-          "Range": 20,
-          "Cooldown": 10
+          "Damage": 192,
+          "Range": 18,
+          "Cooldown": 6
         },
         {
           "Level": 8,
+          "Damage": 208,
+          "Range": 18,
+          "Cooldown": 6
+        },
+        {
+          "Level": 9,
+          "Damage": 224,
+          "Range": 18,
+          "Cooldown": 6
+        },
+        {
+          "Level": 10,
           "Damage": 240,
-          "Range": 20,
-          "Cooldown": 10
-        },
-        {
-          "Level": 9,
-          "Damage": 260,
-          "Range": 20,
-          "Cooldown": 10
-        },
-        {
-          "Level": 10,
-          "Damage": 280,
-          "Range": 20,
-          "Cooldown": 10
-        }
-      ]
-    },
-    {
-      "name": "ElectricGrenade",
-      "hero": "Mopz",
-      "columns": [
-        "2_Explosion Damage",
-        "4_ElectricZone Damage"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "2_Explosion Damage": 117,
-          "4_ElectricZone Damage": 10
-        },
-        {
-          "Level": 2,
-          "2_Explosion Damage": 143,
-          "4_ElectricZone Damage": 13
-        },
-        {
-          "Level": 3,
-          "2_Explosion Damage": 168,
-          "4_ElectricZone Damage": 15
-        },
-        {
-          "Level": 4,
-          "2_Explosion Damage": 194,
-          "4_ElectricZone Damage": 17
-        },
-        {
-          "Level": 5,
-          "2_Explosion Damage": 219,
-          "4_ElectricZone Damage": 19
-        },
-        {
-          "Level": 6,
-          "2_Explosion Damage": 245,
-          "4_ElectricZone Damage": 22
-        },
-        {
-          "Level": 7,
-          "2_Explosion Damage": 270,
-          "4_ElectricZone Damage": 24
-        },
-        {
-          "Level": 8,
-          "2_Explosion Damage": 296,
-          "4_ElectricZone Damage": 26
-        },
-        {
-          "Level": 9,
-          "2_Explosion Damage": 321,
-          "4_ElectricZone Damage": 29
-        },
-        {
-          "Level": 10,
-          "2_Explosion Damage": 347,
-          "4_ElectricZone Damage": 31
+          "Range": 18,
+          "Cooldown": 6
         }
       ]
     },
     {
       "name": "DrillDash",
-      "hero": "Widget",
       "columns": [
+        "Power",
         "Aoe Damage",
-        "LastHitAoe Damage"
+        "LastHitAoe Damage",
+        "Max Dash Distance",
+        "Charges",
+        "Cooldown"
       ],
       "levels": [
         {
           "Level": 1,
+          "Power": 1000,
           "Aoe Damage": 10,
-          "LastHitAoe Damage": 80
+          "LastHitAoe Damage": 80,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 2,
+          "Power": 1300,
           "Aoe Damage": 13,
-          "LastHitAoe Damage": 104
+          "LastHitAoe Damage": 104,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 3,
+          "Power": 1600,
           "Aoe Damage": 16,
-          "LastHitAoe Damage": 128
+          "LastHitAoe Damage": 128,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 4,
+          "Power": 1900,
           "Aoe Damage": 19,
-          "LastHitAoe Damage": 152
+          "LastHitAoe Damage": 152,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 5,
+          "Power": 2200,
           "Aoe Damage": 22,
-          "LastHitAoe Damage": 176
+          "LastHitAoe Damage": 176,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 6,
+          "Power": 2500,
           "Aoe Damage": 25,
-          "LastHitAoe Damage": 200
+          "LastHitAoe Damage": 200,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 7,
+          "Power": 2800,
           "Aoe Damage": 28,
-          "LastHitAoe Damage": 224
+          "LastHitAoe Damage": 224,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 8,
+          "Power": 3100,
           "Aoe Damage": 31,
-          "LastHitAoe Damage": 248
+          "LastHitAoe Damage": 248,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 9,
+          "Power": 3400,
           "Aoe Damage": 34,
-          "LastHitAoe Damage": 272
+          "LastHitAoe Damage": 272,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
         },
         {
           "Level": 10,
+          "Power": 3700,
           "Aoe Damage": 37,
-          "LastHitAoe Damage": 296
+          "LastHitAoe Damage": 296,
+          "Max Dash Distance": 100,
+          "Charges": 1,
+          "Cooldown": 12
+        }
+      ]
+    },
+    {
+      "name": "LittleSpin",
+      "columns": [
+        "Power",
+        "AoeA Damage",
+        "AoeB Damage",
+        "Duration",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1300,
+          "AoeA Damage": 39,
+          "AoeB Damage": 78,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 2,
+          "Power": 1580,
+          "AoeA Damage": 48,
+          "AoeB Damage": 95,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 3,
+          "Power": 1870,
+          "AoeA Damage": 56,
+          "AoeB Damage": 112,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 4,
+          "Power": 2150,
+          "AoeA Damage": 65,
+          "AoeB Damage": 129,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 5,
+          "Power": 2430,
+          "AoeA Damage": 73,
+          "AoeB Damage": 146,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 6,
+          "Power": 2720,
+          "AoeA Damage": 82,
+          "AoeB Damage": 163,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 7,
+          "Power": 3000,
+          "AoeA Damage": 90,
+          "AoeB Damage": 180,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 8,
+          "Power": 3280,
+          "AoeA Damage": 99,
+          "AoeB Damage": 197,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 9,
+          "Power": 3570,
+          "AoeA Damage": 107,
+          "AoeB Damage": 214,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        },
+        {
+          "Level": 10,
+          "Power": 3850,
+          "AoeA Damage": 116,
+          "AoeB Damage": 231,
+          "Duration": 0.8,
+          "Charges": 1,
+          "Cooldown": 8
+        }
+      ]
+    },
+    {
+      "name": "ElectricGrenade",
+      "columns": [
+        "Power",
+        "Explosion Damage",
+        "ElectricZone Damage",
+        "Range",
+        "ElectricZone Duration",
+        "Charges",
+        "Cooldown"
+      ],
+      "levels": [
+        {
+          "Level": 1,
+          "Power": 1300,
+          "Explosion Damage": 117,
+          "ElectricZone Damage": 10,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 2,
+          "Power": 1580,
+          "Explosion Damage": 143,
+          "ElectricZone Damage": 13,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 3,
+          "Power": 1870,
+          "Explosion Damage": 168,
+          "ElectricZone Damage": 15,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 4,
+          "Power": 2150,
+          "Explosion Damage": 194,
+          "ElectricZone Damage": 17,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 5,
+          "Power": 2430,
+          "Explosion Damage": 219,
+          "ElectricZone Damage": 19,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 6,
+          "Power": 2720,
+          "Explosion Damage": 245,
+          "ElectricZone Damage": 22,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 7,
+          "Power": 3000,
+          "Explosion Damage": 270,
+          "ElectricZone Damage": 24,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 8,
+          "Power": 3280,
+          "Explosion Damage": 296,
+          "ElectricZone Damage": 26,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 9,
+          "Power": 3570,
+          "Explosion Damage": 321,
+          "ElectricZone Damage": 29,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
+        },
+        {
+          "Level": 10,
+          "Power": 3850,
+          "Explosion Damage": 347,
+          "ElectricZone Damage": 31,
+          "Range": 35,
+          "ElectricZone Duration": 4,
+          "Charges": 1,
+          "Cooldown": 10
         }
       ]
     },
     {
       "name": "GloveOfDoom",
-      "hero": "Chip",
       "columns": [
+        "Power",
         "Agent Explosion Damage",
         "Agent HP",
         "Agent Lifetime",
@@ -6801,7 +4173,8 @@
       "levels": [
         {
           "Level": 1,
-          "Agent Explosion Damage": 63,
+          "Power": 1000,
+          "Agent Explosion Damage": 60,
           "Agent HP": 50,
           "Agent Lifetime": 8,
           "Range": 12,
@@ -6812,7 +4185,8 @@
         },
         {
           "Level": 2,
-          "Agent Explosion Damage": 82,
+          "Power": 1300,
+          "Agent Explosion Damage": 78,
           "Agent HP": 65,
           "Agent Lifetime": 8.5,
           "Range": 12,
@@ -6823,7 +4197,8 @@
         },
         {
           "Level": 3,
-          "Agent Explosion Damage": 101,
+          "Power": 1600,
+          "Agent Explosion Damage": 96,
           "Agent HP": 80,
           "Agent Lifetime": 9,
           "Range": 12,
@@ -6834,7 +4209,8 @@
         },
         {
           "Level": 4,
-          "Agent Explosion Damage": 120,
+          "Power": 1900,
+          "Agent Explosion Damage": 114,
           "Agent HP": 95,
           "Agent Lifetime": 9.5,
           "Range": 12,
@@ -6845,7 +4221,8 @@
         },
         {
           "Level": 5,
-          "Agent Explosion Damage": 139,
+          "Power": 2200,
+          "Agent Explosion Damage": 132,
           "Agent HP": 110,
           "Agent Lifetime": 10,
           "Range": 12,
@@ -6856,7 +4233,8 @@
         },
         {
           "Level": 6,
-          "Agent Explosion Damage": 158,
+          "Power": 2500,
+          "Agent Explosion Damage": 150,
           "Agent HP": 125,
           "Agent Lifetime": 10.5,
           "Range": 12,
@@ -6867,7 +4245,8 @@
         },
         {
           "Level": 7,
-          "Agent Explosion Damage": 176,
+          "Power": 2800,
+          "Agent Explosion Damage": 168,
           "Agent HP": 140,
           "Agent Lifetime": 11,
           "Range": 12,
@@ -6878,7 +4257,8 @@
         },
         {
           "Level": 8,
-          "Agent Explosion Damage": 195,
+          "Power": 3100,
+          "Agent Explosion Damage": 186,
           "Agent HP": 155,
           "Agent Lifetime": 11.5,
           "Range": 12,
@@ -6889,7 +4269,8 @@
         },
         {
           "Level": 9,
-          "Agent Explosion Damage": 214,
+          "Power": 3400,
+          "Agent Explosion Damage": 204,
           "Agent HP": 170,
           "Agent Lifetime": 12,
           "Range": 12,
@@ -6900,7 +4281,8 @@
         },
         {
           "Level": 10,
-          "Agent Explosion Damage": 233,
+          "Power": 3700,
+          "Agent Explosion Damage": 222,
           "Agent HP": 185,
           "Agent Lifetime": 12.5,
           "Range": 12,
@@ -6913,8 +4295,8 @@
     },
     {
       "name": "AmoeboidLauncher",
-      "hero": "Lump",
       "columns": [
+        "Power",
         "Small Damage",
         "Medium Damage",
         "Large Damage",
@@ -6925,7 +4307,6 @@
         "Medium Lifetime",
         "Large Lifetime",
         "AcidZone Damage",
-        "AcidZone Duration",
         "Range",
         "Charges",
         "Cooldown"
@@ -6933,6 +4314,7 @@
       "levels": [
         {
           "Level": 1,
+          "Power": 1300,
           "Small Damage": 39,
           "Medium Damage": 59,
           "Large Damage": 78,
@@ -6943,13 +4325,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 2,
+          "Power": 1580,
           "Small Damage": 48,
           "Medium Damage": 71,
           "Large Damage": 95,
@@ -6960,13 +4343,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 3,
+          "Power": 1870,
           "Small Damage": 56,
           "Medium Damage": 84,
           "Large Damage": 112,
@@ -6977,13 +4361,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 4,
+          "Power": 2150,
           "Small Damage": 65,
           "Medium Damage": 97,
           "Large Damage": 129,
@@ -6994,13 +4379,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 5,
+          "Power": 2430,
           "Small Damage": 73,
           "Medium Damage": 110,
           "Large Damage": 146,
@@ -7011,13 +4397,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 6,
+          "Power": 2720,
           "Small Damage": 82,
           "Medium Damage": 122,
           "Large Damage": 163,
@@ -7028,13 +4415,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 7,
+          "Power": 3000,
           "Small Damage": 90,
           "Medium Damage": 135,
           "Large Damage": 180,
@@ -7045,13 +4433,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 8,
+          "Power": 3280,
           "Small Damage": 99,
           "Medium Damage": 148,
           "Large Damage": 197,
@@ -7062,13 +4451,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 9,
+          "Power": 3570,
           "Small Damage": 107,
           "Medium Damage": 161,
           "Large Damage": 214,
@@ -7079,13 +4469,14 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 10,
+          "Power": 3850,
           "Small Damage": 116,
           "Medium Damage": 173,
           "Large Damage": 231,
@@ -7096,70 +4487,10 @@
           "Medium Lifetime": 12.5,
           "Large Lifetime": 15,
           "AcidZone Damage": 10,
-          "AcidZone Duration": 1,
+		  "AcidZone Duration": 1,
           "Range": 14,
           "Charges": 1,
           "Cooldown": 12
-        }
-      ]
-    },
-    {
-      "name": "LittleSpin",
-      "hero": "Lil'Ann",
-      "columns": [
-        "AoeA Damage",
-        "AoeB Damage"
-      ],
-      "levels": [
-        {
-          "Level": 1,
-          "AoeA Damage": 42,
-          "AoeB Damage": 83
-        },
-        {
-          "Level": 2,
-          "AoeA Damage": 51,
-          "AoeB Damage": 101
-        },
-        {
-          "Level": 3,
-          "AoeA Damage": 60,
-          "AoeB Damage": 119
-        },
-        {
-          "Level": 4,
-          "AoeA Damage": 69,
-          "AoeB Damage": 138
-        },
-        {
-          "Level": 5,
-          "AoeA Damage": 78,
-          "AoeB Damage": 156
-        },
-        {
-          "Level": 6,
-          "AoeA Damage": 87,
-          "AoeB Damage": 174
-        },
-        {
-          "Level": 7,
-          "AoeA Damage": 96,
-          "AoeB Damage": 192
-        },
-        {
-          "Level": 8,
-          "AoeA Damage": 105,
-          "AoeB Damage": 210
-        },
-        {
-          "Level": 9,
-          "AoeA Damage": 114,
-          "AoeB Damage": 228
-        },
-        {
-          "Level": 10,
-          "AoeA Damage": 123,
-          "AoeB Damage": 246
         }
       ]
     }

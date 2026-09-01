@@ -105,6 +105,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .gadget-pair { padding: 7px 10px !important; }
 .gadget-stat { display: block; }
 .gadget-stat + .gadget-stat { margin-top: 3px; padding-top: 3px; }
+.stats.gadget-stat-damage .gadget-damage, .stats.gadget-stat-hp .gadget-hp { margin-top: 0; padding-top: 0; }
 .gadget-damage { color: var(--orange); }
 .gadget-hp { color: var(--accent); }
 .gadget-damage::before, .gadget-hp::before { content: none !important; display: none !important; }

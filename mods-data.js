@@ -357,7 +357,7 @@ window.RANGER_MODS = {
     },
     {
       "name": "Quick Reload",
-      "icon": "Spin-Up Rotor.png",
+      "icon": "Quick Reload.png",
       "menu": "The weapon recovers ammo after using a gadget."
     }
   ],

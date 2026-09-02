@@ -3863,8 +3863,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1000,
-          "Aoe Damage": 10,
-          "LastHitAoe Damage": 80,
+          "Aoe Damage": 5,
+          "LastHitAoe Damage": 75,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3872,8 +3872,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 2,
           "Power": 1300,
-          "Aoe Damage": 13,
-          "LastHitAoe Damage": 104,
+          "Aoe Damage": 7,
+          "LastHitAoe Damage": 98,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3881,8 +3881,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 3,
           "Power": 1600,
-          "Aoe Damage": 16,
-          "LastHitAoe Damage": 128,
+          "Aoe Damage": 8,
+          "LastHitAoe Damage": 120,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3890,8 +3890,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 4,
           "Power": 1900,
-          "Aoe Damage": 19,
-          "LastHitAoe Damage": 152,
+          "Aoe Damage": 10,
+          "LastHitAoe Damage": 143,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3899,8 +3899,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 5,
           "Power": 2200,
-          "Aoe Damage": 22,
-          "LastHitAoe Damage": 176,
+          "Aoe Damage": 11,
+          "LastHitAoe Damage": 165,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3908,8 +3908,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 6,
           "Power": 2500,
-          "Aoe Damage": 25,
-          "LastHitAoe Damage": 200,
+          "Aoe Damage": 13,
+          "LastHitAoe Damage": 188,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3917,8 +3917,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 7,
           "Power": 2800,
-          "Aoe Damage": 28,
-          "LastHitAoe Damage": 224,
+          "Aoe Damage": 14,
+          "LastHitAoe Damage": 210,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3926,8 +3926,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 8,
           "Power": 3100,
-          "Aoe Damage": 31,
-          "LastHitAoe Damage": 248,
+          "Aoe Damage": 16,
+          "LastHitAoe Damage": 233,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3935,8 +3935,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 9,
           "Power": 3400,
-          "Aoe Damage": 34,
-          "LastHitAoe Damage": 272,
+          "Aoe Damage": 17,
+          "LastHitAoe Damage": 255,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12
@@ -3944,8 +3944,8 @@ window.RUMBLE_DATA = {
         {
           "Level": 10,
           "Power": 3700,
-          "Aoe Damage": 37,
-          "LastHitAoe Damage": 296,
+          "Aoe Damage": 19,
+          "LastHitAoe Damage": 278,
           "Max Dash Distance": 100,
           "Charges": 1,
           "Cooldown": 12

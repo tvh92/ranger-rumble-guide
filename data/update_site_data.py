@@ -163,13 +163,42 @@ def parse_stat_export(filename: str, labels: tuple[str, ...]) -> list[dict]:
 
 
 def parse_descriptions(filename: str, has_full: bool) -> dict[str, dict[str, str]]:
+    source = read(f"descriptions/{filename}")
     entries = {}
-    for block in re.split(r"\r?\n\s*\r?\n", read(f"descriptions/{filename}")):
-        lines = [line.strip() for line in block.splitlines() if line.strip()]
-        if len(lines) < 2:
-            continue
-        name, paragraphs = lines[0], lines[1:]
-        entries[name] = {"short": paragraphs[0], "full": " ".join(paragraphs[1:]) if has_full else ""}
+    if has_full and "**Short biography**" in source:
+        lines = source.splitlines()
+        index = 0
+        while index < len(lines):
+            if not lines[index].strip():
+                index += 1
+                continue
+            name = lines[index].strip()
+            if index + 1 >= len(lines) or lines[index + 1].strip() != "**Short biography**":
+                raise ValueError(f"data/descriptions/{filename}: expected Short biography after {name!r}")
+            sections = {"short": [], "website": [], "long": []}
+            current = "short"
+            index += 2
+            while index < len(lines):
+                line = lines[index].strip()
+                heading = re.fullmatch(r"\*\*(Short|Website|Long) biography\*\*", line)
+                if heading:
+                    current = heading.group(1).lower()
+                elif line and current == "long" and index + 1 < len(lines) and lines[index + 1].strip() == "**Short biography**":
+                    break
+                elif line:
+                    sections[current].append(line)
+                index += 1
+            entries[name] = {
+                "short": " ".join(sections["short"]),
+                "full": " ".join(sections["long"]),
+            }
+    else:
+        for block in re.split(r"\r?\n\s*\r?\n", source):
+            lines = [line.strip() for line in block.splitlines() if line.strip()]
+            if len(lines) < 2:
+                continue
+            name, paragraphs = lines[0], lines[1:]
+            entries[name] = {"short": paragraphs[0], "full": " ".join(paragraphs[1:]) if has_full else ""}
     if not entries:
         raise ValueError(f"data/descriptions/{filename}: no descriptions found")
     return entries

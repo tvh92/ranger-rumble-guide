@@ -61,9 +61,9 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .skin-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; width: 100%; max-width: 698px; margin-inline: auto; }
 .skin-row:has(.skin:nth-child(8)) { max-width: 395px; }
 .skin { flex: 0 1 92px; width: 92px; min-height: 118px; padding: 8px 5px 10px; border: 1px solid var(--line); border-radius: 0; background: var(--surface-strong); color: var(--text); cursor: pointer; box-shadow: inset 0 0 0 1px var(--page); }
-.skin.rarity-common { border-left: 4px solid #3C6FFA; }
-.skin.rarity-rare { border-left: 4px solid #ED00EE; }
-.skin.rarity-epic { border-left: 4px solid #F38A0E; }
+.skin.rarity-common { border-bottom: 4px solid #3C6FFA; }
+.skin.rarity-rare { border-bottom: 4px solid #ED00EE; }
+.skin.rarity-epic { border-bottom: 4px solid #F38A0E; }
 .skin:hover { border-color: var(--accent-strong); background: var(--surface-soft); }
 .skin.is-selected { border-color: var(--accent-strong); box-shadow: 0 0 0 2px var(--line-bright); }
 .skin img { display: block; width: min(76px, 100%); height: 76px; margin: auto; object-fit: contain; }
@@ -169,7 +169,7 @@ html[data-theme='light'] .mod-card header img { filter: drop-shadow(0 2px 1px #1
 :where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle, .detail-toc button):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 @media (max-width: 1280px) {
-  .detail-toc { position: fixed; top: auto; right: auto; bottom: var(--detail-toc-mobile-bottom, 12px); left: var(--detail-toc-mobile-left, 16px); z-index: 8; display: flex; align-items: center; width: var(--detail-toc-mobile-width, calc(100% - 32px)); margin: 0; padding: 7px 12px; overflow-x: auto; border-width: 1px; box-shadow: 0 8px 24px color-mix(in srgb, var(--shadow) 55%, transparent); scrollbar-width: none; }
+  .detail-toc { position: fixed; top: auto; right: auto; bottom: var(--detail-toc-mobile-bottom, 12px); left: var(--detail-toc-mobile-left, 16px); z-index: 8; display: flex; align-items: center; width: var(--detail-toc-mobile-width, calc(100% - 32px)); margin: 0; padding: 0 12px; overflow-x: auto; border-width: 1px; box-shadow: 0 8px 24px color-mix(in srgb, var(--shadow) 55%, transparent); scrollbar-width: none; }
   .detail-toc::-webkit-scrollbar { display: none; }
   .detail-toc > span { flex: 0 0 auto; }
   .detail-toc button { flex: 0 0 auto; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }

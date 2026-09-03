@@ -312,6 +312,7 @@ def parse_used_skins() -> dict[str, list[str]]:
         elif stripped.startswith("- ") and used and current:
             name = stripped[2:].strip()
             if name.lower() != "none":
+                name = re.sub(r" \((?:Common|Rare|Epic)\)$", "", name)
                 result[current].append(name)
         elif not stripped.startswith("-"):
             if stripped.upper() == "ACTIVE HERO SKINS":
@@ -320,6 +321,20 @@ def parse_used_skins() -> dict[str, list[str]]:
             result[current] = []
     if not result:
         raise ValueError("hero-skins-status.txt: no heroes found")
+    return result
+
+
+def parse_skin_rarities() -> dict[str, str]:
+    result = {}
+    current = None
+    for line in read("hero-skins-status.txt").splitlines():
+        stripped = line.strip()
+        if stripped.startswith("-") and current:
+            match = re.match(r"^- (.*) \((Common|Rare|Epic)\)$", stripped)
+            if match:
+                result[f"{current}/{match.group(1)}"] = match.group(2)
+        elif stripped and not stripped.startswith("=") and stripped not in {"Used:", "Unused:"} and stripped.upper() != "ACTIVE HERO SKINS":
+            current = canonical_hero_name(stripped)
     return result
 
 
@@ -451,7 +466,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
         ROOT / "mods-data.js": json_js("RANGER_MODS", parse_mods(), "data/hero_talent_stats_export.txt"),
         ROOT / "guide-data.js": build_guide(),
         ROOT / "season-data.js": season,
-        DATA_DIR / "skin-status.js": json_js("RANGER_USED_SKINS", parse_used_skins(), "data/hero-skins-status.txt"),
+        DATA_DIR / "skin-status.js": json_js("RANGER_USED_SKINS", parse_used_skins(), "data/hero-skins-status.txt") + json_js("RANGER_SKIN_RARITIES", parse_skin_rarities(), "data/hero-skins-status.txt"),
         ROOT / "index.html": update_index((ROOT / "index.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
     }
 

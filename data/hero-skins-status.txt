@@ -9,11 +9,11 @@ Unused:
 
 Widget
 Used:
-- Widget
-- Megalopolis Widget
-- McMarx Sports Widget
-- Rebel Widget
-- Raritanium Widget
+- Widget (Common)
+- Megalopolis Widget (Common)
+- McMarx Sports Widget (Common)
+- Rebel Widget (Epic)
+- Raritanium Widget (Epic)
 Unused:
 - Clank Suit Widget
 - Pirate Widget
@@ -63,10 +63,10 @@ Unused:
 
 Chip
 Used:
-- Chip
-- Nefarious Chip
-- Raritanium Chip
-- McMarx Sports Chip
+- Chip (Common)
+- Nefarious Chip (Rare)
+- Raritanium Chip (Epic)
+- McMarx Sports Chip (Common)
 Unused:
 - Amoeboid Chip
 - Zoni Chip
@@ -93,11 +93,11 @@ Unused:
 
 Sprocket
 Used:
-- Sprocket
-- Blackwater Sprocket
-- Robot Sprocket
-- McMarx Sports Sprocket
-- Ancient Lombax Sprocket
+- Sprocket (Common)
+- Blackwater Sprocket (Rare)
+- Robot Sprocket (Epic)
+- McMarx Sports Sprocket (Common)
+- Ancient Lombax Sprocket (Common)
 Unused:
 - Megacorp Sprocket
 

@@ -75,3 +75,20 @@ window.RANGER_USED_SKINS = {
     "Blackwater Celeste"
   ]
 };
+// Generated from data/hero-skins-status.txt.
+window.RANGER_SKIN_RARITIES = {
+  "Widget/Widget": "Common",
+  "Widget/Megalopolis Widget": "Common",
+  "Widget/McMarx Sports Widget": "Common",
+  "Widget/Rebel Widget": "Epic",
+  "Widget/Raritanium Widget": "Epic",
+  "Chip/Chip": "Common",
+  "Chip/Nefarious Chip": "Rare",
+  "Chip/Raritanium Chip": "Epic",
+  "Chip/McMarx Sports Chip": "Common",
+  "Sprocket/Sprocket": "Common",
+  "Sprocket/Blackwater Sprocket": "Rare",
+  "Sprocket/Robot Sprocket": "Epic",
+  "Sprocket/McMarx Sports Sprocket": "Common",
+  "Sprocket/Ancient Lombax Sprocket": "Common"
+};

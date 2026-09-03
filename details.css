@@ -169,10 +169,10 @@ html[data-theme='light'] .mod-card header img { filter: drop-shadow(0 2px 1px #1
 :where(.combat-icon, .skin, .hero-summary, .hero-nav, dialog .close, .description-toggle, .detail-toc button):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 @media (max-width: 1280px) {
-  .detail-toc { position: fixed; top: auto; right: auto; bottom: var(--detail-toc-mobile-bottom, 12px); left: var(--detail-toc-mobile-left, 16px); z-index: 8; display: flex; align-items: center; width: var(--detail-toc-mobile-width, calc(100% - 32px)); margin: 0; padding: 0 12px; overflow-x: auto; border-width: 1px; box-shadow: 0 8px 24px color-mix(in srgb, var(--shadow) 55%, transparent); scrollbar-width: none; }
+  .detail-toc { position: fixed; top: auto; right: auto; bottom: var(--detail-toc-mobile-bottom, 12px); left: var(--detail-toc-mobile-left, 16px); z-index: 8; display: flex; align-items: center; justify-content: safe center; width: var(--detail-toc-mobile-width, calc(100% - 32px)); margin: 0; padding: 4px 12px; overflow-x: auto; border-width: 1px; box-shadow: 0 8px 24px color-mix(in srgb, var(--shadow) 55%, transparent); scrollbar-width: none; }
   .detail-toc::-webkit-scrollbar { display: none; }
   .detail-toc > span { flex: 0 0 auto; }
-  .detail-toc button { flex: 0 0 auto; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }
+  .detail-toc button { flex: 0 0 auto; padding-left: 22px; border-top: 0; border-left: 1px solid color-mix(in srgb, var(--line) 45%, transparent); }
   .detail-body { padding-bottom: 100px; }
   #overview, #loadout, #skins, #combat-stats, #talents { scroll-margin-top: 18px; }
 }

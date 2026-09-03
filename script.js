@@ -132,7 +132,7 @@ function statCandidates(item,mode='normal') {
     if(item.name==='Widget'||item.name==='Ratchet') return all.filter(column=>/^(Ult |Projectile Time|Missiles)/i.test(column)&&!/Fire Rate/i.test(column));
     return all.filter(column=>/^Ult /i.test(column)&&!/Fire Rate/i.test(column));
   }
-  return all.filter(column=>!(item.name==='Drill Thruster'&&column==='Max Dash Distance'));
+  return all.filter(column=>!(item.name==='DrillDash'&&column==='Max Dash Distance'));
 }
 function combinedStatsTable(hero,weapon,gadget,loadout) {
   const groups=[{label:'Hero',displayName:hero.name,item:hero,mode:'hero'},{label:'Weapon',displayName:loadout[0],item:weapon,mode:'normal'},{label:'Gadget',displayName:loadout[2],item:gadget,mode:'normal'},{label:'Ultimate',displayName:loadout[7],item:hero,mode:'ultimate'}].map(group=>{

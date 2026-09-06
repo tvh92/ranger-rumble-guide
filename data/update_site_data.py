@@ -360,7 +360,8 @@ def season_date_label(start: str, end: str) -> str:
 def update_index(source: str, game_version: str, site_version: str, season_start: str, season_end: str) -> str:
     source = replace_section(source, r'(<meta name="app-version" content=")[^"]+("/?>)', rf'\g<1>{site_version}\g<2>', "index.html")
     source = replace_section(source, r'(Game version\s+)[^<]+', rf'\g<1>{game_version}', "index.html")
-    source = replace_section(source, r'(<p class="season-dates">)[^<]+(</p>)', rf'\g<1>{season_date_label(season_start, season_end)}\g<2>', "index.html")
+    if 'class="season-dates"' in source:
+        source = replace_section(source, r'(<p class="season-dates">)[^<]+(</p>)', rf'\g<1>{season_date_label(season_start, season_end)}\g<2>', "season-pass.html")
     return re.sub(r'([?&]v=)[^"\'&\s>]+', rf'\g<1>{site_version}', source)
 
 
@@ -468,6 +469,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
         ROOT / "season-data.js": season,
         DATA_DIR / "skin-status.js": json_js("RANGER_USED_SKINS", parse_used_skins(), "data/hero-skins-status.txt") + json_js("RANGER_SKIN_RARITIES", parse_skin_rarities(), "data/hero-skins-status.txt"),
         ROOT / "index.html": update_index((ROOT / "index.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
+        ROOT / "season-pass.html": update_index((ROOT / "season-pass.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
     }
 
 

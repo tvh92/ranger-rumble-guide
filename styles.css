@@ -29,7 +29,7 @@ button { font: inherit; }
 .star-field { display: none; }
 
 .topbar {
-  position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 5; display: flex; align-items: center;
   height: 104px; padding: 0 max(38px, 5vw); border-bottom: 2px solid var(--line-bright);
   background: color-mix(in srgb, var(--page) 94%, transparent); box-shadow: 0 8px 24px var(--shadow); backdrop-filter: blur(10px);
 }
@@ -41,10 +41,16 @@ button { font: inherit; }
   background: var(--surface-header); color: var(--accent); font-size: 21px; line-height: 1; cursor: pointer; transition: transform .18s, box-shadow .18s;
 }
 .theme-toggle:hover { transform: translateY(-2px); box-shadow: 0 0 16px color-mix(in srgb, var(--accent-strong) 35%, transparent); }
+.topbar-navigation { display: flex; align-items: center; gap: clamp(42px, 7vw, 132px); margin-left: clamp(42px, 7vw, 132px); }
+.topbar-actions { display: flex; align-items: center; margin-left: auto; }
+.topbar-link { position: relative; padding: 6px 0; color: var(--accent); font: italic 900 18px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-decoration: none; text-transform: uppercase; transition: color .18s; }
+.topbar-link::after { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent-strong); content: ''; transform: scaleX(0); transform-origin: center; transition: transform .18s; }
+.topbar-link:hover,.topbar-link:focus-visible,.topbar-link[aria-current='page'] { color: var(--heading); }
+.topbar-link:hover::after,.topbar-link:focus-visible::after,.topbar-link[aria-current='page']::after { transform: scaleX(1); }
 
 .section { width: 100%; max-width: 1840px; min-height: calc(100vh - 184px); margin-inline: auto; padding: 52px max(42px, 5vw) 64px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--line-bright); }
-.section-heading h2 { margin: 0; color: var(--heading); font: italic 900 clamp(44px, 4vw, 58px)/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; text-shadow: 3px 3px 0 color-mix(in srgb, var(--page) 85%, black); }
+.section-heading :is(h1,h2) { margin: 0; color: var(--heading); font: italic 900 clamp(44px, 4vw, 58px)/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; text-shadow: 3px 3px 0 color-mix(in srgb, var(--page) 85%, black); }
 .season-section { min-height: auto; padding-top: 12px; }
 .season-eyebrow { margin: 0 0 8px; color: var(--accent-strong); font-size: 12px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; }
 .season-dates { margin: 0; color: var(--muted); font-weight: 800; letter-spacing: .2px; }
@@ -57,9 +63,6 @@ button { font: inherit; }
 .season-infinite strong { color: var(--heading); font: italic 900 21px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
 .season-infinite span { margin-top: 4px; color: var(--muted); font-size: 12px; }
 .season-rewards { max-width: 1400px; margin: 0 auto; }
-.season-rewards summary { width: fit-content; margin: 0 auto; padding: 11px 18px; border: 1px solid var(--line-bright); background: var(--surface-header); color: var(--accent); cursor: pointer; font: italic 900 18px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; box-shadow: 0 6px 14px var(--shadow); }
-.season-rewards summary:hover,.season-rewards summary:focus-visible { border-color: var(--accent-strong); color: var(--heading); }
-.season-rewards[open] summary { margin-bottom: 12px; }
 .season-table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--line); box-shadow: 0 8px 18px var(--shadow); }
 .season-table { width: 100%; min-width: 720px; border-collapse: collapse; background: var(--surface); }
 .season-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -103,13 +106,16 @@ button { font: inherit; }
 footer { display: flex; align-items: center; gap: 8px; min-height: 80px; padding: 24px max(24px, 8vw); border-top: 2px solid var(--line-bright); background: var(--surface-header); color: var(--text); font: 800 16px 'Barlow Condensed', Impact, sans-serif; letter-spacing: 1px; }
 .game-version { display: inline-flex; align-items: center; margin-left: 2px; padding: 4px 8px; border: 1px solid var(--line-bright); background: var(--surface-strong); color: var(--accent); font: 800 11px Outfit; letter-spacing: .4px; white-space: nowrap; }
 footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; letter-spacing: 0; }
-:where(.card, .theme-toggle):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+:where(.card, .theme-toggle, .topbar-link):focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 @media (max-width: 650px) {
   .topbar { height: 82px; padding-inline: 16px; }
   .brand { height: 68px; }
   .game-icon { width: 48px; height: 48px; }
   .game-logo { width: min(190px, 50vw); height: 62px; }
+  .topbar { height: auto; min-height: 82px; padding-block: 7px; flex-wrap: wrap; gap: 6px; }
+  .topbar-navigation { order: 3; flex-basis: 100%; justify-content: space-between; gap: 12px; margin: 0 2px; padding: 4px 0 2px; }
+  .topbar-link { font-size: 16px; }
   .section { padding: 42px 18px 55px; }
   .section-heading h2 { font-size: 43px; }
   .season-section { padding-top: 4px; }

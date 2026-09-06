@@ -19,6 +19,11 @@
 
 When the user requests website work, that request authorizes implementing, validating, committing, and pushing the scoped change to this repository's configured GitHub remote. Do not ask for separate commit or push approval. If the user explicitly asks only to commit, do not push until requested.
 
+## TODO
+1. Make the header text (only for "Heroes", "Season Pass", and "Bot Names") larger in the following HTML files: `heroes.html`, `season-pass.html`, and `bot-names.html`.
+2. Reduce the width of the table in `season-pass.html` so it fits better on the page.
+3. Update the `update_site_data.py` script so that it also updates `bot-names.html`.
+
 ## Working tree conventions
 
 - Modified files under `data/` may be intentional generated or exported data. Inspect and summarize them before treating them as unrelated changes.
@@ -27,7 +32,7 @@ When the user requests website work, that request authorizes implementing, valid
 
 ## Data conventions
 
-- `data/update_site_data.py` previews or regenerates the text-exported site data (`data.json`, `data.js`, `descriptions.js`, `mods-data.js`, `guide-data.js`, `season-data.js`, `data/skin-status.js`, and `index.html`). It is preview-only unless `--write` is supplied. Keep its curated stat and talent-presentation overrides aligned with intentional corrections in the generated website data.
+- `data/update_site_data.py` previews or regenerates the text-exported site data (`data.json`, `data.js`, `descriptions.js`, `mods-data.js`, `guide-data.js`, `season-data.js`, `data/skin-status.js`, `index.html`, and `season-pass.html`). It is preview-only unless `--write` is supplied. Keep its curated stat and talent-presentation overrides aligned with intentional corrections in the generated website data.
 - Pass the visible game version with `--game-version`. Use `--bump-site-version` or `--site-version` separately for the `app-version` and every local cache-busting `?v=` reference.
 - The generator reads the season number from the `Season N` heading in `data/SeasonPassContent.txt` and calculates the season dates automatically.
 - Active loadouts and internal names are documented in `data/active-hero-loadouts.txt`.
@@ -42,6 +47,8 @@ When the user requests website work, that request authorizes implementing, valid
 
 - Dark mode is the default; light mode must remain visibly lighter and readable.
 - Hero cards and windows use the game's teal, green, and orange visual language.
+- The header navigation contains plain-text links for Heroes, Season Pass, and Bot Names; keep them spaced between the logo and theme toggle.
+- The main page contains Heroes only. Keep Season Pass in `season-pass.html`; all 61 reward tiers are shown by default, without a disclosure control.
 - Rarity colors: Common `#3C6FFA`, Rare `#ED00EE`, Epic `#F38A0E`.
 - Use `Lil' Ann` consistently.
 - Hero windows close by X or outside click and support previous/next navigation.

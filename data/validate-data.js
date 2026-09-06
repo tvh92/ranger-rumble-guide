@@ -49,23 +49,27 @@ for (const [category, entries] of Object.entries(descriptions || {})) {
   }
 }
 
-const indexSource = fs.readFileSync(path.join(projectRoot, 'index.html'), 'utf8');
 const scriptSource = fs.readFileSync(path.join(projectRoot, 'script.js'), 'utf8');
-const appVersion = indexSource.match(/<meta name="app-version" content="([^"]+)">/)?.[1];
-if (!appVersion) {
-  errors.push('index.html: app-version meta tag is missing');
-} else {
-  const localAssets = [...indexSource.matchAll(/\b(?:src|href)="([^"]+)"/g)]
+const sitePages = ['index.html', 'season-pass.html', 'bot-names.html'];
+const pageVersions = new Map();
+for (const filename of sitePages) {
+  const source = fs.readFileSync(path.join(projectRoot, filename), 'utf8');
+  const appVersion = source.match(/<meta name="app-version" content="([^"]+)">/)?.[1];
+  if (!appVersion) { errors.push(`${filename}: app-version meta tag is missing`); continue; }
+  pageVersions.set(filename, appVersion);
+  const localAssets = [...source.matchAll(/\b(?:src|href)="([^"]+)"/g)]
     .map(match => match[1])
     .filter(url => !/^(?:#|https?:|data:)/i.test(url));
   for (const url of localAssets) {
     const [assetPath, query = ''] = url.split('?');
     const version = new URLSearchParams(query).get('v');
-    if (version !== appVersion) errors.push(`index.html: ${url} must use ?v=${appVersion}`);
+    if (version !== appVersion) errors.push(`${filename}: ${url} must use ?v=${appVersion}`);
     const diskPath = path.join(projectRoot, ...decodeURIComponent(assetPath).split('/'));
-    if (!fs.existsSync(diskPath)) errors.push(`index.html: referenced asset is missing: ${assetPath}`);
+    if (!fs.existsSync(diskPath)) errors.push(`${filename}: referenced asset is missing: ${assetPath}`);
   }
 }
+const appVersion = pageVersions.get('index.html');
+for (const [filename, version] of pageVersions) if (version !== appVersion) errors.push(`${filename}: app-version ${version} must match index.html ${appVersion}`);
 
 const rawRuntimeAssets = scriptSource.split(/\r?\n/)
   .map((line, index) => ({line, number: index + 1}))

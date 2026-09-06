@@ -51,14 +51,14 @@ button { font: inherit; }
 .section { width: 100%; max-width: 1840px; min-height: calc(100vh - 184px); margin-inline: auto; padding: 52px max(42px, 5vw) 64px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--line-bright); }
 .section-heading :is(h1,h2) { margin: 0; color: var(--heading); font: italic 900 clamp(44px, 4vw, 58px)/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; text-shadow: 3px 3px 0 color-mix(in srgb, var(--page) 85%, black); }
-.season-section { min-height: auto; padding-top: 12px; }
+.season-section { min-height: auto; padding-top: 8px; padding-bottom: 32px; }
 .season-eyebrow { margin: 0 0 8px; color: var(--accent-strong); font-size: 12px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; }
 .season-dates { margin: 0; color: var(--muted); font-weight: 800; letter-spacing: .2px; }
-.season-intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 1400px; margin: 0 auto 18px; padding: 18px 20px; border: 1px solid var(--line); background: linear-gradient(105deg, var(--surface-header), var(--surface)); box-shadow: 0 8px 18px var(--shadow); }
+.season-intro { display: flex; align-items: center; justify-content: space-between; gap: 18px; max-width: 1400px; margin: 0 auto 12px; padding: 12px 16px; border: 1px solid var(--line); background: linear-gradient(105deg, var(--surface-header), var(--surface)); box-shadow: 0 8px 18px var(--shadow); }
 .season-number { color: var(--orange); font: italic 900 30px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-transform: uppercase; }
 .season-intro p { margin: 7px 0 0; color: var(--muted); }
-.season-infinite { display: flex; align-items: center; gap: 12px; min-width: 310px; padding: 9px 13px; border-left: 3px solid var(--accent-strong); background: color-mix(in srgb, var(--surface-strong) 80%, transparent); }
-.season-infinite img { width: 48px; height: 48px; object-fit: contain; }
+.season-infinite { display: flex; align-items: center; gap: 10px; min-width: 280px; padding: 7px 11px; border-left: 3px solid var(--accent-strong); background: color-mix(in srgb, var(--surface-strong) 80%, transparent); }
+.season-infinite img { width: 40px; height: 40px; object-fit: contain; }
 .season-infinite strong,.season-infinite span { display: block; }
 .season-infinite strong { color: var(--heading); font: italic 900 21px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
 .season-infinite span { margin-top: 4px; color: var(--muted); font-size: 12px; }

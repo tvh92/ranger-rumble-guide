@@ -43,7 +43,7 @@ button { font: inherit; }
 .theme-toggle:hover { transform: translateY(-2px); box-shadow: 0 0 16px color-mix(in srgb, var(--accent-strong) 35%, transparent); }
 .topbar-navigation { display: flex; align-items: center; gap: clamp(42px, 7vw, 132px); margin-left: clamp(42px, 7vw, 132px); }
 .topbar-actions { display: flex; align-items: center; margin-left: auto; }
-.topbar-link { position: relative; padding: 6px 0; color: var(--accent); font: italic 900 18px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-decoration: none; text-transform: uppercase; transition: color .18s; }
+.topbar-link { position: relative; padding: 6px 0; color: var(--accent); font: italic 900 22px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-decoration: none; text-transform: uppercase; transition: color .18s; }
 .topbar-link::after { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent-strong); content: ''; transform: scaleX(0); transform-origin: center; transition: transform .18s; }
 .topbar-link:hover,.topbar-link:focus-visible,.topbar-link[aria-current='page'] { color: var(--heading); }
 .topbar-link:hover::after,.topbar-link:focus-visible::after,.topbar-link[aria-current='page']::after { transform: scaleX(1); }
@@ -115,7 +115,7 @@ footer small { margin-left: 10px; color: var(--muted); font: 400 11px Outfit; le
   .game-logo { width: min(190px, 50vw); height: 62px; }
   .topbar { height: auto; min-height: 82px; padding-block: 7px; flex-wrap: wrap; gap: 6px; }
   .topbar-navigation { order: 3; flex-basis: 100%; justify-content: space-between; gap: 12px; margin: 0 2px; padding: 4px 0 2px; }
-  .topbar-link { font-size: 16px; }
+  .topbar-link { font-size: 19px; }
   .section { padding: 42px 18px 55px; }
   .section-heading h2 { font-size: 43px; }
   .season-section { padding-top: 4px; }

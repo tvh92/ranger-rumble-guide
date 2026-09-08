@@ -63,7 +63,7 @@ MOD_PRESENTATION_OVERRIDES = {
     },
     "Mopz": {
         "Spin-Up Rotor": {"effect": "Adds stage 3 after 5s of spin-up with an 8x stored fire-rate multiplier.", "note": "Base stages are approximately 1.3s/3x and 3s/5x."},
-        "Quick Reload": {"icon": "Spin-Up Rotor.png"},
+        "Quick Reload": {"icon": "Quick Reload.png"},
     },
     "Ratchet": {"Triple Barrel": {"effect": "Projectile count: 3. No additional shot is consumed."}},
     "Sparky": {"Azur Igniter": {"effect": "Activates after 1.5s of continuous fire; approximately +50% damage."}},

@@ -1,12 +1,12 @@
 // Generated from data/SeasonPassContent.txt.
 window.RANGER_SEASON = {
-  "number": 11,
-  "starts": "2026-08-11",
-  "ends": "2026-09-08",
+  "number": 12,
+  "starts": "2026-09-08",
+  "ends": "2026-10-06",
   "rewards": [
     [
       0,
-      "Raritanium x5",
+      "Raritanium x10",
       "Fashionium x50",
       0
     ],
@@ -67,7 +67,7 @@ window.RANGER_SEASON = {
     [
       10,
       "Fashionium x25",
-      "Raritanium x10",
+      "Cores x1",
       3000
     ],
     [
@@ -126,7 +126,7 @@ window.RANGER_SEASON = {
     ],
     [
       20,
-      "Reebo (Epic) x1",
+      "Cores x1",
       "Hero Lorbs (Epic) x200",
       3000
     ],
@@ -186,8 +186,8 @@ window.RANGER_SEASON = {
     ],
     [
       30,
-      "Raritanium x5",
-      "Fashionium x50",
+      "Reebo (Epic) x1",
+      "Cores x1",
       3000
     ],
     [
@@ -246,8 +246,8 @@ window.RANGER_SEASON = {
     ],
     [
       40,
-      "Fashionium x25",
-      "Raritanium x10",
+      "Cores x1",
+      "Raritanium x20",
       3000
     ],
     [
@@ -306,7 +306,7 @@ window.RANGER_SEASON = {
     ],
     [
       50,
-      "Reebo (Epic) x1",
+      "Fashionium x25",
       "Cores x1",
       3000
     ],
@@ -367,7 +367,7 @@ window.RANGER_SEASON = {
     [
       60,
       "Cores x1",
-      "Skin: Raritanium Chip x1",
+      "Skin: Raritanium Widget x1",
       3000
     ]
   ],

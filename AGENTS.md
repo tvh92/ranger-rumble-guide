@@ -19,11 +19,6 @@
 
 When the user requests website work, that request authorizes implementing, validating, committing, and pushing the scoped change to this repository's configured GitHub remote. Do not ask for separate commit or push approval. If the user explicitly asks only to commit, do not push until requested.
 
-## TODO
-1. Make the header text (only for "Heroes", "Season Pass", and "Bot Names") larger in the following HTML files: `heroes.html`, `season-pass.html`, and `bot-names.html`.
-2. Reduce the width of the table in `season-pass.html` so it fits better on the page.
-3. Update the `update_site_data.py` script so that it also updates `bot-names.html`.
-
 ## Working tree conventions
 
 - Modified files under `data/` may be intentional generated or exported data. Inspect and summarize them before treating them as unrelated changes.

@@ -470,6 +470,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
         DATA_DIR / "skin-status.js": json_js("RANGER_USED_SKINS", parse_used_skins(), "data/hero-skins-status.txt") + json_js("RANGER_SKIN_RARITIES", parse_skin_rarities(), "data/hero-skins-status.txt"),
         ROOT / "index.html": update_index((ROOT / "index.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "season-pass.html": update_index((ROOT / "season-pass.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
+        ROOT / "bot-names.html": update_index((ROOT / "bot-names.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
     }
 
 

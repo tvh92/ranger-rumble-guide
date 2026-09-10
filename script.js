@@ -138,7 +138,7 @@ function modTable(mod) {
 function modsSection(heroKey) {
   const mods=window.RANGER_MODS?.[heroKey]||[];
   if(!mods.length)return '';
-  const requirements=[{level:3,cores:1},{level:6,cores:3}];
+  const requirements=[{level:3,cores:1},{level:6,cores:3},{level:7,cores:6},{level:8,cores:8},{level:9,cores:10},{level:10,cores:12}];
   const cards=mods.map((mod,index)=>{const requirement=requirements[index]||requirements.at(-1),prerequisite=index?'<span class="talent-prerequisite">Requires previous talent</span>':'';return`<article class="mod-card"><header><img src="${assetUrl(`talents/${encodeURIComponent(mod.icon)}`)}" alt=""><div><span>Hero talent</span><h4>${safe(mod.name)}</h4></div></header><div class="talent-requirements"><span>Unlocks at Lv ${requirement.level}</span><span>${requirement.cores} ${requirement.cores===1?'core':'cores'}</span>${prerequisite}</div><p class="mod-menu">${safe(mod.menu)}</p><p class="mod-effect">${safe(mod.effect)}</p>${mod.note?`<p class="mod-note">${safe(mod.note)}</p>`:''}${modTable(mod)}</article>`}).join('');
   return `<section class="mods-section" id="talents"><h3>Talents</h3><div class="mod-grid">${cards}</div></section>`;
 }

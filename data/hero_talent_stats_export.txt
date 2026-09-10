@@ -14,6 +14,22 @@ TALENT: Triple Barrel
 MENU: Each shot now fires three projectiles instead of two.
 EFFECT: Projectile count 3; no additional shot consumed.
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Widget (internal: Sandy)
@@ -24,6 +40,22 @@ EFFECT: Regeneration delay reduced from 6.0000s to 4.0000s; full-regeneration ti
 TALENT: Double Barrel
 MENU: Each shot now fires two projectiles instead of one.
 EFFECT: Projectile count 2; no additional shot consumed.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
 
 ================================================================================
 
@@ -47,6 +79,22 @@ Level  | Damage
 9      | 85.0000
 10     | 93.0000
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Chip
@@ -68,6 +116,22 @@ Level  | Damage spec  | Health damage
 8      | 62.0000      | 31.0000
 9      | 68.0000      | 34.0000
 10     | 74.0000      | 37.0000
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
 
 ================================================================================
 
@@ -91,6 +155,22 @@ Level  | Normal damage  | Enhanced damage
 8      | 263.0000       | 329.0000
 9      | 285.0000       | 356.0000
 10     | 308.0000       | 385.0000
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
 
 ================================================================================
 
@@ -125,6 +205,22 @@ Level  | Damage
 9      | 14.0000
 10     | 15.0000
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Sparky (internal: Fuse)
@@ -143,6 +239,22 @@ Level  | Normal damage  | Blue-fire damage
 9      | 89.0000        | 134.0000
 10     | 96.0000        | 144.0000
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Mopz (internal: Raiden)
@@ -154,6 +266,22 @@ BASE STAGES: approximately 1.3000s/3.0000x and 3.0000s/5.0000x.
 TALENT: Quick Reload
 MENU: The weapon recovers ammo after using a gadget.
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Celeste
@@ -164,6 +292,22 @@ EFFECT: Dash cooldown reduction 0.5000 (-50%).
 TALENT: Ricochet Blades
 MENU: The number of rebounds from the blades increases.
 EFFECT: Extended maximum hit count 7 (base 6); ricochet radius 8.0000.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
 
 ================================================================================
 
@@ -187,6 +331,22 @@ Level  | Minirocket damage
 9      | 22.0000
 10     | 24.0000
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Lump
@@ -209,6 +369,22 @@ Level  | Damage per application
 9      | 11.0000
 10     | 12.0000
 
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
 ================================================================================
 
 HERO: Grimshot
@@ -219,6 +395,22 @@ EFFECT: Radius 2.3000; duration 8.0000s (same as the shield); heals 0.0500 of ma
 TALENT: Thermal Scope
 MENU: Rivals are displayed through walls at the center of the reticle.
 EFFECT: Through-wall detection enabled; normalized central-screen radius 0.5000.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
+
+TALENT: Improved Ammo
+MENU: Grants more ammo to the weapon.
+EFFECT: Maximum ammo +20%.
+
+TALENT: Improved Fire Rate
+MENU: Increases the weapon's fire rate.
+EFFECT: Weapon fire rate +20%.
+
+TALENT: Improved Health
+MENU: Grants more health to the hero.
+EFFECT: Maximum health +20%.
 
 ================================================================================
 

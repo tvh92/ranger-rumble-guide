@@ -12,6 +12,30 @@ window.RANGER_MODS = {
       "icon": "Triple Barrel.png",
       "menu": "Each shot now fires three projectiles instead of two.",
       "effect": "Projectile count: 3. No additional shot is consumed."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Widget": [
@@ -26,6 +50,30 @@ window.RANGER_MODS = {
       "icon": "Double Barrel.png",
       "menu": "Each shot now fires two projectiles instead of one.",
       "effect": "Projectile count: 2. No additional shot is consumed."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Sprocket": [
@@ -75,6 +123,30 @@ window.RANGER_MODS = {
           93
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Chip": [
@@ -135,6 +207,30 @@ window.RANGER_MODS = {
           37
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Lil'Ann": [
@@ -196,6 +292,30 @@ window.RANGER_MODS = {
         ]
       ],
       "note": "The activation window appears to be controlled by game code."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Tempest": [
@@ -291,6 +411,30 @@ window.RANGER_MODS = {
           15
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Sparky": [
@@ -345,6 +489,30 @@ window.RANGER_MODS = {
           144
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Mopz": [
@@ -359,6 +527,30 @@ window.RANGER_MODS = {
       "name": "Quick Reload",
       "icon": "Quick Reload.png",
       "menu": "The weapon recovers ammo after using a gadget."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Celeste": [
@@ -373,6 +565,30 @@ window.RANGER_MODS = {
       "icon": "Ricochet Blades.png",
       "menu": "The number of rebounds from the blades increases.",
       "effect": "Increases the maximum hit count from three to four."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Zed": [
@@ -422,6 +638,30 @@ window.RANGER_MODS = {
           24
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Lump": [
@@ -471,6 +711,30 @@ window.RANGER_MODS = {
           12
         ]
       ]
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ],
   "Grimshot": [
@@ -485,6 +749,30 @@ window.RANGER_MODS = {
       "icon": "Thermal Scope.png",
       "menu": "Rivals are displayed through walls at the center of the reticle.",
       "effect": "Through-wall detection enabled; normalized central-screen radius: 0.5."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
+    },
+    {
+      "name": "Improved Ammo",
+      "icon": "Improved Ammo.png",
+      "menu": "Grants more ammo to the weapon.",
+      "effect": "Maximum ammo +20%."
+    },
+    {
+      "name": "Improved Fire Rate",
+      "icon": "Improved Fire Rate.png",
+      "menu": "Increases the weapon's fire rate.",
+      "effect": "Weapon fire rate +20%."
+    },
+    {
+      "name": "Improved Health",
+      "icon": "Improved Health.png",
+      "menu": "Grants more health to the hero.",
+      "effect": "Maximum health +20%."
     }
   ]
 };

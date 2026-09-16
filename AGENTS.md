@@ -59,8 +59,7 @@ Keep the version and generic fan-site disclaimer. Ranger Rumble is developed by 
 
 ## TODO
 
-5. Add Ultimate data, including range, duration, and related values.
-6. Update the website after version 1.10, including Sparky's second talent when data becomes available.
-8. Update the talent design.
-9. Add a tab covering modes and maps.
-10. Add a tab covering events.
+1. Add Ultimate data, including range, duration, and related values.
+2. Update the website after version 1.10, including Sparky's second talent when data becomes available.
+3. Add a tab covering modes and maps.
+4. Add a tab covering events.

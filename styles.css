@@ -41,7 +41,7 @@ button { font: inherit; }
   background: var(--surface-header); color: var(--accent); font-size: 21px; line-height: 1; cursor: pointer; transition: transform .18s, box-shadow .18s;
 }
 .theme-toggle:hover { transform: translateY(-2px); box-shadow: 0 0 16px color-mix(in srgb, var(--accent-strong) 35%, transparent); }
-.topbar-navigation { display: flex; align-items: center; gap: clamp(42px, 7vw, 132px); margin-left: clamp(42px, 7vw, 132px); }
+.topbar-navigation { display: flex; align-items: center; gap: clamp(20px, 3.6vw, 66px); margin-left: clamp(20px, 3.6vw, 66px); }
 .topbar-actions { display: flex; align-items: center; margin-left: auto; }
 .topbar-link { position: relative; padding: 6px 0; color: var(--accent); font: italic 900 22px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .8px; text-decoration: none; text-transform: uppercase; transition: color .18s; }
 .topbar-link::after { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent-strong); content: ''; transform: scaleX(0); transform-origin: center; transition: transform .18s; }

@@ -50,7 +50,7 @@ for (const [category, entries] of Object.entries(descriptions || {})) {
 }
 
 const scriptSource = fs.readFileSync(path.join(projectRoot, 'script.js'), 'utf8');
-const sitePages = ['index.html', 'season-pass.html', 'bot-names.html'];
+const sitePages = ['index.html', 'modes-maps.html', 'season-pass.html', 'bot-names.html'];
 const pageVersions = new Map();
 for (const filename of sitePages) {
   const source = fs.readFileSync(path.join(projectRoot, filename), 'utf8');

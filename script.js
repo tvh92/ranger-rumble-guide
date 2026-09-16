@@ -143,16 +143,31 @@ function modTable(mod) {
 const talentRequirements=[{level:3,cores:1},{level:6,cores:3},{level:7,cores:6},{level:8,cores:8},{level:9,cores:10},{level:10,cores:12}];
 function talentType(index){return index<2?'Signature':'Upgrade';}
 function talentValue(value){const rounded=Math.round(value*10)/10;return Number.isInteger(rounded)?String(rounded):rounded.toFixed(1);}
-function talentComparison(heroKey,mod){
+function talentComparison(heroKey,index,mod){
   const talentName=norm(mod.name),isHealth=talentName==='improvedhealth',isAmmo=talentName==='improvedammo',isFireRate=talentName==='improvedfirerate';
   if(!isHealth&&!isAmmo&&!isFireRate)return '';
-  const config=guide.heroes[heroKey],loadout=loadouts[heroKey],item=isHealth?find(data.characters,heroKey):find(data.weapons,config.weaponStats||loadout[0]),column=isHealth?'Hero HP':isAmmo?'MaxAmmo':'Fire Rate',label=isHealth?'Hero HP':isAmmo?'Max ammo':'Fire rate',rows=item?.levels?.map(level=>{const before=Number(level[column]);if(!Number.isFinite(before))return '';return`<tr><th scope="row">LV ${level.Level}</th><td>${talentValue(before)}</td><td>${talentValue(before*1.2)}</td></tr>`}).filter(Boolean).join('');
+  const config=guide.heroes[heroKey],loadout=loadouts[heroKey],item=isHealth?find(data.characters,heroKey):find(data.weapons,config.weaponStats||loadout[0]),column=isHealth?'Hero HP':isAmmo?'MaxAmmo':'Fire Rate',label=isHealth?'Hero HP':isAmmo?'Max ammo':'Fire rate',values=(item?.levels||[]).map(level=>Number(level[column])).filter(Number.isFinite);
+  if(!values.length)return '';
+  const isConstant=values.every(value=>value===values[0]);
+  const isSecondHealth=isHealth&&index>2;
+  if(isConstant){
+    const current=values[0],after=current*1.2;
+    return `<div class="talent-stat-change"><span class="talent-stat-change-label">${safe(label)} · current / after +20%</span><div class="talent-stat-change-values" aria-label="${safe(label)} ${talentValue(current)} to ${talentValue(after)}"><strong>${talentValue(current)}</strong><span aria-hidden="true">→</span><strong>${talentValue(after)}</strong></div><p class="talent-stat-change-note">Constant across hero levels</p></div>`;
+  }
+  const rows=(item?.levels||[]).map((level,rowIndex)=>{
+    const initial=Number(level[column]);
+    if(!Number.isFinite(initial))return '';
+    const current=initial*(isSecondHealth?1.2:1),after=initial*(isSecondHealth?1.4:1.2);
+    return isSecondHealth?`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${talentValue(initial)}</td><td>${talentValue(current)}</td><td>${talentValue(after)}</td></tr>`:`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${talentValue(current)}</td><td>${talentValue(after)}</td></tr>`;
+  }).filter(Boolean).join('');
   if(!rows)return '';
-  return `<div class="talent-comparison"><span class="talent-comparison-label">${safe(label)} · before / after talent</span><table class="talent-comparison-table"><caption>${safe(label)} before and after ${safe(mod.name)} for ${safe(displayHeroName(heroKey))}</caption><thead><tr><th scope="col">Level</th><th scope="col">Before</th><th scope="col">After +20%</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  const headers=isSecondHealth?'<th scope="col">Initial</th><th scope="col">Current +20%</th><th scope="col">After +40%</th>':'<th scope="col">Current</th><th scope="col">After +20%</th>';
+  const note=isSecondHealth?'<p class="talent-comparison-note">Based on initial HP levels; talent bonuses are additive, not cumulative.</p>':'';
+  return `<div class="talent-comparison"><table class="talent-comparison-table" aria-label="${safe(label)} values for ${safe(mod.name)}"><thead><tr><th scope="col">Level</th>${headers}</tr></thead><tbody>${rows}</tbody></table>${note}</div>`;
 }
 function talentDetailMarkup(heroKey,index,mod,requirement){
   const titleId=`talent-title-${norm(heroKey)}-${index}`;
-  return `<div class="talent-detail-meta">Talent ${index+1} · Unlocks at level ${requirement.level}</div><h4 id="${titleId}">${safe(mod.name)}</h4><div class="talent-detail-icon"><img src="${assetUrl(`talents/${encodeURIComponent(mod.icon)}`)}" alt=""></div><p class="talent-detail-summary">${safe(mod.menu)}</p>${mod.effect?`<div class="talent-effect"><span>Detailed effect</span><p>${safe(mod.effect)}</p></div>`:''}${mod.note?`<p class="talent-note">${safe(mod.note)}</p>`:''}${talentComparison(heroKey,mod)}${modTable(mod)}`;
+  return `<div class="talent-detail-meta">Talent ${index+1} · Unlocks at level ${requirement.level}</div><h4 id="${titleId}">${safe(mod.name)}</h4><div class="talent-detail-icon"><img src="${assetUrl(`talents/${encodeURIComponent(mod.icon)}`)}" alt=""></div><p class="talent-detail-summary">${safe(mod.menu)}</p>${mod.effect?`<div class="talent-effect"><span>Detailed effect</span><p>${safe(mod.effect)}</p></div>`:''}${mod.note?`<p class="talent-note">${safe(mod.note)}</p>`:''}${talentComparison(heroKey,index,mod)}${modTable(mod)}`;
 }
 function selectTalent(tree,index,pin=false){
   const mods=window.RANGER_MODS?.[tree.dataset.hero]||[],mod=mods[index],requirement=talentRequirements[index]||talentRequirements.at(-1);

@@ -19,7 +19,7 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .selected-skin-stage img { flex: 0 0 auto; max-width: none; margin: 0; object-fit: contain; object-position: center bottom; }
 .selected-skin span { display: block; margin-top: 7px; color: var(--accent); font-size: 13px; font-weight: 800; }
 
-.detail-body { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; min-height: 0; height: 90vh; max-height: 90vh; padding: 30px 36px 120px; overflow-y: auto; overscroll-behavior: contain; scroll-padding-bottom: 120px; background-color: color-mix(in srgb, var(--surface) 88%, var(--page)); background-image: linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%); background-size: 44px 76px; scrollbar-color: var(--line) var(--surface-strong); scrollbar-width: thin; }
+.detail-body { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; min-height: 0; height: 90vh; max-height: 90vh; padding: 30px 36px 120px; overflow-y: auto; overscroll-behavior: contain; scroll-padding: 76px 0 120px; background-color: color-mix(in srgb, var(--surface) 88%, var(--page)); background-image: linear-gradient(30deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%), linear-gradient(150deg, var(--pattern) 12%, transparent 12.5%, transparent 87%, var(--pattern) 87.5%); background-size: 44px 76px; scrollbar-color: var(--line) var(--surface-strong); scrollbar-width: thin; }
 .detail-body::-webkit-scrollbar { width: 10px; }
 .detail-body::-webkit-scrollbar-track { background: var(--surface-strong); }
 .detail-body::-webkit-scrollbar-thumb { border: 2px solid var(--surface-strong); border-radius: 8px; background: var(--line); }
@@ -133,7 +133,7 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .talent-list-header { display: grid; grid-template-columns: 68px minmax(0, 1fr); align-items: center; min-height: 22px; margin: 0 0 8px; color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 1px; line-height: 1; text-transform: uppercase; }
 .talent-list-header span:first-child { text-align: center; }
 .talent-list::before { content: ''; position: absolute; top: 67px; bottom: 42px; left: 42px; width: 2px; background: linear-gradient(180deg, var(--accent-strong), color-mix(in srgb, var(--line-bright) 80%, var(--accent)), var(--accent-strong)); box-shadow: 0 0 10px color-mix(in srgb, var(--accent-strong) 28%, transparent); }
-.talent-node { position: relative; z-index: 1; display: grid; grid-template-columns: 68px minmax(0, 1fr); align-items: stretch; width: 100%; min-width: 0; min-height: 85px; margin: 0; padding: 0 0 13px; border: 0; background: transparent; color: var(--text); text-align: left; cursor: pointer; }
+.talent-node { position: relative; z-index: 1; display: grid; grid-template-columns: 68px minmax(0, 1fr); align-items: stretch; width: 100%; min-width: 0; min-height: 85px; margin: 0; padding: 0 0 13px; border: 0; background: transparent; color: var(--text); text-align: left; cursor: pointer; scroll-margin: 76px 0 120px; }
 .talent-unlock { display: flex; position: relative; z-index: 1; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; }
 .talent-unlock strong { display: grid; place-items: center; width: 38px; height: 38px; border: 2px solid var(--accent-strong); border-radius: 50%; background: var(--surface-strong); color: var(--heading); font: 800 18px/1 'Barlow Condensed', Impact, sans-serif; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-strong) 12%, transparent); }
 .talent-unlock small { position: relative; z-index: 2; padding: 2px 4px; background: var(--surface-strong); color: var(--orange); font-size: 10px; font-weight: 800; line-height: 1; white-space: nowrap; }
@@ -158,16 +158,22 @@ html[data-theme='light'] .talent-node-icon img { filter: drop-shadow(0 2px 1px #
 .talent-effect p { margin: 0; color: var(--heading); font-size: 14px; font-weight: 700; line-height: 1.4; }
 .talent-note { margin: 0 0 14px; color: var(--muted); font-size: 11px; font-style: italic; line-height: 1.35; }
 .talent-detail .mod-table-wrap { width: 100%; overflow-x: auto; }
-.talent-comparison { width: 100%; margin-top: 15px; overflow-x: auto; border-top: 1px solid var(--line); }
-.talent-comparison-label { display: block; padding: 10px 0 8px; color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: .8px; text-transform: uppercase; }
-.talent-comparison-table, .mod-table { width: 100%; min-width: max(100%, 280px); border-collapse: collapse; font-size: 12px; }
-.talent-comparison-table th, .talent-comparison-table td { padding: 7px 9px; border-right: 1px solid color-mix(in srgb, var(--line) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); text-align: right; }
+.talent-comparison { width: 100%; margin-top: 15px; padding-top: 1px; overflow-x: auto; border-top: 1px solid var(--line); }
+.talent-comparison-table, .mod-table { width: max-content; min-width: 0; margin-inline: auto; border-collapse: collapse; font-size: 12px; }
+.talent-comparison-table th, .talent-comparison-table td, .mod-table th, .mod-table td { padding: 7px 9px; border-right: 1px solid color-mix(in srgb, var(--line) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); text-align: center; }
 .talent-comparison-table thead th { background: var(--surface-soft); color: var(--accent); font-size: 10px; text-transform: uppercase; }
-.talent-comparison-table thead th:first-child, .talent-comparison-table tbody th { text-align: left; }
-.talent-comparison-table tbody th { color: var(--orange); white-space: nowrap; }
+.talent-comparison-table tbody th { color: var(--orange); white-space: nowrap; text-align: center; }
 .talent-comparison-table tbody td { color: var(--heading); font-weight: 700; }
 .talent-comparison-table tbody td:last-child { color: var(--accent-strong); }
 .talent-comparison-table tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface-soft) 48%, transparent); }
+.talent-comparison-note { margin: 9px auto 0; max-width: 290px; color: var(--muted); font-size: 10px; line-height: 1.3; text-align: center; }
+.talent-stat-change { width: 100%; margin-top: 15px; padding-top: 1px; border-top: 1px solid var(--line); text-align: center; }
+.talent-stat-change-label { display: block; padding-top: 9px; color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: .8px; text-transform: uppercase; }
+.talent-stat-change-values { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 7px; }
+.talent-stat-change-values strong { min-width: 58px; padding: 8px 10px; border: 1px solid var(--line); background: var(--surface-soft); color: var(--heading); font: italic 800 24px/1 'Barlow Condensed', Impact, sans-serif; }
+.talent-stat-change-values strong:last-child { border-color: var(--accent-strong); background: color-mix(in srgb, var(--accent-strong) 16%, var(--surface-soft)); color: var(--accent-strong); }
+.talent-stat-change-values span { color: var(--orange); font-size: 22px; font-weight: 800; }
+.talent-stat-change-note { margin: 7px 0 0; color: var(--muted); font-size: 10px; line-height: 1.3; }
 .mod-table-wrap { margin-top: 14px; overflow-x: auto; border-top: 1px solid var(--line); }
 .mod-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .mod-table th, .mod-table td { padding: 7px 9px; border-right: 1px solid color-mix(in srgb, var(--line) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); text-align: center; }

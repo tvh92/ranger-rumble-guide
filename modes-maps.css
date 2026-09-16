@@ -1,14 +1,14 @@
 .modes-maps-page { min-height: calc(100vh - 184px); }
 .modes-maps-section { max-width: 1660px; }
-.modes-table-wrap { overflow-x: auto; border: 1px solid var(--line); box-shadow: 0 10px 24px var(--shadow); scrollbar-color: var(--line-bright) var(--surface-strong); }
-.modes-table { width: 100%; min-width: 1100px; border-collapse: separate; border-spacing: 0; background: var(--surface); }
+.modes-table-wrap { max-width: 1080px; margin-inline: auto; overflow-x: auto; border: 1px solid var(--line); box-shadow: 0 10px 24px var(--shadow); scrollbar-color: var(--line-bright) var(--surface-strong); }
+.modes-table { width: 100%; min-width: 980px; border-collapse: separate; border-spacing: 0; background: var(--surface); }
 .modes-table caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .modes-table th, .modes-table td { border-right: 1px solid color-mix(in srgb, var(--line) 68%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 68%, transparent); }
 .modes-table tr > :last-child { border-right: 0; }
 .modes-table tbody tr:last-child > * { border-bottom: 0; }
 .modes-table thead th { padding: 13px 14px; background: var(--surface-header); color: var(--accent); text-align: center; vertical-align: top; }
-.modes-table thead th:first-child { width: 190px; min-width: 190px; color: var(--orange); font: italic 900 22px/.95 'Barlow Condensed', Impact, sans-serif; letter-spacing: .7px; text-transform: uppercase; }
-.modes-table thead th:not(:first-child) { min-width: 180px; }
+.modes-table thead th:first-child { width: 165px; min-width: 165px; color: var(--orange); font: italic 900 22px/.95 'Barlow Condensed', Impact, sans-serif; letter-spacing: .7px; text-transform: uppercase; }
+.modes-table thead th:not(:first-child) { min-width: 160px; }
 .modes-table thead .zone-control-head { background: linear-gradient(135deg, color-mix(in srgb, #63e6e8 17%, var(--surface-header)), var(--surface-header)); }
 .mode-heading { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; }
 .mode-heading > img { flex: 0 0 auto; width: 52px; height: 52px; object-fit: contain; filter: drop-shadow(0 4px 3px var(--shadow)); }

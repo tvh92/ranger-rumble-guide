@@ -56,3 +56,11 @@ When the user requests website work, that request authorizes implementing, valid
 ## Legal text
 
 Keep the version and generic fan-site disclaimer. Ranger Rumble is developed by Oh BiBi and published by Sony Interactive Entertainment. Ratchet & Clank was created by Insomniac Games and is owned by Sony Interactive Entertainment. Names, trademarks, and game assets belong to their respective owners.
+
+## TODO
+
+5. Add Ultimate data, including range, duration, and related values.
+6. Update the website after version 1.10, including Sparky's second talent when data becomes available.
+8. Update the talent design.
+9. Add a tab covering modes and maps.
+10. Add a tab covering events.

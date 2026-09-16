@@ -57,6 +57,7 @@ body{background-image:linear-gradient(180deg,color-mix(in srgb,var(--page) 28%,t
 /* Keep hero renders grounded while compensating for their different canvas proportions. */
 #hero-art{object-position:center bottom;transform:scale(var(--render-scale,1));transform-origin:center bottom}
 .card.rarity-epic .portrait{background:linear-gradient(145deg,color-mix(in srgb,var(--rarity) 70%,var(--surface)),var(--surface))}
+.card.rarity-legendary .portrait{background:linear-gradient(145deg,color-mix(in srgb,var(--rarity) 70%,var(--surface)),var(--surface))}
 
 /* Final interaction and density adjustments. Keep the hit target still while the visual card lifts. */
 .card-hitarea{position:relative;display:flex;min-width:0;align-self:stretch}.card,.card:hover{position:relative;height:100%;border-color:var(--line)!important;border-bottom-color:var(--line)!important;box-shadow:none;transform:translate3d(0,0,0)!important;transition:transform .18s ease,box-shadow .18s ease;will-change:transform}.card::after{position:absolute;z-index:3;inset:0;display:block;padding:2px;background:var(--accent-strong);clip-path:inherit;content:'';opacity:0;pointer-events:none;transition:opacity .18s ease;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude}.card-hitarea:is(:hover,:focus-within)>.card{transform:translate3d(0,-4px,0)!important;box-shadow:0 12px 26px var(--shadow)}.card-hitarea:is(:hover,:focus-within)>.card::after{opacity:1}

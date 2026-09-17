@@ -73,3 +73,8 @@ body{background-image:linear-gradient(180deg,color-mix(in srgb,var(--page) 28%,t
 @media(max-width:760px){.combat-icon{height:150px;grid-template-rows:28px 82px 40px}.icon-type{height:28px;padding:8px 6px 10px;font-size:12px}.icon-art{height:82px;padding:14px 16px}.icon-art img{height:68px}.combat-icon.dual .icon-art img{height:60px}.combat-icon small{height:40px;font-size:13px}.card[data-key='Tempest'] .portrait img,.card[data-key='Lump'] .portrait img{width:124%;height:150px;transform:translateY(5px)}}
 @media(max-width:760px){.card[data-key='Lump'] .portrait img{transform:translate(-10%,5px)}}
 @media(max-width:650px){.season-section>.season-dates{margin-bottom:18px}}
+
+/* Keep the artwork background independent from extension-managed document scrolling. */
+html{position:relative;min-height:100%;isolation:isolate;background-color:var(--page)}
+html::before{position:fixed;z-index:-1;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--page) 28%,transparent),color-mix(in srgb,var(--page) 72%,transparent)),url('images/backgrounds/Bg_Ardolis.png') center top/cover no-repeat;content:'';pointer-events:none}
+body,main#top{background-image:none;background-color:transparent;background-attachment:scroll}

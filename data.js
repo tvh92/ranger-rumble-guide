@@ -8,7 +8,9 @@ window.RUMBLE_DATA = {
         "Hero Power",
         "Ult Damage",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range"
       ],
       "levels": [
         {
@@ -17,7 +19,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 4800,
           "Ult Damage": 64,
           "Ult Power": 1600,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 2,
@@ -25,7 +29,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 5600,
           "Ult Damage": 75,
           "Ult Power": 1870,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 3,
@@ -33,7 +39,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 6400,
           "Ult Damage": 85,
           "Ult Power": 2130,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 4,
@@ -41,7 +49,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 7200,
           "Ult Damage": 96,
           "Ult Power": 2400,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 5,
@@ -49,7 +59,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 8000,
           "Ult Damage": 107,
           "Ult Power": 2670,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 6,
@@ -57,7 +69,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 8800,
           "Ult Damage": 117,
           "Ult Power": 2930,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 7,
@@ -65,7 +79,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 9600,
           "Ult Damage": 128,
           "Ult Power": 3200,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 8,
@@ -73,7 +89,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 10400,
           "Ult Damage": 139,
           "Ult Power": 3470,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 9,
@@ -81,7 +99,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 11200,
           "Ult Damage": 149,
           "Ult Power": 3730,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         },
         {
           "Level": 10,
@@ -89,7 +109,9 @@ window.RUMBLE_DATA = {
           "Hero Power": 12000,
           "Ult Damage": 160,
           "Ult Power": 4000,
-          "Ult Fire Rate": 1300
+          "Ult Fire Rate": 1300,
+          "Ult Duration": 8,
+          "Ult Range": 2
         }
       ],
       "ultimate": "HoverBoard (Celeste)"
@@ -102,7 +124,11 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Overhealth",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Projectile Speed",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -112,7 +138,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 73,
           "Overhealth": 40,
           "Ult Power": 1000,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 2,
@@ -121,7 +151,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 95,
           "Overhealth": 52,
           "Ult Power": 1300,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 3,
@@ -130,7 +164,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 117,
           "Overhealth": 64,
           "Ult Power": 1600,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 4,
@@ -139,7 +177,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 139,
           "Overhealth": 76,
           "Ult Power": 1900,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 5,
@@ -148,7 +190,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 161,
           "Overhealth": 88,
           "Ult Power": 2200,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 6,
@@ -157,7 +203,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 183,
           "Overhealth": 100,
           "Ult Power": 2500,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 7,
@@ -166,7 +216,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 204,
           "Overhealth": 112,
           "Ult Power": 2800,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 8,
@@ -175,7 +229,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 226,
           "Overhealth": 124,
           "Ult Power": 3100,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 9,
@@ -184,7 +242,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 248,
           "Overhealth": 136,
           "Ult Power": 3400,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 10,
@@ -193,7 +255,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 270,
           "Overhealth": 148,
           "Ult Power": 3700,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 30,
+          "Ult Overhealth Duration": 4
         }
       ],
       "ultimate": "Sheepinator (Chip)"
@@ -206,7 +272,11 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Overhealth",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Projectile Speed",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -216,7 +286,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 234,
           "Overhealth": 52,
           "Ult Power": 1300,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 2,
@@ -225,7 +299,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 285,
           "Overhealth": 63,
           "Ult Power": 1580,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 3,
@@ -234,7 +312,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 336,
           "Overhealth": 75,
           "Ult Power": 1870,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 4,
@@ -243,7 +325,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 387,
           "Overhealth": 86,
           "Ult Power": 2150,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 5,
@@ -252,7 +338,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 438,
           "Overhealth": 97,
           "Ult Power": 2430,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 6,
@@ -261,7 +351,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 489,
           "Overhealth": 109,
           "Ult Power": 2720,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 7,
@@ -270,7 +364,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 540,
           "Overhealth": 120,
           "Ult Power": 3000,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 8,
@@ -279,7 +377,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 591,
           "Overhealth": 131,
           "Ult Power": 3280,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 9,
@@ -288,7 +390,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 642,
           "Overhealth": 143,
           "Ult Power": 3570,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         },
         {
           "Level": 10,
@@ -297,7 +403,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 693,
           "Overhealth": 154,
           "Ult Power": 3850,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 3,
+          "Ult Range": 20,
+          "Ult Projectile Speed": 15,
+          "Ult Overhealth Duration": 4
         }
       ],
       "ultimate": "BigBoom (Fuse)"
@@ -307,68 +417,90 @@ window.RUMBLE_DATA = {
       "columns": [
         "Hero HP",
         "Hero Power",
-        "Overhealth"
+        "Overhealth",
+        "Ult Duration",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
           "Level": 1,
           "Hero HP": 320,
           "Hero Power": 4800,
-          "Overhealth": 64
+          "Overhealth": 64,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 2,
           "Hero HP": 373,
           "Hero Power": 5600,
-          "Overhealth": 75
+          "Overhealth": 75,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 3,
           "Hero HP": 427,
           "Hero Power": 6400,
-          "Overhealth": 85
+          "Overhealth": 85,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 4,
           "Hero HP": 480,
           "Hero Power": 7200,
-          "Overhealth": 96
+          "Overhealth": 96,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 5,
           "Hero HP": 533,
           "Hero Power": 8000,
-          "Overhealth": 107
+          "Overhealth": 107,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 6,
           "Hero HP": 587,
           "Hero Power": 8800,
-          "Overhealth": 117
+          "Overhealth": 117,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 7,
           "Hero HP": 640,
           "Hero Power": 9600,
-          "Overhealth": 128
+          "Overhealth": 128,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 8,
           "Hero HP": 693,
           "Hero Power": 10400,
-          "Overhealth": 139
+          "Overhealth": 139,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 9,
           "Hero HP": 747,
           "Hero Power": 11200,
-          "Overhealth": 149
+          "Overhealth": 149,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 10,
           "Hero HP": 800,
           "Hero Power": 12000,
-          "Overhealth": 160
+          "Overhealth": 160,
+          "Ult Duration": 8,
+          "Ult Overhealth Duration": 1.9
         }
       ],
       "ultimate": "SmokeScreen (Grimshot)"
@@ -381,7 +513,10 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Overhealth",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -391,7 +526,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 39,
           "Overhealth": 104,
           "Ult Power": 1300,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 2,
@@ -400,7 +538,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 48,
           "Overhealth": 127,
           "Ult Power": 1580,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 3,
@@ -409,7 +550,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 56,
           "Overhealth": 149,
           "Ult Power": 1870,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 4,
@@ -418,7 +562,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 65,
           "Overhealth": 172,
           "Ult Power": 2150,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 5,
@@ -427,7 +574,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 73,
           "Overhealth": 195,
           "Ult Power": 2430,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 6,
@@ -436,7 +586,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 82,
           "Overhealth": 217,
           "Ult Power": 2720,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 7,
@@ -445,7 +598,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 90,
           "Overhealth": 240,
           "Ult Power": 3000,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 8,
@@ -454,7 +610,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 99,
           "Overhealth": 263,
           "Ult Power": 3280,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 9,
@@ -463,7 +622,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 107,
           "Overhealth": 285,
           "Ult Power": 3570,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 10,
@@ -472,7 +634,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 116,
           "Overhealth": 308,
           "Ult Power": 3850,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 3.5,
+          "Ult Overhealth Duration": 6
         }
       ],
       "ultimate": "Sabre (LilAnn)"
@@ -483,7 +648,9 @@ window.RUMBLE_DATA = {
         "Hero HP",
         "Hero Power",
         "Ult Damage",
-        "Overhealth"
+        "Overhealth",
+        "Ult Duration",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -491,70 +658,90 @@ window.RUMBLE_DATA = {
           "Hero HP": 208,
           "Hero Power": 3900,
           "Ult Damage": 117,
-          "Overhealth": 156
+          "Overhealth": 156,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 2,
           "Hero HP": 253,
           "Hero Power": 4750,
           "Ult Damage": 143,
-          "Overhealth": 190
+          "Overhealth": 190,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 3,
           "Hero HP": 299,
           "Hero Power": 5600,
           "Ult Damage": 168,
-          "Overhealth": 224
+          "Overhealth": 224,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 4,
           "Hero HP": 344,
           "Hero Power": 6450,
           "Ult Damage": 194,
-          "Overhealth": 258
+          "Overhealth": 258,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 5,
           "Hero HP": 389,
           "Hero Power": 7300,
           "Ult Damage": 219,
-          "Overhealth": 292
+          "Overhealth": 292,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 6,
           "Hero HP": 435,
           "Hero Power": 8150,
           "Ult Damage": 245,
-          "Overhealth": 326
+          "Overhealth": 326,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 7,
           "Hero HP": 480,
           "Hero Power": 9000,
           "Ult Damage": 270,
-          "Overhealth": 360
+          "Overhealth": 360,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 8,
           "Hero HP": 525,
           "Hero Power": 9850,
           "Ult Damage": 296,
-          "Overhealth": 394
+          "Overhealth": 394,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 9,
           "Hero HP": 571,
           "Hero Power": 10700,
           "Ult Damage": 321,
-          "Overhealth": 428
+          "Overhealth": 428,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 10,
           "Hero HP": 616,
           "Hero Power": 11550,
           "Ult Damage": 347,
-          "Overhealth": 462
+          "Overhealth": 462,
+          "Ult Duration": 1,
+          "Ult Overhealth Duration": 2.95
         }
       ],
       "ultimate": "Evolution (Lump)"
@@ -567,7 +754,10 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Overhealth",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -577,7 +767,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 169,
           "Overhealth": 104,
           "Ult Power": 1300,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 2,
@@ -586,7 +779,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 206,
           "Overhealth": 127,
           "Ult Power": 1580,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 3,
@@ -595,7 +791,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 243,
           "Overhealth": 149,
           "Ult Power": 1870,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 4,
@@ -604,7 +803,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 280,
           "Overhealth": 172,
           "Ult Power": 2150,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 5,
@@ -613,7 +815,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 316,
           "Overhealth": 195,
           "Ult Power": 2430,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 6,
@@ -622,7 +827,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 353,
           "Overhealth": 217,
           "Ult Power": 2720,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 7,
@@ -631,7 +839,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 390,
           "Overhealth": 240,
           "Ult Power": 3000,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 8,
@@ -640,7 +851,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 427,
           "Overhealth": 263,
           "Ult Power": 3280,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 9,
@@ -649,7 +863,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 464,
           "Overhealth": 285,
           "Ult Power": 3570,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         },
         {
           "Level": 10,
@@ -658,7 +875,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 501,
           "Overhealth": 308,
           "Ult Power": 3850,
-          "Ult Fire Rate": 1100
+          "Ult Fire Rate": 1100,
+          "Ult Duration": 7,
+          "Ult Range": 20,
+          "Ult Overhealth Duration": 2.95
         }
       ],
       "ultimate": "CannonBall (Markus)"
@@ -671,7 +891,10 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Overhealth",
         "Ult Power",
-        "Ult Fire Rate"
+        "Ult Fire Rate",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -681,7 +904,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 39,
           "Overhealth": 104,
           "Ult Power": 1300,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 2,
@@ -690,7 +916,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 48,
           "Overhealth": 127,
           "Ult Power": 1580,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 3,
@@ -699,7 +928,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 56,
           "Overhealth": 149,
           "Ult Power": 1870,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 4,
@@ -708,7 +940,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 65,
           "Overhealth": 172,
           "Ult Power": 2150,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 5,
@@ -717,7 +952,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 73,
           "Overhealth": 195,
           "Ult Power": 2430,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 6,
@@ -726,7 +964,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 82,
           "Overhealth": 217,
           "Ult Power": 2720,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 7,
@@ -735,7 +976,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 90,
           "Overhealth": 240,
           "Ult Power": 3000,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 8,
@@ -744,7 +988,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 99,
           "Overhealth": 263,
           "Ult Power": 3280,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 9,
@@ -753,7 +1000,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 107,
           "Overhealth": 285,
           "Ult Power": 3570,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         },
         {
           "Level": 10,
@@ -762,7 +1012,10 @@ window.RUMBLE_DATA = {
           "Ult Damage": 116,
           "Overhealth": 308,
           "Ult Power": 3850,
-          "Ult Fire Rate": 900
+          "Ult Fire Rate": 900,
+          "Ult Duration": 5,
+          "Ult Range": 30,
+          "Ult Overhealth Duration": 6
         }
       ],
       "ultimate": "Negatron (Raiden)"
@@ -775,7 +1028,11 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Projectile Time",
         "Missiles",
-        "Overhealth"
+        "Overhealth",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Projectile Speed",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -785,7 +1042,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 45,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 128
+          "Overhealth": 128,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 2,
@@ -794,7 +1055,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 52,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 149
+          "Overhealth": 149,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 3,
@@ -803,7 +1068,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 60,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 171
+          "Overhealth": 171,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 4,
@@ -812,7 +1081,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 67,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 192
+          "Overhealth": 192,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 5,
@@ -821,7 +1094,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 75,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 213
+          "Overhealth": 213,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 6,
@@ -830,7 +1107,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 82,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 235
+          "Overhealth": 235,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 7,
@@ -839,7 +1120,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 90,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 256
+          "Overhealth": 256,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 8,
@@ -848,7 +1133,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 97,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 277
+          "Overhealth": 277,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 9,
@@ -857,7 +1146,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 105,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 299
+          "Overhealth": 299,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 10,
@@ -866,7 +1159,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 112,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 320
+          "Overhealth": 320,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         }
       ],
       "ultimate": "RYNO (RatchetRyno / RynoRatchet)"
@@ -879,7 +1176,11 @@ window.RUMBLE_DATA = {
         "Ult Damage",
         "Projectile Time",
         "Missiles",
-        "Overhealth"
+        "Overhealth",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Projectile Speed",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -889,7 +1190,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 28,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 80
+          "Overhealth": 80,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 2,
@@ -898,7 +1203,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 36,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 104
+          "Overhealth": 104,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 3,
@@ -907,7 +1216,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 45,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 128
+          "Overhealth": 128,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 4,
@@ -916,7 +1229,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 53,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 152
+          "Overhealth": 152,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 5,
@@ -925,7 +1242,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 62,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 176
+          "Overhealth": 176,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 6,
@@ -934,7 +1255,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 70,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 200
+          "Overhealth": 200,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 7,
@@ -943,7 +1268,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 78,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 224
+          "Overhealth": 224,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 8,
@@ -952,7 +1281,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 87,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 248
+          "Overhealth": 248,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 9,
@@ -961,7 +1294,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 95,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 272
+          "Overhealth": 272,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         },
         {
           "Level": 10,
@@ -970,7 +1307,11 @@ window.RUMBLE_DATA = {
           "Ult Damage": 104,
           "Projectile Time": 0.13,
           "Missiles": 18,
-          "Overhealth": 296
+          "Overhealth": 296,
+          "Ult Duration": 3.1,
+          "Ult Range": 30,
+          "Ult Projectile Speed": 40,
+          "Ult Overhealth Duration": 4.09
         }
       ],
       "ultimate": "Ryno (Sandy)"
@@ -981,7 +1322,9 @@ window.RUMBLE_DATA = {
         "Hero HP",
         "Hero Power",
         "Ult Damage",
-        "Overhealth"
+        "Overhealth",
+        "Ult Duration",
+        "Ult Overhealth Duration"
       ],
       "levels": [
         {
@@ -989,70 +1332,90 @@ window.RUMBLE_DATA = {
           "Hero HP": 200,
           "Hero Power": 3000,
           "Ult Damage": 110,
-          "Overhealth": 40
+          "Overhealth": 40,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 2,
           "Hero HP": 260,
           "Hero Power": 3900,
           "Ult Damage": 143,
-          "Overhealth": 52
+          "Overhealth": 52,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 3,
           "Hero HP": 320,
           "Hero Power": 4800,
           "Ult Damage": 176,
-          "Overhealth": 64
+          "Overhealth": 64,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 4,
           "Hero HP": 380,
           "Hero Power": 5700,
           "Ult Damage": 209,
-          "Overhealth": 76
+          "Overhealth": 76,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 5,
           "Hero HP": 440,
           "Hero Power": 6600,
           "Ult Damage": 242,
-          "Overhealth": 88
+          "Overhealth": 88,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 6,
           "Hero HP": 500,
           "Hero Power": 7500,
           "Ult Damage": 275,
-          "Overhealth": 100
+          "Overhealth": 100,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 7,
           "Hero HP": 560,
           "Hero Power": 8400,
           "Ult Damage": 308,
-          "Overhealth": 112
+          "Overhealth": 112,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 8,
           "Hero HP": 620,
           "Hero Power": 9300,
           "Ult Damage": 341,
-          "Overhealth": 124
+          "Overhealth": 124,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 9,
           "Hero HP": 680,
           "Hero Power": 10200,
           "Ult Damage": 374,
-          "Overhealth": 136
+          "Overhealth": 136,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         },
         {
           "Level": 10,
           "Hero HP": 740,
           "Hero Power": 11100,
           "Ult Damage": 407,
-          "Overhealth": 148
+          "Overhealth": 148,
+          "Ult Duration": 5,
+          "Ult Overhealth Duration": 2
         }
       ],
       "ultimate": "Slam (Sprocket)"
@@ -1062,6 +1425,9 @@ window.RUMBLE_DATA = {
       "columns": [
         "Hero HP",
         "Hero Power",
+        "Ult Duration",
+        "Ult Range",
+        "Ult Projectile Speed",
         "Tank HP",
         "Tank Damage",
         "Tank Fire Rate",
@@ -1072,6 +1438,9 @@ window.RUMBLE_DATA = {
           "Level": 1,
           "Hero HP": 256,
           "Hero Power": 4800,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 960,
           "Tank Damage": 142,
           "Tank Fire Rate": 0.7,
@@ -1081,6 +1450,9 @@ window.RUMBLE_DATA = {
           "Level": 2,
           "Hero HP": 299,
           "Hero Power": 5600,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1120,
           "Tank Damage": 171,
           "Tank Fire Rate": 0.7,
@@ -1090,6 +1462,9 @@ window.RUMBLE_DATA = {
           "Level": 3,
           "Hero HP": 341,
           "Hero Power": 6400,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1280,
           "Tank Damage": 201,
           "Tank Fire Rate": 0.7,
@@ -1099,6 +1474,9 @@ window.RUMBLE_DATA = {
           "Level": 4,
           "Hero HP": 384,
           "Hero Power": 7200,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1440,
           "Tank Damage": 231,
           "Tank Fire Rate": 0.7,
@@ -1108,6 +1486,9 @@ window.RUMBLE_DATA = {
           "Level": 5,
           "Hero HP": 427,
           "Hero Power": 8000,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1600,
           "Tank Damage": 260,
           "Tank Fire Rate": 0.7,
@@ -1117,6 +1498,9 @@ window.RUMBLE_DATA = {
           "Level": 6,
           "Hero HP": 469,
           "Hero Power": 8800,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1760,
           "Tank Damage": 290,
           "Tank Fire Rate": 0.7,
@@ -1126,6 +1510,9 @@ window.RUMBLE_DATA = {
           "Level": 7,
           "Hero HP": 512,
           "Hero Power": 9600,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 1920,
           "Tank Damage": 319,
           "Tank Fire Rate": 0.7,
@@ -1135,6 +1522,9 @@ window.RUMBLE_DATA = {
           "Level": 8,
           "Hero HP": 555,
           "Hero Power": 10400,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 2080,
           "Tank Damage": 349,
           "Tank Fire Rate": 0.7,
@@ -1144,6 +1534,9 @@ window.RUMBLE_DATA = {
           "Level": 9,
           "Hero HP": 597,
           "Hero Power": 11200,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 2240,
           "Tank Damage": 379,
           "Tank Fire Rate": 0.7,
@@ -1153,6 +1546,9 @@ window.RUMBLE_DATA = {
           "Level": 10,
           "Hero HP": 640,
           "Hero Power": 12000,
+          "Ult Duration": 25,
+          "Ult Range": 25,
+          "Ult Projectile Speed": 60,
           "Tank HP": 2400,
           "Tank Damage": 408,
           "Tank Fire Rate": 0.7,

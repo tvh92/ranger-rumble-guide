@@ -132,8 +132,8 @@ html[data-theme='light'] :is(.stat-ui-icon, .speed-badge img) { filter: brightne
 .talent-list { position: relative; min-width: 0; padding: 19px 12px 7px 8px; background: linear-gradient(180deg, color-mix(in srgb, var(--surface-header) 56%, transparent), transparent 26%); }
 .talent-list-header { display: grid; grid-template-columns: 68px minmax(0, 1fr); align-items: center; min-height: 22px; margin: 0 0 8px; color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 1px; line-height: 1; text-transform: uppercase; }
 .talent-list-header span:first-child { text-align: center; }
-.talent-list::before { content: ''; position: absolute; top: 67px; bottom: 100px; left: 42px; width: 2px; background: linear-gradient(180deg, var(--accent-strong), color-mix(in srgb, var(--line-bright) 80%, var(--accent)), var(--accent-strong)); box-shadow: 0 0 10px color-mix(in srgb, var(--accent-strong) 28%, transparent); }
 .talent-node { position: relative; z-index: 1; display: grid; grid-template-columns: 68px minmax(0, 1fr); align-items: stretch; width: 100%; min-width: 0; min-height: 85px; margin: 0; padding: 0 0 13px; border: 0; background: transparent; color: var(--text); text-align: left; cursor: pointer; scroll-margin: 76px 0 120px; }
+.talent-node.has-next-talent::after { content: ''; position: absolute; z-index: 0; top: 38px; bottom: -38px; left: 34px; width: 2px; background: linear-gradient(180deg, var(--accent-strong), color-mix(in srgb, var(--line-bright) 80%, var(--accent)), var(--accent-strong)); box-shadow: 0 0 10px color-mix(in srgb, var(--accent-strong) 28%, transparent); pointer-events: none; }
 .talent-unlock { display: flex; position: relative; z-index: 1; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; }
 .talent-unlock strong { display: grid; place-items: center; width: 38px; height: 38px; border: 2px solid var(--accent-strong); border-radius: 50%; background: var(--surface-strong); color: var(--heading); font: 800 18px/1 'Barlow Condensed', Impact, sans-serif; box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-strong) 12%, transparent); }
 .talent-unlock small { position: relative; z-index: 2; padding: 2px 4px; background: var(--surface-strong); color: var(--orange); font-size: 10px; font-weight: 800; line-height: 1; white-space: nowrap; }
@@ -249,7 +249,7 @@ html[data-theme='light'] .talent-detail-icon img { background: #123f4a; filter: 
   .fixed-group, .fixed-group:has(.fixed-stat:nth-child(2):last-child) { flex-basis: 100%; }
   .talent-node { grid-template-columns: 60px minmax(0, 1fr); }
   .talent-list-header { grid-template-columns: 60px minmax(0, 1fr); }
-  .talent-list::before { top: 67px; left: 38px; }
+  .talent-node.has-next-talent::after { left: 30px; }
   .talent-node-card { grid-template-columns: 47px minmax(0, 1fr); padding-inline: 8px; }
   .talent-node-icon { width: 40px; height: 40px; }
   .talent-node-icon img { width: 35px; height: 35px; }

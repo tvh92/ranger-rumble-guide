@@ -40,49 +40,6 @@ GADGET_STAT_OVERRIDES = {
 WEAPON_STAT_OVERRIDES = {
     "Buzzblades": {"Ricochet": 3},
 }
-MOD_PRESENTATION_OVERRIDES = {
-    "Celeste": {
-        "Turbo Dash": {"effect": "Dash cooldown reduction: 50%."},
-        "Ricochet Blades": {"effect": "Increases the maximum hit count from three to four."},
-    },
-    "Chip": {
-        "Extra Agent": {"effect": "3 Agents deployed instead of 2; consumes one gadget charge."},
-        "Dual Arc Emitter": {"effect": "1 additional beam; 50% secondary-beam health multiplier; 16 Electric buildup."},
-    },
-    "Grimshot": {
-        "Healing Field": {"effect": "2.3 radius; 8s duration; heals 5% of maximum HP per second."},
-        "Thermal Scope": {"effect": "Through-wall detection enabled; normalized central-screen radius: 0.5."},
-    },
-    "Lil'Ann": {
-        "Adrenaline Spike": {"menu": "Knocking out another ranger grants Lil' Ann a temporary speed bonus.", "effect": "Move-speed modifier: +15% for 4s; triggered by a player elimination."},
-        "Impact Chamber": {"effect": "Enhanced-shot damage: +25%; activation window: 3s.", "note": "The activation window appears to be controlled by game code."},
-    },
-    "Lump": {
-        "Acid Core (localized asset name; former wiki name: Acid Spill)": {"name": "Acid Core", "icon": "Acid Core.png", "effect": "Acid-zone damage: 10; duration: 1s; triggered by Small Amoeboid death."},
-        "Magma Nozzle": {"effect": "Pool radius: 2; lifetime: 2s; movement-speed modifier: -25%."},
-    },
-    "Mopz": {
-        "Spin-Up Rotor": {"effect": "Adds stage 3 after 5s of spin-up with an 8x stored fire-rate multiplier.", "note": "Base stages are approximately 1.3s/3x and 3s/5x."},
-        "Quick Reload": {"icon": "Quick Reload.png"},
-    },
-    "Ratchet": {"Triple Barrel": {"effect": "Projectile count: 3. No additional shot is consumed."}},
-    "Sparky": {"Azur Igniter": {"effect": "Activates after 1.5s of continuous fire; approximately +50% damage."}},
-    "Sprocket": {
-        "Rocket Legs": {"effect": "Base jump multiplier: 1.5 (+50%)."},
-        "Cluster Bombs": {"effect": "2 bomblets; 2.5 AOE radius; 7 horizontal push; 1 upward push."},
-    },
-    "Tempest": {
-        "Pulse Core": {"effect": "Forward AOE; push force increases with level."},
-        "Cryo Shards": {"effect": "Approximately 2.5 effective AOE radius; 4 Ice buildup per application."},
-    },
-    "Widget": {"Double Barrel": {"effect": "Projectile count: 2. No additional shot is consumed."}},
-    "Zed": {
-        "Artillery Ace": {"effect": "Weapon movement-speed modifier is overridden to 0; Ultimates are excluded."},
-        "Rocket Cluster": {"effect": "2 additional minirockets; projectile speed: 24; blast radius: 1."},
-    },
-}
-
-
 def read(name: str) -> str:
     path = DATA_DIR / name
     if not path.is_file():
@@ -218,16 +175,21 @@ def parse_mods() -> dict[str, list[dict]]:
             talent = re.search(r"^TALENT:\s*(.+)$", talent_block, re.MULTILINE)
             menu = re.search(r"^MENU:\s*(.+)$", talent_block, re.MULTILINE)
             effect = re.search(r"^EFFECT:\s*(.+)$", talent_block, re.MULTILINE)
+            base_stages = re.search(r"^BASE STAGES:\s*(.+)$", talent_block, re.MULTILINE)
+            note = re.search(r"^NOTE:\s*(.+)$", talent_block, re.MULTILINE)
             if not (talent and menu):
                 raise ValueError(f"hero_talent_stats_export.txt: malformed talent for {hero_name}")
             entry = {"name": talent.group(1).strip(), "icon": f"{talent.group(1).strip()}.png", "menu": menu.group(1).strip()}
             if effect:
                 entry["effect"] = clean_number_text(effect.group(1).strip())
-            table = re.search(r"^Level\s*\|\s*(.+)$\r?\n((?:^\s*\d+\s*\|.*$\r?\n?)+)", talent_block, re.MULTILINE)
+            if base_stages:
+                entry["baseStages"] = clean_number_text(base_stages.group(1).strip())
+            if note:
+                entry["note"] = clean_number_text(note.group(1).strip())
+            table = re.search(r"^Level\s*\|\s*(.+)$\r?\n(?:^[-|\s]+$\r?\n)?((?:^\s*\d+\s*\|.*$\r?\n?)+)", talent_block, re.MULTILINE)
             if table:
                 entry["columns"] = [cell.strip() for cell in table.group(1).split("|")]
                 entry["levels"] = [[number(cell.strip()) for cell in row.split("|")[1:]] for row in table.group(2).splitlines()]
-            entry.update(MOD_PRESENTATION_OVERRIDES.get(hero_name, {}).get(entry["name"], {}))
             result.setdefault(hero_name, []).append(entry)
     if not result:
         raise ValueError("hero_talent_stats_export.txt: no hero talents found")
@@ -471,6 +433,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
         ROOT / "index.html": update_index((ROOT / "index.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "season-pass.html": update_index((ROOT / "season-pass.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "bot-names.html": update_index((ROOT / "bot-names.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
+        ROOT / "modes-maps.html": update_index((ROOT / "modes-maps.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
     }
 
 

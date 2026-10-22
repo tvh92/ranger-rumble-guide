@@ -11,66 +11,77 @@ Melee: Omniwrench (icon/internal: RatchetMelee / WrenchMelee)
 Ultimate: RYNO (internal: RatchetRyno / RynoRatchet)
 
 Hero: Widget (internal hero: Sandy)
+Speed: Medium
 Weapon: Burst Pistol
 Gadget: Drill Thruster (internal: DrillDash)
 Melee: Turbo Drill (icon: WidgetMelee)
 Ultimate: RYNO (internal: Ryno)
 
 Hero: Celeste (internal hero: Celeste)
+Speed: Fast
 Weapon: Buzz Blades
 Gadget: Cryo Slider
 Melee: Slapshot
 Ultimate: Hoverboard
 
 Hero: Sprocket (internal hero: Sprocket)
+Speed: Medium
 Weapon: Shatterbomb
 Gadget: Hoverboots
 Melee: Omnimagnet
 Ultimate: Mega Strike
 
 Hero: Sparky (internal hero: Fuse)
+Speed: Medium
 Weapon: Pyrocitor
 Gadget: Hunter Mine Launcher
 Melee: Crackaxe
 Ultimate: Big Boom
 
 Hero: Lil' Ann (internal hero: LilAnn)
+Speed: Fast
 Weapon: Blitz Gun
 Gadget: Whirling Blades (internal: LittleSpin)
 Melee: Storm Cutlass
 Ultimate: Vortex Wallop
 
 Hero: Chip (internal hero: Chip)
+Speed: Medium
 Weapon: Tesla Claw
 Gadget: Glove of Doom
 Melee: Brainstorm
 Ultimate: Sheep-o-Bomb
 
 Hero: Tempest (internal hero: Markus)
+Speed: Medium
 Weapon: Cold Snap
 Gadget: Void Repulser
 Melee: Typhoon
 Ultimate: Good Ol' Shot
 
 Hero: Zed (internal hero: ZedOne)
+Speed: Medium
 Weapon: Warmonger
 Gadget: Bombardier
 Melee: Stick of Order
 Ultimate: Tank Formation
 
 Hero: Mopz (internal hero: Raiden)
+Speed: Medium
 Weapon: Blackhole Storm
 Gadget: Voltage Drop
 Melee: SEV3R
 Ultimate: Negatron Collider
 
 Hero: Grimshot (internal hero: Grimshot)
+Speed: Medium
 Weapon: Headhunter
 Gadget: Holoshield Glove
 Melee: X60 Cleaver
 Ultimate: Smoke Leap
 
 Hero: Lump (internal hero: Lump)
+Speed: Medium
 Weapon: Lava Gun
 Gadget: Amoeboid Launcher
 Melee: Glo-Bash

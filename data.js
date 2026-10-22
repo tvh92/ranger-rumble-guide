@@ -281,7 +281,7 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 208,
+          "Hero HP": 260,
           "Hero Power": 3900,
           "Ult Damage": 234,
           "Overhealth": 52,
@@ -294,7 +294,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Hero HP": 253,
+          "Hero HP": 317,
           "Hero Power": 4750,
           "Ult Damage": 285,
           "Overhealth": 63,
@@ -307,7 +307,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Hero HP": 299,
+          "Hero HP": 373,
           "Hero Power": 5600,
           "Ult Damage": 336,
           "Overhealth": 75,
@@ -320,7 +320,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Hero HP": 344,
+          "Hero HP": 430,
           "Hero Power": 6450,
           "Ult Damage": 387,
           "Overhealth": 86,
@@ -333,7 +333,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Hero HP": 389,
+          "Hero HP": 487,
           "Hero Power": 7300,
           "Ult Damage": 438,
           "Overhealth": 97,
@@ -346,7 +346,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Hero HP": 435,
+          "Hero HP": 543,
           "Hero Power": 8150,
           "Ult Damage": 489,
           "Overhealth": 109,
@@ -359,7 +359,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Hero HP": 480,
+          "Hero HP": 600,
           "Hero Power": 9000,
           "Ult Damage": 540,
           "Overhealth": 120,
@@ -372,7 +372,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Hero HP": 525,
+          "Hero HP": 657,
           "Hero Power": 9850,
           "Ult Damage": 591,
           "Overhealth": 131,
@@ -385,7 +385,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Hero HP": 571,
+          "Hero HP": 713,
           "Hero Power": 10700,
           "Ult Damage": 642,
           "Overhealth": 143,
@@ -398,7 +398,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Hero HP": 616,
+          "Hero HP": 770,
           "Hero Power": 11550,
           "Ult Damage": 693,
           "Overhealth": 154,
@@ -424,81 +424,81 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 320,
+          "Hero HP": 256,
           "Hero Power": 4800,
-          "Overhealth": 64,
+          "Overhealth": 48,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 2,
-          "Hero HP": 373,
+          "Hero HP": 299,
           "Hero Power": 5600,
-          "Overhealth": 75,
+          "Overhealth": 56,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 3,
-          "Hero HP": 427,
+          "Hero HP": 341,
           "Hero Power": 6400,
-          "Overhealth": 85,
+          "Overhealth": 64,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 4,
-          "Hero HP": 480,
+          "Hero HP": 384,
           "Hero Power": 7200,
-          "Overhealth": 96,
+          "Overhealth": 72,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 5,
-          "Hero HP": 533,
+          "Hero HP": 427,
           "Hero Power": 8000,
-          "Overhealth": 107,
+          "Overhealth": 80,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 6,
-          "Hero HP": 587,
+          "Hero HP": 469,
           "Hero Power": 8800,
-          "Overhealth": 117,
+          "Overhealth": 88,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 7,
-          "Hero HP": 640,
+          "Hero HP": 512,
           "Hero Power": 9600,
-          "Overhealth": 128,
+          "Overhealth": 96,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 8,
-          "Hero HP": 693,
+          "Hero HP": 555,
           "Hero Power": 10400,
-          "Overhealth": 139,
+          "Overhealth": 104,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 9,
-          "Hero HP": 747,
+          "Hero HP": 597,
           "Hero Power": 11200,
-          "Overhealth": 149,
+          "Overhealth": 112,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         },
         {
           "Level": 10,
-          "Hero HP": 800,
+          "Hero HP": 640,
           "Hero Power": 12000,
-          "Overhealth": 160,
+          "Overhealth": 120,
           "Ult Duration": 8,
           "Ult Overhealth Duration": 1.9
         }
@@ -521,7 +521,7 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 260,
+          "Hero HP": 208,
           "Hero Power": 3900,
           "Ult Damage": 39,
           "Overhealth": 104,
@@ -533,7 +533,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Hero HP": 317,
+          "Hero HP": 253,
           "Hero Power": 4750,
           "Ult Damage": 48,
           "Overhealth": 127,
@@ -545,7 +545,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Hero HP": 373,
+          "Hero HP": 299,
           "Hero Power": 5600,
           "Ult Damage": 56,
           "Overhealth": 149,
@@ -557,7 +557,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Hero HP": 430,
+          "Hero HP": 344,
           "Hero Power": 6450,
           "Ult Damage": 65,
           "Overhealth": 172,
@@ -569,7 +569,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Hero HP": 487,
+          "Hero HP": 389,
           "Hero Power": 7300,
           "Ult Damage": 73,
           "Overhealth": 195,
@@ -581,7 +581,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Hero HP": 543,
+          "Hero HP": 435,
           "Hero Power": 8150,
           "Ult Damage": 82,
           "Overhealth": 217,
@@ -593,7 +593,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Hero HP": 600,
+          "Hero HP": 480,
           "Hero Power": 9000,
           "Ult Damage": 90,
           "Overhealth": 240,
@@ -605,7 +605,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Hero HP": 657,
+          "Hero HP": 525,
           "Hero Power": 9850,
           "Ult Damage": 99,
           "Overhealth": 263,
@@ -617,7 +617,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Hero HP": 713,
+          "Hero HP": 571,
           "Hero Power": 10700,
           "Ult Damage": 107,
           "Overhealth": 285,
@@ -629,7 +629,7 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Hero HP": 770,
+          "Hero HP": 616,
           "Hero Power": 11550,
           "Ult Damage": 116,
           "Overhealth": 308,
@@ -658,7 +658,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 208,
           "Hero Power": 3900,
           "Ult Damage": 117,
-          "Overhealth": 156,
+          "Overhealth": 104,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -667,7 +667,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 253,
           "Hero Power": 4750,
           "Ult Damage": 143,
-          "Overhealth": 190,
+          "Overhealth": 127,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -676,7 +676,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 299,
           "Hero Power": 5600,
           "Ult Damage": 168,
-          "Overhealth": 224,
+          "Overhealth": 149,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -685,7 +685,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 344,
           "Hero Power": 6450,
           "Ult Damage": 194,
-          "Overhealth": 258,
+          "Overhealth": 172,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -694,7 +694,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 389,
           "Hero Power": 7300,
           "Ult Damage": 219,
-          "Overhealth": 292,
+          "Overhealth": 195,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -703,7 +703,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 435,
           "Hero Power": 8150,
           "Ult Damage": 245,
-          "Overhealth": 326,
+          "Overhealth": 217,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -712,7 +712,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 480,
           "Hero Power": 9000,
           "Ult Damage": 270,
-          "Overhealth": 360,
+          "Overhealth": 240,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -721,7 +721,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 525,
           "Hero Power": 9850,
           "Ult Damage": 296,
-          "Overhealth": 394,
+          "Overhealth": 263,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -730,7 +730,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 571,
           "Hero Power": 10700,
           "Ult Damage": 321,
-          "Overhealth": 428,
+          "Overhealth": 285,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         },
@@ -739,7 +739,7 @@ window.RUMBLE_DATA = {
           "Hero HP": 616,
           "Hero Power": 11550,
           "Ult Damage": 347,
-          "Overhealth": 462,
+          "Overhealth": 308,
           "Ult Duration": 1,
           "Ult Overhealth Duration": 2.95
         }
@@ -1436,123 +1436,123 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 256,
+          "Hero HP": 320,
           "Hero Power": 4800,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 960,
-          "Tank Damage": 142,
+          "Tank Damage": 120,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 42
+          "Tank Range": 35
         },
         {
           "Level": 2,
-          "Hero HP": 299,
+          "Hero HP": 373,
           "Hero Power": 5600,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1120,
-          "Tank Damage": 171,
+          "Tank Damage": 140,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 43
+          "Tank Range": 35
         },
         {
           "Level": 3,
-          "Hero HP": 341,
+          "Hero HP": 427,
           "Hero Power": 6400,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1280,
-          "Tank Damage": 201,
+          "Tank Damage": 160,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 44
+          "Tank Range": 35
         },
         {
           "Level": 4,
-          "Hero HP": 384,
+          "Hero HP": 480,
           "Hero Power": 7200,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1440,
-          "Tank Damage": 231,
+          "Tank Damage": 180,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 45
+          "Tank Range": 35
         },
         {
           "Level": 5,
-          "Hero HP": 427,
+          "Hero HP": 533,
           "Hero Power": 8000,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1600,
-          "Tank Damage": 260,
+          "Tank Damage": 200,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 46
+          "Tank Range": 35
         },
         {
           "Level": 6,
-          "Hero HP": 469,
+          "Hero HP": 587,
           "Hero Power": 8800,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1760,
-          "Tank Damage": 290,
+          "Tank Damage": 220,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 47
+          "Tank Range": 35
         },
         {
           "Level": 7,
-          "Hero HP": 512,
+          "Hero HP": 640,
           "Hero Power": 9600,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 1920,
-          "Tank Damage": 319,
+          "Tank Damage": 240,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 48
+          "Tank Range": 35
         },
         {
           "Level": 8,
-          "Hero HP": 555,
+          "Hero HP": 693,
           "Hero Power": 10400,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 2080,
-          "Tank Damage": 349,
+          "Tank Damage": 260,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 49
+          "Tank Range": 35
         },
         {
           "Level": 9,
-          "Hero HP": 597,
+          "Hero HP": 747,
           "Hero Power": 11200,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 2240,
-          "Tank Damage": 379,
+          "Tank Damage": 280,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 50
+          "Tank Range": 35
         },
         {
           "Level": 10,
-          "Hero HP": 640,
+          "Hero HP": 800,
           "Hero Power": 12000,
           "Ult Duration": 25,
           "Ult Range": 25,
           "Ult Projectile Speed": 60,
           "Tank HP": 2400,
-          "Tank Damage": 408,
+          "Tank Damage": 300,
           "Tank Fire Rate": 0.7,
-          "Tank Range": 51
+          "Tank Range": 35
         }
       ],
       "ultimate": "TankZed (ZedOne)"
@@ -1566,52 +1566,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 384,
+          "Hero HP": 320,
           "Hero Power": 4800
         },
         {
           "Level": 2,
-          "Hero HP": 448,
+          "Hero HP": 373,
           "Hero Power": 5600
         },
         {
           "Level": 3,
-          "Hero HP": 512,
+          "Hero HP": 427,
           "Hero Power": 6400
         },
         {
           "Level": 4,
-          "Hero HP": 576,
+          "Hero HP": 480,
           "Hero Power": 7200
         },
         {
           "Level": 5,
-          "Hero HP": 640,
+          "Hero HP": 533,
           "Hero Power": 8000
         },
         {
           "Level": 6,
-          "Hero HP": 704,
+          "Hero HP": 587,
           "Hero Power": 8800
         },
         {
           "Level": 7,
-          "Hero HP": 768,
+          "Hero HP": 640,
           "Hero Power": 9600
         },
         {
           "Level": 8,
-          "Hero HP": 832,
+          "Hero HP": 693,
           "Hero Power": 10400
         },
         {
           "Level": 9,
-          "Hero HP": 896,
+          "Hero HP": 747,
           "Hero Power": 11200
         },
         {
           "Level": 10,
-          "Hero HP": 960,
+          "Hero HP": 800,
           "Hero Power": 12000
         }
       ],
@@ -1686,52 +1686,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 160,
+          "Hero HP": 200,
           "Hero Power": 3000
         },
         {
           "Level": 2,
-          "Hero HP": 208,
+          "Hero HP": 260,
           "Hero Power": 3900
         },
         {
           "Level": 3,
-          "Hero HP": 256,
+          "Hero HP": 320,
           "Hero Power": 4800
         },
         {
           "Level": 4,
-          "Hero HP": 304,
+          "Hero HP": 380,
           "Hero Power": 5700
         },
         {
           "Level": 5,
-          "Hero HP": 352,
+          "Hero HP": 440,
           "Hero Power": 6600
         },
         {
           "Level": 6,
-          "Hero HP": 400,
+          "Hero HP": 500,
           "Hero Power": 7500
         },
         {
           "Level": 7,
-          "Hero HP": 448,
+          "Hero HP": 560,
           "Hero Power": 8400
         },
         {
           "Level": 8,
-          "Hero HP": 496,
+          "Hero HP": 620,
           "Hero Power": 9300
         },
         {
           "Level": 9,
-          "Hero HP": 544,
+          "Hero HP": 680,
           "Hero Power": 10200
         },
         {
           "Level": 10,
-          "Hero HP": 592,
+          "Hero HP": 740,
           "Hero Power": 11100
         }
       ],
@@ -1746,52 +1746,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 312,
+          "Hero HP": 260,
           "Hero Power": 3900
         },
         {
           "Level": 2,
-          "Hero HP": 380,
+          "Hero HP": 317,
           "Hero Power": 4750
         },
         {
           "Level": 3,
-          "Hero HP": 448,
+          "Hero HP": 373,
           "Hero Power": 5600
         },
         {
           "Level": 4,
-          "Hero HP": 516,
+          "Hero HP": 430,
           "Hero Power": 6450
         },
         {
           "Level": 5,
-          "Hero HP": 584,
+          "Hero HP": 487,
           "Hero Power": 7300
         },
         {
           "Level": 6,
-          "Hero HP": 652,
+          "Hero HP": 543,
           "Hero Power": 8150
         },
         {
           "Level": 7,
-          "Hero HP": 720,
+          "Hero HP": 600,
           "Hero Power": 9000
         },
         {
           "Level": 8,
-          "Hero HP": 788,
+          "Hero HP": 657,
           "Hero Power": 9850
         },
         {
           "Level": 9,
-          "Hero HP": 856,
+          "Hero HP": 713,
           "Hero Power": 10700
         },
         {
           "Level": 10,
-          "Hero HP": 924,
+          "Hero HP": 770,
           "Hero Power": 11550
         }
       ],
@@ -1806,52 +1806,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 312,
+          "Hero HP": 260,
           "Hero Power": 3900
         },
         {
           "Level": 2,
-          "Hero HP": 380,
+          "Hero HP": 317,
           "Hero Power": 4750
         },
         {
           "Level": 3,
-          "Hero HP": 448,
+          "Hero HP": 373,
           "Hero Power": 5600
         },
         {
           "Level": 4,
-          "Hero HP": 516,
+          "Hero HP": 430,
           "Hero Power": 6450
         },
         {
           "Level": 5,
-          "Hero HP": 584,
+          "Hero HP": 487,
           "Hero Power": 7300
         },
         {
           "Level": 6,
-          "Hero HP": 652,
+          "Hero HP": 543,
           "Hero Power": 8150
         },
         {
           "Level": 7,
-          "Hero HP": 720,
+          "Hero HP": 600,
           "Hero Power": 9000
         },
         {
           "Level": 8,
-          "Hero HP": 788,
+          "Hero HP": 657,
           "Hero Power": 9850
         },
         {
           "Level": 9,
-          "Hero HP": 856,
+          "Hero HP": 713,
           "Hero Power": 10700
         },
         {
           "Level": 10,
-          "Hero HP": 924,
+          "Hero HP": 770,
           "Hero Power": 11550
         }
       ],
@@ -1926,52 +1926,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Hero HP": 384,
+          "Hero HP": 320,
           "Hero Power": 4800
         },
         {
           "Level": 2,
-          "Hero HP": 448,
+          "Hero HP": 373,
           "Hero Power": 5600
         },
         {
           "Level": 3,
-          "Hero HP": 512,
+          "Hero HP": 427,
           "Hero Power": 6400
         },
         {
           "Level": 4,
-          "Hero HP": 576,
+          "Hero HP": 480,
           "Hero Power": 7200
         },
         {
           "Level": 5,
-          "Hero HP": 640,
+          "Hero HP": 533,
           "Hero Power": 8000
         },
         {
           "Level": 6,
-          "Hero HP": 704,
+          "Hero HP": 587,
           "Hero Power": 8800
         },
         {
           "Level": 7,
-          "Hero HP": 768,
+          "Hero HP": 640,
           "Hero Power": 9600
         },
         {
           "Level": 8,
-          "Hero HP": 832,
+          "Hero HP": 693,
           "Hero Power": 10400
         },
         {
           "Level": 9,
-          "Hero HP": 896,
+          "Hero HP": 747,
           "Hero Power": 11200
         },
         {
           "Level": 10,
-          "Hero HP": 960,
+          "Hero HP": 800,
           "Hero Power": 12000
         }
       ],
@@ -2054,102 +2054,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1600,
-          "Damage": 8,
+          "Damage": 6,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 2,
           "Power": 1870,
-          "Damage": 9,
+          "Damage": 7,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 3,
           "Power": 2130,
-          "Damage": 11,
+          "Damage": 9,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 4,
           "Power": 2400,
-          "Damage": 12,
+          "Damage": 10,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 5,
           "Power": 2670,
-          "Damage": 13,
+          "Damage": 11,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 6,
           "Power": 2930,
-          "Damage": 15,
+          "Damage": 12,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 7,
           "Power": 3200,
-          "Damage": 16,
+          "Damage": 13,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 8,
           "Power": 3470,
-          "Damage": 17,
+          "Damage": 14,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 9,
           "Power": 3730,
-          "Damage": 19,
+          "Damage": 15,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 10,
           "Power": 4000,
-          "Damage": 20,
+          "Damage": 16,
           "Projectiles": 2,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         }
       ]
     },
@@ -2168,80 +2168,80 @@ window.RUMBLE_DATA = {
           "Power": 1300,
           "Damage": 16,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 2,
           "Power": 1580,
           "Damage": 19,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 3,
           "Power": 1870,
           "Damage": 22,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 4,
           "Power": 2150,
           "Damage": 26,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 5,
           "Power": 2430,
           "Damage": 29,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 6,
           "Power": 2720,
           "Damage": 33,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 7,
           "Power": 3000,
           "Damage": 36,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 8,
           "Power": 3280,
           "Damage": 39,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 9,
           "Power": 3570,
           "Damage": 43,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         },
         {
           "Level": 10,
           "Power": 3850,
           "Damage": 46,
           "Range": 35,
-          "MaxAmmo": 35,
-          "ReloadTime": 3.4
+          "MaxAmmo": 45,
+          "ReloadTime": 3
         }
       ]
     },
@@ -2260,102 +2260,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1300,
-          "Damage": 104,
-          "Mod Damage": 130,
+          "Damage": 111,
+          "Mod Damage": 166,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 2,
           "Power": 1580,
-          "Damage": 127,
-          "Mod Damage": 159,
+          "Damage": 135,
+          "Mod Damage": 202,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 3,
           "Power": 1870,
-          "Damage": 149,
-          "Mod Damage": 186,
+          "Damage": 159,
+          "Mod Damage": 238,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 4,
           "Power": 2150,
-          "Damage": 172,
-          "Mod Damage": 215,
+          "Damage": 183,
+          "Mod Damage": 274,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 5,
           "Power": 2430,
-          "Damage": 195,
-          "Mod Damage": 244,
+          "Damage": 207,
+          "Mod Damage": 310,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 6,
           "Power": 2720,
-          "Damage": 217,
-          "Mod Damage": 271,
+          "Damage": 231,
+          "Mod Damage": 346,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 7,
           "Power": 3000,
-          "Damage": 240,
-          "Mod Damage": 300,
+          "Damage": 255,
+          "Mod Damage": 383,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 8,
           "Power": 3280,
-          "Damage": 263,
-          "Mod Damage": 329,
+          "Damage": 279,
+          "Mod Damage": 419,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 9,
           "Power": 3570,
-          "Damage": 285,
-          "Mod Damage": 356,
+          "Damage": 303,
+          "Mod Damage": 455,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         },
         {
           "Level": 10,
           "Power": 3850,
-          "Damage": 308,
-          "Mod Damage": 385,
+          "Damage": 327,
+          "Mod Damage": 491,
           "Fire Rate": 0.75,
           "Range": 22,
-          "MaxAmmo": 3,
-          "ReloadTime": 1.8
+          "MaxAmmo": 5,
+          "ReloadTime": 1.5
         }
       ]
     },
@@ -2368,52 +2368,52 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Damage": 112,
+          "Damage": 120,
           "Mod Damage": 120
         },
         {
           "Level": 2,
-          "Damage": 131,
+          "Damage": 140,
           "Mod Damage": 140
         },
         {
           "Level": 3,
-          "Damage": 149,
+          "Damage": 160,
           "Mod Damage": 160
         },
         {
           "Level": 4,
-          "Damage": 168,
+          "Damage": 180,
           "Mod Damage": 180
         },
         {
           "Level": 5,
-          "Damage": 187,
+          "Damage": 200,
           "Mod Damage": 200
         },
         {
           "Level": 6,
-          "Damage": 205,
+          "Damage": 220,
           "Mod Damage": 220
         },
         {
           "Level": 7,
-          "Damage": 224,
+          "Damage": 240,
           "Mod Damage": 240
         },
         {
           "Level": 8,
-          "Damage": 243,
+          "Damage": 260,
           "Mod Damage": 260
         },
         {
           "Level": 9,
-          "Damage": 261,
+          "Damage": 280,
           "Mod Damage": 280
         },
         {
           "Level": 10,
-          "Damage": 280,
+          "Damage": 300,
           "Mod Damage": 300
         }
       ]
@@ -2434,90 +2434,90 @@ window.RUMBLE_DATA = {
           "Power": 1000,
           "Damage": 8,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 2,
           "Power": 1300,
           "Damage": 10,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 3,
           "Power": 1600,
           "Damage": 13,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 4,
           "Power": 1900,
           "Damage": 15,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 5,
           "Power": 2200,
           "Damage": 18,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 6,
           "Power": 2500,
           "Damage": 20,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 7,
           "Power": 2800,
           "Damage": 22,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 8,
           "Power": 3100,
           "Damage": 25,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 9,
           "Power": 3400,
           "Damage": 27,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         },
         {
           "Level": 10,
           "Power": 3700,
           "Damage": 30,
           "Fire Rate": 6,
-          "Range": 35,
-          "MaxAmmo": 30,
-          "ReloadTime": 1.4
+          "Range": 30,
+          "MaxAmmo": 35,
+          "ReloadTime": 1.5
         }
       ]
     },
@@ -2536,101 +2536,101 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1600,
-          "Damage": 13,
+          "Damage": 10,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 2,
           "Power": 1870,
-          "Damage": 15,
+          "Damage": 11,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 3,
           "Power": 2130,
-          "Damage": 17,
+          "Damage": 13,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 4,
           "Power": 2400,
-          "Damage": 19,
+          "Damage": 14,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 5,
           "Power": 2670,
-          "Damage": 21,
+          "Damage": 16,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 6,
           "Power": 2930,
-          "Damage": 23,
+          "Damage": 18,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 7,
           "Power": 3200,
-          "Damage": 26,
+          "Damage": 19,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 8,
           "Power": 3470,
-          "Damage": 28,
+          "Damage": 21,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 9,
           "Power": 3730,
-          "Damage": 30,
+          "Damage": 22,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         },
         {
           "Level": 10,
           "Power": 4000,
-          "Damage": 32,
+          "Damage": 24,
           "Fire Rate": 2.5,
           "Range": 30,
-          "MaxAmmo": 13,
-          "ReloadTime": 1.4,
+          "MaxAmmo": 20,
+          "ReloadTime": 2,
           "Ricochet": 3
         }
       ]
@@ -2650,102 +2650,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1300,
-          "Damage": 85,
+          "Damage": 68,
           "Mod Damage": 5,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 2,
           "Power": 1580,
-          "Damage": 103,
+          "Damage": 82,
           "Mod Damage": 6,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 3,
           "Power": 1870,
-          "Damage": 121,
+          "Damage": 97,
           "Mod Damage": 7,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 4,
           "Power": 2150,
-          "Damage": 140,
+          "Damage": 112,
           "Mod Damage": 9,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 5,
           "Power": 2430,
-          "Damage": 158,
+          "Damage": 127,
           "Mod Damage": 10,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 6,
           "Power": 2720,
-          "Damage": 177,
+          "Damage": 141,
           "Mod Damage": 11,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 7,
           "Power": 3000,
-          "Damage": 195,
+          "Damage": 156,
           "Mod Damage": 12,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 8,
           "Power": 3280,
-          "Damage": 213,
+          "Damage": 171,
           "Mod Damage": 13,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 9,
           "Power": 3570,
-          "Damage": 232,
+          "Damage": 185,
           "Mod Damage": 14,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         },
         {
           "Level": 10,
           "Power": 3850,
-          "Damage": 250,
+          "Damage": 200,
           "Mod Damage": 15,
           "Fire Rate": 0.85,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.6
+          "MaxAmmo": 8,
+          "ReloadTime": 2.5
         }
       ]
     },
@@ -2822,91 +2822,91 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1600,
-          "Damage": 112,
+          "Damage": 120,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 2,
           "Power": 1870,
-          "Damage": 131,
+          "Damage": 140,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 3,
           "Power": 2130,
-          "Damage": 149,
+          "Damage": 160,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 4,
           "Power": 2400,
-          "Damage": 168,
+          "Damage": 180,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 5,
           "Power": 2670,
-          "Damage": 187,
+          "Damage": 200,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 6,
           "Power": 2930,
-          "Damage": 205,
+          "Damage": 220,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 7,
           "Power": 3200,
-          "Damage": 224,
+          "Damage": 240,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 8,
           "Power": 3470,
-          "Damage": 243,
+          "Damage": 260,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 9,
           "Power": 3730,
-          "Damage": 261,
+          "Damage": 280,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         },
         {
           "Level": 10,
           "Power": 4000,
-          "Damage": 280,
+          "Damage": 300,
           "Range": 65,
-          "MaxAmmo": 3,
-          "ReloadTime": 3,
+          "MaxAmmo": 6,
+          "ReloadTime": 2,
           "Cooldown": 1.54
         }
       ]
@@ -2921,52 +2921,52 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Damage": 32,
-          "Shield HP": 256
+          "Shield HP": 192
         },
         {
           "Level": 2,
           "Damage": 37,
-          "Shield HP": 299
+          "Shield HP": 224
         },
         {
           "Level": 3,
           "Damage": 43,
-          "Shield HP": 341
+          "Shield HP": 256
         },
         {
           "Level": 4,
           "Damage": 48,
-          "Shield HP": 384
+          "Shield HP": 288
         },
         {
           "Level": 5,
           "Damage": 53,
-          "Shield HP": 427
+          "Shield HP": 320
         },
         {
           "Level": 6,
           "Damage": 59,
-          "Shield HP": 469
+          "Shield HP": 352
         },
         {
           "Level": 7,
           "Damage": 64,
-          "Shield HP": 512
+          "Shield HP": 384
         },
         {
           "Level": 8,
           "Damage": 69,
-          "Shield HP": 555
+          "Shield HP": 416
         },
         {
           "Level": 9,
           "Damage": 75,
-          "Shield HP": 597
+          "Shield HP": 448
         },
         {
           "Level": 10,
           "Damage": 80,
-          "Shield HP": 640
+          "Shield HP": 480
         }
       ]
     },
@@ -3077,102 +3077,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1300,
-          "Damage": 33,
+          "Damage": 26,
           "Mod Damage": 4,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 2,
           "Power": 1580,
-          "Damage": 40,
+          "Damage": 32,
           "Mod Damage": 5,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 3,
           "Power": 1870,
-          "Damage": 47,
+          "Damage": 37,
           "Mod Damage": 6,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 4,
           "Power": 2150,
-          "Damage": 54,
+          "Damage": 43,
           "Mod Damage": 6,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 5,
           "Power": 2430,
-          "Damage": 61,
+          "Damage": 49,
           "Mod Damage": 7,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 6,
           "Power": 2720,
-          "Damage": 68,
+          "Damage": 54,
           "Mod Damage": 8,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 7,
           "Power": 3000,
-          "Damage": 75,
+          "Damage": 60,
           "Mod Damage": 9,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 8,
           "Power": 3280,
-          "Damage": 82,
+          "Damage": 66,
           "Mod Damage": 10,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 9,
           "Power": 3570,
-          "Damage": 89,
+          "Damage": 71,
           "Mod Damage": 11,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         },
         {
           "Level": 10,
           "Power": 3850,
-          "Damage": 96,
+          "Damage": 77,
           "Mod Damage": 12,
           "Fire Rate": 8,
           "Range": 26,
-          "MaxAmmo": 60,
-          "ReloadTime": 3
+          "MaxAmmo": 72,
+          "ReloadTime": 2.5
         }
       ]
     },
@@ -3249,102 +3249,102 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
-          "Damage": 39,
-          "Mod Damage": 47,
+          "Power": 1000,
+          "Damage": 35,
+          "Mod Damage": 42,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 2,
-          "Power": 1580,
-          "Damage": 48,
-          "Mod Damage": 58,
+          "Power": 1300,
+          "Damage": 46,
+          "Mod Damage": 55,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 3,
-          "Power": 1870,
+          "Power": 1600,
           "Damage": 56,
           "Mod Damage": 67,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 4,
-          "Power": 2150,
-          "Damage": 65,
-          "Mod Damage": 78,
+          "Power": 1900,
+          "Damage": 67,
+          "Mod Damage": 80,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 5,
-          "Power": 2430,
-          "Damage": 73,
-          "Mod Damage": 88,
+          "Power": 2200,
+          "Damage": 77,
+          "Mod Damage": 92,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 6,
-          "Power": 2720,
-          "Damage": 82,
-          "Mod Damage": 98,
+          "Power": 2500,
+          "Damage": 88,
+          "Mod Damage": 105,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 7,
-          "Power": 3000,
-          "Damage": 90,
-          "Mod Damage": 108,
+          "Power": 2800,
+          "Damage": 98,
+          "Mod Damage": 118,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 8,
-          "Power": 3280,
-          "Damage": 99,
-          "Mod Damage": 119,
+          "Power": 3100,
+          "Damage": 109,
+          "Mod Damage": 130,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 9,
-          "Power": 3570,
-          "Damage": 107,
-          "Mod Damage": 128,
+          "Power": 3400,
+          "Damage": 119,
+          "Mod Damage": 143,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         },
         {
           "Level": 10,
-          "Power": 3850,
-          "Damage": 116,
-          "Mod Damage": 139,
+          "Power": 3700,
+          "Damage": 130,
+          "Mod Damage": 155,
           "Range": 65,
-          "MaxAmmo": 6,
-          "ReloadTime": 3,
+          "MaxAmmo": 9,
+          "ReloadTime": 2,
           "Cooldown": 0.91
         }
       ]
@@ -3364,102 +3364,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1300,
-          "Damage": 33,
-          "Mod Damage": 50,
+          "Damage": 26,
+          "Mod Damage": 39,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 2,
           "Power": 1580,
-          "Damage": 40,
-          "Mod Damage": 60,
+          "Damage": 32,
+          "Mod Damage": 48,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 3,
           "Power": 1870,
-          "Damage": 47,
-          "Mod Damage": 71,
+          "Damage": 37,
+          "Mod Damage": 56,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 4,
           "Power": 2150,
-          "Damage": 54,
-          "Mod Damage": 81,
+          "Damage": 43,
+          "Mod Damage": 65,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 5,
           "Power": 2430,
-          "Damage": 61,
-          "Mod Damage": 92,
+          "Damage": 49,
+          "Mod Damage": 73,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 6,
           "Power": 2720,
-          "Damage": 68,
-          "Mod Damage": 102,
+          "Damage": 54,
+          "Mod Damage": 82,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 7,
           "Power": 3000,
-          "Damage": 75,
-          "Mod Damage": 113,
+          "Damage": 60,
+          "Mod Damage": 90,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 8,
           "Power": 3280,
-          "Damage": 82,
-          "Mod Damage": 123,
+          "Damage": 66,
+          "Mod Damage": 99,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 9,
           "Power": 3570,
-          "Damage": 89,
-          "Mod Damage": 134,
+          "Damage": 71,
+          "Mod Damage": 107,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 10,
           "Power": 3850,
-          "Damage": 96,
-          "Mod Damage": 144,
+          "Damage": 77,
+          "Mod Damage": 116,
           "Fire Rate": 2,
           "Range": 18,
-          "MaxAmmo": 12,
-          "ReloadTime": 1.8
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         }
       ]
     },
@@ -3559,102 +3559,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1000,
-          "Damage": 75,
+          "Damage": 65,
           "Mod Damage": 25,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 2,
           "Power": 1300,
-          "Damage": 98,
+          "Damage": 85,
           "Mod Damage": 33,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 3,
           "Power": 1600,
-          "Damage": 120,
+          "Damage": 104,
           "Mod Damage": 40,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 4,
           "Power": 1900,
-          "Damage": 143,
+          "Damage": 124,
           "Mod Damage": 48,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 5,
           "Power": 2200,
-          "Damage": 165,
+          "Damage": 143,
           "Mod Damage": 55,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 6,
           "Power": 2500,
-          "Damage": 188,
+          "Damage": 163,
           "Mod Damage": 63,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 7,
           "Power": 2800,
-          "Damage": 210,
+          "Damage": 182,
           "Mod Damage": 70,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 8,
           "Power": 3100,
-          "Damage": 233,
+          "Damage": 202,
           "Mod Damage": 78,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 9,
           "Power": 3400,
-          "Damage": 255,
+          "Damage": 221,
           "Mod Damage": 85,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         },
         {
           "Level": 10,
           "Power": 3700,
-          "Damage": 278,
+          "Damage": 241,
           "Mod Damage": 93,
           "Fire Rate": 0.75,
           "Range": 30,
-          "MaxAmmo": 5,
-          "ReloadTime": 1.8
+          "MaxAmmo": 7,
+          "ReloadTime": 2
         }
       ]
     },
@@ -3776,102 +3776,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1000,
-          "Damage": 20,
-          "Mod Damage": 20,
+          "Damage": 19,
+          "Mod Damage": 19,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 2,
           "Power": 1300,
-          "Damage": 26,
-          "Mod Damage": 26,
+          "Damage": 25,
+          "Mod Damage": 25,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 3,
           "Power": 1600,
-          "Damage": 32,
-          "Mod Damage": 32,
+          "Damage": 30,
+          "Mod Damage": 30,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 4,
           "Power": 1900,
-          "Damage": 38,
-          "Mod Damage": 38,
+          "Damage": 36,
+          "Mod Damage": 36,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 5,
           "Power": 2200,
-          "Damage": 44,
-          "Mod Damage": 44,
+          "Damage": 42,
+          "Mod Damage": 42,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 6,
           "Power": 2500,
-          "Damage": 50,
-          "Mod Damage": 50,
+          "Damage": 48,
+          "Mod Damage": 48,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 7,
           "Power": 2800,
-          "Damage": 56,
-          "Mod Damage": 56,
+          "Damage": 53,
+          "Mod Damage": 53,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 8,
           "Power": 3100,
-          "Damage": 62,
-          "Mod Damage": 62,
+          "Damage": 59,
+          "Mod Damage": 59,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 9,
           "Power": 3400,
-          "Damage": 68,
-          "Mod Damage": 68,
+          "Damage": 65,
+          "Mod Damage": 65,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         },
         {
           "Level": 10,
           "Power": 3700,
-          "Damage": 74,
-          "Mod Damage": 74,
+          "Damage": 70,
+          "Mod Damage": 70,
           "Fire Rate": 2,
           "Range": 22,
-          "MaxAmmo": 10,
-          "ReloadTime": 1.3
+          "MaxAmmo": 16,
+          "ReloadTime": 2
         }
       ]
     },
@@ -3888,93 +3888,93 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
+          "Power": 1600,
           "Damage": 72,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 2,
-          "Power": 1580,
-          "Damage": 87,
+          "Power": 1870,
+          "Damage": 84,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 3,
-          "Power": 1870,
-          "Damage": 103,
+          "Power": 2130,
+          "Damage": 96,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 4,
-          "Power": 2150,
-          "Damage": 118,
+          "Power": 2400,
+          "Damage": 108,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 5,
-          "Power": 2430,
-          "Damage": 134,
+          "Power": 2670,
+          "Damage": 120,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 6,
-          "Power": 2720,
-          "Damage": 149,
+          "Power": 2930,
+          "Damage": 132,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 7,
-          "Power": 3000,
-          "Damage": 165,
+          "Power": 3200,
+          "Damage": 144,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 8,
-          "Power": 3280,
-          "Damage": 181,
+          "Power": 3470,
+          "Damage": 156,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 9,
-          "Power": 3570,
-          "Damage": 196,
+          "Power": 3730,
+          "Damage": 168,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         },
         {
           "Level": 10,
-          "Power": 3850,
-          "Damage": 212,
+          "Power": 4000,
+          "Damage": 180,
           "Fire Rate": 0.75,
           "Range": 18,
-          "MaxAmmo": 6,
-          "ReloadTime": 3
+          "MaxAmmo": 8,
+          "ReloadTime": 1.5
         }
       ]
     },
@@ -3991,70 +3991,70 @@ window.RUMBLE_DATA = {
           "Level": 1,
           "Power": 500,
           "Damage": 26,
-          "Shield HP": 260,
+          "Shield HP": 208,
           "ReloadTime": 6
         },
         {
           "Level": 2,
           "Power": 650,
           "Damage": 32,
-          "Shield HP": 317,
+          "Shield HP": 253,
           "ReloadTime": 6
         },
         {
           "Level": 3,
           "Power": 800,
           "Damage": 37,
-          "Shield HP": 373,
+          "Shield HP": 299,
           "ReloadTime": 6
         },
         {
           "Level": 4,
           "Power": 950,
           "Damage": 43,
-          "Shield HP": 430,
+          "Shield HP": 344,
           "ReloadTime": 6
         },
         {
           "Level": 5,
           "Power": 1100,
           "Damage": 49,
-          "Shield HP": 487,
+          "Shield HP": 389,
           "ReloadTime": 6
         },
         {
           "Level": 6,
           "Power": 1250,
           "Damage": 54,
-          "Shield HP": 543,
+          "Shield HP": 435,
           "ReloadTime": 6
         },
         {
           "Level": 7,
           "Power": 1400,
           "Damage": 60,
-          "Shield HP": 600,
+          "Shield HP": 480,
           "ReloadTime": 6
         },
         {
           "Level": 8,
           "Power": 1550,
           "Damage": 66,
-          "Shield HP": 657,
+          "Shield HP": 525,
           "ReloadTime": 6
         },
         {
           "Level": 9,
           "Power": 1700,
           "Damage": 71,
-          "Shield HP": 713,
+          "Shield HP": 571,
           "ReloadTime": 6
         },
         {
           "Level": 10,
           "Power": 1850,
           "Damage": 77,
-          "Shield HP": 770,
+          "Shield HP": 616,
           "ReloadTime": 6
         }
       ]
@@ -4074,102 +4074,102 @@ window.RUMBLE_DATA = {
         {
           "Level": 1,
           "Power": 1600,
-          "Damage": 136,
+          "Damage": 120,
           "Mod Damage": 10,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 2,
           "Power": 1870,
-          "Damage": 159,
+          "Damage": 140,
           "Mod Damage": 11,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 3,
           "Power": 2130,
-          "Damage": 181,
+          "Damage": 160,
           "Mod Damage": 13,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 4,
           "Power": 2400,
-          "Damage": 204,
+          "Damage": 180,
           "Mod Damage": 14,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 5,
           "Power": 2670,
-          "Damage": 227,
+          "Damage": 200,
           "Mod Damage": 16,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 6,
           "Power": 2930,
-          "Damage": 249,
+          "Damage": 220,
           "Mod Damage": 18,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 7,
           "Power": 3200,
-          "Damage": 272,
+          "Damage": 240,
           "Mod Damage": 19,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 8,
           "Power": 3470,
-          "Damage": 295,
+          "Damage": 260,
           "Mod Damage": 21,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 9,
           "Power": 3730,
-          "Damage": 317,
+          "Damage": 280,
           "Mod Damage": 22,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         },
         {
           "Level": 10,
           "Power": 4000,
-          "Damage": 340,
+          "Damage": 300,
           "Mod Damage": 24,
           "Fire Rate": 0.65,
           "Range": 30,
-          "MaxAmmo": 3,
-          "ReloadTime": 3
+          "MaxAmmo": 7,
+          "ReloadTime": 2.5
         }
       ]
     }
@@ -4248,7 +4248,6 @@ window.RUMBLE_DATA = {
     {
       "name": "DrillDash",
       "columns": [
-        "Power",
         "Aoe Damage",
         "LastHitAoe Damage",
         "Max Dash Distance",
@@ -4258,7 +4257,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1000,
           "Aoe Damage": 5,
           "LastHitAoe Damage": 75,
           "Max Dash Distance": 100,
@@ -4267,7 +4265,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1300,
           "Aoe Damage": 7,
           "LastHitAoe Damage": 98,
           "Max Dash Distance": 100,
@@ -4276,7 +4273,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1600,
           "Aoe Damage": 8,
           "LastHitAoe Damage": 120,
           "Max Dash Distance": 100,
@@ -4285,7 +4281,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 1900,
           "Aoe Damage": 10,
           "LastHitAoe Damage": 143,
           "Max Dash Distance": 100,
@@ -4294,7 +4289,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2200,
           "Aoe Damage": 11,
           "LastHitAoe Damage": 165,
           "Max Dash Distance": 100,
@@ -4303,7 +4297,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2500,
           "Aoe Damage": 13,
           "LastHitAoe Damage": 188,
           "Max Dash Distance": 100,
@@ -4312,7 +4305,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 2800,
           "Aoe Damage": 14,
           "LastHitAoe Damage": 210,
           "Max Dash Distance": 100,
@@ -4321,7 +4313,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3100,
           "Aoe Damage": 16,
           "LastHitAoe Damage": 233,
           "Max Dash Distance": 100,
@@ -4330,7 +4321,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3400,
           "Aoe Damage": 17,
           "LastHitAoe Damage": 255,
           "Max Dash Distance": 100,
@@ -4339,7 +4329,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3700,
           "Aoe Damage": 19,
           "LastHitAoe Damage": 278,
           "Max Dash Distance": 100,
@@ -4351,7 +4340,6 @@ window.RUMBLE_DATA = {
     {
       "name": "Cryoslider",
       "columns": [
-        "Power",
         "Damage",
         "Range",
         "Charges",
@@ -4361,7 +4349,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1600,
           "Damage": 88,
           "Range": 34,
           "Charges": 1,
@@ -4370,7 +4357,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1870,
           "Damage": 103,
           "Range": 34,
           "Charges": 1,
@@ -4379,7 +4365,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 2130,
           "Damage": 117,
           "Range": 34,
           "Charges": 1,
@@ -4388,7 +4373,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 2400,
           "Damage": 132,
           "Range": 34,
           "Charges": 1,
@@ -4397,7 +4381,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2670,
           "Damage": 147,
           "Range": 34,
           "Charges": 1,
@@ -4406,7 +4389,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2930,
           "Damage": 161,
           "Range": 34,
           "Charges": 1,
@@ -4415,7 +4397,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 3200,
           "Damage": 176,
           "Range": 34,
           "Charges": 1,
@@ -4424,7 +4405,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3470,
           "Damage": 191,
           "Range": 34,
           "Charges": 1,
@@ -4433,7 +4413,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3730,
           "Damage": 205,
           "Range": 34,
           "Charges": 1,
@@ -4442,7 +4421,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 4000,
           "Damage": 220,
           "Range": 34,
           "Charges": 1,
@@ -4454,7 +4432,6 @@ window.RUMBLE_DATA = {
     {
       "name": "HoverBoots",
       "columns": [
-        "Power",
         "Damage",
         "Range",
         "Charges",
@@ -4463,7 +4440,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1000,
           "Damage": 20,
           "Range": 2,
           "Charges": 1,
@@ -4471,7 +4447,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1300,
           "Damage": 26,
           "Range": 2,
           "Charges": 1,
@@ -4479,7 +4454,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1600,
           "Damage": 32,
           "Range": 2,
           "Charges": 1,
@@ -4487,7 +4461,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 1900,
           "Damage": 38,
           "Range": 2,
           "Charges": 1,
@@ -4495,7 +4468,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2200,
           "Damage": 44,
           "Range": 2,
           "Charges": 1,
@@ -4503,7 +4475,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2500,
           "Damage": 50,
           "Range": 2,
           "Charges": 1,
@@ -4511,7 +4482,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 2800,
           "Damage": 56,
           "Range": 2,
           "Charges": 1,
@@ -4519,7 +4489,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3100,
           "Damage": 62,
           "Range": 2,
           "Charges": 1,
@@ -4527,7 +4496,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3400,
           "Damage": 68,
           "Range": 2,
           "Charges": 1,
@@ -4535,7 +4503,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3700,
           "Damage": 74,
           "Range": 2,
           "Charges": 1,
@@ -4546,7 +4513,6 @@ window.RUMBLE_DATA = {
     {
       "name": "MineLauncher",
       "columns": [
-        "Power",
         "Damage",
         "Range",
         "Charges",
@@ -4555,7 +4521,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
           "Damage": 143,
           "Range": 24,
           "Charges": 1,
@@ -4563,7 +4528,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1580,
           "Damage": 174,
           "Range": 24,
           "Charges": 1,
@@ -4571,7 +4535,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1870,
           "Damage": 205,
           "Range": 24,
           "Charges": 1,
@@ -4579,7 +4542,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 2150,
           "Damage": 237,
           "Range": 24,
           "Charges": 1,
@@ -4587,7 +4549,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2430,
           "Damage": 268,
           "Range": 24,
           "Charges": 1,
@@ -4595,7 +4556,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2720,
           "Damage": 299,
           "Range": 24,
           "Charges": 1,
@@ -4603,7 +4563,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 3000,
           "Damage": 330,
           "Range": 24,
           "Charges": 1,
@@ -4611,7 +4570,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3280,
           "Damage": 361,
           "Range": 24,
           "Charges": 1,
@@ -4619,7 +4577,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3570,
           "Damage": 392,
           "Range": 24,
           "Charges": 1,
@@ -4627,7 +4584,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3850,
           "Damage": 424,
           "Range": 24,
           "Charges": 1,
@@ -4638,7 +4594,6 @@ window.RUMBLE_DATA = {
     {
       "name": "LittleSpin",
       "columns": [
-        "Power",
         "AoeA Damage",
         "AoeB Damage",
         "Duration",
@@ -4648,90 +4603,80 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
-          "AoeA Damage": 39,
-          "AoeB Damage": 78,
+          "AoeA Damage": 46,
+          "AoeB Damage": 91,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 2,
-          "Power": 1580,
-          "AoeA Damage": 48,
-          "AoeB Damage": 95,
+          "AoeA Damage": 55,
+          "AoeB Damage": 111,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 3,
-          "Power": 1870,
-          "AoeA Damage": 56,
-          "AoeB Damage": 112,
+          "AoeA Damage": 65,
+          "AoeB Damage": 131,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 4,
-          "Power": 2150,
-          "AoeA Damage": 65,
-          "AoeB Damage": 129,
+          "AoeA Damage": 75,
+          "AoeB Damage": 151,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 5,
-          "Power": 2430,
-          "AoeA Damage": 73,
-          "AoeB Damage": 146,
+          "AoeA Damage": 85,
+          "AoeB Damage": 170,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 6,
-          "Power": 2720,
-          "AoeA Damage": 82,
-          "AoeB Damage": 163,
+          "AoeA Damage": 95,
+          "AoeB Damage": 190,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 7,
-          "Power": 3000,
-          "AoeA Damage": 90,
-          "AoeB Damage": 180,
+          "AoeA Damage": 105,
+          "AoeB Damage": 210,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 8,
-          "Power": 3280,
-          "AoeA Damage": 99,
-          "AoeB Damage": 197,
+          "AoeA Damage": 115,
+          "AoeB Damage": 230,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 9,
-          "Power": 3570,
-          "AoeA Damage": 107,
-          "AoeB Damage": 214,
+          "AoeA Damage": 125,
+          "AoeB Damage": 250,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
         },
         {
           "Level": 10,
-          "Power": 3850,
-          "AoeA Damage": 116,
-          "AoeB Damage": 231,
+          "AoeA Damage": 135,
+          "AoeB Damage": 270,
           "Duration": 0.8,
           "Charges": 1,
           "Cooldown": 8
@@ -4741,7 +4686,6 @@ window.RUMBLE_DATA = {
     {
       "name": "VoidRepulser",
       "columns": [
-        "Power",
         "Damage",
         "Shield HP",
         "Range",
@@ -4752,9 +4696,8 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
           "Damage": 26,
-          "Shield HP": 260,
+          "Shield HP": 208,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4762,9 +4705,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1580,
           "Damage": 32,
-          "Shield HP": 317,
+          "Shield HP": 253,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4772,9 +4714,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1870,
           "Damage": 37,
-          "Shield HP": 373,
+          "Shield HP": 299,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4782,9 +4723,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 2150,
           "Damage": 43,
-          "Shield HP": 430,
+          "Shield HP": 344,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4792,9 +4732,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2430,
           "Damage": 49,
-          "Shield HP": 487,
+          "Shield HP": 389,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4802,9 +4741,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2720,
           "Damage": 54,
-          "Shield HP": 543,
+          "Shield HP": 435,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4812,9 +4750,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 3000,
           "Damage": 60,
-          "Shield HP": 600,
+          "Shield HP": 480,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4822,9 +4759,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3280,
           "Damage": 66,
-          "Shield HP": 657,
+          "Shield HP": 525,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4832,9 +4768,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3570,
           "Damage": 71,
-          "Shield HP": 713,
+          "Shield HP": 571,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4842,9 +4777,8 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3850,
           "Damage": 77,
-          "Shield HP": 770,
+          "Shield HP": 616,
           "Range": 5,
           "Duration": 6,
           "Charges": 1,
@@ -4855,7 +4789,6 @@ window.RUMBLE_DATA = {
     {
       "name": "Bombardier",
       "columns": [
-        "Power",
         "Damage",
         "Range",
         "Charges",
@@ -4864,80 +4797,70 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1600,
-          "Damage": 112,
+          "Damage": 120,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 2,
-          "Power": 1870,
-          "Damage": 131,
+          "Damage": 140,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 3,
-          "Power": 2130,
-          "Damage": 149,
+          "Damage": 160,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 4,
-          "Power": 2400,
-          "Damage": 168,
+          "Damage": 180,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 5,
-          "Power": 2670,
-          "Damage": 187,
+          "Damage": 200,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 6,
-          "Power": 2930,
-          "Damage": 205,
+          "Damage": 220,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 7,
-          "Power": 3200,
-          "Damage": 224,
+          "Damage": 240,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 8,
-          "Power": 3470,
-          "Damage": 243,
+          "Damage": 260,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 9,
-          "Power": 3730,
-          "Damage": 261,
+          "Damage": 280,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
         },
         {
           "Level": 10,
-          "Power": 4000,
-          "Damage": 280,
+          "Damage": 300,
           "Range": 24,
           "Charges": 1,
           "Cooldown": 12
@@ -4947,7 +4870,6 @@ window.RUMBLE_DATA = {
     {
       "name": "ElectricGrenade",
       "columns": [
-        "Power",
         "Explosion Damage",
         "ElectricZone Damage",
         "Range",
@@ -4958,7 +4880,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
           "Explosion Damage": 117,
           "ElectricZone Damage": 10,
           "Range": 35,
@@ -4968,7 +4889,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1580,
           "Explosion Damage": 143,
           "ElectricZone Damage": 13,
           "Range": 35,
@@ -4978,7 +4898,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1870,
           "Explosion Damage": 168,
           "ElectricZone Damage": 15,
           "Range": 35,
@@ -4988,7 +4907,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 2150,
           "Explosion Damage": 194,
           "ElectricZone Damage": 17,
           "Range": 35,
@@ -4998,7 +4916,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2430,
           "Explosion Damage": 219,
           "ElectricZone Damage": 19,
           "Range": 35,
@@ -5008,7 +4925,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2720,
           "Explosion Damage": 245,
           "ElectricZone Damage": 22,
           "Range": 35,
@@ -5018,7 +4934,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 3000,
           "Explosion Damage": 270,
           "ElectricZone Damage": 24,
           "Range": 35,
@@ -5028,7 +4943,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3280,
           "Explosion Damage": 296,
           "ElectricZone Damage": 26,
           "Range": 35,
@@ -5038,7 +4952,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3570,
           "Explosion Damage": 321,
           "ElectricZone Damage": 29,
           "Range": 35,
@@ -5048,7 +4961,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3850,
           "Explosion Damage": 347,
           "ElectricZone Damage": 31,
           "Range": 35,
@@ -5061,7 +4973,6 @@ window.RUMBLE_DATA = {
     {
       "name": "HoloshieldGlove",
       "columns": [
-        "Power",
         "Damage",
         "Shield HP",
         "Range",
@@ -5071,90 +4982,80 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1600,
           "Damage": 32,
-          "Shield HP": 256,
+          "Shield HP": 192,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 2,
-          "Power": 1870,
           "Damage": 37,
-          "Shield HP": 299,
+          "Shield HP": 224,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 3,
-          "Power": 2130,
           "Damage": 43,
-          "Shield HP": 341,
+          "Shield HP": 256,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 4,
-          "Power": 2400,
           "Damage": 48,
-          "Shield HP": 384,
+          "Shield HP": 288,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 5,
-          "Power": 2670,
           "Damage": 53,
-          "Shield HP": 427,
+          "Shield HP": 320,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 6,
-          "Power": 2930,
           "Damage": 59,
-          "Shield HP": 469,
+          "Shield HP": 352,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 7,
-          "Power": 3200,
           "Damage": 64,
-          "Shield HP": 512,
+          "Shield HP": 384,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 8,
-          "Power": 3470,
           "Damage": 69,
-          "Shield HP": 555,
+          "Shield HP": 416,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 9,
-          "Power": 3730,
           "Damage": 75,
-          "Shield HP": 597,
+          "Shield HP": 448,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
         },
         {
           "Level": 10,
-          "Power": 4000,
           "Damage": 80,
-          "Shield HP": 640,
+          "Shield HP": 480,
           "Range": 12,
           "Charges": 1,
           "Cooldown": 16
@@ -5164,7 +5065,6 @@ window.RUMBLE_DATA = {
     {
       "name": "GloveOfDoom",
       "columns": [
-        "Power",
         "Agent Explosion Damage",
         "Agent HP",
         "Agent Lifetime",
@@ -5177,7 +5077,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1000,
           "Agent Explosion Damage": 60,
           "Agent HP": 50,
           "Agent Lifetime": 8,
@@ -5189,7 +5088,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1300,
           "Agent Explosion Damage": 78,
           "Agent HP": 65,
           "Agent Lifetime": 8.5,
@@ -5201,7 +5099,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1600,
           "Agent Explosion Damage": 96,
           "Agent HP": 80,
           "Agent Lifetime": 9,
@@ -5213,7 +5110,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 1900,
           "Agent Explosion Damage": 114,
           "Agent HP": 95,
           "Agent Lifetime": 9.5,
@@ -5225,7 +5121,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2200,
           "Agent Explosion Damage": 132,
           "Agent HP": 110,
           "Agent Lifetime": 10,
@@ -5237,7 +5132,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2500,
           "Agent Explosion Damage": 150,
           "Agent HP": 125,
           "Agent Lifetime": 10.5,
@@ -5249,7 +5143,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 2800,
           "Agent Explosion Damage": 168,
           "Agent HP": 140,
           "Agent Lifetime": 11,
@@ -5261,7 +5154,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3100,
           "Agent Explosion Damage": 186,
           "Agent HP": 155,
           "Agent Lifetime": 11.5,
@@ -5273,7 +5165,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3400,
           "Agent Explosion Damage": 204,
           "Agent HP": 170,
           "Agent Lifetime": 12,
@@ -5285,7 +5176,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3700,
           "Agent Explosion Damage": 222,
           "Agent HP": 185,
           "Agent Lifetime": 12.5,
@@ -5300,10 +5190,6 @@ window.RUMBLE_DATA = {
     {
       "name": "AmoeboidLauncher",
       "columns": [
-        "Power",
-        "Small Damage",
-        "Medium Damage",
-        "Large Damage",
         "Small HP",
         "Medium HP",
         "Large HP",
@@ -5318,10 +5204,6 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
-          "Power": 1300,
-          "Small Damage": 39,
-          "Medium Damage": 59,
-          "Large Damage": 78,
           "Small HP": 91,
           "Medium HP": 143,
           "Large HP": 195,
@@ -5336,10 +5218,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
-          "Power": 1580,
-          "Small Damage": 48,
-          "Medium Damage": 71,
-          "Large Damage": 95,
           "Small HP": 111,
           "Medium HP": 174,
           "Large HP": 238,
@@ -5354,10 +5232,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
-          "Power": 1870,
-          "Small Damage": 56,
-          "Medium Damage": 84,
-          "Large Damage": 112,
           "Small HP": 131,
           "Medium HP": 205,
           "Large HP": 280,
@@ -5372,10 +5246,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
-          "Power": 2150,
-          "Small Damage": 65,
-          "Medium Damage": 97,
-          "Large Damage": 129,
           "Small HP": 151,
           "Medium HP": 237,
           "Large HP": 323,
@@ -5390,10 +5260,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
-          "Power": 2430,
-          "Small Damage": 73,
-          "Medium Damage": 110,
-          "Large Damage": 146,
           "Small HP": 170,
           "Medium HP": 268,
           "Large HP": 365,
@@ -5408,10 +5274,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
-          "Power": 2720,
-          "Small Damage": 82,
-          "Medium Damage": 122,
-          "Large Damage": 163,
           "Small HP": 190,
           "Medium HP": 299,
           "Large HP": 408,
@@ -5426,10 +5288,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
-          "Power": 3000,
-          "Small Damage": 90,
-          "Medium Damage": 135,
-          "Large Damage": 180,
           "Small HP": 210,
           "Medium HP": 330,
           "Large HP": 450,
@@ -5444,10 +5302,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
-          "Power": 3280,
-          "Small Damage": 99,
-          "Medium Damage": 148,
-          "Large Damage": 197,
           "Small HP": 230,
           "Medium HP": 361,
           "Large HP": 493,
@@ -5462,10 +5316,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
-          "Power": 3570,
-          "Small Damage": 107,
-          "Medium Damage": 161,
-          "Large Damage": 214,
           "Small HP": 250,
           "Medium HP": 392,
           "Large HP": 535,
@@ -5480,10 +5330,6 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
-          "Power": 3850,
-          "Small Damage": 116,
-          "Medium Damage": 173,
-          "Large Damage": 231,
           "Small HP": 270,
           "Medium HP": 424,
           "Large HP": 578,

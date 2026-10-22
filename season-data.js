@@ -1,13 +1,13 @@
 // Generated from data/SeasonPassContent.txt.
 window.RANGER_SEASON = {
-  "number": 12,
-  "starts": "2026-09-08",
-  "ends": "2026-10-06",
+  "number": 13,
+  "starts": "2026-10-06",
+  "ends": "2026-11-03",
   "rewards": [
     [
       0,
       "Raritanium x10",
-      "Fashionium x50",
+      "Fashionium x100",
       0
     ],
     [
@@ -19,7 +19,7 @@ window.RANGER_SEASON = {
     [
       2,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       1500
     ],
     [
@@ -37,7 +37,7 @@ window.RANGER_SEASON = {
     [
       5,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -49,7 +49,7 @@ window.RANGER_SEASON = {
     [
       7,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -66,8 +66,8 @@ window.RANGER_SEASON = {
     ],
     [
       10,
-      "Fashionium x25",
-      "Cores x1",
+      "Fashionium x50",
+      "Cores x2",
       3000
     ],
     [
@@ -79,7 +79,7 @@ window.RANGER_SEASON = {
     [
       12,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -97,7 +97,7 @@ window.RANGER_SEASON = {
     [
       15,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -109,7 +109,7 @@ window.RANGER_SEASON = {
     [
       17,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -139,7 +139,7 @@ window.RANGER_SEASON = {
     [
       22,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -157,7 +157,7 @@ window.RANGER_SEASON = {
     [
       25,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -169,7 +169,7 @@ window.RANGER_SEASON = {
     [
       27,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -187,7 +187,7 @@ window.RANGER_SEASON = {
     [
       30,
       "Reebo (Epic) x1",
-      "Cores x1",
+      "Cores x2",
       3000
     ],
     [
@@ -199,7 +199,7 @@ window.RANGER_SEASON = {
     [
       32,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -217,7 +217,7 @@ window.RANGER_SEASON = {
     [
       35,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -229,7 +229,7 @@ window.RANGER_SEASON = {
     [
       37,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -259,7 +259,7 @@ window.RANGER_SEASON = {
     [
       42,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -277,7 +277,7 @@ window.RANGER_SEASON = {
     [
       45,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -289,7 +289,7 @@ window.RANGER_SEASON = {
     [
       47,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -306,8 +306,8 @@ window.RANGER_SEASON = {
     ],
     [
       50,
-      "Fashionium x25",
-      "Cores x1",
+      "Fashionium x50",
+      "Cores x2",
       3000
     ],
     [
@@ -319,7 +319,7 @@ window.RANGER_SEASON = {
     [
       52,
       "Hero Lorbs (Common) x100",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -337,7 +337,7 @@ window.RANGER_SEASON = {
     [
       55,
       "Hero Lorbs (Rare) x75",
-      "Raritanium x5",
+      "Raritanium x10",
       3000
     ],
     [
@@ -349,7 +349,7 @@ window.RANGER_SEASON = {
     [
       57,
       "Reebo (Rare) x1",
-      "Fashionium x25",
+      "Fashionium x100",
       3000
     ],
     [
@@ -367,7 +367,7 @@ window.RANGER_SEASON = {
     [
       60,
       "Cores x1",
-      "Skin: Raritanium Widget x1",
+      "Fashionium x500",
       3000
     ]
   ],

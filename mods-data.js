@@ -5,13 +5,13 @@ window.RANGER_MODS = {
       "name": "Express Recovery",
       "icon": "Express Recovery.png",
       "menu": "Ratchet regenerates faster than other heroes.",
-      "effect": "Regeneration delay reduced from 6s to 4s; full-regeneration time remains 3s."
+      "effect": "Health regeneration starts after 4s without damage instead of 6s; full regeneration takes 3s."
     },
     {
       "name": "Triple Barrel",
       "icon": "Triple Barrel.png",
       "menu": "Each shot now fires three projectiles.",
-      "effect": "Projectile count 3 (base 2); no additional shot consumed."
+      "effect": "Each shot fires 3 projectiles instead of 2, without using extra ammo."
     },
     {
       "name": "Improved Health",
@@ -43,13 +43,13 @@ window.RANGER_MODS = {
       "name": "Express Recovery",
       "icon": "Express Recovery.png",
       "menu": "Widget regenerates faster than other heroes.",
-      "effect": "Regeneration delay reduced from 6s to 4s; full-regeneration time remains 3s."
+      "effect": "Health regeneration starts after 4s without damage instead of 6s; full regeneration takes 3s."
     },
     {
       "name": "Double Barrel",
       "icon": "Double Barrel.png",
       "menu": "Each shot now fires two projectiles instead of one.",
-      "effect": "Projectile count 2; no additional shot consumed."
+      "effect": "Each shot fires 2 projectiles instead of 1, without using extra ammo. Damage per projectile is reduced by 40%."
     },
     {
       "name": "Improved Health",
@@ -81,13 +81,13 @@ window.RANGER_MODS = {
       "name": "Rocket Legs",
       "icon": "Rocket Legs.png",
       "menu": "Sprocket jumps higher from the ground.",
-      "effect": "Base jump multiplier 1.5x (+50%)."
+      "effect": "Jump strength increased by 50%."
     },
     {
       "name": "Cluster Bombs",
       "icon": "Cluster Bombs.png",
       "menu": "Grenades release two bomblets after exploding.",
-      "effect": "Bomblet count 2; AoE radius 2.5; horizontal push 7; upward push 1.",
+      "effect": "Releases 2 bomblets with a 2.5 blast radius; they push enemies outward (7) and slightly upward (1).",
       "columns": [
         "Damage"
       ],
@@ -154,57 +154,57 @@ window.RANGER_MODS = {
       "name": "Extra Agent",
       "icon": "Extra Agent.png",
       "menu": "The gadget now generates one additional Agent of Doom.",
-      "effect": "Agents deployed 3 (base 2); consumes one gadget charge."
+      "effect": "Deploys 3 Agents instead of 2; consumes one gadget charge."
     },
     {
       "name": "Dual Arc Emitter",
       "icon": "Dual Arc Emitter.png",
       "menu": "The Tesla Claw can now hit two enemies at the same time.",
-      "effect": "Additional beams 1; secondary-beam health multiplier 0.5; Electric buildup 16.",
+      "effect": "Fires an extra beam at another enemy, dealing 50% damage to health and adding 16 Electric buildup per hit.",
       "columns": [
         "Damage spec",
         "Health damage"
       ],
       "levels": [
         [
-          20,
-          10
+          19,
+          9.5
         ],
         [
-          26,
-          13
+          25,
+          12.5
         ],
         [
-          32,
-          16
+          30,
+          15
         ],
         [
-          38,
-          19
+          36,
+          18
         ],
         [
-          44,
-          22
+          42,
+          21
         ],
         [
-          50,
-          25
+          48,
+          24
         ],
         [
-          56,
-          28
+          53,
+          26.5
         ],
         [
-          62,
-          31
+          59,
+          29.5
         ],
         [
-          68,
-          34
+          65,
+          32.5
         ],
         [
-          74,
-          37
+          70,
+          35
         ]
       ]
     },
@@ -237,58 +237,58 @@ window.RANGER_MODS = {
     {
       "name": "Adrenaline Spike",
       "icon": "Adrenaline Spike.png",
-      "menu": "Knocking out another ranger grants Lil'Ann a temporary speed bonus."
+      "menu": "Knocking out another ranger grants Lil'Ann a temporary speed bonus.",
+      "effect": "Grants +15% movement speed for 4s after knocking out another ranger."
     },
     {
       "name": "Impact Chamber",
       "icon": "Impact Chamber.png",
       "menu": "Firing shortly after a dash delivers a more powerful shot.",
-      "effect": "Enhanced-shot damage +25%; existing gameplay/wiki activation window 3s.",
-      "note": "The 3-second activation window is not serialized in the enhancement asset and appears to be controlled by game code.",
+      "effect": "Increases Blitz Gun damage by 50% for 3 seconds after a dash.",
       "columns": [
         "Normal damage",
         "Enhanced damage"
       ],
       "levels": [
         [
-          104,
-          130
+          111,
+          166
         ],
         [
-          127,
-          159
+          135,
+          202
         ],
         [
-          149,
-          186
+          159,
+          238
         ],
         [
-          172,
-          215
+          183,
+          274
         ],
         [
-          195,
-          244
+          207,
+          310
         ],
         [
-          217,
-          271
+          231,
+          346
         ],
         [
-          240,
-          300
+          255,
+          383
         ],
         [
-          263,
-          329
+          279,
+          419
         ],
         [
-          285,
-          356
+          303,
+          455
         ],
         [
-          308,
-          385
+          327,
+          491
         ]
       ]
     },
@@ -322,7 +322,7 @@ window.RANGER_MODS = {
       "name": "Pulse Core",
       "icon": "Pulse Core.png",
       "menu": "When the shield breaks, it deals damage in an area in front of it.",
-      "effect": "Forward AoE; leveled push force 25 to 205.",
+      "effect": "When the shield breaks, damages and pushes back enemies in front of it; push force grows from 25 at level 1 to 205 at level 10.",
       "columns": [
         "Damage",
         "Push force"
@@ -374,7 +374,7 @@ window.RANGER_MODS = {
       "name": "Cryo Shards",
       "icon": "Cryo Shards.png",
       "menu": "Projectiles leave ice shards on the ground after exploding.",
-      "effect": "Effective AoE radius approximately 2.5; Ice buildup 4 per application.",
+      "effect": "Ice shards cover about a 2.5 radius and add 4 Ice buildup per hit.",
       "columns": [
         "Damage"
       ],
@@ -441,51 +441,51 @@ window.RANGER_MODS = {
       "name": "Azur Igniter",
       "icon": "Azur Igniter.png",
       "menu": "After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.",
-      "effect": "Activates after 1.5s continuous fire; approximately +50.5618% damage; values are listed by level below.",
+      "effect": "After 1.5s of continuous fire, the flame turns blue and deals about 50% more damage.",
       "columns": [
         "Normal damage",
         "Blue-fire damage"
       ],
       "levels": [
         [
-          33,
-          50
+          26,
+          39
         ],
         [
-          40,
-          60
+          32,
+          48
         ],
         [
-          47,
-          71
+          37,
+          56
+        ],
+        [
+          43,
+          65
+        ],
+        [
+          49,
+          73
         ],
         [
           54,
-          81
+          82
         ],
         [
-          61,
-          92
+          60,
+          90
         ],
         [
-          68,
-          102
+          66,
+          99
         ],
         [
-          75,
-          113
+          71,
+          107
         ],
         [
-          82,
-          123
-        ],
-        [
-          89,
-          134
-        ],
-        [
-          96,
-          144
+          77,
+          116
         ]
       ]
     },
@@ -524,8 +524,8 @@ window.RANGER_MODS = {
       "name": "Spin-Up Rotor",
       "icon": "Spin-Up Rotor.png",
       "menu": "The rate of fire can increase even further.",
-      "effect": "Adds stage 3: 5s spin-up, stored fire-rate multiplier 8x, non-progressive.",
-      "baseStages": "approximately 1.3s/3x and 3s/5x."
+      "effect": "Adds a third fire-rate stage: after 5s of spin-up, fire rate is 8x.",
+      "baseStages": "About 3x after 1.3s and 5x after 3s."
     },
     {
       "name": "Quick Reload",
@@ -561,14 +561,14 @@ window.RANGER_MODS = {
     {
       "name": "Turbo Dash",
       "icon": "Turbo Dash.png",
-      "menu": "Celeste’s dash recharges faster.",
-      "effect": "Dash cooldown reduction 0.5 (-50%)."
+      "menu": "Celeste's dash recharges faster.",
+      "effect": "Dash cooldown reduced by 50%."
     },
     {
       "name": "Ricochet Blades",
       "icon": "Ricochet Blades.png",
       "menu": "The number of rebounds from the blades increases.",
-      "effect": "Extended maximum hit count 7 (base 6); ricochet radius 8."
+      "effect": "Blades can hit up to 7 times instead of 6; ricochet radius 8."
     },
     {
       "name": "Improved Health",
@@ -600,13 +600,13 @@ window.RANGER_MODS = {
       "name": "Artillery Ace",
       "icon": "Artillery Ace.png",
       "menu": "Zed One is no longer slowed down when firing his weapon.",
-      "effect": "Weapon movement-speed modifier overridden to 0; Ultimates excluded."
+      "effect": "Firing your weapon no longer slows movement; this does not apply to ultimates."
     },
     {
       "name": "Rocket Cluster",
       "icon": "Rocket Cluster.png",
       "menu": "Fires two minirockets in addition to the usual one.",
-      "effect": "Additional minirockets 2; projectile speed 24; blast radius 1.",
+      "effect": "Fires 2 extra minirockets (speed 24, blast radius 1).",
       "columns": [
         "Minirocket damage"
       ],
@@ -673,13 +673,13 @@ window.RANGER_MODS = {
       "name": "Acid Core",
       "icon": "Acid Core.png",
       "menu": "Small allied Amoeboids now spawn an acid puddle on death.",
-      "effect": "Acid-zone damage 10; movement-modifier duration 1s; triggered by Small Amoeboid death."
+      "effect": "The acid puddle deals 10 damage and applies a movement effect for 1s."
     },
     {
       "name": "Magma Nozzle",
       "icon": "Magma Nozzle.png",
       "menu": "Firing leaves lava on the ground, burning enemies standing on it.",
-      "effect": "Pool radius 2; lifetime 2s; movement-speed modifier -0.25.",
+      "effect": "Lava pools have a 2 radius, last 2s, and slow enemies by 25%.",
       "columns": [
         "Damage per application"
       ],
@@ -732,7 +732,7 @@ window.RANGER_MODS = {
       "name": "Improved Fire Rate",
       "icon": "Improved Fire Rate.png",
       "menu": "Increases the weapon's fire rate.",
-      "effect": "Weapon fire-rate interval multiplier 0.75x."
+      "effect": "Time between shots reduced by 25%."
     },
     {
       "name": "Improved Health",
@@ -746,13 +746,13 @@ window.RANGER_MODS = {
       "name": "Healing Field",
       "icon": "Healing Field.png",
       "menu": "Shields now heal allies directly behind them.",
-      "effect": "Radius 2.3; duration 8s (same as the shield); heals 0.05 of maximum HP per second (5%/s)."
+      "effect": "Heals allies behind the shield for 5% of their maximum health per second for 8s (radius 2.3)."
     },
     {
       "name": "Thermal Scope",
       "icon": "Thermal Scope.png",
       "menu": "Rivals are displayed through walls at the center of the reticle.",
-      "effect": "Through-wall detection enabled; normalized central-screen radius 0.5."
+      "effect": "Reveals enemies through walls at the center of the reticle (radius 0.5, relative to the screen)."
     },
     {
       "name": "Improved Health",

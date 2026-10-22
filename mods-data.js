@@ -11,7 +11,7 @@ window.RANGER_MODS = {
       "name": "Triple Barrel",
       "icon": "Triple Barrel.png",
       "menu": "Each shot now fires three projectiles.",
-      "effect": "Each shot fires 3 projectiles instead of 2, without using extra ammo."
+      "effect": "Adds 1 projectile per shot without using extra ammo."
     },
     {
       "name": "Improved Health",
@@ -49,7 +49,7 @@ window.RANGER_MODS = {
       "name": "Double Barrel",
       "icon": "Double Barrel.png",
       "menu": "Each shot now fires two projectiles instead of one.",
-      "effect": "Each shot fires 2 projectiles instead of 1, without using extra ammo. Damage per projectile is reduced by 40%."
+      "effect": "Adds 1 projectile per shot without using extra ammo. Damage per projectile is reduced by 40%."
     },
     {
       "name": "Improved Health",
@@ -87,7 +87,7 @@ window.RANGER_MODS = {
       "name": "Cluster Bombs",
       "icon": "Cluster Bombs.png",
       "menu": "Grenades release two bomblets after exploding.",
-      "effect": "Releases 2 bomblets with a 2.5 blast radius; they push enemies outward (7) and slightly upward (1).",
+      "effect": "Bomblets have a 2.5 blast radius; they push enemies outward (7) and slightly upward (1).",
       "columns": [
         "Damage"
       ],
@@ -238,16 +238,16 @@ window.RANGER_MODS = {
       "name": "Adrenaline Spike",
       "icon": "Adrenaline Spike.png",
       "menu": "Knocking out another ranger grants Lil'Ann a temporary speed bonus.",
-      "effect": "Grants +15% movement speed for 4s after knocking out another ranger."
+      "effect": "+15% movement speed for 4s."
     },
     {
       "name": "Impact Chamber",
       "icon": "Impact Chamber.png",
       "menu": "Firing shortly after a dash delivers a more powerful shot.",
-      "effect": "Increases Blitz Gun damage by 50% for 3 seconds after a dash.",
+      "effect": "Blitz Gun damage +50% for 3 seconds after a dash.",
       "columns": [
-        "Normal damage",
-        "Enhanced damage"
+        "Normal",
+        "Enhanced"
       ],
       "levels": [
         [
@@ -322,7 +322,7 @@ window.RANGER_MODS = {
       "name": "Pulse Core",
       "icon": "Pulse Core.png",
       "menu": "When the shield breaks, it deals damage in an area in front of it.",
-      "effect": "When the shield breaks, damages and pushes back enemies in front of it; push force grows from 25 at level 1 to 205 at level 10.",
+      "effect": "Damages and pushes back enemies in front of it; push force grows from 25 at level 1 to 205 at level 10.",
       "columns": [
         "Damage",
         "Push force"
@@ -441,10 +441,10 @@ window.RANGER_MODS = {
       "name": "Azur Igniter",
       "icon": "Azur Igniter.png",
       "menu": "After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.",
-      "effect": "After 1.5s of continuous fire, the flame turns blue and deals about 50% more damage.",
+      "effect": "Deals about 50% more damage after 1.5s of continuous fire.",
       "columns": [
-        "Normal damage",
-        "Blue-fire damage"
+        "Normal",
+        "Blue-fire"
       ],
       "levels": [
         [
@@ -600,15 +600,15 @@ window.RANGER_MODS = {
       "name": "Artillery Ace",
       "icon": "Artillery Ace.png",
       "menu": "Zed One is no longer slowed down when firing his weapon.",
-      "effect": "Firing your weapon no longer slows movement; this does not apply to ultimates."
+      "effect": "Ultimates still slow movement."
     },
     {
       "name": "Rocket Cluster",
       "icon": "Rocket Cluster.png",
       "menu": "Fires two minirockets in addition to the usual one.",
-      "effect": "Fires 2 extra minirockets (speed 24, blast radius 1).",
+      "effect": "Minirockets have speed 24 and blast radius 1.",
       "columns": [
-        "Minirocket damage"
+        "Minirocket"
       ],
       "levels": [
         [
@@ -681,7 +681,7 @@ window.RANGER_MODS = {
       "menu": "Firing leaves lava on the ground, burning enemies standing on it.",
       "effect": "Lava pools have a 2 radius, last 2s, and slow enemies by 25%.",
       "columns": [
-        "Damage per application"
+        "Per application"
       ],
       "levels": [
         [
@@ -746,13 +746,13 @@ window.RANGER_MODS = {
       "name": "Healing Field",
       "icon": "Healing Field.png",
       "menu": "Shields now heal allies directly behind them.",
-      "effect": "Heals allies behind the shield for 5% of their maximum health per second for 8s (radius 2.3)."
+      "effect": "Heals 5% of maximum health per second for 8s within a 2.3 radius."
     },
     {
       "name": "Thermal Scope",
       "icon": "Thermal Scope.png",
       "menu": "Rivals are displayed through walls at the center of the reticle.",
-      "effect": "Reveals enemies through walls at the center of the reticle (radius 0.5, relative to the screen)."
+      "effect": "Reveal radius is 0.5, relative to the screen."
     },
     {
       "name": "Improved Health",

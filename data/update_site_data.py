@@ -39,6 +39,25 @@ GADGET_STAT_OVERRIDES = {
 WEAPON_STAT_OVERRIDES = {
     "Buzzblades": {"Ricochet": 3},
 }
+MOD_COLUMN_OVERRIDES = {
+    "Impact Chamber": ["Normal", "Enhanced"],
+    "Azur Igniter": ["Normal", "Blue-fire"],
+    "Rocket Cluster": ["Minirocket"],
+    "Magma Nozzle": ["Per application"],
+}
+MOD_EFFECT_OVERRIDES = {
+    "Triple Barrel": "Adds 1 projectile per shot without using extra ammo.",
+    "Double Barrel": "Adds 1 projectile per shot without using extra ammo. Damage per projectile is reduced by 40%.",
+    "Cluster Bombs": "Bomblets have a 2.5 blast radius; they push enemies outward (7) and slightly upward (1).",
+    "Adrenaline Spike": "+15% movement speed for 4s.",
+    "Impact Chamber": "Blitz Gun damage +50% for 3 seconds after a dash.",
+    "Pulse Core": "Damages and pushes back enemies in front of it; push force grows from 25 at level 1 to 205 at level 10.",
+    "Azur Igniter": "Deals about 50% more damage after 1.5s of continuous fire.",
+    "Artillery Ace": "Ultimates still slow movement.",
+    "Rocket Cluster": "Minirockets have speed 24 and blast radius 1.",
+    "Healing Field": "Heals 5% of maximum health per second for 8s within a 2.3 radius.",
+    "Thermal Scope": "Reveal radius is 0.5, relative to the screen.",
+}
 def read(name: str) -> str:
     path = DATA_DIR / name
     if not path.is_file():
@@ -186,8 +205,10 @@ def parse_mods() -> dict[str, list[dict]]:
             if note:
                 entry["note"] = clean_number_text(note.group(1).strip())
             table = re.search(r"^Level\s*\|\s*(.+)$\r?\n(?:^[-|\s]+$\r?\n)?((?:^\s*\d+\s*\|.*$\r?\n?)+)", talent_block, re.MULTILINE)
+            if entry["name"] in MOD_EFFECT_OVERRIDES:
+                entry["effect"] = MOD_EFFECT_OVERRIDES[entry["name"]]
             if table:
-                entry["columns"] = [cell.strip() for cell in table.group(1).split("|")]
+                entry["columns"] = MOD_COLUMN_OVERRIDES.get(entry["name"]) or [cell.strip() for cell in table.group(1).split("|")]
                 entry["levels"] = [[number(cell.strip()) for cell in row.split("|")[1:]] for row in table.group(2).splitlines()]
             result.setdefault(hero_name, []).append(entry)
     if not result:

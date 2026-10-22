@@ -7,7 +7,8 @@
     'index.html': ['styles.css', 'details.css', 'data.js', 'guide-data.js', 'mods-data.js', 'descriptions.js', 'skin-manifest.js', 'data/skin-status.js', 'script.js'],
     'modes-maps.html': ['styles.css', 'modes-maps.css', 'modes-maps.js'],
     'season-pass.html': ['styles.css', 'season-data.js', 'season-pass.js'],
-    'bot-names.html': ['styles.css', 'bot-names.css', 'bot-names.js']
+    'bot-names.html': ['styles.css', 'bot-names.css', 'bot-names.js'],
+    'events.html': ['styles.css', 'events.css', 'events.js']
   };
 
   function normalisePath(path) {

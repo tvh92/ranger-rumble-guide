@@ -21,10 +21,10 @@ Unused:
 
 Mopz
 Used:
-- Mopz
-- Blackwater Mopz
-- Dreadzone Mopz
-- Megalopolis Mopz
+- Mopz (Rare)
+- Blackwater Mopz (Rare)
+- Dreadzone Mopz (Common)
+- Megalopolis Mopz (Common)
 Unused:
 - Amoeboid Mopz
 - Pirate Mopz
@@ -32,30 +32,30 @@ Unused:
 
 Tempest
 Used:
-- Tempest
-- Blackwater Tempest
-- Dreadzone Tempest
-- Nefarious Tempest
+- Tempest (Rare)
+- Blackwater Tempest (Rare)
+- Dreadzone Tempest (Common)
+- Nefarious Tempest (Rare)
 Unused:
 - Megacorp Tempest
 - Raritanium Tempest
 
 Zed
 Used:
-- Zed
-- Dreadzone Zed
-- Nefarious Zed
-- Blackwater Zed
+- Zed (Epic)
+- Dreadzone Zed (Common)
+- Nefarious Zed (Rare)
+- Blackwater Zed (Rare)
 Unused:
 - Megacorp Zed
 - Pirate Zed
 
 Lil' Ann
 Used:
-- Lil'Ann
-- Megalopolis Lil'Ann
-- Nefarious Lil'Ann
-- Raritanium Lil'Ann
+- Lil'Ann (Rare)
+- Megalopolis Lil'Ann (Common)
+- Nefarious Lil'Ann (Rare)
+- Raritanium Lil'Ann (Epic)
 Unused:
 - Admiral Lil'Ann
 - Gary's disciple Lil'Ann
@@ -73,21 +73,21 @@ Unused:
 
 Sparky
 Used:
-- Sparky
-- Megalopolis Sparky
-- Raritanium Sparky
-- Robot Sparky
+- Sparky (Rare)
+- Megalopolis Sparky (Common)
+- Raritanium Sparky (Epic)
+- Robot Sparky (Epic)
 Unused:
 - Pirate Sparky
 - Rebel Sparky
 
 Lump
 Used:
-- Lump
-- Nefarious Lump
-- Raritanium Lump
-- McMarx Sports Lump
-- DreadZone Lump
+- Lump (Rare)
+- Nefarious Lump (Rare)
+- Raritanium Lump (Epic)
+- McMarx Sports Lump (Common)
+- DreadZone Lump (Common)
 Unused:
 - Dimensional Lump
 
@@ -103,21 +103,21 @@ Unused:
 
 Grimshot
 Used:
-- Grimshot
-- Amoeboid Grimshot
-- Zoni Grimshot
-- Nefarious Grimshot
-- Gary's disciple Grimshot
-- Dreadzone Grimshot
+- Grimshot (Epic)
+- Amoeboid Grimshot (Epic)
+- Zoni Grimshot (Common)
+- Nefarious Grimshot (Rare)
+- Gary's disciple Grimshot (Common)
+- Dreadzone Grimshot (Common)
 Unused:
 - None
 
 Celeste
 Used:
-- Celeste
-- McMarx Sports Celeste
-- Robot Celeste
-- Blackwater Celeste
+- Celeste (Epic)
+- McMarx Sports Celeste (Common)
+- Robot Celeste (Epic)
+- Blackwater Celeste (Rare)
 Unused:
 - Amoeboid Celeste
 - Qwark Force Celeste

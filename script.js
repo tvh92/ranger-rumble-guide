@@ -145,6 +145,7 @@ const talentRequirements=[{level:3,cores:1},{level:6,cores:3},{level:7,cores:6},
 function talentValue(value){const rounded=Math.round(value*10)/10;return Number.isInteger(rounded)?String(rounded):rounded.toFixed(1);}
 function talentComparison(heroKey,index,mod){
   const talentName=norm(mod.name),isHealth=talentName==='improvedhealth',isAmmo=talentName==='improvedammo',isFireRate=talentName==='improvedfirerate';
+  const formatValue=isHealth?value=>String(Math.round(value)):talentValue;
   if(!isHealth&&!isAmmo&&!isFireRate)return '';
   const bonusMatch=String(mod.effect||'').match(/\+(\d+(?:\.\d+)?)%/),bonusPercent=bonusMatch?Number(bonusMatch[1]):NaN,bonus=bonusPercent/100;
   if(!Number.isFinite(bonus))return '';
@@ -154,16 +155,16 @@ function talentComparison(heroKey,index,mod){
   const isSecondHealth=isHealth&&index>2;
   if(isConstant){
     const current=values[0],after=current*(1+bonus);
-    return `<div class="talent-stat-change"><span class="talent-stat-change-label">Current / after +${talentValue(bonusPercent)}%</span><div class="talent-stat-change-values" aria-label="${safe(label)} ${talentValue(current)} to ${talentValue(after)}"><strong>${talentValue(current)}</strong><span aria-hidden="true">→</span><strong>${talentValue(after)}</strong></div><p class="talent-stat-change-note">Constant across hero levels</p></div>`;
+    return `<div class="talent-stat-change"><span class="talent-stat-change-label">Current / after +${formatValue(bonusPercent)}%</span><div class="talent-stat-change-values" aria-label="${safe(label)} ${formatValue(current)} to ${formatValue(after)}"><strong>${formatValue(current)}</strong><span aria-hidden="true">→</span><strong>${formatValue(after)}</strong></div><p class="talent-stat-change-note">Constant across hero levels</p></div>`;
   }
   const rows=(item?.levels||[]).map((level,rowIndex)=>{
     const initial=Number(level[column]);
     if(!Number.isFinite(initial))return '';
     const current=initial*(isSecondHealth?1+bonus:1),after=initial*(isSecondHealth?1+bonus*2:1+bonus);
-    return isSecondHealth?`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${talentValue(initial)}</td><td>${talentValue(current)}</td><td>${talentValue(after)}</td></tr>`:`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${talentValue(current)}</td><td>${talentValue(after)}</td></tr>`;
+    return isSecondHealth?`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${formatValue(initial)}</td><td>${formatValue(current)}</td><td>${formatValue(after)}</td></tr>`:`<tr><th scope="row">LV ${level.Level||rowIndex+1}</th><td>${formatValue(current)}</td><td>${formatValue(after)}</td></tr>`;
   }).filter(Boolean).join('');
   if(!rows)return '';
-  const headers=isSecondHealth?`<th scope="col">Initial</th><th scope="col">Current +${talentValue(bonusPercent)}%</th><th scope="col">After +${talentValue(bonusPercent*2)}%</th>`:`<th scope="col">Current</th><th scope="col">After +${talentValue(bonusPercent)}%</th>`;
+  const headers=isSecondHealth?`<th scope="col">Initial</th><th scope="col">Current +${formatValue(bonusPercent)}%</th><th scope="col">After +${formatValue(bonusPercent*2)}%</th>`:`<th scope="col">Current</th><th scope="col">After +${formatValue(bonusPercent)}%</th>`;
   const note=isSecondHealth?'<p class="talent-comparison-note">Based on initial HP levels; talent bonuses are additive, not cumulative.</p>':'';
   return `<div class="talent-comparison"><table class="talent-comparison-table" aria-label="${safe(label)} values for ${safe(mod.name)}"><thead><tr><th scope="col">Level</th>${headers}</tr></thead><tbody>${rows}</tbody></table>${note}</div>`;
 }

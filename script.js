@@ -121,7 +121,7 @@ function statCandidates(item,mode='normal') {
 }
 function combinedStatsTable(hero,weapon,gadget,loadout) {
   const groups=[{label:'Hero',displayName:hero.name,item:hero,mode:'hero'},{label:'Weapon',displayName:loadout[0],item:weapon,mode:'normal'},{label:'Gadget',displayName:loadout[2],item:gadget,mode:'normal'},{label:'Ultimate',displayName:loadout[7],item:hero,mode:'ultimate'}].map(group=>{
-    const hidden={gloveofdoom:/^More Agent Drones$/i,amoeboidlauncher:/^(AcidZone Damage|AcidZone Duration)$/i,ratchetburstpistol:/^Projectiles$/i}[norm(group.item?.name)];
+    const hidden={gloveofdoom:/^More Agent Drones$/i,amoeboidlauncher:/^AcidZone Duration$/i,ratchetburstpistol:/^Projectiles$/i}[norm(group.item?.name)];
     const candidates=statCandidates(group.item,group.mode).filter(column=>!(group.label==='Gadget'&&/^Charges$/i.test(column))&&!hidden?.test(column)),fixed=candidates.filter(column=>group.item.levels.every(row=>row[column]===group.item.levels[0][column])),id=`stats-${norm(group.label)}`;
     return {...group,id,fixed,columns:candidates.filter(column=>!fixed.includes(column)).map((key,index)=>({key,id:`${id}-${index}`}))};
   });

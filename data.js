@@ -744,7 +744,13 @@ window.RUMBLE_DATA = {
           "Ult Overhealth Duration": 2.95
         }
       ],
-      "ultimate": "Evolution (Lump)"
+      "ultimate": "Evolution (Lump)",
+      "ultimateHealthMultipliers": [
+        1.0,
+        1.25,
+        1.5,
+        1.88
+      ]
     },
     {
       "name": "Tempest",

@@ -122,6 +122,9 @@ def parse_stat_export(filename: str, labels: tuple[str, ...]) -> list[dict]:
         entry = {"name": name, "columns": columns, "levels": levels}
         if ultimate:
             entry["ultimate"] = ultimate.group(1).strip()
+            multipliers = re.search(r"^Evolution HP Multipliers:\n((?:^  Level \d+: [\d.]+x\n?)+)", block, re.MULTILINE)
+            if multipliers:
+                entry["ultimateHealthMultipliers"] = [float(value) for value in re.findall(r"([\d.]+)x", multipliers.group(1))]
         if labels[0] == "GADGET":
             internal = re.search(r"^INTERNAL ID:\s*(.+)$", block, re.MULTILINE)
             hero = re.search(r"^HERO:\s*(.+)$", block, re.MULTILINE)

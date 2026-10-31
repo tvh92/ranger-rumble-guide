@@ -84,11 +84,12 @@ dialog .close:hover { background: color-mix(in srgb, var(--surface-soft) 65%, va
 .fixed-stat.lifetime-stat, .fixed-stat.multiplier-stat { grid-column: 1 / -1; }
 .fixed-stat.lifetime-stat, .fixed-stat.multiplier-stat { display: grid; grid-template-columns: 1fr; align-items: start; }
 .fixed-stat.lifetime-stat dd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; font-size: 16px; }
-.fixed-stat.multiplier-stat dd { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 0; font-size: 16px; }
+.fixed-stat.multiplier-stat dd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; font-size: 16px; }
 .lifetime-stat dd span, .multiplier-stat dd span { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 14px; }
-.lifetime-stat dd span + span { border-left: 1px solid var(--line); }
+.lifetime-stat dd span + span, .multiplier-stat dd span + span { border-left: 1px solid var(--line); }
 .lifetime-stat dd b, .multiplier-stat dd b { color: var(--muted); font-size: 10px; letter-spacing: .08em; }
 .lifetime-stat dd strong, .multiplier-stat dd strong { color: var(--text); }
+.multiplier-stat dd span { padding-inline: 4px; }
 .fixed-stat.staged-fire-rate { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr; align-items: start; }
 .staged-fire-rate dt { padding-bottom: 4px; }
 .staged-fire-rate dd { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px 8px; font-size: 14px; }

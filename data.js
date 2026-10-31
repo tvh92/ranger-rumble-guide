@@ -5190,6 +5190,9 @@ window.RUMBLE_DATA = {
     {
       "name": "AmoeboidLauncher",
       "columns": [
+        "Small Damage",
+        "Medium Damage",
+        "Large Damage",
         "Small HP",
         "Medium HP",
         "Large HP",
@@ -5204,6 +5207,9 @@ window.RUMBLE_DATA = {
       "levels": [
         {
           "Level": 1,
+          "Small Damage": 39,
+          "Medium Damage": 59,
+          "Large Damage": 78,
           "Small HP": 91,
           "Medium HP": 143,
           "Large HP": 195,
@@ -5218,6 +5224,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 2,
+          "Small Damage": 48,
+          "Medium Damage": 71,
+          "Large Damage": 95,
           "Small HP": 111,
           "Medium HP": 174,
           "Large HP": 238,
@@ -5232,6 +5241,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 3,
+          "Small Damage": 56,
+          "Medium Damage": 84,
+          "Large Damage": 112,
           "Small HP": 131,
           "Medium HP": 205,
           "Large HP": 280,
@@ -5246,6 +5258,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 4,
+          "Small Damage": 65,
+          "Medium Damage": 97,
+          "Large Damage": 129,
           "Small HP": 151,
           "Medium HP": 237,
           "Large HP": 323,
@@ -5260,6 +5275,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 5,
+          "Small Damage": 73,
+          "Medium Damage": 110,
+          "Large Damage": 146,
           "Small HP": 170,
           "Medium HP": 268,
           "Large HP": 365,
@@ -5274,6 +5292,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 6,
+          "Small Damage": 82,
+          "Medium Damage": 122,
+          "Large Damage": 163,
           "Small HP": 190,
           "Medium HP": 299,
           "Large HP": 408,
@@ -5288,6 +5309,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 7,
+          "Small Damage": 90,
+          "Medium Damage": 135,
+          "Large Damage": 180,
           "Small HP": 210,
           "Medium HP": 330,
           "Large HP": 450,
@@ -5302,6 +5326,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 8,
+          "Small Damage": 99,
+          "Medium Damage": 148,
+          "Large Damage": 197,
           "Small HP": 230,
           "Medium HP": 361,
           "Large HP": 493,
@@ -5316,6 +5343,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 9,
+          "Small Damage": 107,
+          "Medium Damage": 161,
+          "Large Damage": 214,
           "Small HP": 250,
           "Medium HP": 392,
           "Large HP": 535,
@@ -5330,6 +5360,9 @@ window.RUMBLE_DATA = {
         },
         {
           "Level": 10,
+          "Small Damage": 116,
+          "Medium Damage": 173,
+          "Large Damage": 231,
           "Small HP": 270,
           "Medium HP": 424,
           "Large HP": 578,

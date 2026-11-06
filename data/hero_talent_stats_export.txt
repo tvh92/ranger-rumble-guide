@@ -1,5 +1,5 @@
 RANGER RUMBLE HERO TALENT EXPORT
-Source: version 1.10.3.149 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
+Source: version 1.10.4.123 APK HeroSpec TalentsInUnlockOrder and referenced gameplay records
 Fixed-point divisor: 65536
 Damage arrays: levels 1 through 10
 Unlock requirements: Talent 1 unlocks at level 3 and costs 1 core. Talent 2 unlocks at level 6, costs 3 cores, and requires Talent 1 to be unlocked first.
@@ -257,7 +257,7 @@ EFFECT: Maximum ammo +25%.
 
 TALENT: Improved Fire Rate
 MENU: Increases the weapon's fire rate.
-EFFECT: Weapon fire rate +25%.
+EFFECT: Weapon fire rate +25%. Time between shots reduced by 25%.
 
 TALENT: Improved Health
 MENU: Grants more health to the hero.
@@ -416,7 +416,7 @@ EFFECT: Maximum ammo +25%.
 
 TALENT: Improved Fire Rate
 MENU: Increases the weapon's fire rate.
-EFFECT: Weapon fire rate +25%.
+EFFECT: Weapon cooldown reduced by 25%.
 
 TALENT: Improved Health
 MENU: Grants more health to the hero.

@@ -510,7 +510,7 @@ window.RANGER_MODS = {
       "name": "Improved Fire Rate",
       "icon": "Improved Fire Rate.png",
       "menu": "Increases the weapon's fire rate.",
-      "effect": "Weapon fire rate +25%."
+      "effect": "Weapon fire rate +25%. Time between shots reduced by 25%."
     },
     {
       "name": "Improved Health",
@@ -770,7 +770,7 @@ window.RANGER_MODS = {
       "name": "Improved Fire Rate",
       "icon": "Improved Fire Rate.png",
       "menu": "Increases the weapon's fire rate.",
-      "effect": "Weapon fire rate +25%."
+      "effect": "Weapon cooldown reduced by 25%."
     },
     {
       "name": "Improved Health",

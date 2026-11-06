@@ -14,8 +14,8 @@ Used:
 - McMarx Sports Widget (Common)
 - Rebel Widget (Epic)
 - Raritanium Widget (Epic)
+- Clank Suit Widget (Epic)
 Unused:
-- Clank Suit Widget
 - Pirate Widget
 - Zoni Widget
 
@@ -97,7 +97,7 @@ Used:
 - Blackwater Sprocket (Rare)
 - Robot Sprocket (Epic)
 - McMarx Sports Sprocket (Common)
-- Ancient Lombax Sprocket (Common)
+- Ancient Lombax Sprocket (Rare)
 Unused:
 - Megacorp Sprocket
 

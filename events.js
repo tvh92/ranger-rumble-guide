@@ -19,7 +19,7 @@
   const qredits = amount => `${amount.toLocaleString('en-US')} Qredits`;
   const lootbox = rarity => `<span class="rarity rarity-${rarity.toLowerCase()}">${rarity}</span> Reebo lootbox`;
 
-  // Sourced from EventsEconomy.asset and the English localisation file (game version 1.10.3).
+  // Sourced from EventsEconomy.asset and the English localisation file (game version 1.10.4).
   // Rewards that the extracted data does not identify are left out.
   const events = [
     {

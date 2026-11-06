@@ -8,7 +8,8 @@ window.RANGER_USED_SKINS = {
     "Megalopolis Widget",
     "McMarx Sports Widget",
     "Rebel Widget",
-    "Raritanium Widget"
+    "Raritanium Widget",
+    "Clank Suit Widget"
   ],
   "Mopz": [
     "Mopz",
@@ -82,6 +83,7 @@ window.RANGER_SKIN_RARITIES = {
   "Widget/McMarx Sports Widget": "Common",
   "Widget/Rebel Widget": "Epic",
   "Widget/Raritanium Widget": "Epic",
+  "Widget/Clank Suit Widget": "Epic",
   "Mopz/Mopz": "Rare",
   "Mopz/Blackwater Mopz": "Rare",
   "Mopz/Dreadzone Mopz": "Common",
@@ -115,7 +117,7 @@ window.RANGER_SKIN_RARITIES = {
   "Sprocket/Blackwater Sprocket": "Rare",
   "Sprocket/Robot Sprocket": "Epic",
   "Sprocket/McMarx Sports Sprocket": "Common",
-  "Sprocket/Ancient Lombax Sprocket": "Common",
+  "Sprocket/Ancient Lombax Sprocket": "Rare",
   "Grimshot/Grimshot": "Epic",
   "Grimshot/Amoeboid Grimshot": "Epic",
   "Grimshot/Zoni Grimshot": "Common",

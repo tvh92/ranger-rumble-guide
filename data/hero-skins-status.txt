@@ -15,9 +15,10 @@ Used:
 - Rebel Widget (Epic)
 - Raritanium Widget (Epic)
 - Clank Suit Widget (Epic)
+- Pirate Widget (Rare)
+- Zoni Widget (Common)
 Unused:
-- Pirate Widget
-- Zoni Widget
+- None
 
 Mopz
 Used:
@@ -25,10 +26,11 @@ Used:
 - Blackwater Mopz (Rare)
 - Dreadzone Mopz (Common)
 - Megalopolis Mopz (Common)
+- Amoeboid Mopz (Epic)
+- Pirate Mopz (Rare)
+- Qforce Mopz (Common)
 Unused:
-- Amoeboid Mopz
-- Pirate Mopz
-- Qforce Mopz
+- None
 
 Tempest
 Used:
@@ -36,9 +38,10 @@ Used:
 - Blackwater Tempest (Rare)
 - Dreadzone Tempest (Common)
 - Nefarious Tempest (Rare)
+- Megacorp Tempest (Rare)
+- Raritanium Tempest (Epic)
 Unused:
-- Megacorp Tempest
-- Raritanium Tempest
+- None
 
 Zed
 Used:
@@ -46,9 +49,10 @@ Used:
 - Dreadzone Zed (Common)
 - Nefarious Zed (Rare)
 - Blackwater Zed (Rare)
+- Megacorp Zed (Rare)
+- Pirate Zed (Rare)
 Unused:
-- Megacorp Zed
-- Pirate Zed
+- None
 
 Lil' Ann
 Used:
@@ -56,10 +60,11 @@ Used:
 - Megalopolis Lil'Ann (Common)
 - Nefarious Lil'Ann (Rare)
 - Raritanium Lil'Ann (Epic)
+- Admiral Lil'Ann (Rare)
+- Gary's disciple Lil'Ann (Epic)
+- Megacorp Lil'Ann (Rare)
 Unused:
-- Admiral Lil'Ann
-- Gary's disciple Lil'Ann
-- Megacorp Lil'Ann
+- None
 
 Chip
 Used:
@@ -67,9 +72,10 @@ Used:
 - Nefarious Chip (Rare)
 - Raritanium Chip (Epic)
 - McMarx Sports Chip (Common)
+- Amoeboid Chip (Epic)
+- Zoni Chip (Common)
 Unused:
-- Amoeboid Chip
-- Zoni Chip
+- None
 
 Sparky
 Used:
@@ -77,9 +83,10 @@ Used:
 - Megalopolis Sparky (Common)
 - Raritanium Sparky (Epic)
 - Robot Sparky (Epic)
+- Pirate Sparky (Rare)
+- Rebel Sparky (Epic)
 Unused:
-- Pirate Sparky
-- Rebel Sparky
+- None
 
 Lump
 Used:
@@ -88,8 +95,9 @@ Used:
 - Raritanium Lump (Epic)
 - McMarx Sports Lump (Common)
 - DreadZone Lump (Common)
+- Dimensional Lump (Common)
 Unused:
-- Dimensional Lump
+- None
 
 Sprocket
 Used:
@@ -98,8 +106,9 @@ Used:
 - Robot Sprocket (Epic)
 - McMarx Sports Sprocket (Common)
 - Ancient Lombax Sprocket (Rare)
+- Megacorp Sprocket (Rare)
 Unused:
-- Megacorp Sprocket
+- None
 
 Grimshot
 Used:
@@ -118,6 +127,7 @@ Used:
 - McMarx Sports Celeste (Common)
 - Robot Celeste (Epic)
 - Blackwater Celeste (Rare)
+- Amoeboid Celeste (Epic)
+- Qwark Force Celeste (Common)
 Unused:
-- Amoeboid Celeste
-- Qwark Force Celeste
+- None

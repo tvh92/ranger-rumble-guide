@@ -9,57 +9,75 @@ window.RANGER_USED_SKINS = {
     "McMarx Sports Widget",
     "Rebel Widget",
     "Raritanium Widget",
-    "Clank Suit Widget"
+    "Clank Suit Widget",
+    "Pirate Widget",
+    "Zoni Widget"
   ],
   "Mopz": [
     "Mopz",
     "Blackwater Mopz",
     "Dreadzone Mopz",
-    "Megalopolis Mopz"
+    "Megalopolis Mopz",
+    "Amoeboid Mopz",
+    "Pirate Mopz",
+    "Qforce Mopz"
   ],
   "Tempest": [
     "Tempest",
     "Blackwater Tempest",
     "Dreadzone Tempest",
-    "Nefarious Tempest"
+    "Nefarious Tempest",
+    "Megacorp Tempest",
+    "Raritanium Tempest"
   ],
   "Zed": [
     "Zed",
     "Dreadzone Zed",
     "Nefarious Zed",
-    "Blackwater Zed"
+    "Blackwater Zed",
+    "Megacorp Zed",
+    "Pirate Zed"
   ],
   "Lil'Ann": [
     "Lil'Ann",
     "Megalopolis Lil'Ann",
     "Nefarious Lil'Ann",
-    "Raritanium Lil'Ann"
+    "Raritanium Lil'Ann",
+    "Admiral Lil'Ann",
+    "Gary's disciple Lil'Ann",
+    "Megacorp Lil'Ann"
   ],
   "Chip": [
     "Chip",
     "Nefarious Chip",
     "Raritanium Chip",
-    "McMarx Sports Chip"
+    "McMarx Sports Chip",
+    "Amoeboid Chip",
+    "Zoni Chip"
   ],
   "Sparky": [
     "Sparky",
     "Megalopolis Sparky",
     "Raritanium Sparky",
-    "Robot Sparky"
+    "Robot Sparky",
+    "Pirate Sparky",
+    "Rebel Sparky"
   ],
   "Lump": [
     "Lump",
     "Nefarious Lump",
     "Raritanium Lump",
     "McMarx Sports Lump",
-    "DreadZone Lump"
+    "DreadZone Lump",
+    "Dimensional Lump"
   ],
   "Sprocket": [
     "Sprocket",
     "Blackwater Sprocket",
     "Robot Sprocket",
     "McMarx Sports Sprocket",
-    "Ancient Lombax Sprocket"
+    "Ancient Lombax Sprocket",
+    "Megacorp Sprocket"
   ],
   "Grimshot": [
     "Grimshot",
@@ -73,7 +91,9 @@ window.RANGER_USED_SKINS = {
     "Celeste",
     "McMarx Sports Celeste",
     "Robot Celeste",
-    "Blackwater Celeste"
+    "Blackwater Celeste",
+    "Amoeboid Celeste",
+    "Qwark Force Celeste"
   ]
 };
 // Generated from data/hero-skins-status.txt.
@@ -84,40 +104,58 @@ window.RANGER_SKIN_RARITIES = {
   "Widget/Rebel Widget": "Epic",
   "Widget/Raritanium Widget": "Epic",
   "Widget/Clank Suit Widget": "Epic",
+  "Widget/Pirate Widget": "Rare",
+  "Widget/Zoni Widget": "Common",
   "Mopz/Mopz": "Rare",
   "Mopz/Blackwater Mopz": "Rare",
   "Mopz/Dreadzone Mopz": "Common",
   "Mopz/Megalopolis Mopz": "Common",
+  "Mopz/Amoeboid Mopz": "Epic",
+  "Mopz/Pirate Mopz": "Rare",
+  "Mopz/Qforce Mopz": "Common",
   "Tempest/Tempest": "Rare",
   "Tempest/Blackwater Tempest": "Rare",
   "Tempest/Dreadzone Tempest": "Common",
   "Tempest/Nefarious Tempest": "Rare",
+  "Tempest/Megacorp Tempest": "Rare",
+  "Tempest/Raritanium Tempest": "Epic",
   "Zed/Zed": "Epic",
   "Zed/Dreadzone Zed": "Common",
   "Zed/Nefarious Zed": "Rare",
   "Zed/Blackwater Zed": "Rare",
+  "Zed/Megacorp Zed": "Rare",
+  "Zed/Pirate Zed": "Rare",
   "Lil'Ann/Lil'Ann": "Rare",
   "Lil'Ann/Megalopolis Lil'Ann": "Common",
   "Lil'Ann/Nefarious Lil'Ann": "Rare",
   "Lil'Ann/Raritanium Lil'Ann": "Epic",
+  "Lil'Ann/Admiral Lil'Ann": "Rare",
+  "Lil'Ann/Gary's disciple Lil'Ann": "Epic",
+  "Lil'Ann/Megacorp Lil'Ann": "Rare",
   "Chip/Chip": "Common",
   "Chip/Nefarious Chip": "Rare",
   "Chip/Raritanium Chip": "Epic",
   "Chip/McMarx Sports Chip": "Common",
+  "Chip/Amoeboid Chip": "Epic",
+  "Chip/Zoni Chip": "Common",
   "Sparky/Sparky": "Rare",
   "Sparky/Megalopolis Sparky": "Common",
   "Sparky/Raritanium Sparky": "Epic",
   "Sparky/Robot Sparky": "Epic",
+  "Sparky/Pirate Sparky": "Rare",
+  "Sparky/Rebel Sparky": "Epic",
   "Lump/Lump": "Rare",
   "Lump/Nefarious Lump": "Rare",
   "Lump/Raritanium Lump": "Epic",
   "Lump/McMarx Sports Lump": "Common",
   "Lump/DreadZone Lump": "Common",
+  "Lump/Dimensional Lump": "Common",
   "Sprocket/Sprocket": "Common",
   "Sprocket/Blackwater Sprocket": "Rare",
   "Sprocket/Robot Sprocket": "Epic",
   "Sprocket/McMarx Sports Sprocket": "Common",
   "Sprocket/Ancient Lombax Sprocket": "Rare",
+  "Sprocket/Megacorp Sprocket": "Rare",
   "Grimshot/Grimshot": "Epic",
   "Grimshot/Amoeboid Grimshot": "Epic",
   "Grimshot/Zoni Grimshot": "Common",
@@ -127,5 +165,7 @@ window.RANGER_SKIN_RARITIES = {
   "Celeste/Celeste": "Epic",
   "Celeste/McMarx Sports Celeste": "Common",
   "Celeste/Robot Celeste": "Epic",
-  "Celeste/Blackwater Celeste": "Rare"
+  "Celeste/Blackwater Celeste": "Rare",
+  "Celeste/Amoeboid Celeste": "Epic",
+  "Celeste/Qwark Force Celeste": "Common"
 };

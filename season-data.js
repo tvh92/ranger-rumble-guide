@@ -1,8 +1,8 @@
 // Generated from data/SeasonPassContent.txt.
 window.RANGER_SEASON = {
-  "number": 13,
-  "starts": "2026-10-06",
-  "ends": "2026-11-03",
+  "number": 14,
+  "starts": "2026-11-03",
+  "ends": "2026-12-01",
   "rewards": [
     [
       0,
@@ -371,5 +371,6 @@ window.RANGER_SEASON = {
       3000
     ]
   ],
-  "infiniteReward": "Reebo (Common) x1"
+  "infiniteReward": "Reebo (Common) x1",
+  "premiumFree": true
 };

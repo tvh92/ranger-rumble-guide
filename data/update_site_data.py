@@ -30,6 +30,8 @@ LOADOUT_INTERNALS = {
 }
 SEASON_TWO_START = date(2025, 12, 2)
 SEASON_ONE_START = date(2025, 11, 12)
+# SeasonPassEconomy.asset: autoGrantSuperPassStartSeasonIndex. From this season on, the Premium track is free.
+PREMIUM_FREE_FROM_SEASON = 14
 WEAPON_DAMAGE_OVERRIDES = {
     "Cryo Slider": [88, 103, 117, 132, 147, 161, 176, 191, 205, 220],
 }
@@ -282,6 +284,34 @@ def parse_season() -> tuple[int, list[list[int | str]]]:
     return int(season.group(1)), rewards
 
 
+def parse_ranger_road() -> dict[str, list[list[int | str]]]:
+    source = read("RangerRoadContent.txt")
+    ranks, rewards, section = [], [], None
+    for line in source.splitlines():
+        stripped = line.strip()
+        if stripped in {"Ranks", "Rewards"}:
+            section = stripped
+            continue
+        if section == "Ranks":
+            match = re.match(r"^(.+?)\s*\|\s*(\d+)\s*\|\s*(ico_Rank_\w+)$", stripped)
+            if match:
+                icon = match.group(3)
+                if not (ROOT / "images" / "ranger road" / f"{icon}.png").is_file():
+                    raise ValueError(f"RangerRoadContent.txt: missing rank icon images/ranger road/{icon}.png")
+                ranks.append([match.group(1), int(match.group(2)), icon])
+        elif section == "Rewards":
+            match = re.match(r"^(\d+)\s*\|\s*(.+)$", stripped)
+            if match:
+                rewards.append([int(match.group(1)), match.group(2)])
+    if not ranks or not rewards:
+        raise ValueError("RangerRoadContent.txt: expected Ranks and Rewards rows")
+    for label, rows, column in (("rank", ranks, 1), ("reward", rewards, 0)):
+        medals = [row[column] for row in rows]
+        if medals != sorted(medals) or len(set(medals)) != len(medals):
+            raise ValueError(f"RangerRoadContent.txt: {label} medal requirements must increase")
+    return {"ranks": ranks, "rewards": rewards}
+
+
 def parse_used_skins() -> dict[str, list[str]]:
     result: dict[str, list[str]] = {}
     current = None
@@ -444,7 +474,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
     }
     season_number, rewards = parse_season()
     season_start, season_end = season_dates(season_number)
-    season = json_js("RANGER_SEASON", {"number": season_number, "starts": season_start, "ends": season_end, "rewards": rewards, "infiniteReward": season_infinite_reward()}, "data/SeasonPassContent.txt")
+    season = json_js("RANGER_SEASON", {"number": season_number, "starts": season_start, "ends": season_end, "rewards": rewards, "infiniteReward": season_infinite_reward(), "premiumFree": season_number >= PREMIUM_FREE_FROM_SEASON}, "data/SeasonPassContent.txt")
     return {
         ROOT / "data.json": json.dumps(data, ensure_ascii=False, indent=2) + "\n",
         ROOT / "data.js": json_js("RUMBLE_DATA", data, "data.json by data/update_site_data.py"),
@@ -452,8 +482,10 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
         ROOT / "mods-data.js": json_js("RANGER_MODS", parse_mods(), "data/hero_talent_stats_export.txt"),
         ROOT / "guide-data.js": build_guide(),
         ROOT / "season-data.js": season,
+        ROOT / "ranger-road-data.js": json_js("RANGER_ROAD", parse_ranger_road(), "data/RangerRoadContent.txt"),
         DATA_DIR / "skin-status.js": json_js("RANGER_USED_SKINS", parse_used_skins(), "data/hero-skins-status.txt") + json_js("RANGER_SKIN_RARITIES", parse_skin_rarities(), "data/hero-skins-status.txt"),
         ROOT / "index.html": update_index((ROOT / "index.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
+        ROOT / "ranger-road.html": update_index((ROOT / "ranger-road.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "season-pass.html": update_index((ROOT / "season-pass.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "bot-names.html": update_index((ROOT / "bot-names.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),
         ROOT / "modes-maps.html": update_index((ROOT / "modes-maps.html").read_text(encoding="utf-8-sig"), game_version, site_version, season_start, season_end),

@@ -75,6 +75,26 @@ button { font: inherit; }
 .season-reward { display: inline-flex; align-items: center; gap: 10px; min-height: 35px; font-weight: 700; }
 .season-reward img { width: 35px; height: 35px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
 .season-reward.text-only span { padding-left: 10px; border-left: 2px solid var(--orange); }
+.road-heading { max-width: 900px; margin: 30px auto 12px; color: var(--heading); font: italic 900 30px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; }
+.road-tables > .road-heading:first-child { margin-top: 8px; }
+.road-tables .season-table { min-width: 0; }
+.road-reward-table tbody th { width: 112px; font-variant-numeric: tabular-nums; }
+.road-reward-table td:last-child { width: auto; color: inherit; }
+.road-rank-table td:last-child { width: 140px; color: var(--orange); font: italic 900 20px/.9 'Barlow Condensed', Impact, sans-serif; font-variant-numeric: tabular-nums; }
+.road-rank { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-weight: 800; }
+.road-rank img { width: 48px; height: 44px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
+.road-icon { position: relative; display: inline-grid; flex: none; place-items: center; width: 35px; height: 35px; }
+.season-reward .road-icon img { width: 35px; height: 35px; }
+.season-reward .road-icon .road-lorbs-hero { position: absolute; right: -7px; bottom: -5px; width: 24px; height: 24px; }
+.road-feature { border: 1px solid #20d99a; border-radius: 50%; background: radial-gradient(circle at 50% 35%, #1b6c7a, #072733); }
+.season-reward .road-feature img { width: 23px; height: 23px; filter: none; }
+@media (max-width: 650px) {
+  .road-heading { font-size: 27px; }
+  .road-rank-table td:last-child { width: 84px; }
+  .road-reward-table tbody th { width: 76px; }
+  .road-rank { gap: 10px; }
+  .road-rank img { width: 40px; height: 36px; }
+}
 
 .card-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; max-width: 1400px; margin-inline: auto; }
 .event-card { position: relative; }

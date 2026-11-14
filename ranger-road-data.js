@@ -1,0 +1,366 @@
+// Generated from data/RangerRoadContent.txt.
+window.RANGER_ROAD = {
+  "ranks": [
+    [
+      "Underpaid Intern I",
+      0,
+      "ico_Rank_UnderpaidIntern_01"
+    ],
+    [
+      "Underpaid Intern II",
+      110,
+      "ico_Rank_UnderpaidIntern_02"
+    ],
+    [
+      "Underpaid Intern III",
+      230,
+      "ico_Rank_UnderpaidIntern_03"
+    ],
+    [
+      "Qwark Assistant I",
+      350,
+      "ico_Rank_QwarkAssistant_01"
+    ],
+    [
+      "Qwark Assistant II",
+      470,
+      "ico_Rank_QwarkAssistant_02"
+    ],
+    [
+      "Qwark Assistant III",
+      725,
+      "ico_Rank_QwarkAssistant_03"
+    ],
+    [
+      "Up-and-Comer I",
+      1100,
+      "ico_Rank_UpAndComer_01"
+    ],
+    [
+      "Up-and-Comer II",
+      1625,
+      "ico_Rank_UpAndComer_02"
+    ],
+    [
+      "Up-and-Comer III",
+      2300,
+      "ico_Rank_UpAndComer_03"
+    ],
+    [
+      "Weapon Tester I",
+      3100,
+      "ico_Rank_WeaponTester_01"
+    ],
+    [
+      "Weapon Tester II",
+      3900,
+      "ico_Rank_WeaponTester_02"
+    ],
+    [
+      "Weapon Tester III",
+      4700,
+      "ico_Rank_WeaponTester_03"
+    ],
+    [
+      "Ranger Aspirant I",
+      5750,
+      "ico_Rank_RangerAspirant_01"
+    ],
+    [
+      "Ranger Aspirant II",
+      6950,
+      "ico_Rank_RangerAspirant_02"
+    ],
+    [
+      "Ranger Aspirant III",
+      8250,
+      "ico_Rank_RangerAspirant_03"
+    ]
+  ],
+  "rewards": [
+    [
+      1,
+      "Feature unlock: Dash"
+    ],
+    [
+      15,
+      "Hero Lorbs (Widget) x100"
+    ],
+    [
+      30,
+      "Hero unlock: Chip"
+    ],
+    [
+      45,
+      "Qredits x1000"
+    ],
+    [
+      60,
+      "Mode unlock: Bolt Race"
+    ],
+    [
+      80,
+      "Hero Lorbs (Chip) x100"
+    ],
+    [
+      100,
+      "Feature unlock: Double Jump"
+    ],
+    [
+      120,
+      "Mode unlock: Zone Control"
+    ],
+    [
+      140,
+      "Qredits x1500"
+    ],
+    [
+      160,
+      "Hero Lorbs (Widget) x300"
+    ],
+    [
+      180,
+      "Reebo (Rare) x1"
+    ],
+    [
+      200,
+      "Hero unlock: Tempest"
+    ],
+    [
+      220,
+      "Qredits x2000"
+    ],
+    [
+      240,
+      "Hero Lorbs (Tempest) x100"
+    ],
+    [
+      260,
+      "Mode unlock: Total Rumble"
+    ],
+    [
+      280,
+      "Hero Lorbs (Chip) x300"
+    ],
+    [
+      300,
+      "Qredits x2500"
+    ],
+    [
+      320,
+      "Hero Lorbs (Tempest) x300"
+    ],
+    [
+      340,
+      "Reebo (Rare) x1"
+    ],
+    [
+      360,
+      "Mode unlock: Blast Ball"
+    ],
+    [
+      380,
+      "Hero Lorbs (Tempest) x600"
+    ],
+    [
+      400,
+      "Feature unlock: Helipack"
+    ],
+    [
+      420,
+      "Hero Lorbs (Mopz) x300"
+    ],
+    [
+      440,
+      "Mode unlock: Mob Rush"
+    ],
+    [
+      460,
+      "Qredits x3500"
+    ],
+    [
+      480,
+      "Hero Lorbs (Widget) x600"
+    ],
+    [
+      500,
+      "Hero Lorbs (Chip) x600"
+    ],
+    [
+      550,
+      "Hero unlock: Sparky"
+    ],
+    [
+      600,
+      "Qredits x4000"
+    ],
+    [
+      650,
+      "Hero Lorbs (Sparky) x300"
+    ],
+    [
+      700,
+      "Hero Lorbs (Mopz) x700"
+    ],
+    [
+      750,
+      "Reebo (Epic) x1"
+    ],
+    [
+      850,
+      "Hero unlock: Lil' Ann"
+    ],
+    [
+      950,
+      "Qredits x4500"
+    ],
+    [
+      1050,
+      "Hero Lorbs (Lil' Ann) x300"
+    ],
+    [
+      1150,
+      "Hero Lorbs (Sparky) x700"
+    ],
+    [
+      1250,
+      "Reebo (Epic) x1"
+    ],
+    [
+      1400,
+      "Hero unlock: Zed"
+    ],
+    [
+      1550,
+      "Qredits x5000"
+    ],
+    [
+      1700,
+      "Hero Lorbs (Zed) x300"
+    ],
+    [
+      1850,
+      "Hero Lorbs (Lil' Ann) x700"
+    ],
+    [
+      2000,
+      "Reebo (Epic) x1"
+    ],
+    [
+      2200,
+      "Hero unlock: Sprocket"
+    ],
+    [
+      2400,
+      "Qredits x5500"
+    ],
+    [
+      2600,
+      "Hero Lorbs (Sprocket) x300"
+    ],
+    [
+      2800,
+      "Hero Lorbs (Zed) x700"
+    ],
+    [
+      3000,
+      "Reebo (Epic) x1"
+    ],
+    [
+      3200,
+      "Hero unlock: Lump"
+    ],
+    [
+      3400,
+      "Qredits x6000"
+    ],
+    [
+      3600,
+      "Hero Lorbs (Lump) x1000"
+    ],
+    [
+      3800,
+      "Hero Lorbs (Sprocket) x700"
+    ],
+    [
+      4000,
+      "Reebo (Epic) x1"
+    ],
+    [
+      4200,
+      "Hero unlock: Celeste"
+    ],
+    [
+      4400,
+      "Qredits x6500"
+    ],
+    [
+      4600,
+      "Hero Lorbs (Celeste) x1000"
+    ],
+    [
+      4800,
+      "Hero Lorbs (Lump) x1000"
+    ],
+    [
+      5000,
+      "Hero unlock: Grimshot"
+    ],
+    [
+      5300,
+      "Hero Lorbs (Widget) x1000"
+    ],
+    [
+      5600,
+      "Hero Lorbs (Chip) x1000"
+    ],
+    [
+      5900,
+      "Hero Lorbs (Tempest) x1000"
+    ],
+    [
+      6200,
+      "Hero Lorbs (Mopz) x1000"
+    ],
+    [
+      6500,
+      "Hero Lorbs (Sparky) x1000"
+    ],
+    [
+      6800,
+      "Hero Lorbs (Lil' Ann) x1000"
+    ],
+    [
+      7100,
+      "Hero Lorbs (Zed) x1000"
+    ],
+    [
+      7400,
+      "Hero Lorbs (Sprocket) x1000"
+    ],
+    [
+      7700,
+      "Hero Lorbs (Grimshot) x1000"
+    ],
+    [
+      8000,
+      "Hero Lorbs (Celeste) x1000"
+    ],
+    [
+      8500,
+      "Qredits x10000"
+    ],
+    [
+      9000,
+      "Raritanium x100"
+    ],
+    [
+      9500,
+      "Fashionium x500"
+    ],
+    [
+      10000,
+      "Cores x3"
+    ]
+  ]
+};

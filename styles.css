@@ -75,25 +75,38 @@ button { font: inherit; }
 .season-reward { display: inline-flex; align-items: center; gap: 10px; min-height: 35px; font-weight: 700; }
 .season-reward img { width: 35px; height: 35px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
 .season-reward.text-only span { padding-left: 10px; border-left: 2px solid var(--orange); }
-.road-heading { max-width: 900px; margin: 30px auto 12px; color: var(--heading); font: italic 900 30px/.9 'Barlow Condensed', Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase; }
-.road-tables > .road-heading:first-child { margin-top: 8px; }
 .road-tables .season-table { min-width: 0; }
-.road-reward-table tbody th { width: 112px; font-variant-numeric: tabular-nums; }
-.road-reward-table td:last-child { width: auto; color: inherit; }
-.road-rank-table td:last-child { width: 140px; color: var(--orange); font: italic 900 20px/.9 'Barlow Condensed', Impact, sans-serif; font-variant-numeric: tabular-nums; }
-.road-rank { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-weight: 800; }
-.road-rank img { width: 48px; height: 44px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
+.road-table tbody th { width: 112px; font-variant-numeric: tabular-nums; }
+.road-table td:last-child { width: auto; color: inherit; }
+.road-tier { --tier: #9fb4c4; }
+.road-tier[data-rank='QwarkAssistant'] { --tier: #54e36b; }
+.road-tier[data-rank='UpAndComer'] { --tier: #3fb4ff; }
+.road-tier[data-rank='WeaponTester'] { --tier: #c46bff; }
+.road-tier[data-rank='RangerAspirant'] { --tier: #ffc93a; }
+html[data-theme='light'] .road-tier { --tier: #5d7385; }
+html[data-theme='light'] .road-tier[data-rank='QwarkAssistant'] { --tier: #1f8a35; }
+html[data-theme='light'] .road-tier[data-rank='UpAndComer'] { --tier: #0b6fb8; }
+html[data-theme='light'] .road-tier[data-rank='WeaponTester'] { --tier: #8a2fc7; }
+html[data-theme='light'] .road-tier[data-rank='RangerAspirant'] { --tier: #9a6a00; }
+.season-table tbody.road-tier tr.road-tier-head, .season-table tbody.road-tier tr.road-tier-head:hover { background: linear-gradient(90deg, color-mix(in srgb, var(--tier) 26%, var(--surface-header)), var(--surface-header) 70%); }
+.season-table tbody tr.road-tier-head th { width: auto; padding: 10px 14px; border-left: 4px solid var(--tier); border-top: 2px solid color-mix(in srgb, var(--tier) 55%, transparent); color: var(--heading); font: inherit; }
+.road-tier-title { display: flex; align-items: center; gap: 14px; }
+.road-tier-title img { width: 54px; height: 50px; object-fit: contain; filter: drop-shadow(0 3px 3px var(--shadow)); }
+.road-tier-title strong { display: block; color: var(--heading); font: italic 900 25px/.95 'Barlow Condensed', Impact, sans-serif; letter-spacing: .5px; text-transform: uppercase; }
+.road-tier-title small { display: block; margin-top: 3px; color: var(--tier); font-size: 13px; font-weight: 800; }
+.road-tier-count { margin-left: auto; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; white-space: nowrap; }
+.road-tier tr:not(.road-tier-head) th { border-left: 4px solid color-mix(in srgb, var(--tier) 35%, transparent); }
 .road-icon { position: relative; display: inline-grid; flex: none; place-items: center; width: 35px; height: 35px; }
 .season-reward .road-icon img { width: 35px; height: 35px; }
 .season-reward .road-icon .road-lorbs-hero { position: absolute; right: -7px; bottom: -5px; width: 24px; height: 24px; }
 .road-feature { border: 1px solid #20d99a; border-radius: 50%; background: radial-gradient(circle at 50% 35%, #1b6c7a, #072733); }
 .season-reward .road-feature img { width: 23px; height: 23px; filter: none; }
 @media (max-width: 650px) {
-  .road-heading { font-size: 27px; }
-  .road-rank-table td:last-child { width: 84px; }
-  .road-reward-table tbody th { width: 76px; }
-  .road-rank { gap: 10px; }
-  .road-rank img { width: 40px; height: 36px; }
+  .road-table tbody th { width: 76px; }
+  .road-tier-title { gap: 10px; }
+  .road-tier-title img { width: 44px; height: 40px; }
+  .road-tier-title strong { font-size: 22px; }
+}
 }
 
 .card-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; max-width: 1400px; margin-inline: auto; }

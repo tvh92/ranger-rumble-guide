@@ -32,6 +32,10 @@ SEASON_TWO_START = date(2025, 12, 2)
 SEASON_ONE_START = date(2025, 11, 12)
 # SeasonPassEconomy.asset: autoGrantSuperPassStartSeasonIndex. From this season on, the Premium track is free.
 PREMIUM_FREE_FROM_SEASON = 14
+# SeasonPassEconomy.asset: cycleLastSeasonInfinitely. Later seasons repeat the last season's rewards, so
+# season-pass.js advances the number and dates every 28 days, up to this season (servers close May 2027).
+LAST_REPEATING_SEASON = 13
+AUTO_ADVANCE_UNTIL_SEASON = 20
 WEAPON_DAMAGE_OVERRIDES = {
     "Cryo Slider": [88, 103, 117, 132, 147, 161, 176, 191, 205, 220],
 }
@@ -474,7 +478,7 @@ def build_outputs(game_version: str, site_version: str) -> dict[Path, str]:
     }
     season_number, rewards = parse_season()
     season_start, season_end = season_dates(season_number)
-    season = json_js("RANGER_SEASON", {"number": season_number, "starts": season_start, "ends": season_end, "rewards": rewards, "infiniteReward": season_infinite_reward(), "premiumFree": season_number >= PREMIUM_FREE_FROM_SEASON}, "data/SeasonPassContent.txt")
+    season = json_js("RANGER_SEASON", {"number": season_number, "starts": season_start, "ends": season_end, "rewards": rewards, "infiniteReward": season_infinite_reward(), "premiumFree": season_number >= PREMIUM_FREE_FROM_SEASON, "autoAdvanceUntil": AUTO_ADVANCE_UNTIL_SEASON if season_number >= LAST_REPEATING_SEASON else None}, "data/SeasonPassContent.txt")
     return {
         ROOT / "data.json": json.dumps(data, ensure_ascii=False, indent=2) + "\n",
         ROOT / "data.js": json_js("RUMBLE_DATA", data, "data.json by data/update_site_data.py"),

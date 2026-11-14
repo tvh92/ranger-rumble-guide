@@ -27,9 +27,10 @@ When the user requests website work, that request authorizes implementing, valid
 
 ## Data conventions
 
-- `data/update_site_data.py` previews or regenerates the text-exported site data (`data.json`, `data.js`, `descriptions.js`, `mods-data.js`, `guide-data.js`, `season-data.js`, `data/skin-status.js`, `index.html`, and `season-pass.html`). It is preview-only unless `--write` is supplied. Keep its curated stat and talent-presentation overrides aligned with intentional corrections in the generated website data.
+- `data/update_site_data.py` previews or regenerates the text-exported site data (`data.json`, `data.js`, `descriptions.js`, `mods-data.js`, `guide-data.js`, `season-data.js`, `ranger-road-data.js`, `data/skin-status.js`, `index.html`, `ranger-road.html`, and `season-pass.html`). It is preview-only unless `--write` is supplied. Keep its curated stat and talent-presentation overrides aligned with intentional corrections in the generated website data.
 - Pass the visible game version with `--game-version`. Use `--bump-site-version` or `--site-version` separately for the `app-version` and every local cache-busting `?v=` reference.
 - The generator reads the season number from the `Season N` heading in `data/SeasonPassContent.txt` and calculates the season dates automatically.
+- `data/RangerRoadContent.txt` holds the Ranger Road ranks (name, medal threshold, icon from `images/ranger road/`) and its medal rewards. Regenerate it with `apk extraction/Scripts/New/ranger_road_export.py`. The game repeats Season 13's rewards from Season 14 onward and makes the Premium track free from Season 14.
 - Active loadouts and internal names are documented in `data/active-hero-loadouts.txt`.
 - Only skins listed under `Used:` in `data/hero-skins-status.txt` should appear; retain `Unused:` entries as reference.
 - Descriptions come from `data/descriptions/` and are displayed in the hero/item description panel.
@@ -42,8 +43,8 @@ When the user requests website work, that request authorizes implementing, valid
 
 - Dark mode is the default; light mode must remain visibly lighter and readable.
 - Hero cards and windows use the game's teal, green, and orange visual language.
-- The header navigation contains plain-text links for Heroes, Season Pass, and Bot Names; keep them spaced between the logo and theme toggle.
-- The main page contains Heroes only. Keep Season Pass in `season-pass.html`; all 61 reward tiers are shown by default, without a disclosure control.
+- The header navigation contains plain-text links for Heroes, Modes and maps, Events, Ranger Road, Season Pass, and Bot Names; keep them spaced between the logo and theme toggle.
+- The main page contains Heroes only. Keep Ranger Road in `ranger-road.html` (one table, grouped by rank) and Season Pass in `season-pass.html`; all 61 reward tiers are shown by default, without a disclosure control.
 - Rarity colors: Common `#3C6FFA`, Rare `#ED00EE`, Epic `#F38A0E`.
 - Use `Lil' Ann` consistently.
 - Hero windows close by X or outside click and support previous/next navigation.

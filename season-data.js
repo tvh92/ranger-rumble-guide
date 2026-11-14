@@ -372,5 +372,6 @@ window.RANGER_SEASON = {
     ]
   ],
   "infiniteReward": "Reebo (Common) x1",
-  "premiumFree": true
+  "premiumFree": true,
+  "autoAdvanceUntil": 20
 };

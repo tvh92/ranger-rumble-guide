@@ -41,7 +41,7 @@ The site is intentionally built as a static guide and can run directly from the 
 
 The update helper reads the text exports under `data/` and regenerates the corresponding website data. It is preview-only by default, so running it without `--write` cannot overwrite anything.
 
-1. Replace the relevant exports in `data/`. Keep the `Season N` line at the top of `data/SeasonPassContent.txt` current.
+1. Replace the relevant exports in `data/`. Keep the `Season N` line at the top of `data/SeasonPassContent.txt` current. Ranger Road ranks and rewards live in `data/RangerRoadContent.txt`.
 2. Preview the update. This example changes the game to `1.9.4` and proposes the next site cache version automatically:
 
    ```powershell

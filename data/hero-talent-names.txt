@@ -1,0 +1,42 @@
+RANGER RUMBLE HERO TALENT NAMES (TALENTS 1 AND 2)
+Source: version 1.10.4.123 APK, HeroSpec TalentsInUnlockOrder (first two entries per hero).
+Internal asset name = the talent's QuantumDB asset (m_Name). Player-facing name = English localization of its DisplayNameLocaKey.
+Talents 3-6 are the shared Improved Health / Improved Ammo / Improved Fire Rate / Improved Health upgrades for every hero.
+
+Hero (internal)   | Slot     | Player-facing name | Internal asset name                              | Localization key                              | Icon sprite
+------------------+----------+--------------------+--------------------------------------------------+-----------------------------------------------+--------------------------------------
+Ratchet           | Talent 1 | Express Recovery   | Q_Ratchet_Imp1_ReplaceHealth_HeroImprovementSpec | UI.HERO_IMPROVEMENT.NAME.RATCHET_1            | ico_improvement_Widget_01
+Ratchet           | Talent 2 | Triple Barrel      | Q_Blaster_Enh3_TripleShot                        | UI.WEAPON_ENHANCEMENT.NAME.BLASTER_3          | ico_enhancement_Blaster_03
+
+Widget (Sandy)    | Talent 1 | Express Recovery   | Q_Sandy_Imp1_ReplaceHealth_HeroImprovementSpec   | UI.HERO_IMPROVEMENT.NAME.SANDY_1              | ico_improvement_Widget_01
+Widget (Sandy)    | Talent 2 | Double Barrel      | Q_Blaster_Enh1_DoubleShot                        | UI.WEAPON_ENHANCEMENT.NAME.BLASTER_1          | ico_enhancement_Blaster_01
+
+Sprocket          | Talent 1 | Rocket Legs        | Q_Sprocket_Imp1_BetterJump_HeroImprovementSpec   | UI.HERO_IMPROVEMENT.NAME.SPROCKET_1           | ico_improvement_Sprocket_01
+Sprocket          | Talent 2 | Cluster Bombs      | Q_GrenadeLauncher_Enh1_EnhancementSpec_Bomblets  | UI.WEAPON_ENHANCEMENT.NAME.GRENADELAUNCHER_1  | ico_enhancement_Shatterbomb_01
+
+Chip              | Talent 1 | Extra Agent        | Q_GloveOfDoom_Enh1_EnhancementSpec_MoreAgent     | UI.WEAPON_ENHANCEMENT.NAME.GLOVEOFDOOM_1      | ico_improvement_Chip_06
+Chip              | Talent 2 | Dual Arc Emitter   | Q_TeslaClaw_Enh1_EnhancementSpec_MoreBeams       | UI.WEAPON_ENHANCEMENT.NAME.TESLACLAW_1        | UI_Enhancements_SecondBeam
+
+Lil' Ann (LilAnn) | Talent 1 | Adrenaline Spike   | Q_LilAnn_Imp1_OnKillCallbacksHeroImprovementSpec | UI.HERO_IMPROVEMENT.NAME.LIL_ANN_1            | ico_improvement_LilAnn_01
+Lil' Ann (LilAnn) | Talent 2 | Impact Chamber     | Q_Shotgun_Enh1_EnhancementSpec_DashDamage        | UI.WEAPON_ENHANCEMENT.NAME.SHOTGUN_1          | ico_enhancement_BlitzGun_01
+
+Tempest (Markus)  | Talent 1 | Pulse Core         | Q_VoidRepulser_Enh1_EnhancementSpec_Aoe          | UI.WEAPON_ENHANCEMENT.NAME.VOIDREPULSER_1     | ico_enhancement_VoidRepulser_01
+Tempest (Markus)  | Talent 2 | Cryo Shards        | Q_ColdSnap_Enh1_EnhancementSpec_IceShards        | UI.WEAPON_ENHANCEMENT.NAME.COLDSNAP_1         | ico_enhancement_ColdSnap_01
+
+Sparky (Fuse)     | Talent 1 | Azur Igniter       | Q_Pyrocitor_Enh2_EnhancementSpec_BlueFire        | UI.WEAPON_ENHANCEMENT.NAME.PYROCITOR_2        | UI_Enhancements_BlueFire
+Sparky (Fuse)     | Talent 2 | Seeker Mines       | Q_MineLauncher_Enh2_EnhancementSpec_JumpingMine  | UI.WEAPON_ENHANCEMENT.NAME.MINELAUNCHER_2     | ico_enhancement_HunterMineLauncher_02
+
+Mopz (Raiden)     | Talent 1 | Spin-Up Rotor      | Q_Gatling_Enh1_EnhancementSpec_SecondStep        | UI.WEAPON_ENHANCEMENT.NAME.GATLING_1          | ico_improvement_Mopz_06
+Mopz (Raiden)     | Talent 2 | Quick Reload       | Q_Gatling_Enh2_EnhancementSpec_GadgetAmmo        | UI.WEAPON_ENHANCEMENT.NAME.GATLING_2          | ico_improvement_Mopz_07
+
+Celeste           | Talent 1 | Turbo Dash         | Q_Celeste_Imp1_DashCooldownReduction             | UI.HERO_IMPROVEMENT.NAME.CELESTE_1            | ico_improvement_Celeste_01
+Celeste           | Talent 2 | Ricochet Blades    | Q_Buzzblades_Enh1_EnhancementSpec_Rebounds       | UI.WEAPON_ENHANCEMENT.NAME.BUZZBLADES_1       | UI_Enhancements_Rebounds
+
+Zed (ZedOne)      | Talent 1 | Artillery Ace      | Q_ZedOne_Imp1_NoSlowDown_HeroImprovementSpec     | UI.HERO_IMPROVEMENT.NAME.ZEDONE_1             | ico_improvement_ZedOne_01
+Zed (ZedOne)      | Talent 2 | Rocket Cluster     | Q_Warmonger_Enh1_EnhancementSpec_MiniRockets     | UI.WEAPON_ENHANCEMENT.NAME.WARMONGER_1        | ico_enhancement_Warmonger_01
+
+Lump              | Talent 1 | Acid Core          | Q_AmoeboidLauncher_Enh1_EnhancementSpec_Puddle   | UI.WEAPON_ENHANCEMENT.NAME.AMOEBOIDLAUNCHER_1 | UI_Enhancements_AcidPuddle
+Lump              | Talent 2 | Magma Nozzle       | Q_Lavagun_Enh1_EnhancementSpec_LavaGround        | UI.WEAPON_ENHANCEMENT.NAME.LAVAGUN_1          | ico_enhancement_LavaGun_01
+
+Grimshot          | Talent 1 | Healing Field      | Q_HoloshieldGlove_Enh1_EnhancementSpec_HealZone  | UI.WEAPON_ENHANCEMENT.NAME.HOLOSHIELDGLOVE_1  | ico_enhancement_HoloshieldGlove_01
+Grimshot          | Talent 2 | Thermal Scope      | Q_Headhunter_Enh1_EnhancementSpec_Wallhack       | UI.WEAPON_ENHANCEMENT.NAME.HEADHUNTER_1       | ico_enhancement_HeadHunter_01

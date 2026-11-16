@@ -188,6 +188,38 @@ def parse_descriptions(filename: str, has_full: bool) -> dict[str, dict[str, str
     return entries
 
 
+# In-game icon sprites for the shared stat talents (slots 3-6). Talents 1 and 2 take their
+# icon from the "Icon sprite" column of hero-talent-names.txt.
+STAT_TALENT_ICONS = {
+    "Improved Health": "ico_improvement_StatUp_Health",
+    "Improved Ammo": "ico_improvement_StatUp_Ammo",
+    "Improved Fire Rate": "ico_improvement_StatUp_Firerate",
+}
+
+
+def talent_icons() -> dict[str, str]:
+    icons = dict(STAT_TALENT_ICONS)
+    for line in read("hero-talent-names.txt").splitlines():
+        cells = [cell.strip() for cell in line.split("|")]
+        if len(cells) == 6 and cells[1].startswith("Talent "):
+            icons[cells[2]] = cells[5]
+    return icons
+
+
+TALENT_ICONS: dict[str, str] = {}
+
+
+def talent_icon(name: str) -> str:
+    if not TALENT_ICONS:
+        TALENT_ICONS.update(talent_icons())
+    sprite = TALENT_ICONS.get(name)
+    if not sprite:
+        raise ValueError(f"hero-talent-names.txt: no icon sprite for talent {name!r}")
+    if not (ROOT / "images" / "talents" / f"{sprite}.png").is_file():
+        raise ValueError(f"missing talent icon images/talents/{sprite}.png")
+    return f"{sprite}.png"
+
+
 def parse_mods() -> dict[str, list[dict]]:
     source = read("hero_talent_stats_export.txt")
     blocks = re.split(r"^={20,}\s*$", source, flags=re.MULTILINE)
@@ -206,7 +238,7 @@ def parse_mods() -> dict[str, list[dict]]:
             note = re.search(r"^NOTE:\s*(.+)$", talent_block, re.MULTILINE)
             if not (talent and menu):
                 raise ValueError(f"hero_talent_stats_export.txt: malformed talent for {hero_name}")
-            entry = {"name": talent.group(1).strip(), "icon": f"{talent.group(1).strip()}.png", "menu": menu.group(1).strip()}
+            entry = {"name": talent.group(1).strip(), "icon": talent_icon(talent.group(1).strip()), "menu": menu.group(1).strip()}
             if effect:
                 entry["effect"] = clean_number_text(effect.group(1).strip())
             if base_stages:

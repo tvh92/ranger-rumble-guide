@@ -3,37 +3,37 @@ window.RANGER_MODS = {
   "Ratchet": [
     {
       "name": "Express Recovery",
-      "icon": "Express Recovery.png",
+      "icon": "ico_improvement_Widget_01.png",
       "menu": "Ratchet regenerates faster than other heroes.",
       "effect": "Health regeneration starts after 4s without damage instead of 6s; full regeneration takes 3s."
     },
     {
       "name": "Triple Barrel",
-      "icon": "Triple Barrel.png",
+      "icon": "ico_enhancement_Blaster_03.png",
       "menu": "Each shot now fires three projectiles.",
       "effect": "Adds 1 projectile per shot without using extra ammo."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -41,37 +41,37 @@ window.RANGER_MODS = {
   "Widget": [
     {
       "name": "Express Recovery",
-      "icon": "Express Recovery.png",
+      "icon": "ico_improvement_Widget_01.png",
       "menu": "Widget regenerates faster than other heroes.",
       "effect": "Health regeneration starts after 4s without damage instead of 6s; full regeneration takes 3s."
     },
     {
       "name": "Double Barrel",
-      "icon": "Double Barrel.png",
+      "icon": "ico_enhancement_Blaster_01.png",
       "menu": "Each shot now fires two projectiles instead of one.",
       "effect": "Adds 1 projectile per shot without using extra ammo. Damage per projectile is reduced by 40%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -79,13 +79,13 @@ window.RANGER_MODS = {
   "Sprocket": [
     {
       "name": "Rocket Legs",
-      "icon": "Rocket Legs.png",
+      "icon": "ico_improvement_Sprocket_01.png",
       "menu": "Sprocket jumps higher from the ground.",
       "effect": "Jump strength increased by 50%."
     },
     {
       "name": "Cluster Bombs",
-      "icon": "Cluster Bombs.png",
+      "icon": "ico_enhancement_Shatterbomb_01.png",
       "menu": "Grenades release two bomblets after exploding.",
       "effect": "Bomblets have a 2.5 blast radius; they push enemies outward (7) and slightly upward (1).",
       "columns": [
@@ -126,25 +126,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -152,13 +152,13 @@ window.RANGER_MODS = {
   "Chip": [
     {
       "name": "Extra Agent",
-      "icon": "Extra Agent.png",
+      "icon": "ico_improvement_Chip_06.png",
       "menu": "The gadget now generates one additional Agent of Doom.",
       "effect": "Deploys 3 Agents instead of 2; consumes one gadget charge."
     },
     {
       "name": "Dual Arc Emitter",
-      "icon": "Dual Arc Emitter.png",
+      "icon": "UI_Enhancements_SecondBeam.png",
       "menu": "The Tesla Claw can now hit two enemies at the same time.",
       "effect": "Fires an extra beam at another enemy, dealing 50% damage to health and adding 16 Electric buildup per hit.",
       "columns": [
@@ -210,25 +210,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -236,13 +236,13 @@ window.RANGER_MODS = {
   "Lil'Ann": [
     {
       "name": "Adrenaline Spike",
-      "icon": "Adrenaline Spike.png",
+      "icon": "ico_improvement_LilAnn_01.png",
       "menu": "Knocking out another ranger grants Lil'Ann a temporary speed bonus.",
       "effect": "+15% movement speed for 4s."
     },
     {
       "name": "Impact Chamber",
-      "icon": "Impact Chamber.png",
+      "icon": "ico_enhancement_BlitzGun_01.png",
       "menu": "Firing shortly after a dash delivers a more powerful shot.",
       "effect": "Blitz Gun damage +50% for 3 seconds after a dash.",
       "columns": [
@@ -294,25 +294,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -320,7 +320,7 @@ window.RANGER_MODS = {
   "Tempest": [
     {
       "name": "Pulse Core",
-      "icon": "Pulse Core.png",
+      "icon": "ico_enhancement_VoidRepulser_01.png",
       "menu": "When the shield breaks, it deals damage in an area in front of it.",
       "effect": "Damages and pushes back enemies in front of it; push force grows from 25 at level 1 to 205 at level 10.",
       "columns": [
@@ -372,7 +372,7 @@ window.RANGER_MODS = {
     },
     {
       "name": "Cryo Shards",
-      "icon": "Cryo Shards.png",
+      "icon": "ico_enhancement_ColdSnap_01.png",
       "menu": "Projectiles leave ice shards on the ground after exploding.",
       "effect": "Ice shards cover about a 2.5 radius and add 4 Ice buildup per hit.",
       "columns": [
@@ -413,25 +413,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -439,7 +439,7 @@ window.RANGER_MODS = {
   "Sparky": [
     {
       "name": "Azur Igniter",
-      "icon": "Azur Igniter.png",
+      "icon": "UI_Enhancements_BlueFire.png",
       "menu": "After holding fire for a sufficient duration, the flame turns blue and inflicts more damage.",
       "effect": "Deals about 50% more damage after 1.5s of continuous fire.",
       "columns": [
@@ -491,30 +491,30 @@ window.RANGER_MODS = {
     },
     {
       "name": "Seeker Mines",
-      "icon": "Seeker Mines.png",
+      "icon": "ico_enhancement_HunterMineLauncher_02.png",
       "menu": "When a mine detonates, it now moves towards nearby enemies."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%. Time between shots reduced by 25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -522,37 +522,37 @@ window.RANGER_MODS = {
   "Mopz": [
     {
       "name": "Spin-Up Rotor",
-      "icon": "Spin-Up Rotor.png",
+      "icon": "ico_improvement_Mopz_06.png",
       "menu": "The rate of fire can increase even further.",
       "effect": "Adds a third fire-rate stage: after 5s of spin-up, fire rate is 8x.",
       "baseStages": "About 3x after 1.3s and 5x after 3s."
     },
     {
       "name": "Quick Reload",
-      "icon": "Quick Reload.png",
+      "icon": "ico_improvement_Mopz_07.png",
       "menu": "The weapon recovers ammo after using a gadget."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -560,37 +560,37 @@ window.RANGER_MODS = {
   "Celeste": [
     {
       "name": "Turbo Dash",
-      "icon": "Turbo Dash.png",
+      "icon": "ico_improvement_Celeste_01.png",
       "menu": "Celeste's dash recharges faster.",
       "effect": "Dash cooldown reduced by 50%."
     },
     {
       "name": "Ricochet Blades",
-      "icon": "Ricochet Blades.png",
+      "icon": "UI_Enhancements_Rebounds.png",
       "menu": "The number of rebounds from the blades increases.",
       "effect": "Blades can hit up to 7 times instead of 6; ricochet radius 8."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -598,13 +598,13 @@ window.RANGER_MODS = {
   "Zed": [
     {
       "name": "Artillery Ace",
-      "icon": "Artillery Ace.png",
+      "icon": "ico_improvement_ZedOne_01.png",
       "menu": "Zed One is no longer slowed down when firing his weapon.",
       "effect": "Ultimates still slow movement."
     },
     {
       "name": "Rocket Cluster",
-      "icon": "Rocket Cluster.png",
+      "icon": "ico_enhancement_Warmonger_01.png",
       "menu": "Fires two minirockets in addition to the usual one.",
       "effect": "Minirockets have speed 24 and blast radius 1.",
       "columns": [
@@ -645,25 +645,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon fire rate +25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -671,13 +671,13 @@ window.RANGER_MODS = {
   "Lump": [
     {
       "name": "Acid Core",
-      "icon": "Acid Core.png",
+      "icon": "UI_Enhancements_AcidPuddle.png",
       "menu": "Small allied Amoeboids now spawn an acid puddle on death.",
       "effect": "The acid puddle deals 10 damage and applies a movement effect for 1s."
     },
     {
       "name": "Magma Nozzle",
-      "icon": "Magma Nozzle.png",
+      "icon": "ico_enhancement_LavaGun_01.png",
       "menu": "Firing leaves lava on the ground, burning enemies standing on it.",
       "effect": "Lava pools have a 2 radius, last 2s, and slow enemies by 25%.",
       "columns": [
@@ -718,25 +718,25 @@ window.RANGER_MODS = {
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Time between shots reduced by 25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }
@@ -744,37 +744,37 @@ window.RANGER_MODS = {
   "Grimshot": [
     {
       "name": "Healing Field",
-      "icon": "Healing Field.png",
+      "icon": "ico_enhancement_HoloshieldGlove_01.png",
       "menu": "Shields now heal allies directly behind them.",
       "effect": "Heals 5% of maximum health per second for 8s within a 2.3 radius."
     },
     {
       "name": "Thermal Scope",
-      "icon": "Thermal Scope.png",
+      "icon": "ico_enhancement_HeadHunter_01.png",
       "menu": "Rivals are displayed through walls at the center of the reticle.",
       "effect": "Reveal radius is 0.5, relative to the screen."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     },
     {
       "name": "Improved Ammo",
-      "icon": "Improved Ammo.png",
+      "icon": "ico_improvement_StatUp_Ammo.png",
       "menu": "Grants more ammo to the weapon.",
       "effect": "Maximum ammo +25%."
     },
     {
       "name": "Improved Fire Rate",
-      "icon": "Improved Fire Rate.png",
+      "icon": "ico_improvement_StatUp_Firerate.png",
       "menu": "Increases the weapon's fire rate.",
       "effect": "Weapon cooldown reduced by 25%."
     },
     {
       "name": "Improved Health",
-      "icon": "Improved Health.png",
+      "icon": "ico_improvement_StatUp_Health.png",
       "menu": "Grants more health to the hero.",
       "effect": "Maximum health +20%."
     }

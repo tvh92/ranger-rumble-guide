@@ -13,7 +13,7 @@ const files = {
   ultimates: ['BigBoom','BigBoomRemote','Cannonball','Evolution','Hoverboard','MegaStrike','Negatron','Ryno','Sheepinator','SmokeScreen','TankFormation','VortexWallop']
 };
 const heroClasses = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.className]));
-const heroProfiles = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, {speed: hero.speed, rarity: hero.rarity, color: hero.color, eventOnly: hero.eventOnly===true}]));
+const heroProfiles = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, {speed: hero.speed, meleeSize: hero.meleeSize, rarity: hero.rarity, color: hero.color, eventOnly: hero.eventOnly===true}]));
 const loadouts = Object.fromEntries(Object.entries(guide.heroes).map(([name, hero]) => [name, hero.loadout]));
 const norm = value => String(value).replace(/[^a-z0-9]/gi,'').toLowerCase();
 const safe = value => { const e=document.createElement('span'); e.textContent=value; return e.innerHTML; };
@@ -32,7 +32,7 @@ function measureDescriptionHeight(panel){const clone=panel.cloneNode(true),width
 const trim = item => ({...item, levels:item.levels.filter(level => level.Level <= 10)});
 const meleeSizeBySpeed = {Fast:'Small', Medium:'Medium', Slow:'Large'};
 function trimHero(item) {
-  const trimmed=trim(item),profile=heroProfiles[item.name],size=meleeSizeBySpeed[profile?.speed],values=guide.meleeDamage?.[size]?.[profile?.rarity];
+  const trimmed=trim(item),profile=heroProfiles[item.name],size=profile?.meleeSize||meleeSizeBySpeed[profile?.speed],values=guide.meleeDamage?.[size]?.[profile?.rarity];
   const widget=item.name==='Ratchet'?raw.characters.find(hero=>hero.name==='Widget'):null;
   const levels=trimmed.levels.map(level=>({...level,...(widget?{'Ult Damage':widget.levels.find(row=>row.Level===level.Level)?.['Ult Damage']}:{}),...(values?{'Melee Damage':values[level.Level-1]}:{})}));
   return {...trimmed,columns:values?[...(trimmed.columns||[]).filter(column=>column!=='Melee Damage'),'Melee Damage']:trimmed.columns,levels};

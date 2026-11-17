@@ -438,6 +438,8 @@ def render_guide(guide: dict) -> str:
     for name in guide["heroOrder"]:
         hero = guide["heroes"][name]
         fields = [f"className: {js_string(hero['className'])}", f"speed: {js_string(hero['speed'])}", f"rarity: {js_string(hero['rarity'])}", f"color: {js_string(hero['color'])}"]
+        if "meleeSize" in hero:
+            fields.append(f"meleeSize: {js_string(hero['meleeSize'])}")
         for key in ("eventOnly", "descriptionHeightHero", "weaponStats"):
             if key in hero:
                 value = "true" if hero[key] is True else js_string(hero[key])
@@ -465,6 +467,9 @@ def build_guide() -> str:
             compact = lambda value: re.sub(r"[^A-Za-z0-9]", "", value)
             internals = [compact(source["weapon"]), compact(source["gadget"]), source["gadget"], f"{compact(name)}Melee", compact(source["ultimate"])]
         hero = {"className": class_name, "speed": speed, "rarity": rarity, "color": RARITY_COLOURS[rarity], "loadout": [source["weapon"], internals[0], source["gadget"], internals[1], internals[2], source["melee"], internals[3], source["ultimate"], internals[4]]}
+        if profile_size:
+            # Melee size comes from the game's melee preset, which is independent of the displayed speed.
+            hero["meleeSize"] = profile_size
         if name == "Ratchet":
             hero.update({"eventOnly": True, "descriptionHeightHero": "Widget", "weaponStats": "Ratchet Burst Pistol"})
         heroes[name] = hero
